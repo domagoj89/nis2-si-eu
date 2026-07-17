@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-68LM6P0B9Y"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-68LM6P0B9Y');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NIS2 za operatorje energetike, plina in toplote v Sloveniji — zahteve 2026</title>
+  <meta name="description" content="Vodnik skladnosti NIS2 za energetska podjetja. Varnost sistemov SCADA, poročanje o incidentih, zaščita verižnih dostav. Rok 2026.">
+  <link rel="canonical" href="https://nis2-si.eu/sektory/energy.html">
+  <meta property="og:title" content="NIS2 za operatorje energetike, plina in toplote v Sloveniji — zahteve 2026">
+  <meta property="og:description" content="Vodnik skladnosti NIS2 za energetska podjetja. Varnost sistemov SCADA, poročanje o incidentih, zaščita verižnih dostav. Rok 2026.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://nis2-si.eu/sektory/energy.html">
+  <meta property="og:locale" content="sl_SI">
+  <meta property="og:site_name" content="NIS2-SI.eu">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="NIS2 za operatorje energetike, plina in toplote v Sloveniji — zahteve 2026">
+  <meta name="twitter:description" content="Vodnik skladnosti NIS2 za energetska podjetja. Varnost sistemov SCADA, poročanje o incidentih, zaščita verižnih dostav. Rok 2026.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Domača stran",
+      "item": "https://nis2-si.eu/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Sektorji",
+      "item": "https://nis2-si.eu/sektory/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "NIS2 za proizvajalce energije, operatorje omrežja, distributerje plina in toplote v Sloveniji — zahteve za leto 2026",
+      "item": "https://nis2-si.eu/sektory/energy.html"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Ali mora naša elektrarna z mocjo pod 50 MW izpolnjevati zahteve Priloge I NIS2?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Če je elektrarna registrirana kot operater kritične infrastrukture pri URSIV-u, veljajo zahteve ne glede na moč. URSIV objavlja seznam kritičnih subjektov — preverjanje statusa je prvi korak. Velike prestopne elektrarne so skoraj vedno razvrščene kot kritični subjekti."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kateri specifični protokoli za oddaljeni dostop do SCADA so dovoljeni po NIS2?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Zahtevani so šifrirani protokoli: SSH za ukazno vrstico, HTTPS za spletne vmesnike, TLS za industrijsko komunikacijo (Modbus/TCP). Prepovedani so Telnet, FTP, nešifriran HTTP in protokoli starejši od 10 let. Vsaka povezava mora biti predpostavljena večfaktorska avtentifikacija."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kakšne so kazni za neupoštevanje roka 18. oktober 2026?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "URSIV lahko izreče denarne kazni do 5 milijonov evrov ali 5% letnih prihodkov (glede na to, kateri znesek je večji) za vsako kategorijo neskladnosti. Poleg tega neporočanje o incidentih s čezmejnim obsegom grozi kazni do 10 milijonov evrov. Od roka naprej velja polni režim revizij skladnosti."
+      }
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container">
+    <div class="nav__inner">
+      <a href="../index.html" class="nav__logo">NIS2<span>-SI</span>.eu</a>
+      <ul class="nav__links">
+        <li><a href="../porownanie.html">Primerjava orodij</a></li>
+        <li><a href="../kalkulator.html">Kalkulator NIS2</a></li>
+        <li><a href="../faq.html">FAQ</a></li>
+      </ul>
+      <a href="../kalkulator.html" class="nav__cta">Preveri ali si zavezан →</a>
+    </div>
+  </div>
+</nav>
+
+<div class="container" style="padding-top:1.5rem;">
+  <div class="breadcrumb">
+    <a href="../index.html">Domača stran</a><span>›</span>
+    <a href="index.html">Sektorji</a><span>›</span>
+    NIS2 za proizvajalce energije, operatorje omrežja, distributerje plina in toplote v Sloveniji — zahteve za leto 2026
+  </div>
+</div>
+
+<!-- HERO -->
+<div style="background:var(--gray-50);padding:2.5rem 0 3rem;border-bottom:1px solid var(--gray-200);">
+  <div class="container--narrow">
+    <span style="display:inline-block;background:#1a3a5c;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Priloga I — kritični subjekt</span>
+    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 za proizvajalce energije, operatorje omrežja, distributerje plina in toplote v Sloveniji — zahteve za leto 2026</h1>
+    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Ta vodnik se obravnava podjetja v sektorju energetike, plina in toplote, registrirana kot kritični subjekti (Priloga I). Spoznate boste specifičnih zahtev glede segmentacije sistemov OT, poročanja o incidentih s čezmejnim obsegom ter zaščite verižnih dostav za omrežno opremo.</p>
+  </div>
+</div>
+
+<!-- WHO QUALIFIES -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
+  <div style="background:var(--gray-50);border-left:4px solid var(--navy);border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;">
+    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Obaveza skladnosti NIS2 se nanašale na vse operaterje kritične infrastrukture v sektorju energije, plina in toplote, registrirane pri URSIV-u kot kritični subjekti, ne glede na velikost zaposlovanja. V praksi to pomeni glavne operaterje prenoса in distribucije, proizvajalce energije, operaterje toplarnskih omrežij in oskrbovalce goriva s sistemskim pomenom. Vsaka od teh kategorij mora implementirati zahteve do 18. oktobra 2026.</p>
+  </div>
+</div>
+
+<!-- OBLIGATIONS -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1.25rem;">Ključne obveznosti NIS2 za ta sektor</h2>
+  <div style="border-top:1px solid var(--gray-100);">
+    
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Segmentacija in zavarovanje sistemov OT/ICS/SCADA</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Sistemi za nadzor procesov (SCADA, PLC, HMI) morajo biti izolirani od pisarniških omrežij prek demilitarizirane cone (DMZ) in požarnega zidu. Prepovedan je neposreden dostop iz IT omrežja do sistemov OT brez vmesne plasti. Potrebno je beleženje in spremljanje vseh povezav med cono OT in korporativnim omrežjem.</p>
+      </div>
+    </div>
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Poročanje o incidentih s potencialno čezmejnim vplivom</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Varnostni incidenti v sistemih proizvodnje, prenosa in distribucije energije, plina ali toplote s sumom vpliva na kontinuiteto oskrbe zunaj ozemlja Slovenije morajo biti prijavljeni SI-CERT v roku 24 ur od odkritja. Obvezni so podrobni opisi vpliva na omrežje, števila prizadetih uporabnikov in ocenjeni čas obnovitve storitve.</p>
+      </div>
+    </div>
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Varnost verižne oskrbe — dobavitelji opreme in programske opreme</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Pogodbe z dobavitelji omrežne opreme, firmware-ja in nadzornega programja morajo vsebovati varnostne klavzule, ki zahtevajo: revije kode, varnostna potrdila, postopke posodabljanja, obravnavo ranljivosti in časovne omejitve oddaljenega dostopa zaposlenih dobavitelja. Dobavitelji morajo dokumentirati svoje varnostne procese in se strinjati s kontrolami.</p>
+      </div>
+    </div>
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Fizična varnost transformatorskih postaj in strežniških sob s kibernetskim spremljanjem</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Transformatorske postaje, toplotne črpalke in osrednje točke distribucije zahtevajo: nadzor fizičnega dostopa (magnetne kartice, biometrija), video nadzor, beleženje vstopov in izstopov osebja ter alarm pri vsaki poskusu nepooblaščenega vstopa. Sistemi SCADA morajo spremljati anomalije v fizičnih parametrih (temperatura, vlažnost, napajanje).</p>
+      </div>
+    </div>
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Upravljanje oddaljenega dostopa do nadzornih sistemov</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Vsaka oddaljena povezava s sistemi SCADA zahteva: večfaktorsko avtentifikacijo, šifriranje (SSH/TLS namesto Telnet/FTP), enkratne žetone dostopa z omejenim rokom veljavnosti, beleženje vseh dejanj in samodejno odjavo po 30 minutah nedejavnosti. Dobavitelji lahko dobijo oddaljeni dostop samo med trajanjem servisnega dela in morajo biti spremljani v realnem času.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TYPICAL GAPS -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Tipične vrzeli skladnosti v tem sektorju</h2>
+  <ul style="list-style:none;padding:0;margin:0;border-top:1px solid var(--gray-100);">
+    
+    <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Sistemi SCADA povezani s korporativnim omrežjem brez segmentacije — vse naprave OT imajo dostop do e-pošte in interneta, kar omogoča širjenje zlonamerne programske opreme na nadzorne sisteme.
+    </li>
+    <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Nešifrirani protokoli (Telnet, FTP, HTTP) za oddaljeni dostop do regulatorjev PLC — dostop dobaviteljev in administratorjev lahko prestrezamejo v nezavarovanih omrežjih.
+    </li>
+    <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Pomanjkanje inventarja naprav OT — operater ne ve, katere naprave SCADA so v omrežju, katere različice firmware-ja se izvajajo in katere ranljivosti obstajajo.
+    </li>
+    <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Oddaljeni dostop dobavitelja brez beleženja — zaposleni dobavitelja omrežne opreme ali firmware-ja se lahko povežejo brez evidentiranja, kdo in kdaj je imel dostop do kritičnih sistemov.
+    </li>
+  </ul>
+</div>
+
+<!-- TOOLS -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Priporočena orodja za ta sektor</h2>
+  <div style="display:grid;gap:1rem;">
+    
+    <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
+        <strong style="color:var(--navy);font-size:1rem;">Secfix</strong>
+        <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">secfix.com</span>
+      </div>
+      <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
+      <a href="../orodja/secfix.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Preveri orodje →</a>
+    </div>
+    <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
+        <strong style="color:var(--navy);font-size:1rem;">Vanta</strong>
+        <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">vanta.com</span>
+      </div>
+      <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
+      <a href="../orodja/vanta.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Preveri orodje →</a>
+    </div>
+    <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
+        <strong style="color:var(--navy);font-size:1rem;">ISMS.online</strong>
+        <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">isms.online</span>
+      </div>
+      <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
+      <a href="../orodja/isms-online.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Preveri orodje →</a>
+    </div>
+  </div>
+</div>
+
+<!-- FAQ -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem;" itemscope itemtype="https://schema.org/FAQPage">
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Pogosto zastavljena vprašanja</h2>
+  <div style="border-top:1px solid var(--gray-100);">
+    
+  <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Ali mora naša elektrarna z mocjo pod 50 MW izpolnjevati zahteve Priloge I NIS2?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Če je elektrarna registrirana kot operater kritične infrastrukture pri URSIV-u, veljajo zahteve ne glede na moč. URSIV objavlja seznam kritičnih subjektov — preverjanje statusa je prvi korak. Velike prestopne elektrarne so skoraj vedno razvrščene kot kritični subjekti.</p>
+    </div>
+  </div>
+  <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Kateri specifični protokoli za oddaljeni dostop do SCADA so dovoljeni po NIS2?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Zahtevani so šifrirani protokoli: SSH za ukazno vrstico, HTTPS za spletne vmesnike, TLS za industrijsko komunikacijo (Modbus/TCP). Prepovedani so Telnet, FTP, nešifriran HTTP in protokoli starejši od 10 let. Vsaka povezava mora biti predpostavljena večfaktorska avtentifikacija.</p>
+    </div>
+  </div>
+  <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Kakšne so kazni za neupoštevanje roka 18. oktober 2026?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">URSIV lahko izreče denarne kazni do 5 milijonov evrov ali 5% letnih prihodkov (glede na to, kateri znesek je večji) za vsako kategorijo neskladnosti. Poleg tega neporočanje o incidentih s čezmejnim obsegom grozi kazni do 10 milijonov evrov. Od roka naprej velja polni režim revizij skladnosti.</p>
+    </div>
+  </div>
+  </div>
+</div>
+
+<!-- CTA -->
+<div style="background:var(--navy);padding:3rem 1.25rem;text-align:center;margin-top:2rem;">
+  <div class="container--narrow">
+    <h2 style="color:#fff;font-size:1.4rem;margin:0 0 .75rem;">Preveri zahteve za svojo organizacijo</h2>
+    <p style="color:rgba(255,255,255,.75);margin:0 0 1.5rem;font-size:.95rem;">
+      NIS2 · Slovenija · 2026
+    </p>
+    <a href="../kalkulator.html" style="display:inline-block;background:#16a34a;color:#fff;padding:.85rem 2.25rem;border-radius:8px;font-weight:700;font-size:1rem;text-decoration:none;">
+      Zaženi kalkulator →
+    </a>
+  </div>
+</div>
+
+
+<nav class="related-sectors" aria-label="Sorodni sektorji" style="max-width:1100px;margin:2rem auto;padding:1.5rem 1.25rem;border-top:1px solid #e5e7eb;"><h2 style="font-size:1.05rem;margin:0 0 .75rem;">Sorodni sektorji</h2><ul style="list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:.5rem 1rem;"><li style="margin:0"><a href="fintech.html">NIS2 za Fintech</a></li><li style="margin:0"><a href="food.html">NIS2 za predelovalce živil</a></li><li style="margin:0"><a href="hospitals.html">NIS2 za bolnišnice v Sloveniji 2026</a></li><li style="margin:0"><a href="hr-payroll.html">NIS2 za dobavitelje kadrovske in plačne programske opreme v Sloveniji</a></li><li style="margin:0"><a href="index.html">Sektorji, zajeti v NIS2 v Sloveniji 2026</a></li><li style="margin:0"><a href="insurance.html">NIS2 za zavarovalnice v Sloveniji</a></li></ul></nav>
+<footer style="background:var(--gray-50);border-top:1px solid var(--gray-200);padding:2rem 1.25rem;text-align:center;">
+  <div class="container">
+    <p style="color:var(--gray-400);font-size:.82rem;margin:0;">
+      © 2026 NIS2-SI.eu · NIS2 · URSIV/SI-CERT
+      <br>Informacije so samo za izobraževalne namene in ne predstavljajo pravnega nasveta.
+      <br><a href="../index.html" style="color:var(--gray-400);">Domača stran</a> ·
+      <a href="index.html" style="color:var(--gray-400);">Sektorji</a> ·
+      <a href="../porownanie.html" style="color:var(--gray-400);">Primerjava orodij</a>
+    </p>
+  </div>
+</footer>
+
+  <script src="/js/tg-cta.js" defer></script>
+</body>
+</html>

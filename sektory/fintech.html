@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-68LM6P0B9Y"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-68LM6P0B9Y');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NIS2 za Fintech — Zahteve Skladnosti oktober 2026 v Sloveniji</title>
+  <meta name="description" content="Celovit vodnik NIS2 za fintech podjetja, procesorje plačil in posojilne platforme. Spoznajte obveznosti za pomembne subjekte, teste varnosti API in poročanje incidentov.">
+  <link rel="canonical" href="https://nis2-si.eu/sektory/fintech.html">
+  <meta property="og:title" content="NIS2 za Fintech — Zahteve Skladnosti oktober 2026 v Sloveniji">
+  <meta property="og:description" content="Celovit vodnik NIS2 za fintech podjetja, procesorje plačil in posojilne platforme. Spoznajte obveznosti za pomembne subjekte, teste varnosti API in poročanje incidentov.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://nis2-si.eu/sektory/fintech.html">
+  <meta property="og:locale" content="sl_SI">
+  <meta property="og:site_name" content="NIS2-SI.eu">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="NIS2 za Fintech — Zahteve Skladnosti oktober 2026 v Sloveniji">
+  <meta name="twitter:description" content="Celovit vodnik NIS2 za fintech podjetja, procesorje plačil in posojilne platforme. Spoznajte obveznosti za pomembne subjekte, teste varnosti API in poročanje incidentov.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Domača stran",
+      "item": "https://nis2-si.eu/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Sektorji",
+      "item": "https://nis2-si.eu/sektory/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "NIS2 za Fintech v Sloveniji — Obveznosti Pomembnih Subjektov oktober 2026",
+      "item": "https://nis2-si.eu/sektory/fintech.html"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Ali mora neobank s 250 000 uporabniki uporabljati polne zahteve NIS2 Priloge II?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Da, če neobank zagotavlja plačilne storitve v Sloveniji in presega pragove uporabnikov ali obsega transakcij, določene s strani URSIV, je razvrščen kot pomemben subjekt. Zahtevana je polna dokumentacija upravljanja tveganja ICT, testi varnosti API najmanj enkrat letno in poročanje incidentov URSIV v roku 72 ur."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kakšne so konkretne zahteve za bančna API, ki jih narekuje NIS2?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "API mora biti predmet testov penetracije pred vsako uvedbo v produkcijo (ali vsaj enkrat letno za manjše spremembe), z dokumentacijo skladnosti s OWASP API Security Top 10. Zahtevani so tudi: večstopenjsko preverjanje pristnosti (MFA) za dostop administratorja, šifriranje TLS 1.2 najmanj, omejitev hitrosti in beleženje vseh operacij na računu stranke."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kakšne kazni grožijo za neupoštevanje roka za poročanje incidentov URSIV?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Zamudeno ali nepopolno obvestilo o incidentu, ki moti obdelavo plačil, predstavlja kršitev NIS2 in lahko povzroči globo do 50 000 EUR za fizične osebe in do 1 000 000 EUR za pravne osebe. Poleg tega lahko URSIV izda priporočilo za izvajanje izboljšav v določenem roku pod grožnjo upravnih sankcij."
+      }
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container">
+    <div class="nav__inner">
+      <a href="../index.html" class="nav__logo">NIS2<span>-SI</span>.eu</a>
+      <ul class="nav__links">
+        <li><a href="../porownanie.html">Primerjava orodij</a></li>
+        <li><a href="../kalkulator.html">Kalkulator NIS2</a></li>
+        <li><a href="../faq.html">Pogosta vprašanja</a></li>
+      </ul>
+      <a href="../kalkulator.html" class="nav__cta">Preveri ali spadaš →</a>
+    </div>
+  </div>
+</nav>
+
+<div class="container" style="padding-top:1.5rem;">
+  <div class="breadcrumb">
+    <a href="../index.html">Domača stran</a><span>›</span>
+    <a href="index.html">Sektorji</a><span>›</span>
+    NIS2 za Fintech v Sloveniji — Obveznosti Pomembnih Subjektov oktober 2026
+  </div>
+</div>
+
+<!-- HERO -->
+<div style="background:var(--gray-50);padding:2.5rem 0 3rem;border-bottom:1px solid var(--gray-200);">
+  <div class="container--narrow">
+    <span style="display:inline-block;background:#16a34a;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Priloga II — Pomemben Subjekt</span>
+    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 za Fintech v Sloveniji — Obveznosti Pomembnih Subjektov oktober 2026</h1>
+    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Vodnik namenjen timom skladnosti, varnosti in operacij fintech podjetij ter neobankingov. Izvedeli boste, katere konkretne zahteve se nanašajo na upravljanje tveganja ICT, testiranje varnosti API in poročanje incidentov, ki motijo obdelavo plačil.</p>
+  </div>
+</div>
+
+<!-- WHO QUALIFIES -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
+  <div style="background:var(--gray-50);border-left:4px solid var(--navy);border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;">
+    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Zahteva se nanaša na fintech podjetja, procesorje plačil, neobankike in posojilne platforme, ki vodijo več kot 350 000 uporabnikov ali obdelujejo plačila, ki presegajo določene pragove (v skladu s kategorizacijo URSIV). Obveznost velja za vsako organizacijo, ki zagotavlja plačilne ali kreditne storitve v Sloveniji, ne glede na sedež, če obdeluje slovenske uporabnike.</p>
+  </div>
+</div>
+
+<!-- OBLIGATIONS -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1.25rem;">Ključne obveznosti NIS2 za ta sektor</h2>
+  <div style="border-top:1px solid var(--gray-100);">
+    
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Upravljanje tveganja ICT sorazmerno z obsegom in kritičnostjo storitev</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Vsaka fintech institucija mora vpeljati formalen sistem upravljanja tveganja ICT, ki zajema oceno ranljivosti, teste penetracije API in mobilnih aplikacij najmanj enkrat letno ter preslikavo odvisnosti od ponudnikov v oblaku. Tveganja morajo biti dokumentirana v urnik in povezana s SLA ponudnikov. Za velike procesorje plačil so potrebni testi varnosti po vsaki spremembi kode v kritičnih sistemih.</p>
+      </div>
+    </div>
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Testiranje varnosti API in mobilnih aplikacij</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Fintech podjetja morajo podvreči vsaAPI, ki obdelujejo finančne podatke ali preverjajo uporabnike, formalnim testom varnosti (pentestom) pred uvedbo v produkcijo. Mobilne aplikacije zahtevajo preverjanje OWASP Mobile Top 10. Rezultati testov morajo biti dokumentirani in shranjeni najmanj 3 leta za namene revizije URSIV.</p>
+      </div>
+    </div>
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Zaščita podatkov strank v skladu s NIS2, PSD2 in GDPR</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Platforme morajo vpeljati end-to-end šifriranje za občutljive podatke (številke kartic, PIN-e, podatke prijave) in nespremenljivost revizijskih beležk. Postopki morajo pokrivati tako zahteve GDPR (pravica dostopa in izbrisanja) kot NIS2 (integritet podatkov). Zunanji ponudniki (oblak, analitika) zahtevajo pogodbe s klauzulami varnosti ICT in obveščanjem o incidentih v roku 24 ur.</p>
+      </div>
+    </div>
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Poročanje incidentov, ki motijo obdelavo plačil</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Vsak incident, ki onemogoči obdelavo plačil dlje kot 30 minut, mora biti prijavljen URSIV in SI-CERT v roku 72 ur od odkritja. Poročilo mora vsebovati: opis grožnje, število motenj transakcij, vpliv na stranke ter sprejete corrective ukrepe. Fintech podjetja morajo vzdrževati načrt okrevanja v sili (disaster recovery plan) z RTO ≤ 4 ure in RPO ≤ 1 uro.</p>
+      </div>
+    </div>
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Dokumentacija varnostnih zahtev za ponudnike in integratorje</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Vse pogodbe s ponudniki oblaka, plačilnimi vratarji in integratorji morajo vsebovati formalno opisane zahteve ICT: standarde šifriranja, postopke varnostnega kopiranja, revizije varnosti, geografske meje obdelave podatkov. Vsak ponudnik mora imeti načrt poslovne kontinuitete in postopek obveščanja v primeru incidenta. Fintech podjetja morajo izvajati letne preglede pogodb in validirati skladnost ponudnikov.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TYPICAL GAPS -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Tipične vrzeli skladnosti v tem sektorju</h2>
+  <ul style="list-style:none;padding:0;margin:0;border-top:1px solid var(--gray-100);">
+    
+    <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Varnost API se ne ocenjuje formalno po vsaki izdaji — vpeljite teste varnosti v CI/CD pipeline in dokumentirajte rezultate za vsak release
+    </li>
+    <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Brez dokumentiranih varnostnih zahtev za ponudnike oblaka — ustvarite standardno klauzulo ICT v pogodbah, ki opisuje šifriranje, revizije in roke za obveščanje o incidentih
+    </li>
+    <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Postopki incidentov pokrivajo GDPR, vendar ne naslavljajo pragov poročanja NIS2 (30 minut motnje plačil) — ločite pot GDPR od NIS2 in dodelite osebo, odgovorno za obveščanje URSIV
+    </li>
+    <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Brez testov okrevanja v sili za kritične sisteme plačil — načrtujte letne vaje okrevanja iz varnostnih kopij v testnem okolju in dokumentirajte čase RTO/RPO
+    </li>
+  </ul>
+</div>
+
+<!-- TOOLS -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Priporočena orodja za ta sektor</h2>
+  <div style="display:grid;gap:1rem;">
+    
+    <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
+        <strong style="color:var(--navy);font-size:1rem;">Secfix</strong>
+        <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">secfix.com</span>
+      </div>
+      <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
+      <a href="../nastroje/secfix.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Preveri orodje →</a>
+    </div>
+    <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
+        <strong style="color:var(--navy);font-size:1rem;">Reglyze</strong>
+        <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">reglyze.com</span>
+      </div>
+      <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
+      <a href="../nastroje/reglyze.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Preveri orodje →</a>
+    </div>
+    <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
+        <strong style="color:var(--navy);font-size:1rem;">Sprinto</strong>
+        <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">sprinto.com</span>
+      </div>
+      <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
+      <a href="../nastroje/sprinto.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Preveri orodje →</a>
+    </div>
+  </div>
+</div>
+
+<!-- FAQ -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem;" itemscope itemtype="https://schema.org/FAQPage">
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Pogosta vprašanja</h2>
+  <div style="border-top:1px solid var(--gray-100);">
+    
+  <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Ali mora neobank s 250 000 uporabniki uporabljati polne zahteve NIS2 Priloge II?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Da, če neobank zagotavlja plačilne storitve v Sloveniji in presega pragove uporabnikov ali obsega transakcij, določene s strani URSIV, je razvrščen kot pomemben subjekt. Zahtevana je polna dokumentacija upravljanja tveganja ICT, testi varnosti API najmanj enkrat letno in poročanje incidentov URSIV v roku 72 ur.</p>
+    </div>
+  </div>
+  <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Kakšne so konkretne zahteve za bančna API, ki jih narekuje NIS2?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">API mora biti predmet testov penetracije pred vsako uvedbo v produkcijo (ali vsaj enkrat letno za manjše spremembe), z dokumentacijo skladnosti s OWASP API Security Top 10. Zahtevani so tudi: večstopenjsko preverjanje pristnosti (MFA) za dostop administratorja, šifriranje TLS 1.2 najmanj, omejitev hitrosti in beleženje vseh operacij na računu stranke.</p>
+    </div>
+  </div>
+  <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Kakšne kazni grožijo za neupoštevanje roka za poročanje incidentov URSIV?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Zamudeno ali nepopolno obvestilo o incidentu, ki moti obdelavo plačil, predstavlja kršitev NIS2 in lahko povzroči globo do 50 000 EUR za fizične osebe in do 1 000 000 EUR za pravne osebe. Poleg tega lahko URSIV izda priporočilo za izvajanje izboljšav v določenem roku pod grožnjo upravnih sankcij.</p>
+    </div>
+  </div>
+  </div>
+</div>
+
+<!-- CTA -->
+<div style="background:var(--navy);padding:3rem 1.25rem;text-align:center;margin-top:2rem;">
+  <div class="container--narrow">
+    <h2 style="color:#fff;font-size:1.4rem;margin:0 0 .75rem;">Preveri zahteve za svojo organizacijo</h2>
+    <p style="color:rgba(255,255,255,.75);margin:0 0 1.5rem;font-size:.95rem;">
+      NIS2 · Slovenija · oktober 2026
+    </p>
+    <a href="../kalkulator.html" style="display:inline-block;background:#16a34a;color:#fff;padding:.85rem 2.25rem;border-radius:8px;font-weight:700;font-size:1rem;text-decoration:none;">
+      Zaženi kalkulator →
+    </a>
+  </div>
+</div>
+
+
+<nav class="related-sectors" aria-label="Povezani sektorji" style="max-width:1100px;margin:2rem auto;padding:1.5rem 1.25rem;border-top:1px solid #e5e7eb;"><h2 style="font-size:1.05rem;margin:0 0 .75rem;">Povezani sektorji</h2><ul style="list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:.5rem 1rem;"><li style="margin:0"><a href="food.html">NIS2 za predelovalce živil</a></li><li style="margin:0"><a href="hospitals.html">NIS2 za bolnišnice v Sloveniji oktober 2026</a></li><li style="margin:0"><a href="hr-payroll.html">NIS2 za ponudnike programske opreme HR in plačnih storitev v Sloveniji</a></li><li style="margin:0"><a href="index.html">Sektorji predmet NIS2 v Sloveniji oktober 2026</a></li><li style="margin:0"><a href="insurance.html">NIS2 za zavarovalnice v Sloveniji</a></li><li style="margin:0"><a href="it-outsourcing.html">NIS2 za podjetja IT outsourcinga in integratorje sistemov v Sloveniji oktober 2026</a></li></ul></nav>
+<footer style="background:var(--gray-50);border-top:1px solid var(--gray-200);padding:2rem 1.25rem;text-align:center;">
+  <div class="container">
+    <p style="color:var(--gray-400);font-size:.82rem;margin:0;">
+      © 2026 NIS2-SI.eu · NIS2 · URSIV/SI-CERT
+      <br>Informacije so izobrazbenega značaja in ne predstavljajo pravnega nasveta.
+      <br><a href="../index.html" style="color:var(--gray-400);">Domača stran</a> ·
+      <a href="index.html" style="color:var(--gray-400);">Sektorji</a> ·
+      <a href="../porownanie.html" style="color:var(--gray-400);">Primerjava orodij</a>
+    </p>
+  </div>
+</footer>
+
+  <script src="/js/tg-cta.js" defer></script>
+</body>
+</html>
