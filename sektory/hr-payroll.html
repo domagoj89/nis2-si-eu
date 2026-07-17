@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="sl">
 <head>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-68LM6P0B9Y"></script>
@@ -11,18 +11,18 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KSC/NIS2 dla dostawców oprogramowania HR i usług płacowych w Polsce</title>
-  <meta name="description" content="Wymagania KSC/NIS2 dla dostawców oprogramowania HR i systemów płacowych zarządzających danymi pracowników. Zobowiązania do 2026 roku.">
+  <title>NIS2 za ponudnike HR programske opreme v Sloveniji 2026</title>
+  <meta name="description" content="NIS2 zahteve za ponudnike plačilne in kadrovske programske opreme v Sloveniji. Obveznosti varovanja podatkov zaposlenih, poročanje incidentov in izolacija podatkov strank.">
   <link rel="canonical" href="https://nis2-si.eu/sektory/hr-payroll.html">
-  <meta property="og:title" content="KSC/NIS2 dla dostawców oprogramowania HR i usług płacowych w Polsce">
-  <meta property="og:description" content="Wymagania KSC/NIS2 dla dostawców oprogramowania HR i systemów płacowych zarządzających danymi pracowników. Zobowiązania do 2026 roku.">
+  <meta property="og:title" content="NIS2 za ponudnike HR programske opreme v Sloveniji 2026">
+  <meta property="og:description" content="NIS2 zahteve za ponudnike plačilne in kadrovske programske opreme v Sloveniji. Obveznosti varovanja podatkov zaposlenih, poročanje incidentov in izolacija podatkov strank.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://nis2-si.eu/sektory/hr-payroll.html">
-  <meta property="og:locale" content="pl_PL">
-  <meta property="og:site_name" content="NIS2-Narzedzia.pl">
+  <meta property="og:locale" content="sl_SI">
+  <meta property="og:site_name" content="NIS2-SI.eu">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="KSC/NIS2 dla dostawców oprogramowania HR i usług płacowych w Polsce">
-  <meta name="twitter:description" content="Wymagania KSC/NIS2 dla dostawców oprogramowania HR i systemów płacowych zarządzających danymi pracowników. Zobowiązania do 2026 roku.">
+  <meta name="twitter:title" content="NIS2 za ponudnike HR programske opreme v Sloveniji 2026">
+  <meta name="twitter:description" content="NIS2 zahteve za ponudnike plačilne in kadrovske programske opreme v Sloveniji. Obveznosti varovanja podatkov zaposlenih, poročanje incidentov in izolacija podatkov strank.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
@@ -34,19 +34,19 @@
     {
       "@type": "ListItem",
       "position": 1,
-      "name": "Strona główna",
+      "name": "Domov",
       "item": "https://nis2-si.eu/"
     },
     {
       "@type": "ListItem",
       "position": 2,
-      "name": "Sektory",
+      "name": "Sektorji",
       "item": "https://nis2-si.eu/sektory/"
     },
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "KSC/NIS2 dla dostawców oprogramowania HR i usług płacowych w Polsce — wymagania 2026",
+      "name": "NIS2 za ponudnike HR in plačilne programske opreme v Sloveniji — obveznosti 2026",
       "item": "https://nis2-si.eu/sektory/hr-payroll.html"
     }
   ]
@@ -59,26 +59,26 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Czy system HR działający w architekturze multi-tenant (wielu klientów w jednej bazie danych) automatycznie spełnia wymóg izolacji danych KSC/NIS2?",
+      "name": "Ali sem zavezanec NIS2, če imam samo Pet strank za svojo HR programsko opremo?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nie. Pojedyncza baza danych z filtrowaniem danych na poziomie aplikacji to minimum, ale KSC/NIS2 wymaga testowania tej izolacji co najmniej co 6 miesięcy za pośrednictwem audytów bezpieczeństwa (np. testów penetracyjnych). Brak dokumentacji takich testów stanowi naruszenie wymogów — UKNF będzie żądać raporty z audytów podczas kontroli."
+        "text": "Da, ste. NIS2 zahteva Priloga II vas ne razvršča glede na število strank, temveč na to, da ste »ponudnik digitalne storitve« in obdelujete osebne podatke ter plačilne informacije. Že ena strankav kritičnem sektorju (finance, zdravstvo, energija) vas kvalificira. Tudi če imate samo pet manjših strank, ste po definiciji NIS2 »pomembna entiteta« in morate izpolnjevati vse obveznosti."
       }
     },
     {
       "@type": "Question",
-      "name": "Jaka kara grozi za niezgłoszenie incydentu dotykającego danych pracowników wielu naszych klientów do CERT Polska w ciągu 24 godzin?",
+      "name": "Kaj točno pomeni »fizična izolacija« podatkov v večnajemniški arhitekturi?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Kara administracyjna wynosi od 10 000 do 50 000 zł za każdy incydent. Dodatkowo UKNF może nakazać wstrzymanie usług do czasu wdrożenia działań naprawczych. Osoby odpowiadające (np. dyrektorzy IT) mogą ponieść odpowiedzialność karną za narażenie bezpieczeństwa danych osobowych (art. 268 kodeksu karnego)."
+        "text": "Pomeni, da so podatki različnih strank shranjeni v ločenih tabelah podatkovne baze s strogo ločenimi dostupi, ne le v ločenih »mapah« znotraj enake tabele. Administrator sistema ne sme tehnično moči dostopati do podatkov druge stranke, tudi če ima dostop do celotne podatkovne baze. Minimalna raven je repliciranje podatkovne baze za vsako stranko ali uporaba particioniranih tabel z neuporabljivo steno med strankami."
       }
     },
     {
       "@type": "Question",
-      "name": "Czy wystarczy SMS z kodem jednorazowym do uwierzytelniania administratorów systemu płacowego, aby spełnić wymóg MFA w KSC/NIS2?",
+      "name": "Kakšne so kazni za neupoštevanje NIS2 zahtev do leta 2026?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nie. KSC/NIS2 i NIST SP 800-63C wymagają uwierzytelniania opartego na sprzęcie — klucze FIDO2, karty inteligentne, tokeny hardwarowe. SMS i aplikacje mobilne (TOTP, push notifications) nie spełniają normy dla dostępu do systemów zarządzających danymi wrażliwymi wielu organizacji. Migracja musi być zakończona do końca 2025 roku."
+        "text": "Za ponudnike digitalnih storitev so kazni izrečene do 100.000 EUR ali 2 % globalnega letnega prometa, odvisno od tega, kaj je večje. Če ne poročite incidenta v roku 24 ur, je posebna kazen do 50.000 EUR. Neuspešna ali nepopolna izolacija podatkov strank, ki pripelje do vdora, se šteje za nepravilno izvrševanje nalog in je podvržena najvišjim kaznem. Rok za polno usklajeno je 31. oktober 2025, pogodbe s strankami pa morajo že sedaj vsebovati klavzule o NIS2 zahtevah."
       }
     }
   ]
@@ -90,44 +90,44 @@
 <nav class="nav">
   <div class="container">
     <div class="nav__inner">
-      <a href="../index.html" class="nav__logo">NIS2<span>Si</span>.eu</a>
+      <a href="../index.html" class="nav__logo">NIS2<span>SI</span>.eu</a>
       <ul class="nav__links">
-        <li><a href="../porownanie.html">Porównanie narzędzi</a></li>
-        <li><a href="../kalkulator.html">Kalkulator KSC</a></li>
+        <li><a href="../primerjava.html">Primerjava orodij</a></li>
+        <li><a href="../kalkulator.html">Kalkulator NIS2</a></li>
         <li><a href="../faq.html">FAQ</a></li>
       </ul>
-      <a href="../kalkulator.html" class="nav__cta">Sprawdź czy podlegasz →</a>
+      <a href="../kalkulator.html" class="nav__cta">Preverite, ali ste zavezani →</a>
     </div>
   </div>
 </nav>
 
 <div class="container" style="padding-top:1.5rem;">
   <div class="breadcrumb">
-    <a href="../index.html">Strona główna</a><span>›</span>
-    <a href="index.html">Sektory</a><span>›</span>
-    KSC/NIS2 dla dostawców oprogramowania HR i usług płacowych w Polsce — wymagania 2026
+    <a href="../index.html">Domov</a><span>›</span>
+    <a href="index.html">Sektorji</a><span>›</span>
+    NIS2 za ponudnike HR in plačilne programske opreme v Sloveniji — obveznosti 2026
   </div>
 </div>
 
 <!-- HERO -->
 <div style="background:var(--gray-50);padding:2.5rem 0 3rem;border-bottom:1px solid var(--gray-200);">
   <div class="container--narrow">
-    <span style="display:inline-block;background:#16a34a;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Załącznik II — podmiot ważny</span>
-    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">KSC/NIS2 dla dostawców oprogramowania HR i usług płacowych w Polsce — wymagania 2026</h1>
-    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Ta strona zawiera wytyczne dla dostawców systemów kadrowych i rozliczeń wynagrodzeń zarządzających danymi pracowników wielu organizacji jednocześnie. Poznają Państwo konkretne zobowiązania bezpieczeństwa, wymogi izolacji danych klientów oraz procedury zgłaszania incydentów wymagane przez KSC/NIS2.</p>
+    <span style="display:inline-block;background:#16a34a;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Priloga II — pomembna entiteta</span>
+    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 za ponudnike HR in plačilne programske opreme v Sloveniji — obveznosti 2026</h1>
+    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Če s svojo programsko opremo upravljate plačilne podatke in osebne podatke zaposlenih več podjetij hkrati, ste zavezanec NIS2. Naučite se konkretnih obveznosti varovanja podatkov, poročanja varnostnih incidentov in izolacije podatkov strank v večnajemniških sistemih.</p>
   </div>
 </div>
 
 <!-- WHO QUALIFIES -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
   <div style="background:var(--gray-50);border-left:4px solid var(--navy);border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;">
-    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">W zakres KSC/NIS2 wpadają Państwa firmy, jeśli świadczą Państwo usługi SaaS oprogramowania kadrowego lub płacowego dla 10 lub więcej organizacji, bądź Państwych usługi są kluczowe dla operacyjności podatników podatku dochodowego. Dotyczy to także dostawców usług outsourcingu kadr i rozliczeń wynagrodzeń dla średnich i dużych przedsiębiorstw, niezależnie od Państwej wielkości.</p>
+    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Pod NIS2 sodite kot ponudnik digitalne storitve, če upravljate programsko opremo za plačila ali upravljanje virov človeških virov (HRIS) za dve ali več pravnih oseb v Sloveniji. Vaša klasifikacija kot »pomembna entiteta« je obvezna, ne glede na število zaposlenih v vašem podjetju, ker obdelujete osebne podatke in plačilne informacije strank, ki jih štejemo za kritično infrastrukturo sektorja.</p>
   </div>
 </div>
 
 <!-- OBLIGATIONS -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
-  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1.25rem;">Kluczowe obowiązki NIS2 dla tego sektora</h2>
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1.25rem;">Ključne obveznosti NIS2 za ta sektor</h2>
   <div style="border-top:1px solid var(--gray-100);">
     
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -135,8 +135,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Bezpieczeństwo danych pracowników i danych płacowych (NIS2 + GDPR)</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Zobowiązani są Państwo do wdrożenia kontroli dostępu opartych na zasadzie najmniejszych uprawnień dla wszystkich administratorów systemów HR i płacowych. Dane pracowników w systemach wielodostępnych (multi-tenant) muszą być szyfrowane zarówno w spoczynku, jak i w trakcie transmisji. Procedury audytu dostępu do danych płacowych poszczególnych klientów muszą być rejestrowane i dostępne dla UKNF przez co najmniej 30 dni.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Varovanje plačilnih podatkov in osebnih podatkov zaposlenih</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Kot ponudnik HR in plačilne programske opreme ste dolžni zagotoviti, da je dostop do plačilnih podatkov in osebnih podatkov zaposlenih vaših strank zaščiten z najmanj dvofaktorsko avtentikacijo za vse administratorske račune. Vsi dostopi do podatkov morajo biti revidirati in beleženi v neprekinjenih revizijskih zapisih. Podatki morajo biti šifrirani tako med prenosom kot pri mirovanju, in to mora biti dokumentirano v vaši politiki varnosti.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -144,8 +144,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Zgłaszanie incydentów jako dostawca cyfrowy (digital service provider)</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">W przypadku naruszenia bezpieczeństwa danych dotykającego pracowników wielu Państwych klientów, zobowiązani są Państwo do zgłoszenia incydentu do CERT Polska w ciągu 24 godzin od jego potwierdzenia. Raport musi zawierać liczbę dotkniętych organizacji, rodzaj danych, opis ataku oraz podjęte działania naprawcze. Niezgłoszenie incydentu może skutkować karą do 50 000 zł.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Poročanje varnostnih incidentov kao ponudnik digitalne storitve</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Če pride do varnostnega vdora, ki vpliva na podatke dveh ali več vaših strank (na primer, če napadalec dostopa do podatkov zaposlenih v več podjetjih), morate to prijaviti URSIV v roku 24 ur od odkritja. Poleg tega morate vsako prizadeto stranko uradno obvestiti z informacijami o obsegu vdora, prizadetih podatkih in priporočenih ukrepih. Nepopolno ali pozno poročilo predstavlja sankcijo do 50.000 EUR.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -153,8 +153,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Izolacja danych klientów w systemach wielodostępnych</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Każdy klient — organizacja korzystająca z Państwych usług HR — musi mieć gwarantowaną logiczną izolację swoich danych od danych innych klientów. Izolacja musi obejmować kontrolę dostępu na poziomie aplikacji (nie tylko bazy danych), a administrator jednego klienta nie może posiadać dostępu do danych innego klienta. Regularnie (co najmniej co 6 miesięcy) muszą Państwo testować skuteczność tej izolacji za pośrednictwem audytów bezpieczeństwa.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Izolacija podatkov strank v večnajemniških sistemih</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">V svoji programski opremi morate zagotoviti, da je vsak podatek ene stranke popolnoma logično in fizično izoliran od podatkov drugih strank. To pomeni, da mora administrator enega podjetja tehnično biti nemogoče dostopati do podatkov drugega podjetja, tudi če ima uporabnikarski račun ali dostop do sistema. Razdelitev dostopa mora biti osnovana na vlogo in podjetju, z aktivnimi preveritvami na ravni podatkovne baze.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -162,8 +162,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Kontrola dostępu do systemów administracyjnych z uwierzytelnieniem wieloskładnikowym</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Wszystkie dostępy administratorów do systemów zarządzających danymi pracowników i płacowych muszą być chronione uwierzytelnianiem wieloskładnikowym (MFA) opartym na sprzęcie (np. klucze FIDO2, karty inteligentne). Dostęp poprzez nazwy użytkownika i hasło, niezależnie od ich złożoności, nie spełnia wymogów KSC/NIS2. Działalność administratorów musi być zarejestrowana z dokładnością do każdej operacji i przechowywana przez minimum 90 dni.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Kontrola dostopa za administratorske račune</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Vsi administratorski dostopi do plačilnih sistemov in HR podatkov morajo biti zaščiteni z obvezno hardversko večfaktorsko avtentikacijo (na primer, varnostni ključ). Uporabniki ne smejo imeti pridobitve mogočnosti za sami sebi spremeniti pravice dostopa. Hkrati morate upoštevati politik najmanj potrebnih pravic — vsak uporabnik dobi samo tiste pravice, ki jih res potrebuje za svojo nalogo.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -171,8 +171,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Procedura usunięcia danych klienta po rozwiązaniu umowy</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Po zakończeniu umowy z klientem zobowiązani są Państwo do usunięcia jego danych pracowników (wraz z historią płacową) w ciągu 30 dni. Procedura musi być udokumentowana, a każde usunięcie zweryfikowane przez drugą osobę. Klient musi otrzymać potwierdzenie pisemne (lub elektroniczne, podpisane bezpiecznie) wykonania tego procesu. Dane archiwalne wymagane przepisami prawa (np. do rozliczenia podatkowego) mogą być przechowywane wyłącznie w odizolowanym systemie bez dostępu operacyjnego.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Proces izbrisa podatkov ob koncu pogodbe</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Ko pogodba s stranko preneha, morate v dogovorenem roku (navadno 30 dni) zbrisati vse njene podatke iz vašega sistema. To mora biti dokumentirano in potrdljivo — ne le logično izbrisano, temveč tudi fizično odstranjeno iz vseh varnostnih kopij v dogovorjenem roku. Stranki morate posredovati pisno potrdilo o popolnem izbrisu podatkov, ki je primerna za revizijske namene.</p>
       </div>
     </div>
   </div>
@@ -180,27 +180,27 @@
 
 <!-- TYPICAL GAPS -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
-  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Typowe luki compliance w tym sektorze</h2>
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Tipične vrzeli skladnosti v tem sektorju</h2>
   <ul style="list-style:none;padding:0;margin:0;border-top:1px solid var(--gray-100);">
     
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Brak pełnej logicznej izolacji danych klientów na poziomie aplikacji — administratorzy jednego klienta mogą dostępować dane innego klienta poprzez manipulacje parametrami URL lub sesją; wymagane są testy penetracyjne izolacji wielodostępności co najmniej raz na 6 miesięcy.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Podatki različnih strank niso dovolj izolirani na ravni podatkovne baze — administrator ene stranke lahko dostopa do podatkov druge stranke z ročnim spreminjanjem parametrov URL-ja ali SQL poizvedb, kar je kritična ranljivost.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Dostęp administratorów chroniany jedynie hasłem lub OTP wysyłanym SMS-em — niewymienione sprzętem MFA (FIDO2, karty inteligentne) nie spełnia wymogów KSC/NIS2; konieczna migacja do sprzętowych kluczy bezpieczeństwa do końca 2025 roku.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Administratorski dostopi do plačilnih sistemov niso zaščiteni z hardversko večfaktorsko avtentikacijo, temveč le s kodno besedo ali softverskim 2FA, kar ne zadošča zahtevam NIS2 za kritične podatke.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Brak formalnego procesu usuwania danych klienta po rozwiązaniu umowy — dane pozostają na serwerach w formie 'nieaktywnego konta'; wymagane opracowanie i wdrożenie procedury z potwierdzeniem i audytem każdego usunięcia.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Formalni proces za izbris podatkov ob prenehanju pogodbe ne obstaja — podjetja pričakujejo izbris, vendar vaš sistem ne beeleži, kaj je izbrisano, in podatki ostanejo v varnostnih kopijah nedoločeno.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Niewystarczające rejestrowanie dostępów administratorów — logi dostępu przechowywane krócej niż 90 dni lub bez możliwości szybkiego wyszukania operacji; należy wdrożyć centralne rozwiązanie SIEM z retencją 90-365 dni i alertami na operacje wysokoryzyka.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Revizijski zapiski za dostop do plačilnih podatkov niso dovolj podrobni — beležijo se samo prijave, ne pa tudi dejanske branja ali prenose plačilnih datotek, kar onemogoča dokazati, kdo je dostopil do katerih podatkov.
     </li>
   </ul>
 </div>
 
 <!-- TOOLS -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
-  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Rekomendowane narzędzia dla tego sektora</h2>
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Priporočena orodja za ta sektor</h2>
   <div style="display:grid;gap:1rem;">
     
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
@@ -232,25 +232,25 @@
 
 <!-- FAQ -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem;" itemscope itemtype="https://schema.org/FAQPage">
-  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Często zadawane pytania</h2>
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Pogosta vprašanja</h2>
   <div style="border-top:1px solid var(--gray-100);">
     
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Czy system HR działający w architekturze multi-tenant (wielu klientów w jednej bazie danych) automatycznie spełnia wymóg izolacji danych KSC/NIS2?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Ali sem zavezanec NIS2, če imam samo Pet strank za svojo HR programsko opremo?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Nie. Pojedyncza baza danych z filtrowaniem danych na poziomie aplikacji to minimum, ale KSC/NIS2 wymaga testowania tej izolacji co najmniej co 6 miesięcy za pośrednictwem audytów bezpieczeństwa (np. testów penetracyjnych). Brak dokumentacji takich testów stanowi naruszenie wymogów — UKNF będzie żądać raporty z audytów podczas kontroli.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Da, ste. NIS2 zahteva Priloga II vas ne razvršča glede na število strank, temveč na to, da ste »ponudnik digitalne storitve« in obdelujete osebne podatke ter plačilne informacije. Že ena strankav kritičnem sektorju (finance, zdravstvo, energija) vas kvalificira. Tudi če imate samo pet manjših strank, ste po definiciji NIS2 »pomembna entiteta« in morate izpolnjevati vse obveznosti.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Jaka kara grozi za niezgłoszenie incydentu dotykającego danych pracowników wielu naszych klientów do CERT Polska w ciągu 24 godzin?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Kaj točno pomeni »fizična izolacija« podatkov v večnajemniški arhitekturi?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Kara administracyjna wynosi od 10 000 do 50 000 zł za każdy incydent. Dodatkowo UKNF może nakazać wstrzymanie usług do czasu wdrożenia działań naprawczych. Osoby odpowiadające (np. dyrektorzy IT) mogą ponieść odpowiedzialność karną za narażenie bezpieczeństwa danych osobowych (art. 268 kodeksu karnego).</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Pomeni, da so podatki različnih strank shranjeni v ločenih tabelah podatkovne baze s strogo ločenimi dostupi, ne le v ločenih »mapah« znotraj enake tabele. Administrator sistema ne sme tehnično moči dostopati do podatkov druge stranke, tudi če ima dostop do celotne podatkovne baze. Minimalna raven je repliciranje podatkovne baze za vsako stranko ali uporaba particioniranih tabel z neuporabljivo steno med strankami.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Czy wystarczy SMS z kodem jednorazowym do uwierzytelniania administratorów systemu płacowego, aby spełnić wymóg MFA w KSC/NIS2?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Kakšne so kazni za neupoštevanje NIS2 zahtev do leta 2026?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Nie. KSC/NIS2 i NIST SP 800-63C wymagają uwierzytelniania opartego na sprzęcie — klucze FIDO2, karty inteligentne, tokeny hardwarowe. SMS i aplikacje mobilne (TOTP, push notifications) nie spełniają normy dla dostępu do systemów zarządzających danymi wrażliwymi wielu organizacji. Migracja musi być zakończona do końca 2025 roku.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Za ponudnike digitalnih storitev so kazni izrečene do 100.000 EUR ali 2 % globalnega letnega prometa, odvisno od tega, kaj je večje. Če ne poročite incidenta v roku 24 ur, je posebna kazen do 50.000 EUR. Neuspešna ali nepopolna izolacija podatkov strank, ki pripelje do vdora, se šteje za nepravilno izvrševanje nalog in je podvržena najvišjim kaznem. Rok za polno usklajeno je 31. oktober 2025, pogodbe s strankami pa morajo že sedaj vsebovati klavzule o NIS2 zahtevah.</p>
     </div>
   </div>
   </div>
@@ -259,30 +259,27 @@
 <!-- CTA -->
 <div style="background:var(--navy);padding:3rem 1.25rem;text-align:center;margin-top:2rem;">
   <div class="container--narrow">
-    <h2 style="color:#fff;font-size:1.4rem;margin:0 0 .75rem;">Sprawdź wymagania dla swojej organizacji</h2>
+    <h2 style="color:#fff;font-size:1.4rem;margin:0 0 .75rem;">Preverite zahteve za vašo organizacijo</h2>
     <p style="color:rgba(255,255,255,.75);margin:0 0 1.5rem;font-size:.95rem;">
-      KSC/NIS2 · Polska · 2026
+      ZInfV-1/NIS2 · Slovenija · 2026
     </p>
     <a href="../kalkulator.html" style="display:inline-block;background:#16a34a;color:#fff;padding:.85rem 2.25rem;border-radius:8px;font-weight:700;font-size:1rem;text-decoration:none;">
-      Uruchom kalkulator →
+      Zaženite kalkulator →
     </a>
   </div>
 </div>
 
-
-<nav class="related-sectors" aria-label="Powiązane sektory" style="max-width:1100px;margin:2rem auto;padding:1.5rem 1.25rem;border-top:1px solid #e5e7eb;"><h2 style="font-size:1.05rem;margin:0 0 .75rem;">Powiązane sektory</h2><ul style="list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:.5rem 1rem;"><li style="margin:0"><a href="index.html">Sektory objęte NIS2 w Polsce 2026</a></li><li style="margin:0"><a href="insurance.html">KSC/NIS2 dla ubezpieczycieli w Polsce</a></li><li style="margin:0"><a href="it-outsourcing.html">KSC/NIS2 dla firm IT outsourcingu i integratorów systemów w Polsce 2026</a></li><li style="margin:0"><a href="law-firms.html">NIS2 dla kancelarii prawnych w Polsce</a></li><li style="margin:0"><a href="logistics.html">KSC/NIS2 dla operatorów logistycznych w Polsce</a></li><li style="margin:0"><a href="managed-services.html">NIS2 dla MSP i MSSP w Polsce</a></li></ul></nav>
 <footer style="background:var(--gray-50);border-top:1px solid var(--gray-200);padding:2rem 1.25rem;text-align:center;">
   <div class="container">
     <p style="color:var(--gray-400);font-size:.82rem;margin:0;">
-      © 2026 NIS2-Narzedzia.pl · KSC/NIS2 · UKNF/CERT Polska
+      © 2026 NIS2-SI.eu · ZInfV-1/NIS2 · URSIV / SI-CERT
       <br>Informacje mają charakter edukacyjny i nie stanowią porady prawnej.
-      <br><a href="../index.html" style="color:var(--gray-400);">Strona główna</a> ·
-      <a href="index.html" style="color:var(--gray-400);">Sektory</a> ·
-      <a href="../porownanie.html" style="color:var(--gray-400);">Porównanie narzędzi</a>
+      <br><a href="../index.html" style="color:var(--gray-400);">Domov</a> ·
+      <a href="index.html" style="color:var(--gray-400);">Sektorji</a> ·
+      <a href="../primerjava.html" style="color:var(--gray-400);">Primerjava orodij</a>
     </p>
   </div>
 </footer>
 
-  <script src="/js/tg-cta.js" defer></script>
 </body>
 </html>

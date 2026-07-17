@@ -11,18 +11,18 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NIS2 za nepremičninske agencije in platforme proptech v Sloveniji 2026</title>
-  <meta name="description" content="Zahteve NIS2 za posrednike nepremičnin in upravljavce. Varnost podatkov najemnikov, nadzor dostopa, skladnost do 2026.">
+  <title>NIS2 za nepremičninske agencije v Sloveniji 2026 – ZInfV-1</title>
+  <meta name="description" content="Obveznosti NIS2 za nepremičninske agencije in upravljavce v Sloveniji. Varnost podatkov najemnikov, dostop do sistemov stavb in poročanje incidentov do 2026.">
   <link rel="canonical" href="https://nis2-si.eu/sektory/real-estate.html">
-  <meta property="og:title" content="NIS2 za nepremičninske agencije in platforme proptech v Sloveniji 2026">
-  <meta property="og:description" content="Zahteve NIS2 za posrednike nepremičnin in upravljavce. Varnost podatkov najemnikov, nadzor dostopa, skladnost do 2026.">
+  <meta property="og:title" content="NIS2 za nepremičninske agencije v Sloveniji 2026 – ZInfV-1">
+  <meta property="og:description" content="Obveznosti NIS2 za nepremičninske agencije in upravljavce v Sloveniji. Varnost podatkov najemnikov, dostop do sistemov stavb in poročanje incidentov do 2026.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://nis2-si.eu/sektory/real-estate.html">
   <meta property="og:locale" content="sl_SI">
   <meta property="og:site_name" content="NIS2-SI.eu">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="NIS2 za nepremičninske agencije in platforme proptech v Sloveniji 2026">
-  <meta name="twitter:description" content="Zahteve NIS2 za posrednike nepremičnin in upravljavce. Varnost podatkov najemnikov, nadzor dostopa, skladnost do 2026.">
+  <meta name="twitter:title" content="NIS2 za nepremičninske agencije v Sloveniji 2026 – ZInfV-1">
+  <meta name="twitter:description" content="Obveznosti NIS2 za nepremičninske agencije in upravljavce v Sloveniji. Varnost podatkov najemnikov, dostop do sistemov stavb in poročanje incidentov do 2026.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
@@ -46,7 +46,7 @@
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "NIS2 za nepremičninske agencije, upravljavce in platforme proptech v Sloveniji — zahteve 2026",
+      "name": "NIS2 za nepremičninske agencije in upravljavce v Sloveniji — obveznosti 2026",
       "item": "https://nis2-si.eu/sektory/real-estate.html"
     }
   ]
@@ -59,26 +59,26 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Kateri sistemi v mojem uradu nepremičninske agencije so zajeti v zahtevah NIS2?",
+      "name": "Ali se za nas veljajo obveznosti NIS2, če imamo samo majhno nepremičninsko agencijo s 45 zaposlenimi?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Zahteve NIS2 se nanašajo na vse sisteme, ki shranjujejo osebne podatke najemnikov in lastnikov (CRM, podatkovne baze, mobilne aplikacije), sisteme upravljanja zgradb (BMS, nadzor dostopa, senzorji), pa tudi platforme proptech in storitve v oblaku, ki jih uporablja vaša agencija. Niso zajeti samo lokalni papirni dokumenti in zapisi brez digitalnega dostopa."
+        "text": "Ne, če imate manj kot 50 zaposlenih in letni prihodek nižji od 10 milijonov evrov. Vendar pa URSIV ali SI-CERT lahko vašo agencijo izrecno razglasi za 'pomembno entiteto' glede na vrsto podatkov, ki jih obdelujete, ali kritičnost sistemov stavb, ki jih upravljate. Priporočamo, da se predhodno obrnete na URSIV za rajasnitev."
       }
     },
     {
       "@type": "Question",
-      "name": "Koliko časa imam za uvedbo skladnosti NIS2?",
+      "name": "Kaj točno moramo šifrirati in kako?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Subjekt, ki je pomemben za varnost (Priloga II), mora izpolniti vse zahteve NIS2 do 18. oktobra 2026. To pomeni, da morate do tega datuma izvesti šifriranje podatkov, nadzor dostopa, segmentacijo omrežja sistemov BMS in procese poročanja o incidentih. Priporočljivo je začeti z deli že v letu 2024, da se prilagodite rokom."
+        "text": "Šifrirati morate vse osebne podatke najemnikov, lastnikov in podatke o transakcijah, bodisi v mirovanju (AES-256) bodisi med prenosom (TLS 1.2 ali noveje). Podatki o dostopnih kartah, ključih za stavbe in nadzornih kodah so prav tako klasificirani kot kritični in morajo biti zaščiteni. Uporabite eno od priporočenih orodij, kot sta 1Password ali Reglyze, ki omogočata centralizirano upravljanje in nadzor."
       }
     },
     {
       "@type": "Question",
-      "name": "Kakšne kazni me lahko doletijo za neupoštevanje NIS2?",
+      "name": "Kakšne so kazni za neupoštevanje NIS2 do oktobra 2026?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "URSIV lahko izreče globe do 2 milijonov EUR ali 10 % letnih prihodkov (odvisno od tega, kaj je višje) za neupoštevanje zahtev NIS2 ali neobvestilo o varnostnem incidentu. Poleg tega lahko izgubite zaupanje strank, se soočite s tožbami najemnikov in izgubite dostop do financiranja, če vlagatelji ocenijo vašo varnost za nezadostno."
+        "text": "V Sloveniji je odgovorna institucija URSIV (Urad Republike Slovenije za informacijsko varnost). Kazni za neupoštevanje ZInfV-1 lahko dosežejo do 100.000 evrov ali odstotek letnega prometa (do 2 odstotka), odvisno od kategorije kršitve. Najprej se izdajo opozorila in roki za uskladitev, vendar je priporočljivo nemudoma začeti s prevodom obveznosti."
       }
     }
   ]
@@ -92,11 +92,11 @@
     <div class="nav__inner">
       <a href="../index.html" class="nav__logo">NIS2<span>SI</span>.eu</a>
       <ul class="nav__links">
-        <li><a href="../porownanie.html">Primerjava orodij</a></li>
+        <li><a href="../primerjava.html">Primerjava orodij</a></li>
         <li><a href="../kalkulator.html">Kalkulator NIS2</a></li>
-        <li><a href="../faq.html">Pogosta vprašanja</a></li>
+        <li><a href="../faq.html">FAQ</a></li>
       </ul>
-      <a href="../kalkulator.html" class="nav__cta">Preverite ali ste zavezani →</a>
+      <a href="../kalkulator.html" class="nav__cta">Preverite, ali ste zavezani →</a>
     </div>
   </div>
 </nav>
@@ -105,23 +105,23 @@
   <div class="breadcrumb">
     <a href="../index.html">Domov</a><span>›</span>
     <a href="index.html">Sektorji</a><span>›</span>
-    NIS2 za nepremičninske agencije, upravljavce in platforme proptech v Sloveniji — zahteve 2026
+    NIS2 za nepremičninske agencije in upravljavce v Sloveniji — obveznosti 2026
   </div>
 </div>
 
 <!-- HERO -->
 <div style="background:var(--gray-50);padding:2.5rem 0 3rem;border-bottom:1px solid var(--gray-200);">
   <div class="container--narrow">
-    <span style="display:inline-block;background:#16a34a;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Priloga II — subjekt, ki je pomemben za varnost</span>
-    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 za nepremičninske agencije, upravljavce in platforme proptech v Sloveniji — zahteve 2026</h1>
-    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Ta stran obravnava zahteve za varnost omrežja za posrednike nepremičnin, upravljavce zgradb in ponudnike tehnologije nepremičnin (proptech), ki so razvrščeni kot subjekti, ki so pomembni za varnost. Izvedeli boste, katere posebne obveznosti za varnost morate izvesti, da bi izpolnili uredbo NIS2 pred rokom v letu 2026.</p>
+    <span style="display:inline-block;background:#16a34a;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Priloga II — pomembna entiteta</span>
+    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 za nepremičninske agencije in upravljavce v Sloveniji — obveznosti 2026</h1>
+    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Ta stran je namenjena lastnikom nepremičninskih agencij, upravljavcem stavb in ponudnikom nepremičninskih tehnologij v Sloveniji, ki morajo izpolniti obveznosti ZInfV-1 do oktobra 2026. Spoznajte konkretne zahteve za varnost podatkov, dostopne kontrole in poročanje incidentov.</p>
   </div>
 </div>
 
 <!-- WHO QUALIFIES -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
   <div style="background:var(--gray-50);border-left:4px solid var(--navy);border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;">
-    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Obveznost NIS2 se nanaša na nepremičninske agencije, upravljavce nepremičnin in platforme proptech, ki zaposlujejo najmanj 50 zaposlenih ali dosegajo letne prihodke nad 10 milijonov EUR, če zagotavljajo digitalne storitve ali upravljajo informacijske sisteme za nepremičnine, podatke najemnikov ali dostop do zgradb. Razvrstitev kot subjekt, ki je pomemben za varnost (Priloga II), se nanaša tudi na subjekte, ki so priznani kot pomembni za varnost sektorja nepremičnin zaradi njihove vloge v digitalni infrastrukturi.</p>
+    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Pod NIS2 spadajo nepremičninske agencije in upravljavci stavb, ki imajo več kot 50 zaposlenih ali letni prihodek presega 10 milijonov evrov. Veljajo tudi nepremičninskim platform in ponudnikom storitev upravljanja zgradb, ki obdelujejo osebne podatke najemnikov in imajo dostop do sistemov avtomatizacije stavb. Majhne agencije z manj kot 50 zaposlenimi in manjšimi podatkovnimi bazami niso zajete, razen če jih jih njihov pokrajinski upravni organ ali URSIV izrecno obvesti.</p>
   </div>
 </div>
 
@@ -135,8 +135,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Varnost podatkov najemnikov in lastnikov</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Izvesti morate šifriranje osebnih podatkov najemnikov in lastnikov, shranjenih v sistemih CRM, podatkovnih bazah in oblaku. Podatkov ni mogoče shranjevati v nešifriranih tabelah Excel ali dokumentih Word. Izvesti je treba nadzor dostopa na osnovi vlog, tako da lahko samo pooblaščeni zaposleni pregledajo finančne in osebne podatke strank.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Varnost podatkov o najemnikih in lastnikih nepremičnin</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Vzpostaviti morate šifriranje podatkov o najemnikih, lastnikih in transakcijah, bodisi med prenosom bodisi pri shranjevanju. Prepoved je shranjevanje osebnih podatkov v nešifriranih preglednicah ali e-poštnih gradivah. Obvezni sta imenik podatkovnih bazovnih dostopov in redne kontrole, kdo ima dostop do kakšnih podatkov.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -144,8 +144,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Nadzor dostopa do sistemov upravljanja zgradb</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Sistemi upravljanja zgradb (BMS), nadzor dostopa do zgradb in sistemi interfonom morajo biti odločeni od javnega interneta in zaščiteni z naprednom večfaktorsko avtentikacijo. Ni dovoljeno povezovati sistemov dostopa z nešifriranimi omrežji Wi-Fi ali omogočiti oddaljeno prijavo brez šifriranega VPN tunela.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Dostopne kontrole za sisteme upravljanja stavb in pametne naprave</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Sistemi avtomatizacije stavb, alarmni sistemi, sistemi za dostop prek vrat in nadzorne kamere ne smejo biti povezani v splošne oz. zavarovanosti nezadobljive TCP/IP omrežje. Vzpostaviti morate ločene ali VPN zaščitene omrežje ter vgraditi večfaktorsko avtentikacijo za vsak dostop do nadzorne plošče stavbe. Redne preglede dostopnih pravic mora izvajati najmanj trikrat letno.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -153,8 +153,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Preverjanje ponudnikov tehnologije nepremičnin</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Pred uvedbo kateregakoli programa proptech, pametnih ključavnic, senzorjev zgradb ali storitev v oblaku morate opraviti presojo varnosti ponudnika. Pogodbe s ponudniki morajo vsebovati klavzule za varnostne revizije, skladnost z NIS2 in obveznost poročanja o varnostnih incidentih.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Poročanje incidentov, ki vplivajo na kritično infrastrukturo stavb</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Če je prišlo do napada, ki je motil delovanje sistemov upravljanja stavbe (gretje, prezračevanje, dostop) dlje kot 4 ure, morate to poročati SI-CERT/URSIV v roku 72 ur. Privoliti morate tudi najemnike na obvestilo o vlomu v njihove podatke v soglasju s GDPR in nacionalnimi predpisi.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -162,8 +162,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Poročanje o varnostnih incidentih URSIV in SI-CERT</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Če pride do puščanja podatkov najemnikov, nepooblaščenega dostopa do sistema upravljanja zgradb ali napada ransomware na platformo proptech, morate obvestiti SI-CERT v roku 24 ur. Poročilo mora vsebovati opis incidenta, podatke o prizadetih osebah, časovni razpon in izvedena popravna dejanja.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Preverjanje varnosti dobaviteljev nepremičninskih tehnologij</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Pred nakupom ali integracijo katerega koli sistemas za upravljanje nepremičnin, CRM, pametnega ključavnice ali oblačne platforme, morate zahtevati od prodajalca potrdilo o varnostnih tестih ali izjavo o skladnosti z NIS2. Skladno s pogodbami o storitvah ali licencah morajo biti jasno opredeljeni odgovori za incident in poda podatkov.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -171,8 +171,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Upravljanje ranljivosti in posodobitve varnosti</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Vsi sistemi (programska oprema za upravljanje nepremičnin, mobilne aplikacije, strežniki) morajo biti redno posodobljeni s popravkami varnosti. Voditi morate register ranljivosti, mesečno izvajati teste penetracije v kritičnih sistemih in uvajati popravke v roku 30 dni od njihove objave.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Politika in urjenje kadra za informacijsko varnost</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Vzpostaviti morate pisano politiko informacijske varnosti, ki definiše klasifikacijo podatkov, pravila za dostop in postopke za izgubljene ali presnete podatke. Vsi zaposlenci morajo biti usposobljeni za prepoznavanje phishinga in varno ravnanje z dostopi. Letna urjenja sta obvezna in dokumentirana.</p>
       </div>
     </div>
   </div>
@@ -180,20 +180,20 @@
 
 <!-- TYPICAL GAPS -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
-  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Tipske vrzeli skladnosti v tem sektorju</h2>
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Tipične vrzeli skladnosti v tem sektorju</h2>
   <ul style="list-style:none;padding:0;margin:0;border-top:1px solid var(--gray-100);">
     
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Sistemi nadzora dostopa do zgradb (elektronske ključavnice, dostopne kartice) so priključeni na isto nešifrirano omrežje kot pisarniški računalniki in javni internet, brez ločitve omrežja ali požarnega zidu.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Sistemi dostopa v stavbah (ključavnice, videoprevzornike, pristopne kartice) so priključeni na nezaščitena omrežja brez nadzora dostopa ali šifriranja, kar omogoča napade in nepooblaščene dostope.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Podatki najemnikov, pogodbe za najem in finančna poročila so shranjeni v nešifriranih datotekah Excel in poslani po e-pošti brez šifriranja ali gesla — manjka večplastno šifriranje podatkov v mirovanju.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Podatki o najemnikih, zakupnikih in lastnikih so shranjeni v nešifriranih Excel preglednicah ali PDF datotekah na običajnih računalnikih brez omejitve dostopa.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Platforme proptech in ponudniki storitev v oblaku (upravljanje sredstev, aplikacije za najemnike) nikoli niso opravili varnostnega revizije, pogodbe pa ne vsebujejo zahtev NIS2 ali obveznosti poročanja o incidentih.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Nepremičninski podjetja ne preverjajo varnostnih standardov ali politike zasebnosti dobaviteljev pametnih sistemov stavb in oblačnih platform pred integracijo.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Manjka formalni načrt za odziv na varnostne incidente — zaposleni ne vedo, komu prijaviti puščanje podatkov ali kako se obrniti na SI-CERT v primeru napada.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Ni jasnega ločevanja med interno računalniško omrežjem in omrežjem sistemov avtomatizacije stavb, kar omogoča prenos okužbe z malapvare iz internega omrežja v kritične sisteme.
     </li>
   </ul>
 </div>
@@ -209,7 +209,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">reglyze.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../orodja/reglyze.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Preverite orodje →</a>
+      <a href="../orodja/reglyze.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
@@ -217,7 +217,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">1password.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../orodja/1password.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Preverite orodje →</a>
+      <a href="../orodja/1password.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
@@ -225,7 +225,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">nordlayer.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../orodja/nordlayer.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Preverite orodje →</a>
+      <a href="../orodja/nordlayer.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
   </div>
 </div>
@@ -236,21 +236,21 @@
   <div style="border-top:1px solid var(--gray-100);">
     
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Kateri sistemi v mojem uradu nepremičninske agencije so zajeti v zahtevah NIS2?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Ali se za nas veljajo obveznosti NIS2, če imamo samo majhno nepremičninsko agencijo s 45 zaposlenimi?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Zahteve NIS2 se nanašajo na vse sisteme, ki shranjujejo osebne podatke najemnikov in lastnikov (CRM, podatkovne baze, mobilne aplikacije), sisteme upravljanja zgradb (BMS, nadzor dostopa, senzorji), pa tudi platforme proptech in storitve v oblaku, ki jih uporablja vaša agencija. Niso zajeti samo lokalni papirni dokumenti in zapisi brez digitalnega dostopa.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Ne, če imate manj kot 50 zaposlenih in letni prihodek nižji od 10 milijonov evrov. Vendar pa URSIV ali SI-CERT lahko vašo agencijo izrecno razglasi za 'pomembno entiteto' glede na vrsto podatkov, ki jih obdelujete, ali kritičnost sistemov stavb, ki jih upravljate. Priporočamo, da se predhodno obrnete na URSIV za rajasnitev.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Koliko časa imam za uvedbo skladnosti NIS2?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Kaj točno moramo šifrirati in kako?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Subjekt, ki je pomemben za varnost (Priloga II), mora izpolniti vse zahteve NIS2 do 18. oktobra 2026. To pomeni, da morate do tega datuma izvesti šifriranje podatkov, nadzor dostopa, segmentacijo omrežja sistemov BMS in procese poročanja o incidentih. Priporočljivo je začeti z deli že v letu 2024, da se prilagodite rokom.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Šifrirati morate vse osebne podatke najemnikov, lastnikov in podatke o transakcijah, bodisi v mirovanju (AES-256) bodisi med prenosom (TLS 1.2 ali noveje). Podatki o dostopnih kartah, ključih za stavbe in nadzornih kodah so prav tako klasificirani kot kritični in morajo biti zaščiteni. Uporabite eno od priporočenih orodij, kot sta 1Password ali Reglyze, ki omogočata centralizirano upravljanje in nadzor.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Kakšne kazni me lahko doletijo za neupoštevanje NIS2?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Kakšne so kazni za neupoštevanje NIS2 do oktobra 2026?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">URSIV lahko izreče globe do 2 milijonov EUR ali 10 % letnih prihodkov (odvisno od tega, kaj je višje) za neupoštevanje zahtev NIS2 ali neobvestilo o varnostnem incidentu. Poleg tega lahko izgubite zaupanje strank, se soočite s tožbami najemnikov in izgubite dostop do financiranja, če vlagatelji ocenijo vašo varnost za nezadostno.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">V Sloveniji je odgovorna institucija URSIV (Urad Republike Slovenije za informacijsko varnost). Kazni za neupoštevanje ZInfV-1 lahko dosežejo do 100.000 evrov ali odstotek letnega prometa (do 2 odstotka), odvisno od kategorije kršitve. Najprej se izdajo opozorila in roki za uskladitev, vendar je priporočljivo nemudoma začeti s prevodom obveznosti.</p>
     </div>
   </div>
   </div>
@@ -261,7 +261,7 @@
   <div class="container--narrow">
     <h2 style="color:#fff;font-size:1.4rem;margin:0 0 .75rem;">Preverite zahteve za vašo organizacijo</h2>
     <p style="color:rgba(255,255,255,.75);margin:0 0 1.5rem;font-size:.95rem;">
-      NIS2 · Slovenija · 2026
+      ZInfV-1/NIS2 · Slovenija · 2026
     </p>
     <a href="../kalkulator.html" style="display:inline-block;background:#16a34a;color:#fff;padding:.85rem 2.25rem;border-radius:8px;font-weight:700;font-size:1rem;text-decoration:none;">
       Zaženite kalkulator →
@@ -269,20 +269,17 @@
   </div>
 </div>
 
-
-<nav class="related-sectors" aria-label="Povezani sektorji" style="max-width:1100px;margin:2rem auto;padding:1.5rem 1.25rem;border-top:1px solid #e5e7eb;"><h2 style="font-size:1.05rem;margin:0 0 .75rem;">Povezani sektorji</h2><ul style="list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:.5rem 1rem;"><li style="margin:0"><a href="retail.html">NIS2 za maloprodajne verige in e-commerce v Sloveniji 2026</a></li><li style="margin:0"><a href="sme-general.html">NIS2 za srednje velika podjetja v Sloveniji</a></li><li style="margin:0"><a href="software-saas.html">NIS2 za podjetja SaaS B2B v Sloveniji</a></li><li style="margin:0"><a href="telecoms.html">NIS2 za telekomunikacijske operatorje in ISP</a></li><li style="margin:0"><a href="telemedicine.html">NIS2 za platforme telemedicine v Sloveniji</a></li><li style="margin:0"><a href="transport.html">NIS2 za operaterje prevoza</a></li></ul></nav>
 <footer style="background:var(--gray-50);border-top:1px solid var(--gray-200);padding:2rem 1.25rem;text-align:center;">
   <div class="container">
     <p style="color:var(--gray-400);font-size:.82rem;margin:0;">
-      © 2026 NIS2-SI.eu · NIS2 · URSIV/SI-CERT
-      <br>Informacije imajo izobraževalni značaj in ne predstavljajo pravnega nasveta.
+      © 2026 NIS2-SI.eu · ZInfV-1/NIS2 · URSIV / SI-CERT
+      <br>Informacje mają charakter edukacyjny i nie stanowią porady prawnej.
       <br><a href="../index.html" style="color:var(--gray-400);">Domov</a> ·
       <a href="index.html" style="color:var(--gray-400);">Sektorji</a> ·
-      <a href="../porownanie.html" style="color:var(--gray-400);">Primerjava orodij</a>
+      <a href="../primerjava.html" style="color:var(--gray-400);">Primerjava orodij</a>
     </p>
   </div>
 </footer>
 
-  <script src="/js/tg-cta.js" defer></script>
 </body>
 </html>

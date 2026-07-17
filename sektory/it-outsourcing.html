@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="sl">
 <head>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-68LM6P0B9Y"></script>
@@ -11,18 +11,18 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KSC/NIS2 dla firm IT outsourcingu i integratorów systemów w Polsce 2026</title>
-  <meta name="description" content="Wytyczne KSC/NIS2 dla outsourcerów IT i integratorów systemów. Poznaj wymagania bezpieczeństwa dostępu zdalnego, zarządzania dostawcami i zgłaszania incydentów. Deadline: październik 2026.">
+  <title>NIS2 za IT outsourcing podjetja v Sloveniji — Zahteve 2026</title>
+  <meta name="description" content="Obveznosti NIS2/ZInfV-1 za IT outsourcing, system integratorje in IT svetovalce v Sloveniji. Roki, tveganja in koraki do skladnosti do 2026.">
   <link rel="canonical" href="https://nis2-si.eu/sektory/it-outsourcing.html">
-  <meta property="og:title" content="KSC/NIS2 dla firm IT outsourcingu i integratorów systemów w Polsce 2026">
-  <meta property="og:description" content="Wytyczne KSC/NIS2 dla outsourcerów IT i integratorów systemów. Poznaj wymagania bezpieczeństwa dostępu zdalnego, zarządzania dostawcami i zgłaszania incydentów. Deadline: październik 2026.">
+  <meta property="og:title" content="NIS2 za IT outsourcing podjetja v Sloveniji — Zahteve 2026">
+  <meta property="og:description" content="Obveznosti NIS2/ZInfV-1 za IT outsourcing, system integratorje in IT svetovalce v Sloveniji. Roki, tveganja in koraki do skladnosti do 2026.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://nis2-si.eu/sektory/it-outsourcing.html">
-  <meta property="og:locale" content="pl_PL">
-  <meta property="og:site_name" content="NIS2-Narzedzia.pl">
+  <meta property="og:locale" content="sl_SI">
+  <meta property="og:site_name" content="NIS2-SI.eu">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="KSC/NIS2 dla firm IT outsourcingu i integratorów systemów w Polsce 2026">
-  <meta name="twitter:description" content="Wytyczne KSC/NIS2 dla outsourcerów IT i integratorów systemów. Poznaj wymagania bezpieczeństwa dostępu zdalnego, zarządzania dostawcami i zgłaszania incydentów. Deadline: październik 2026.">
+  <meta name="twitter:title" content="NIS2 za IT outsourcing podjetja v Sloveniji — Zahteve 2026">
+  <meta name="twitter:description" content="Obveznosti NIS2/ZInfV-1 za IT outsourcing, system integratorje in IT svetovalce v Sloveniji. Roki, tveganja in koraki do skladnosti do 2026.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
@@ -34,19 +34,19 @@
     {
       "@type": "ListItem",
       "position": 1,
-      "name": "Strona główna",
+      "name": "Domov",
       "item": "https://nis2-si.eu/"
     },
     {
       "@type": "ListItem",
       "position": 2,
-      "name": "Sektory",
+      "name": "Sektorji",
       "item": "https://nis2-si.eu/sektory/"
     },
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "KSC/NIS2 dla firm IT outsourcingu i integratorów systemów w Polsce — wymagania na 2026 rok",
+      "name": "NIS2 za IT outsourcing podjetja in system integratorje v Sloveniji — Vodnik za skladnost ZInfV-1",
       "item": "https://nis2-si.eu/sektory/it-outsourcing.html"
     }
   ]
@@ -59,26 +59,26 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Czy moja firma outsourcingu IT musi spełniać wymogi KSC/NIS2, jeśli zarządza systemami dla banków lub dostawców energii?",
+      "name": "Kaj se šteje za reportabilen incident, ki ga je treba prijaviti URSIV kot IT outsourcing podjetje?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Tak. Jeśli Pana/Pani firma zarządza infrastrukturą informacyjną banku lub operatora usług kluczowych (energia, woda, transport), podlega Pan/Pani wymogom Załącznika II jako podmiot ważny, niezależnie od liczby pracowników. Wymogi obejmują bezpieczny dostęp zdalny, ocenę podwykonawców oraz zdolność do zgłaszania incydentów w ciągu 72 godzin."
+        "text": "Prijaviti morate incident, ki ima vpliv na dostopnost, zaupnost ali celovitost podatkov odjemalca, ki je ključni operater ali pomembni subjekt — to vključuje motnje storitve, nepooblaščene dostope ali kršitve podatkov, ki trajajo več kot 30 minut. Prijava mora biti poslana v 24 urah na SI-CERT@cert.si."
       }
     },
     {
       "@type": "Question",
-      "name": "Co muszę zawrzeć w umowie z podwykonawcą (np. dostawcą usług chmury), aby spełnić wymogi KSC/NIS2?",
+      "name": "Ali moramo imeti ločene PAM (Privileged Access Management) sisteme za vsakega odjemalca?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Umowa musi zawierać: (1) zobowiązanie do utrzymania standardów bezpieczeństwa zgodnych z KSC/NIS2, (2) prawo Pana/Pani do przeprowadzenia audytu bezpieczeństwa, (3) obowiązek zgłoszenia incydentów w ciągu 24 godzin, (4) wymóg utrzymania kopii bezpieczeństwa poza serwerami podstawowymi oraz (5) warunki rozwiązania umowy w przypadku naruszeń bezpieczeństwa. Dokumenty audytu dostawcy powinny być dostępne na żądanie."
+        "text": "Да, vsaj logično — Zakon zahteva, da ima vsak odjemalec izoliran nadzor dostopa in da je vsak dostop nadzorovan ter revidirano beležen. Tehnično je mogoče to storiti z enim PAM sistemom, vendar s strogo ločenimi domenami dostopa in nadzorem, da dostopi iz enega odjemalčevega projekta ne dosežejo drugih. Deljena poverilnica je nepomembna."
       }
     },
     {
       "@type": "Question",
-      "name": "Jakie są kary za niezgodność z wymogami KSC/NIS2 dla outsourcerów IT w Polsce?",
+      "name": "Kaj se zgodi, če ne zagotovimo skladnosti s 15. oktobrom 2026?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Niezgodność może skutkować karami administracyjnymi od UKNF do 10 milionów złotych lub 2% obrotu rocznego (w zależności od tego, która kwota jest wyższa), a także utratą możliwości zarządzania infrastrukturą podmiotów ważnych. Ponadto klient (jeśli jest podmiotem ważnym) może wnieść roszczenia cywilne za szkody wynikające z incydentu spowodowanego niezadowalającymi standardami bezpieczeństwa Pana/Pani firmy."
+        "text": "Kršitve ZInfV-1 lahko povzročijo kazni do 50.000 EUR za manjše kršitve in do 500.000 EUR za hude kršitve (npr. neporočanje incidentov, nevarnostni dostopi). URSIV lahko tudi prepove vam, da nadaljujete z zagotavljanjem storitev ključnim operaterjem, če ne dosežete skladnosti."
       }
     }
   ]
@@ -90,44 +90,44 @@
 <nav class="nav">
   <div class="container">
     <div class="nav__inner">
-      <a href="../index.html" class="nav__logo">NIS2<span>Si</span>.eu</a>
+      <a href="../index.html" class="nav__logo">NIS2<span>SI</span>.eu</a>
       <ul class="nav__links">
-        <li><a href="../porownanie.html">Porównanie narzędzi</a></li>
-        <li><a href="../kalkulator.html">Kalkulator KSC</a></li>
+        <li><a href="../primerjava.html">Primerjava orodij</a></li>
+        <li><a href="../kalkulator.html">Kalkulator NIS2</a></li>
         <li><a href="../faq.html">FAQ</a></li>
       </ul>
-      <a href="../kalkulator.html" class="nav__cta">Sprawdź czy podlegasz →</a>
+      <a href="../kalkulator.html" class="nav__cta">Preverite, ali ste zavezani →</a>
     </div>
   </div>
 </nav>
 
 <div class="container" style="padding-top:1.5rem;">
   <div class="breadcrumb">
-    <a href="../index.html">Strona główna</a><span>›</span>
-    <a href="index.html">Sektory</a><span>›</span>
-    KSC/NIS2 dla firm IT outsourcingu i integratorów systemów w Polsce — wymagania na 2026 rok
+    <a href="../index.html">Domov</a><span>›</span>
+    <a href="index.html">Sektorji</a><span>›</span>
+    NIS2 za IT outsourcing podjetja in system integratorje v Sloveniji — Vodnik za skladnost ZInfV-1
   </div>
 </div>
 
 <!-- HERO -->
 <div style="background:var(--gray-50);padding:2.5rem 0 3rem;border-bottom:1px solid var(--gray-200);">
   <div class="container--narrow">
-    <span style="display:inline-block;background:#16a34a;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Załącznik II — podmiot ważny</span>
-    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">KSC/NIS2 dla firm IT outsourcingu i integratorów systemów w Polsce — wymagania na 2026 rok</h1>
-    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Niniejsza strona skierowana jest do kierowników ds. bezpieczeństwa, właścicieli firm outsourcingu IT oraz konsultantów zarządzających infrastrukturą klientów. Poznają Państwo konkretne obowiązki wynikające z klasyfikacji podmiotu ważnego w Załączniku II oraz praktyczne sposoby wdrażania wymogów KSC/NIS2 dla sektora IT.</p>
+    <span style="display:inline-block;background:#16a34a;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Prilog II — Pomembni subjekt</span>
+    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 za IT outsourcing podjetja in system integratorje v Sloveniji — Vodnik za skladnost ZInfV-1</h1>
+    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Kot IT outsourcing podjetje, system integrator ali IT svetovalec v Sloveniji upravljate kritično infrastrukturo svojih odjemalcev. Ta vodnik pojasnjuje vaše obveznosti pod Zakonom o informacijski varnosti (ZInfV-1/NIS2), vključno s pogodbenimi zahtevami, upravljanjem dostopa in obveznostmi pri prijavah incidentov.</p>
   </div>
 </div>
 
 <!-- WHO QUALIFIES -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
   <div style="background:var(--gray-50);border-left:4px solid var(--navy);border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;">
-    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Firmy outsourcingu IT, integratorzy systemów oraz konsultacje IT zarządzające infrastrukturą krytyczną klientów muszą spełniać wymogi KSC/NIS2, jeśli dysponują dostępem do systemów informacyjnych uznanych za ważne dla bezpieczeństwa lub odporności esencjalnych usług publicznych bądź instytucji finansowych. Klasyfikacja dotyczy także firm, które świadczą usługi w obszarach wymienionych w Załączniku II rozporządzenia, niezależnie od liczby pracowników.</p>
+    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">IT outsourcing podjetja, system integrati in IT svetovalci se štejejo za pomembne subjekte po ZInfV-1, če zagotavljate upravljanje informacijskih sistemov, upravljanje podatkovnih centrov ali hranjenje podatkov za ključne operaterje ali druge pomembne subjekte. Obvezni ste tudi, če imate več kot 250 zaposlenih ali letni prihodek presega 50 milijonov EUR ter upravljate informacijske sisteme, ključne za delovanje odjemalcev.</p>
   </div>
 </div>
 
 <!-- OBLIGATIONS -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
-  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1.25rem;">Kluczowe obowiązki NIS2 dla tego sektora</h2>
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1.25rem;">Ključne obveznosti NIS2 za ta sektor</h2>
   <div style="border-top:1px solid var(--gray-100);">
     
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -135,8 +135,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Bezpieczeństwo narzędzi dostępu zdalnego i zarządzanie dostępem uprzywilejowanym</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Każda firma outsourcingu IT musi wdrożyć wielowarstwowe rozwiązania ochrony dostępu zdalnego do systemów klientów, w tym uwierzytelnianie wieloskładnikowe (MFA), szyfrowanie transportu danych oraz monitorowanie aktywności uprzywilejowanej w czasie rzeczywistym. Zakazane jest dzielenie się haseł dostępu pomiędzy pracownikami; każda osoba musi posiadać indywidualny identyfikator audytowalny. Wymagane jest również automatyczne logowanie uprzywilejowanych sesji z możliwością ich odtworzenia w ramach śledztwa incydentów bezpieczeństwa.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Upravljanje privilegiranega dostopa in oddaljenih orodij</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Kot IT outsourcing podjetje morate implementirati formalno politiko za upravljanje dostopov (PAM), ki preprečuje deljenje privilegiranih poverilnic med okolji odjemalcev. Vsak odjemalec mora imeti izoliran nadzor dostopa z Multi-Factor Authentication (MFA). Oddaljeni dostop za vzdrževanje mora biti šifriran, nadzorovan in revidirano beležen — brez izjem za »hitro napravo« ali »začasne« dostope.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -144,8 +144,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Wymagania bezpieczeństwa w umowach z klientami</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Umowy z klientami muszą zawierać precyzyjne klauzule obligujące Pana/Panią firmę do spełniania standardów KSC/NIS2, w tym zobowiązania dotyczące szyfrowania danych, czasu usunięcia luk w zabezpieczeniach oraz harmonogramu testów penetracyjnych. Każda umowa powinna zawierać postanowienia o prawie klienta do audytu bezpieczeństwa oraz dostępu do raportów z audytów obronnych przeprowadzanych przez podwykonawców. Niezbędne jest także określenie odpowiedzialności za incydenty oraz koszt ich naprawy.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Pogodbenimi zahtevane varnostne zahteve z odjemalci</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Vaše pogodbe s ključnimi operaterji in pomembnimi subjekti morajo vsebovati izrecne zaveze glede varnosti informacij, vključno s pravom do revizije, testi penetracije in nadzora skladnosti. Pogodba mora natančno opredeliti, kako boste upravljali podatke odjemalca, kako dolgo ste trajno zadržani in kakšne varnostne standarde boste uporabljali (najmanj ISO 27001 ali enakovredne).</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -153,8 +153,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Zgłaszanie incydentów powodujących przerwę usług klienta</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Jeśli incydent bezpieczeństwa w systemach Pana/Pani firmy bezpośrednio powoduje przerwę lub degradację usług u klienta — zwłaszcza jeśli klient jest podmiotem ważnym lub operatorem usług kluczowych — obowiązany jest Pan/Pani zgłosić to CERT Polska i organowi regulacyjnemu klienta w ciągu 72 godzin. Zgłoszenie musi zawierać opis incydentu, jego wpływ, podjęte działania naprawcze oraz miary zaradcze. Dokumentowanie procesu zgłaszania jest obowiązkowe dla audytów compliance.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Obveznost prijave incidentov, ki vplivajo na odjemalce</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Če vaš sistem ali storitev povzroči motnje ali varnostne vrzeli, ki vplivajo na odjemalčev dostop do kritične storitve, ste dolžni odjemalca obvestiti v 24 urah. Če je odjemalec ključni operater, morate hkrati obvestiti tudi URSIV (Urad RS za informacijsko varnost). V prijavi navedite naravo incidenta, prizadete sisteme in ustrezne ukrepe.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -162,8 +162,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Przejrzystość łańcucha dostaw i ocena bezpieczeństwa podwykonawców</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Każdorazowo przystępując do współpracy z podwykonawcą IT (np. dostawca oprogramowania, operator data center), obowiązany jest Pan/Pani przeprowadzić formalną ocenę bezpieczeństwa, dokumentując posiadane przez niego certyfikaty (ISO 27001, HITRUST, SOC 2), wyniki audytów oraz plan odpowiadania na incydenty. Lista wszystkich podwykonawców powinna być przechowywana w bazie danych i regularnie aktualizowana. Przy zmianie podwykonawcy klient musi być o tym poinformowany przed faktycznym przeniesieniem danych bądź transferem odpowiedzialności.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Preglednost verige dobaviteljev in varnost podizvajalcev</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Dokumentirajte vse izvajalce, ki imajo dostop do podatkov odjemalca (tudi oblačne storitve, programske opreme za upravljanje) in zahtevajte njihove varnostne certifikate. Boste odgovorni za njihove varnostne pomanjkljivosti — zato morate vsaj letno preveriti njihovo skladnost. Pogodbe s podizvajalci morajo vsebovati enake zahteve, kot jih postavite odjemalcem.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -171,8 +171,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Plan ciągłości działalności i testowanie scenariuszy przywrócenia</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Firma outsourcingu IT musi utrzymywać aktualny plan ciągłości działalności (BCP) i plan odzyskiwania po awarii (DRP), specyficzny dla każdego klienta, z jasno określonymi celami czasu przywrócenia (RTO) i punktami przywrócenia danych (RPO). Plan musi być testowany przynajmniej raz w roku; wyniki testów powinny być dokumentowane i dostępne dla klienta. Scenariusze testowe powinny obejmować scenariusze czarnego łącucha (całkowita utrata dostępu do infrastruktury), ransomware oraz długotrwałą niedostępność dostawcy chmury.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Testiranje odpornosti in načrt za nadaljevanje poslovanja</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Letno izvedite teste odpornosti (pen-teste, simulacije incidentov) na sisteme, ki upravljajo odjemalčeve kritične storitve. Dokumentirajte načrt za nadaljevanje poslovanja (BCP) in načrt obnove po katastrofi (DRP) z RTO in RPO, ki ustrezajo kritičnosti storitve. Odjemalci morajo imeti dostop do preskusnih rezultatov in dokazov o vaši pripravljenosti.</p>
       </div>
     </div>
   </div>
@@ -180,27 +180,27 @@
 
 <!-- TYPICAL GAPS -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
-  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Typowe luki compliance w tym sektorze</h2>
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Tipične vrzeli skladnosti v tem sektorju</h2>
   <ul style="list-style:none;padding:0;margin:0;border-top:1px solid var(--gray-100);">
     
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Wspólne poświadczenia dostępu uprzywilejowanego (hasła, klucze SSH) są udostępnianie pomiędzy pracownikami zamiast wykorzystywania rozwiązań PAM z indywidualnymi kontami audytowalnymi — usuń to poprzez wdrożenie systemu zarządzania sekretami z logowaniem sesji.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Deljenje privilegiranih poverilnic med okolji odjemalcev — vsak dostop mora biti individualiziran, nadzorovan in revidirano beležen; to je mogoče rešiti z ločenim PAM za vsakega odjemalca.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Brak formalnego procesu oceny bezpieczeństwa podwykonawców; firmy polega na samodeclaracji dostawcy zamiast przeprowadzenia niezależnego audytu compliance — opracuj szablon oceny zawierający pytania dotyczące KSC/NIS2 i wymagaj certyfikatów bezpieczeństwa.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Pomanjkanje formalnega procesa ocenjevanja varnosti dobaviteljev — pred oddajo storitve morate zahtevati in dokumentirati varnostne certifikate, izvediti revizije in periodično preverjati skladnost.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Umowy z klientami nie zawierają obowiązku notyfikacji incydentów ani nie definiują, co stanowi incydent podlegający zgłoszeniu — zaktualizuj wszystkie umowy o wymagane klauzule dotyczące zgłaszania incydentów w ciągu 24 godzin i wskaż odpowiednie organy notyfikacyjne.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Pogodbe z odjemalci ne vsebujejo jasnih obveznosti za obveščanje o incidentih v skladu z ZInfV-1 — dodajte klavzulo, ki zahteva notifikacijo v 24 urah in podrobno definirajte, kaj se šteje za reportabilni incident.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Brak wdrożonego systemu monitorowania dostępu zdalnego w czasie rzeczywistym; pracownicy łączą się z systemami klientów bez rejestrowania poleceń czy przesyłanych danych — wdroż narzędzie PAM z zapisem sesji (session recording) obowiązkowe dla wszystkich dostępów uprzywilejowanych.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Nepravilna ali nepopolna beležka dostopov za vzdrževanje — beležite vse prijave (kdo, kdaj, kaj), šifrirajte prenos podatkov in jih hranite najmanj 1 leto.
     </li>
   </ul>
 </div>
 
 <!-- TOOLS -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
-  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Rekomendowane narzędzia dla tego sektora</h2>
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Priporočena orodja za ta sektor</h2>
   <div style="display:grid;gap:1rem;">
     
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
@@ -232,25 +232,25 @@
 
 <!-- FAQ -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem;" itemscope itemtype="https://schema.org/FAQPage">
-  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Często zadawane pytania</h2>
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Pogosta vprašanja</h2>
   <div style="border-top:1px solid var(--gray-100);">
     
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Czy moja firma outsourcingu IT musi spełniać wymogi KSC/NIS2, jeśli zarządza systemami dla banków lub dostawców energii?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Kaj se šteje za reportabilen incident, ki ga je treba prijaviti URSIV kot IT outsourcing podjetje?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Tak. Jeśli Pana/Pani firma zarządza infrastrukturą informacyjną banku lub operatora usług kluczowych (energia, woda, transport), podlega Pan/Pani wymogom Załącznika II jako podmiot ważny, niezależnie od liczby pracowników. Wymogi obejmują bezpieczny dostęp zdalny, ocenę podwykonawców oraz zdolność do zgłaszania incydentów w ciągu 72 godzin.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Prijaviti morate incident, ki ima vpliv na dostopnost, zaupnost ali celovitost podatkov odjemalca, ki je ključni operater ali pomembni subjekt — to vključuje motnje storitve, nepooblaščene dostope ali kršitve podatkov, ki trajajo več kot 30 minut. Prijava mora biti poslana v 24 urah na SI-CERT@cert.si.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Co muszę zawrzeć w umowie z podwykonawcą (np. dostawcą usług chmury), aby spełnić wymogi KSC/NIS2?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Ali moramo imeti ločene PAM (Privileged Access Management) sisteme za vsakega odjemalca?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Umowa musi zawierać: (1) zobowiązanie do utrzymania standardów bezpieczeństwa zgodnych z KSC/NIS2, (2) prawo Pana/Pani do przeprowadzenia audytu bezpieczeństwa, (3) obowiązek zgłoszenia incydentów w ciągu 24 godzin, (4) wymóg utrzymania kopii bezpieczeństwa poza serwerami podstawowymi oraz (5) warunki rozwiązania umowy w przypadku naruszeń bezpieczeństwa. Dokumenty audytu dostawcy powinny być dostępne na żądanie.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Да, vsaj logično — Zakon zahteva, da ima vsak odjemalec izoliran nadzor dostopa in da je vsak dostop nadzorovan ter revidirano beležen. Tehnično je mogoče to storiti z enim PAM sistemom, vendar s strogo ločenimi domenami dostopa in nadzorem, da dostopi iz enega odjemalčevega projekta ne dosežejo drugih. Deljena poverilnica je nepomembna.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Jakie są kary za niezgodność z wymogami KSC/NIS2 dla outsourcerów IT w Polsce?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Kaj se zgodi, če ne zagotovimo skladnosti s 15. oktobrom 2026?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Niezgodność może skutkować karami administracyjnymi od UKNF do 10 milionów złotych lub 2% obrotu rocznego (w zależności od tego, która kwota jest wyższa), a także utratą możliwości zarządzania infrastrukturą podmiotów ważnych. Ponadto klient (jeśli jest podmiotem ważnym) może wnieść roszczenia cywilne za szkody wynikające z incydentu spowodowanego niezadowalającymi standardami bezpieczeństwa Pana/Pani firmy.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Kršitve ZInfV-1 lahko povzročijo kazni do 50.000 EUR za manjše kršitve in do 500.000 EUR za hude kršitve (npr. neporočanje incidentov, nevarnostni dostopi). URSIV lahko tudi prepove vam, da nadaljujete z zagotavljanjem storitev ključnim operaterjem, če ne dosežete skladnosti.</p>
     </div>
   </div>
   </div>
@@ -259,30 +259,27 @@
 <!-- CTA -->
 <div style="background:var(--navy);padding:3rem 1.25rem;text-align:center;margin-top:2rem;">
   <div class="container--narrow">
-    <h2 style="color:#fff;font-size:1.4rem;margin:0 0 .75rem;">Sprawdź wymagania dla swojej organizacji</h2>
+    <h2 style="color:#fff;font-size:1.4rem;margin:0 0 .75rem;">Preverite zahteve za vašo organizacijo</h2>
     <p style="color:rgba(255,255,255,.75);margin:0 0 1.5rem;font-size:.95rem;">
-      KSC/NIS2 · Polska · 2026
+      ZInfV-1/NIS2 · Slovenija · 2026
     </p>
     <a href="../kalkulator.html" style="display:inline-block;background:#16a34a;color:#fff;padding:.85rem 2.25rem;border-radius:8px;font-weight:700;font-size:1rem;text-decoration:none;">
-      Uruchom kalkulator →
+      Zaženite kalkulator →
     </a>
   </div>
 </div>
 
-
-<nav class="related-sectors" aria-label="Powiązane sektory" style="max-width:1100px;margin:2rem auto;padding:1.5rem 1.25rem;border-top:1px solid #e5e7eb;"><h2 style="font-size:1.05rem;margin:0 0 .75rem;">Powiązane sektory</h2><ul style="list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:.5rem 1rem;"><li style="margin:0"><a href="law-firms.html">NIS2 dla kancelarii prawnych w Polsce</a></li><li style="margin:0"><a href="logistics.html">KSC/NIS2 dla operatorów logistycznych w Polsce</a></li><li style="margin:0"><a href="managed-services.html">NIS2 dla MSP i MSSP w Polsce</a></li><li style="margin:0"><a href="manufacturing.html">KSC/NIS2 dla producentów przemysłowych w Polsce</a></li><li style="margin:0"><a href="medical-devices.html">NIS2 dla producentów urządzeń medycznych w Polsce 2026</a></li><li style="margin:0"><a href="pharmacies.html">KSC/NIS2 dla aptek i dystrybutorów farmaceutycznych w Polsce 2026</a></li></ul></nav>
 <footer style="background:var(--gray-50);border-top:1px solid var(--gray-200);padding:2rem 1.25rem;text-align:center;">
   <div class="container">
     <p style="color:var(--gray-400);font-size:.82rem;margin:0;">
-      © 2026 NIS2-Narzedzia.pl · KSC/NIS2 · UKNF/CERT Polska
+      © 2026 NIS2-SI.eu · ZInfV-1/NIS2 · URSIV / SI-CERT
       <br>Informacje mają charakter edukacyjny i nie stanowią porady prawnej.
-      <br><a href="../index.html" style="color:var(--gray-400);">Strona główna</a> ·
-      <a href="index.html" style="color:var(--gray-400);">Sektory</a> ·
-      <a href="../porownanie.html" style="color:var(--gray-400);">Porównanie narzędzi</a>
+      <br><a href="../index.html" style="color:var(--gray-400);">Domov</a> ·
+      <a href="index.html" style="color:var(--gray-400);">Sektorji</a> ·
+      <a href="../primerjava.html" style="color:var(--gray-400);">Primerjava orodij</a>
     </p>
   </div>
 </footer>
 
-  <script src="/js/tg-cta.js" defer></script>
 </body>
 </html>

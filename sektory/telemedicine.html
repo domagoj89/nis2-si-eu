@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="sl">
 <head>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-68LM6P0B9Y"></script>
@@ -11,18 +11,18 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NIS2 dla platform telemedycyny w Polsce — wymogi 2026</title>
-  <meta name="description" content="Przewodnik compliance NIS2 dla platform telemedycyny i monitorowania pacjentów. Wymogi bezpieczeństwa danych zdrowotnych, szyfrowanie, raportowanie incydentów. Termin 2026.">
+  <title>NIS2/ZInfV-1 za telehealth platforme v Sloveniji 2026</title>
+  <meta name="description" content="Zahteve NIS2/ZInfV-1 za operaterje digitalnega zdravstva v Sloveniji. Varnost pacientskih podatkov, incidentno poročanje in skladnost s GDPR do 2026.">
   <link rel="canonical" href="https://nis2-si.eu/sektory/telemedicine.html">
-  <meta property="og:title" content="NIS2 dla platform telemedycyny w Polsce — wymogi 2026">
-  <meta property="og:description" content="Przewodnik compliance NIS2 dla platform telemedycyny i monitorowania pacjentów. Wymogi bezpieczeństwa danych zdrowotnych, szyfrowanie, raportowanie incydentów. Termin 2026.">
+  <meta property="og:title" content="NIS2/ZInfV-1 za telehealth platforme v Sloveniji 2026">
+  <meta property="og:description" content="Zahteve NIS2/ZInfV-1 za operaterje digitalnega zdravstva v Sloveniji. Varnost pacientskih podatkov, incidentno poročanje in skladnost s GDPR do 2026.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://nis2-si.eu/sektory/telemedicine.html">
-  <meta property="og:locale" content="pl_PL">
-  <meta property="og:site_name" content="NIS2-Narzedzia.pl">
+  <meta property="og:locale" content="sl_SI">
+  <meta property="og:site_name" content="NIS2-SI.eu">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="NIS2 dla platform telemedycyny w Polsce — wymogi 2026">
-  <meta name="twitter:description" content="Przewodnik compliance NIS2 dla platform telemedycyny i monitorowania pacjentów. Wymogi bezpieczeństwa danych zdrowotnych, szyfrowanie, raportowanie incydentów. Termin 2026.">
+  <meta name="twitter:title" content="NIS2/ZInfV-1 za telehealth platforme v Sloveniji 2026">
+  <meta name="twitter:description" content="Zahteve NIS2/ZInfV-1 za operaterje digitalnega zdravstva v Sloveniji. Varnost pacientskih podatkov, incidentno poročanje in skladnost s GDPR do 2026.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
@@ -34,19 +34,19 @@
     {
       "@type": "ListItem",
       "position": 1,
-      "name": "Strona główna",
+      "name": "Domov",
       "item": "https://nis2-si.eu/"
     },
     {
       "@type": "ListItem",
       "position": 2,
-      "name": "Sektory",
+      "name": "Sektorji",
       "item": "https://nis2-si.eu/sektory/"
     },
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "NIS2 dla platform telemedycyny i usług monitorowania pacjentów w Polsce — wymogi 2026",
+      "name": "NIS2/ZInfV-1 za telehealth platforme in operaterje digitalnega zdravstva v Sloveniji",
       "item": "https://nis2-si.eu/sektory/telemedicine.html"
     }
   ]
@@ -59,26 +59,26 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Czy moja aplikacja do monitorowania pacjentów w domu musi podlegać wymogom NIS2, jeśli ma poniżej 5000 użytkowników?",
+      "name": "Ali mora telehealth platforma s 180 zaposlenimi, ki deluje samo v Sloveniji, upoštevati NIS2/ZInfV-1?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Jeśli Pani/Pan aplikacja przechowuje dane zdrowotne pacjentów i integruje się z systemami szpitalnymi lub przekazuje dane do podmiotów leczniczych, kwalifikuje się do statusu podmiotu ważnego nawet poniżej 5000 pacjentów. Status ten zależy od funkcji (monitorowanie vitals wpływające na decyzje medyczne) oraz tego, czy wspiera ciągłość opieki. Rekomendujemy skontaktować się z UKNF celem uzyskania formalnej oceny."
+        "text": "Če vaša platforma obdeluje pacientske podatke in je integrirana z bolnišničnimi sistemi ali je njena odsotnost kritična za kontinuiteto zdravstvene oskrbe, se šteje za pomembno entiteto. To je neodvisno od števila zaposlenih — odločilna je vloga v zdravstvenem sistemu. Priporočamo, da prosite URSIV za uradno razjasnitev v vašem primeru."
       }
     },
     {
       "@type": "Question",
-      "name": "Jaki jest konkretny wymóg szyfrowania danych w transmisji — czy HTTPS wystarczy?",
+      "name": "Kaj natančno pomeni 'konec-do-konca šifriranje' za videokonference med zdravnikom in pacientom?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "HTTPS (TLS 1.2 minimum) jest obowiązkowy dla całej transmisji danych pacjentów, jednak NIS2 zaleca dodatkowo szyfrowanie end-to-end dla konsultacji wideo oraz wiadomości medycznych (wymóg wzmocniony). Oznacza to, że nawet operatorzy serwera nie powinni mieć dostępu do niezaszyfrowanych treści komunikacji. Dla monitorowania ciągłego (np. pomiary tętna) wymagane jest szyfrowanie na poziomie przychodzących danych oraz przechowywania."
+        "text": "Pomeni, da se videoток šifrira na napravi zdravnika, prosledi šifriran prek interneta in se dešifrira samo na napravi pacienta — operater platforme nima dostopa do vsebine. Ključi za šifriranje morajo biti upravljani na obeh koncih, ne na centraliziranem strežniku. Implementirati je treba standarde kot SRTP (Secure Real-time Transport Protocol) z naprednimi kriptografski funkcijami."
       }
     },
     {
       "@type": "Question",
-      "name": "Jakie są kary za niezgodność z NIS2 do 2026 roku?",
+      "name": "Kakšne so kazni za neizvršitev obveznosti ZInfV-1 do oktobra 2026?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "NIS2 w Polsce wdrożyć trzeba do września 2026 roku. Podmioty ważne, które nie spełnią wymogów, mogą być ukarane karami administracyjnymi przez UKNF do 10 milionów złotych lub 5% obrotu rocznego (w zależności od tego, która kwota jest wyższa) oraz karami pieniężnymi do 2 milionów złotych za indywidualne naruszenia zgodnie z ustawą KSC. Dodatkowo ponadto może dojść do zawieszenia licencji do świadczenia usług telemetycznych."
+        "text": "Zakon ZInfV-1 predvideva administrative kazni do 50.000 EUR za neizvršitev zahtev za varnost, poročanje incidentov ali neizvršitev dogovorov o obdelavi podatkov. Dodatno se lahko naložijo sankcije po GDPR (do 4 % letnega globalnega prometa). Nepopolnost varnostnih kontrol lahko pripelje tudi do odgovornosti za škodo v primeru kršitve pacientskih podatkov."
       }
     }
   ]
@@ -90,44 +90,44 @@
 <nav class="nav">
   <div class="container">
     <div class="nav__inner">
-      <a href="../index.html" class="nav__logo">NIS2<span>Si</span>.eu</a>
+      <a href="../index.html" class="nav__logo">NIS2<span>SI</span>.eu</a>
       <ul class="nav__links">
-        <li><a href="../porownanie.html">Porównanie narzędzi</a></li>
-        <li><a href="../kalkulator.html">Kalkulator KSC</a></li>
+        <li><a href="../primerjava.html">Primerjava orodij</a></li>
+        <li><a href="../kalkulator.html">Kalkulator NIS2</a></li>
         <li><a href="../faq.html">FAQ</a></li>
       </ul>
-      <a href="../kalkulator.html" class="nav__cta">Sprawdź czy podlegasz →</a>
+      <a href="../kalkulator.html" class="nav__cta">Preverite, ali ste zavezani →</a>
     </div>
   </div>
 </nav>
 
 <div class="container" style="padding-top:1.5rem;">
   <div class="breadcrumb">
-    <a href="../index.html">Strona główna</a><span>›</span>
-    <a href="index.html">Sektory</a><span>›</span>
-    NIS2 dla platform telemedycyny i usług monitorowania pacjentów w Polsce — wymogi 2026
+    <a href="../index.html">Domov</a><span>›</span>
+    <a href="index.html">Sektorji</a><span>›</span>
+    NIS2/ZInfV-1 za telehealth platforme in operaterje digitalnega zdravstva v Sloveniji
   </div>
 </div>
 
 <!-- HERO -->
 <div style="background:var(--gray-50);padding:2.5rem 0 3rem;border-bottom:1px solid var(--gray-200);">
   <div class="container--narrow">
-    <span style="display:inline-block;background:#16a34a;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Załącznik II — podmiot ważny</span>
-    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 dla platform telemedycyny i usług monitorowania pacjentów w Polsce — wymogi 2026</h1>
-    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Niniejszy przewodnik skierowany jest do operatorów platform telemedycyny, aplikacji zdrowotnych i usług monitorowania pacjentów ze strony, którzy muszą spełnić obowiązki jako podmioty ważne w sektorze zdrowia cyfrowego. Poznają Pani/Pan konkretne wymogi bezpieczeństwa transmisji danych pacjentów, integracji z systemami szpitalnymi oraz procedury raportowania incydentów wpływających na ciągłość opieki.</p>
+    <span style="display:inline-block;background:#16a34a;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Priloga II — Pomembna entiteta</span>
+    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2/ZInfV-1 za telehealth platforme in operaterje digitalnega zdravstva v Sloveniji</h1>
+    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Ta vodič je namenjen operaterjem telehealth platform, storitev za oddaljeno spremljanje pacientov in razvijalcem zdravstvenih aplikacij v Sloveniji, ki morajo do oktobra 2026 izpolniti obveznosti pomembne entitete po zakonu ZInfV-1. Spoznajte konkretne zahteve za varnost pacientskih podatkov, upravljanje oskrbne verige in poročanje incidentov.</p>
   </div>
 </div>
 
 <!-- WHO QUALIFIES -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
   <div style="background:var(--gray-50);border-left:4px solid var(--navy);border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;">
-    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Platformy telemedycyny oraz aplikacje zdrowotne kwalifikują się do statusu podmiotu ważnego, jeśli świadczą usługi dla co najmniej 5000 pacjentów lub pośredniczą w wymianie danych zdrowotnych pomiędzy placówkami medycznymi i pacjentami na terenie Polski. Status ważnego podmiotu dotyczy również operatorów usług monitorowania zdalnego pacjentów, których infrastruktura wspiera ciągłość opieki zdrowotnej oraz operatorów aplikacji mobilnych przechowujących dane zdrowotne objęte RODO.</p>
+    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Telehealth platforme, storitve za oddaljeno spremljanje pacientov in razvijalci zdravstvenih aplikacij v Sloveniji se štejejo za pomembne entitete po ZInfV-1, če nudijo storitve, ki so bistvene za zdravstvo ali druge kritične sektorje. To običajno zajema entitete s 250 ali več zaposlenimi ter višji prihodkom ali so njihove storitve kritične za kontinuiteto zdravstvene oskrbe.</p>
   </div>
 </div>
 
 <!-- OBLIGATIONS -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
-  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1.25rem;">Kluczowe obowiązki NIS2 dla tego sektora</h2>
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1.25rem;">Ključne obveznosti NIS2 za ta sektor</h2>
   <div style="border-top:1px solid var(--gray-100);">
     
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -135,8 +135,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Szyfrowanie transmisji konsultacji wideo i wiadomości</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Wszystkie konsultacje wideo, wiadomości tekst oraz wymiana raportów medycznych na Pani/Pana platformie muszą być szyfrowane end-to-end lub co najmniej szyfrowaniem warstwy transportu (TLS 1.2+) podczas transmisji. Konieczne jest przeprowadzenie audytu bieżących kanałów komunikacji i wdrożenie szyfrowania na wszystkich punktach styku pacjenta z systemem. Dokumentacja tego zakresu musi być dostępna dla UKNF oraz CERT Polska w ramach przeglądu compliance.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Konec-do-konca šifriranje pri videokonsultacijah in sporočanju</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Telehealth platforme morajo zagotoviti konec-do-konca šifriranje (E2EE) za vse videokonsultacije, glasovna sporočila in asinkrono komunikacijo s pacienti. To vključuje izbiro kriptografskega standarda najmanj AES-256 ali enakovrednega, hkrati pa je treba zagotoviti, da niti operater platforme nima dostopa do pacientskih pogovorov. Implementirajte redne preglede šifriranja in preverke skladnosti s predpisi GDPR in Uredbom 2016/679.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -144,8 +144,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Wyrównanie GDPR i NIS2 w przetwarzaniu danych zdrowotnych</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Pani/Pan musi udokumentować, że wszystkie procesy przetwarzania danych zdrowotnych pacjentów spełniają zarówno wymogi RODO (Article 9 — dane szczególne) jak i NIS2 (bezpieczeństwo transmisji i przechowywania). Obejmuje to przeprowadzenie oceny skutków dla ochrony danych (DPIA) z uwzględnieniem zagrożeń cyberbezpieczeństwa oraz wdrożenie kontroli dostępu opierającej się na zasadzie najmniejszych uprawnień dla personelu dostępu do danych pacjentów.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Varnost podatkov in dogovori o obdelavi pri integraciji z bolnišničnimi sistemi EHR</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Pred integracijo s spletnimi zdravstvenimi kartami bolnišnic morate imeti formalne dogovore o obdelavi podatkov (DPA) z vsemi podprocesori in zunanjimi izvajalci. Vključiti je treba pogoje za dostop do pacientskih podatkov, zahteve za varnost, pogoje za brisanje podatkov in pojasnila glede pravice do dostopa. Redno preverjajte skladnost tretjih oseb s sredstvami za obvladovanje tveganja in izvedite ocene tveganja za vsako integracijo.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -153,8 +153,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Bezpieczeństwo łańcucha dostaw — integracja z systemami szpitalnymi EHR</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Jeśli Pani/Pan platforma integruje się z elektroniczną dokumentacją medyczną (EHR) szpitali partnerskich, muszą Pani/Pan zidentyfikować wszystkich pod-procesorów i podpisać z nimi umowy przetwarzania danych (DPA) zawierające obowiązki NIS2. Obowiązkowe jest również przeprowadzenie oceny bezpieczeństwa dostawców oprogramowania firm trzecich oraz wdrożenie procedur weryfikacji przed integracją nowych API lub interfejsów szpitalnych.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Penetracijske teste in redne varnostne ocene digitalnih zdravstvenih aplikacij</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Zdravstvene aplikacije morajo biti podvržene najmanj dvema letnim neodvisnim penetracijskim testom, pri čemer je treba posebno pozornost nameniti varnostnim pomanjkljivostim v avtentifikaciji, avtorizaciji in shranjevanju pacientskih podatkov. Rezultate testiranja je treba dokumentirati, ranljivosti naročiti po resnosti in vzpostaviti rok za odpravljanje. Uporabite tudi statično analizo kode (SAST) in dinamično analizo (DAST) v razvojnem procesu.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -162,8 +162,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Raportowanie incydentów bezpieczeństwa wpływających na ciągłość opieki</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Każdy incydent powodujący niedostępność platformy, utratę dostępu do danych pacjenta lub przerwę w monitorowaniu zdalnym musi być zgłoszony do CERT Polska w ciągu 24 godzin od wykrycia, jeśli wpływa na bezpieczeństwo pacjentów. Konieczne jest wdrożenie procedury eskalacji incydentów z kontaktami do placówek medycznych korzystających z Pani/Pana platformy oraz formalny plan odtwarzania po awarii (disaster recovery plan) z RTO poniżej 2 godzin dla systemów monitorowania.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Poročanje o incidentih, ki vplivajo na kontinuiteto zdravstvene oskrbe</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Operaterji telehealth platform morajo SI-CERT obvestiti v roku 72 ur o vsak incidentu, ki vpliva na dostopnost ali zaupnost pacientskih podatkov oziroma zmanjšuje sposobnost platforma za zagotavljanje storitev. Poročilo mora vsebovati opis incidenta, vplivane paciente, čas odkritja in izvedene odgovajoče ukrepe. Imejte pripravljen načrt odziva na incidente z vnaprej dogovorenimi postopki obveščanja bolnišnic in pacientov.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -171,8 +171,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Penetration testing i audyty bezpieczeństwa aplikacji zdrowotnych</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Wszystkie aplikacje mobilne i webowe operujące na danych pacjentów muszą podlegać penetration testingowi przeprowadzanemu przez akredytowaną firmę co najmniej raz na rok. Testy muszą obejmować zagrożenia OWASP Top 10 i specyficzne dla sektora zdrowia (np. odtworzenie danych zdrowotnych, próby nieautoryzowanego dostępu do monitorowania). Wyniki audytów oraz plan remediacji muszą być dokumentowane i udostępniane organom nadzoru na żądanie.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Upravljanje in spremljanje pridobljenih komponent ter programske opreme tretjih oseb</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Telehealth rešitve morajo vključevati inventar vseh zunanjih komponent, knjižnic in storitev tretjih oseb ter njihove verzije. Za vsako komponento je treba spremljati varnostne posodobitve, ranljivosti (CVE) in pogoje distribucije (licenci). Vzpostavite postopek za redne prevere in aktualizacije, posebej za kritične komponente, ki obdelujejo pacientske podatke.</p>
       </div>
     </div>
   </div>
@@ -180,27 +180,27 @@
 
 <!-- TYPICAL GAPS -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
-  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Typowe luki compliance w tym sektorze</h2>
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Tipične vrzeli skladnosti v tem sektorju</h2>
   <ul style="list-style:none;padding:0;margin:0;border-top:1px solid var(--gray-100);">
     
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Platforma konsultacji wideo używa protokołu HTTP zamiast HTTPS lub brak end-to-end encryption w wiadomościach między pacjentem a lekarzem — wymaga to natychmiastowego wdrożenia TLS 1.2+ oraz oceny implementacji szyfrowania.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Videokonsultacijske platforme pogosto nimajo implementiranega konec-do-konca šifriranja in pacientski pogovori ostajajo na strežnikih operaterja v nezašifrirani obliki, kar predstavlja tveganje za kršitev GDPR in ZInfV-1.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Aplikacja zdrowotna nie jest objęta formalnym penetration testingiem ani audytem bezpieczeństwa — konieczne jest zaangażowanie zewnętrznej firmy do przeprowadzenia pełnego testu bezpieczeństwa w ciągu 90 dni.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Zdravstvene aplikacije niso vključene v redne penetracijske teste — razvijalci zanašajo se na samodejno testiranje, ne pa na neodvisne varnostne ocene, kar pusti ranljivosti neopažene.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Brak umów przetwarzania danych (DPA) z pod-procesorami — przykładowo dostawca usług cloud storage, operator API integracji szpitalnej lub firma ochrony kopii zapasowych nie ma podpisanej umowy zawierającej obowiązki NIS2.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Dogovori o obdelavi podatkov (DPA) z vsemi podprocesori (analitika, gostovanje v oblaku, SSO izvajalci) ne obstajajo ali so nezadostni — pogosto je navedenih le nekaj izvajalcev.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Procedura raportowania incydentów nie zdefiniowana lub kontakty do CERT Polska i placówek medycznych nie są udokumentowane — wymaga sformalizowania procesu eskalacji z określonym czasem odpowiedzi poniżej 24 godzin.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Podjetja nimajo vzpostavljenega formalnega procesa za poročanje incidentov SI-CERT in nimajo dogovljenih postopkov obveščanja pacientov in bolnišnic v primeru izpada platforme.
     </li>
   </ul>
 </div>
 
 <!-- TOOLS -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
-  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Rekomendowane narzędzia dla tego sektora</h2>
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Priporočena orodja za ta sektor</h2>
   <div style="display:grid;gap:1rem;">
     
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
@@ -232,25 +232,25 @@
 
 <!-- FAQ -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem;" itemscope itemtype="https://schema.org/FAQPage">
-  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Często zadawane pytania</h2>
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Pogosta vprašanja</h2>
   <div style="border-top:1px solid var(--gray-100);">
     
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Czy moja aplikacja do monitorowania pacjentów w domu musi podlegać wymogom NIS2, jeśli ma poniżej 5000 użytkowników?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Ali mora telehealth platforma s 180 zaposlenimi, ki deluje samo v Sloveniji, upoštevati NIS2/ZInfV-1?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Jeśli Pani/Pan aplikacja przechowuje dane zdrowotne pacjentów i integruje się z systemami szpitalnymi lub przekazuje dane do podmiotów leczniczych, kwalifikuje się do statusu podmiotu ważnego nawet poniżej 5000 pacjentów. Status ten zależy od funkcji (monitorowanie vitals wpływające na decyzje medyczne) oraz tego, czy wspiera ciągłość opieki. Rekomendujemy skontaktować się z UKNF celem uzyskania formalnej oceny.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Če vaša platforma obdeluje pacientske podatke in je integrirana z bolnišničnimi sistemi ali je njena odsotnost kritična za kontinuiteto zdravstvene oskrbe, se šteje za pomembno entiteto. To je neodvisno od števila zaposlenih — odločilna je vloga v zdravstvenem sistemu. Priporočamo, da prosite URSIV za uradno razjasnitev v vašem primeru.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Jaki jest konkretny wymóg szyfrowania danych w transmisji — czy HTTPS wystarczy?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Kaj natančno pomeni 'konec-do-konca šifriranje' za videokonference med zdravnikom in pacientom?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">HTTPS (TLS 1.2 minimum) jest obowiązkowy dla całej transmisji danych pacjentów, jednak NIS2 zaleca dodatkowo szyfrowanie end-to-end dla konsultacji wideo oraz wiadomości medycznych (wymóg wzmocniony). Oznacza to, że nawet operatorzy serwera nie powinni mieć dostępu do niezaszyfrowanych treści komunikacji. Dla monitorowania ciągłego (np. pomiary tętna) wymagane jest szyfrowanie na poziomie przychodzących danych oraz przechowywania.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Pomeni, da se videoток šifrira na napravi zdravnika, prosledi šifriran prek interneta in se dešifrira samo na napravi pacienta — operater platforme nima dostopa do vsebine. Ključi za šifriranje morajo biti upravljani na obeh koncih, ne na centraliziranem strežniku. Implementirati je treba standarde kot SRTP (Secure Real-time Transport Protocol) z naprednimi kriptografski funkcijami.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Jakie są kary za niezgodność z NIS2 do 2026 roku?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Kakšne so kazni za neizvršitev obveznosti ZInfV-1 do oktobra 2026?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">NIS2 w Polsce wdrożyć trzeba do września 2026 roku. Podmioty ważne, które nie spełnią wymogów, mogą być ukarane karami administracyjnymi przez UKNF do 10 milionów złotych lub 5% obrotu rocznego (w zależności od tego, która kwota jest wyższa) oraz karami pieniężnymi do 2 milionów złotych za indywidualne naruszenia zgodnie z ustawą KSC. Dodatkowo ponadto może dojść do zawieszenia licencji do świadczenia usług telemetycznych.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Zakon ZInfV-1 predvideva administrative kazni do 50.000 EUR za neizvršitev zahtev za varnost, poročanje incidentov ali neizvršitev dogovorov o obdelavi podatkov. Dodatno se lahko naložijo sankcije po GDPR (do 4 % letnega globalnega prometa). Nepopolnost varnostnih kontrol lahko pripelje tudi do odgovornosti za škodo v primeru kršitve pacientskih podatkov.</p>
     </div>
   </div>
   </div>
@@ -259,30 +259,27 @@
 <!-- CTA -->
 <div style="background:var(--navy);padding:3rem 1.25rem;text-align:center;margin-top:2rem;">
   <div class="container--narrow">
-    <h2 style="color:#fff;font-size:1.4rem;margin:0 0 .75rem;">Sprawdź wymagania dla swojej organizacji</h2>
+    <h2 style="color:#fff;font-size:1.4rem;margin:0 0 .75rem;">Preverite zahteve za vašo organizacijo</h2>
     <p style="color:rgba(255,255,255,.75);margin:0 0 1.5rem;font-size:.95rem;">
-      KSC/NIS2 · Polska · 2026
+      ZInfV-1/NIS2 · Slovenija · 2026
     </p>
     <a href="../kalkulator.html" style="display:inline-block;background:#16a34a;color:#fff;padding:.85rem 2.25rem;border-radius:8px;font-weight:700;font-size:1rem;text-decoration:none;">
-      Uruchom kalkulator →
+      Zaženite kalkulator →
     </a>
   </div>
 </div>
 
-
-<nav class="related-sectors" aria-label="Powiązane sektory" style="max-width:1100px;margin:2rem auto;padding:1.5rem 1.25rem;border-top:1px solid #e5e7eb;"><h2 style="font-size:1.05rem;margin:0 0 .75rem;">Powiązane sektory</h2><ul style="list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:.5rem 1rem;"><li style="margin:0"><a href="transport.html">KSC/NIS2 dla operatorów transportu</a></li><li style="margin:0"><a href="waste-management.html">NIS2 dla operatorów odpadów w Polsce</a></li><li style="margin:0"><a href="water.html">NIS2 dla operatorów wodociągów w Polsce</a></li><li style="margin:0"><a href="accountants.html">KSC/NIS2 dla biur rachunkowych i audytorów w Polsce 2026</a></li><li style="margin:0"><a href="banks.html">NIS2 dla banków w Polsce</a></li><li style="margin:0"><a href="cloud-providers.html">NIS2 dla dostawców usług chmury w Polsce</a></li></ul></nav>
 <footer style="background:var(--gray-50);border-top:1px solid var(--gray-200);padding:2rem 1.25rem;text-align:center;">
   <div class="container">
     <p style="color:var(--gray-400);font-size:.82rem;margin:0;">
-      © 2026 NIS2-Narzedzia.pl · KSC/NIS2 · UKNF/CERT Polska
+      © 2026 NIS2-SI.eu · ZInfV-1/NIS2 · URSIV / SI-CERT
       <br>Informacje mają charakter edukacyjny i nie stanowią porady prawnej.
-      <br><a href="../index.html" style="color:var(--gray-400);">Strona główna</a> ·
-      <a href="index.html" style="color:var(--gray-400);">Sektory</a> ·
-      <a href="../porownanie.html" style="color:var(--gray-400);">Porównanie narzędzi</a>
+      <br><a href="../index.html" style="color:var(--gray-400);">Domov</a> ·
+      <a href="index.html" style="color:var(--gray-400);">Sektorji</a> ·
+      <a href="../primerjava.html" style="color:var(--gray-400);">Primerjava orodij</a>
     </p>
   </div>
 </footer>
 
-  <script src="/js/tg-cta.js" defer></script>
 </body>
 </html>

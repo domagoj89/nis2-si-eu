@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="sl">
 <head>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-68LM6P0B9Y"></script>
@@ -11,18 +11,18 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KSC/NIS2 dla sieci handlowych i e-commerce w Polsce 2026</title>
-  <meta name="description" content="Przewodnik compliance KSC/NIS2 dla dużych sieci handlowych i operatorów e-commerce. Wymagania bezpieczeństwa danych, POS, płatności i raportowania incydentów do 2026 r.">
+  <title>NIS2/ZInfV-1 za velike trgovske verige in e-commerce - Slovenija 2026</title>
+  <meta name="description" content="Obveznosti NIS2 za trgovske verige: zaščita plačilnih sistemov, podatkov strank, dobaviteljev. Rok usklajevanja do oktobra 2026.">
   <link rel="canonical" href="https://nis2-si.eu/sektory/retail.html">
-  <meta property="og:title" content="KSC/NIS2 dla sieci handlowych i e-commerce w Polsce 2026">
-  <meta property="og:description" content="Przewodnik compliance KSC/NIS2 dla dużych sieci handlowych i operatorów e-commerce. Wymagania bezpieczeństwa danych, POS, płatności i raportowania incydentów do 2026 r.">
+  <meta property="og:title" content="NIS2/ZInfV-1 za velike trgovske verige in e-commerce - Slovenija 2026">
+  <meta property="og:description" content="Obveznosti NIS2 za trgovske verige: zaščita plačilnih sistemov, podatkov strank, dobaviteljev. Rok usklajevanja do oktobra 2026.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://nis2-si.eu/sektory/retail.html">
-  <meta property="og:locale" content="pl_PL">
-  <meta property="og:site_name" content="NIS2-Narzedzia.pl">
+  <meta property="og:locale" content="sl_SI">
+  <meta property="og:site_name" content="NIS2-SI.eu">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="KSC/NIS2 dla sieci handlowych i e-commerce w Polsce 2026">
-  <meta name="twitter:description" content="Przewodnik compliance KSC/NIS2 dla dużych sieci handlowych i operatorów e-commerce. Wymagania bezpieczeństwa danych, POS, płatności i raportowania incydentów do 2026 r.">
+  <meta name="twitter:title" content="NIS2/ZInfV-1 za velike trgovske verige in e-commerce - Slovenija 2026">
+  <meta name="twitter:description" content="Obveznosti NIS2 za trgovske verige: zaščita plačilnih sistemov, podatkov strank, dobaviteljev. Rok usklajevanja do oktobra 2026.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
@@ -34,19 +34,19 @@
     {
       "@type": "ListItem",
       "position": 1,
-      "name": "Strona główna",
+      "name": "Domov",
       "item": "https://nis2-si.eu/"
     },
     {
       "@type": "ListItem",
       "position": 2,
-      "name": "Sektory",
+      "name": "Sektorji",
       "item": "https://nis2-si.eu/sektory/"
     },
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "KSC/NIS2 dla dużych sieci handlowych i operatorów e-commerce w Polsce — wymagania 2026",
+      "name": "NIS2/ZInfV-1 za velike trgovske verige in e-commerce operatorje v Sloveniji — Obveznosti in rok 2026",
       "item": "https://nis2-si.eu/sektory/retail.html"
     }
   ]
@@ -59,26 +59,26 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Czy nasz starszy terminal POS musi być wymieniony, aby spełnić KSC/NIS2?",
+      "name": "Katere trgovske verige in e-commerce operatorje zavezuje ZInfV-1 v Sloveniji?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Jeśli terminal został wdrożony przed 2019 r. i nie posiada certyfikacji PCI-DSS 3.2.1, zalecamy wymianę do 31 grudnia 2026 r. Tymczasowo można wdrożyć tokenizację (np. poprzez bramkę płatności) lub zwiększyć monitorowanie sieci, jednak modernizacja jest obligatoryjna dla pełnego compliance. Sprawdzenie statusu PCI-DSS każdego terminala powinno być częścią audytu przygotowawczego."
+        "text": "ZInfV-1 zavezuje trgovske verige in e-commerce operatorje, ki so razvrščeni kot »pomembni subjekti« po Prilogi II: to so organizacije z več kot 250 zaposlenimi ali letnim prometom nad 50 milijonov evrov, ki obdelujejo plačilne podatke ali ponujajo ključne storitve. URSIV razpolaga s popolnim seznamom zavezanih organizacij, ki vam ga lahko posreduje na zahtevo."
       }
     },
     {
       "@type": "Question",
-      "name": "Jakie dane z programu lojalnościowego możemy przechowywać i jak długo?",
+      "name": "Kakšne so posledice neupoštevanja obveznosti PCI-DSS za zastarele POS terminale?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "KSC/NIS2 wymaga przechowywania danych tylko tak długo, jak jest to uzasadnione biznesowo — zazwyczaj 3 lata od ostatniej aktywności klienta. Dane o kartach kredytowych należy usunąć natychmiast po transakcji (PCI-DSS), a historię zakupów można przechowywać wyłącznie dla celów marketingu i analizy. Baza lojalnościowa z danymi 10+ letnimi stanowi niskie ryzyko operacyjne — zalecamy przeprowadzenie audytu retencji i usunięcie historycznych danych."
+        "text": "Neusklajenost s PCI-DSS in ZInfV-1 za POS sisteme vodi do glob od 10 do 50 milijonov evrov (odvisno od resnosti) ter lahko povzroči izgubo dovoljenj za plačilne storitve. Prav tako se povečuje tveganje za krajo podatkov in izguba ugleda. Priporočamo, da v roku šestih mesecev vzpostavite načrt za modernizacijo zastarele infrastrukture."
       }
     },
     {
       "@type": "Question",
-      "name": "Jakie są kary za niespełnienie KSC/NIS2 jako podmiot ważny?",
+      "name": "Kakšen je rok za usklajevanje s predpisi ZInfV-1 in kaj se zgodi, če roka ne zmorem?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Prezes UKNF może nałożyć karę administracyjną do 1,5 mln EUR (lub 3% przychodu brutto) za brak implementacji wymaganych środków bezpieczeństwa oraz do 5 mln EUR (lub 10% przychodu brutto) za nieudostępnienie danych audytorowi. Dodatkowo, naruszenia w systemach płatności mogą prowadzić do kar wydawanych przez procesorów płatności (utraty certyfikacji PCI-DSS). Deadline zgodności to 31 grudnia 2026 r. dla podmiotów ważnych."
+        "text": "Uradno skrajni rok je 19. oktober 2026 za vse zavezane subjekte. Po tej datumi URSIV in SI-CERT izvršujeta redne inšpekcije skladnosti. Organizacije, ki do tega roka ne bodo skladne, prejemajo uradna opozorila in opomene z zavezujočimi roki za odpravo pomanjkljivosti. Priporočamo, da začnete s presejo skladnosti do konca leta 2025."
       }
     }
   ]
@@ -90,44 +90,44 @@
 <nav class="nav">
   <div class="container">
     <div class="nav__inner">
-      <a href="../index.html" class="nav__logo">NIS2<span>Si</span>.eu</a>
+      <a href="../index.html" class="nav__logo">NIS2<span>SI</span>.eu</a>
       <ul class="nav__links">
-        <li><a href="../porownanie.html">Porównanie narzędzi</a></li>
-        <li><a href="../kalkulator.html">Kalkulator KSC</a></li>
+        <li><a href="../primerjava.html">Primerjava orodij</a></li>
+        <li><a href="../kalkulator.html">Kalkulator NIS2</a></li>
         <li><a href="../faq.html">FAQ</a></li>
       </ul>
-      <a href="../kalkulator.html" class="nav__cta">Sprawdź czy podlegasz →</a>
+      <a href="../kalkulator.html" class="nav__cta">Preverite, ali ste zavezani →</a>
     </div>
   </div>
 </nav>
 
 <div class="container" style="padding-top:1.5rem;">
   <div class="breadcrumb">
-    <a href="../index.html">Strona główna</a><span>›</span>
-    <a href="index.html">Sektory</a><span>›</span>
-    KSC/NIS2 dla dużych sieci handlowych i operatorów e-commerce w Polsce — wymagania 2026
+    <a href="../index.html">Domov</a><span>›</span>
+    <a href="index.html">Sektorji</a><span>›</span>
+    NIS2/ZInfV-1 za velike trgovske verige in e-commerce operatorje v Sloveniji — Obveznosti in rok 2026
   </div>
 </div>
 
 <!-- HERO -->
 <div style="background:var(--gray-50);padding:2.5rem 0 3rem;border-bottom:1px solid var(--gray-200);">
   <div class="container--narrow">
-    <span style="display:inline-block;background:#16a34a;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Załącznik II — Podmiot ważny</span>
-    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">KSC/NIS2 dla dużych sieci handlowych i operatorów e-commerce w Polsce — wymagania 2026</h1>
-    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Niniejszy przewodnik adresuje kierowników bezpieczeństwa informacyjnego, compliance officers oraz właścicieli platform e-commerce, którzy muszą spełnić wymogi Ustawy o Krajowym Systemie Cyberbezpieczeństwa jako podmioty ważne. Dowiesz się, jakie konkretne działania wdrożyć w infrastrukturze płatności, zarządzaniu danymi klientów oraz kontroli dostępu dostawców.</p>
+    <span style="display:inline-block;background:#16a34a;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Priloga II — Pomembna subjekt</span>
+    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2/ZInfV-1 za velike trgovske verige in e-commerce operatorje v Sloveniji — Obveznosti in rok 2026</h1>
+    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Vodilo je namenjeno upravam informacijske varnosti in vodstvenemu sloju velikih trgovskih verig ter e-commerce operatorjev, ki obdelujejo plačilne podatke in osebne podatke strank. Spoznajte konkretne obveznosti skladnosti s Slovenskim zakonom o informacijski varnosti po direktivi NIS2.</p>
   </div>
 </div>
 
 <!-- WHO QUALIFIES -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
   <div style="background:var(--gray-50);border-left:4px solid var(--navy);border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;">
-    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Compliance obejmuje sieci handlowe z przychodami powyżej 500 mln EUR rocznie lub operatorów e-commerce przetwarzających dane ponad 1 mln klientów rocznie, jeśli znacznie przyczyniają się do funkcjonowania rynku detalicznego w Polsce. W praktyce dotyczy to największych operatorów (Auchan, Carrefour, Media Markt, Allegro, Amazon.pl i podobnych), które obsługują systemy płatności i przechowują dane osobowe na masową skalę.</p>
+    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Pod obveznosti ZInfV-1 spadajo trgovske verige in e-commerce operatorji s številom zaposlenih nad 250 oseb ali letnim prometom nad 50 milijonov evrov, ki obdelujejo plačilne podatke prek POS terminalov ali spletnih trgovin. Poleg tega morajo biti tudi manjši operatorji, ki nudijo ključne storitve elektronskega poslovanja ali prevzamejo vlogo operaterja kritične infrastrukture, skladni s predpisi.</p>
   </div>
 </div>
 
 <!-- OBLIGATIONS -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
-  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1.25rem;">Kluczowe obowiązki NIS2 dla tego sektora</h2>
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1.25rem;">Ključne obveznosti NIS2 za ta sektor</h2>
   <div style="border-top:1px solid var(--gray-100);">
     
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -135,8 +135,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Bezpieczeństwo infrastruktury POS i przetwarzania płatności</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Muszą Państwo zapewnić szyfowanie danych karty płatniczej w całym łańcuchu POS-Gateway-Procesor oraz wdrożyć tokenizację. KSC/NIS2 wymaga zgodności zarówno z wymogami NIS2 dotyczącymi szyfrowania, jak i z PCI-DSS 3.2.1+. Obowiązuje kwartalna ocena podatności systemu płatności oraz izolacja sieci POS od sieci ogólnodostępnej (DMZ).</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Zaščita infrastrukture plačilnega procesiranja in POS terminalov</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Zagotoviti morate skladnost s standardi PCI-DSS 4.0 za vse točke prodaje, vključno z zastarelo infrastrukturo, ki ni v neposrednem obsegu stare PCI-DSS certifikacije. Poleg tega je treba na sistemih za obdelavo plačil vzpostaviti popolno šifriranje podatkov v prenosu in mirovanju ter omejiti dostop samo na overeni персонал s pogoji, odvisnimi od vloge. URSIV pričakuje, da dokumentirate vse plačilne sisteme, vključno z arhitekturnimi diagrami, kriptografskima ključema in evidenco dostopa.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -144,8 +144,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Notyfikacja naruszeń danych klientów i raportowanie incydentów</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Naruszenie bezpieczeństwa danych klientów (np. wycieku bazy lojalności) musi być zgłoszone Prezesowi UKNF w ciągu 72 godzin od odkrycia, a klientom w ciągu 30 dni. KSC/NIS2 wymaga również raportowania zakłóceń w świadczeniu usług (np. niedostępność e-sklepu powyżej 2 godzin) do CERT Polska. Wymagana jest procedura triage'u incydentów z określonymi progami eskalacji.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Varovanje podatkov strank in obvestilo o kršitvi</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Vzpostaviti morate postopke za odkrivanje in prijavljivanje kršitev osebnih podatkov v roku 72 ur. Za trgovske verige z baze nad milijon strank je obvezna vzpostavitev avtomatiziranega sistema za praćenje anomalij v dostopih do baz podatkov. Prav tako je potrebno periodično preverjati veljavnost in ustreznost obdobja hranjenja podatkov za programe zvestobe ter izbrisati podatke, ki niso več potrebni.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -153,8 +153,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Bezpieczeństwo łańcucha dostaw — kontrola dostępu dostawców logistycznych i magazynowych</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Dostawcy logistyki (DPD, GLS, InPost) i operatorzy magazynów mają dostęp do systemów inwentaryzacji i danych klientów. KSC/NIS2 wymaga umów bezpieczeństwa z minimum: auditem bezpieczeństwa dostawcy przed przydzieleniem dostępu, ograniczeniem uprawnień do minimum niezbędnego oraz monitorowaniem dostępu w logach. Co najmniej raz rocznie przeprowadzić ocenę bezpieczeństwa łańcucha dostaw.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Varnost dobaviteljev in logistike v verigi dostave</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Zahtevati morate, da vsi dobavitelji sistemov za upravljanje zalog in logistike (3PL, WMS, ERP) izpolnjujejo najmanj osnovne varnostne standarde in vam zagotavljajo dokazila o skladnosti. Ključno je установити pogodbe, ki opredelijo odgovornosti za varnost podatkov in protokole za obveščanje o incidentih. Pri vsakem dobavitelju, ki ima dostop do vaših kritičnih sistemov, morate izvršiti letno presojo tveganja in dostop periodično preveriti.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -162,8 +162,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Zarządzanie danymi programów lojalnościowych i retencja danych</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Bazy danych klientów loyalty programs (Carrefour Club, Allegro Smart) zawierają dane behawiorowe, historię zakupów i karty kredytowe. KSC/NIS2 wymaga określenia terminu przechowywania (maksymalnie do 3 lat po ostatniej aktywności klienta), automatycznego usuwania danych nieaktywnych, szyfrowania haseł i tokenów sesji. Kontrola dostępu do baz lojalnościowych musi być limitowana do zespołu CRM i nie może dotyczyć ogólnych administratorów IT.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Prijavljivanje incidentov URSIV in upravljanje kriznih situacij</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">V primeru incidenta, ki vpliva na dostopnost spletne trgovine, POS omrežja ali plačilnega procesiranja za več kot dve uri, morate takoj obvestiti SI-CERT in URSIV (najdlje v roku ene ure). Pripraviti morate podroben načrt za krizno upravljanje, ki vključuje scenarije izpada, komunikacijske kanale in vloge reševalnega tima. Dokumentirati morate tudi vse incidente v internem beledu z analizo vzroka in korektivnimi ukrepi.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -171,8 +171,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Zarządzanie ryzykiem bezpieczeństwa i ciągłość działalności</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">KSC/NIS2 wymaga opracowania plan ciągłości działalności dla krytycznych systemów (POS, e-sklep, płatności) z RTO max 24h i RPO max 4h. Obowiązkowe są testy failover systemu płatności co najmniej dwa razy rocznie i procedury awaryjne obsługi offline-owej transakcji. Muszą Państwo prowadzić rejestr ryzyka cyberbezpieczeństwa z co najmniej kwartalną aktualizacją ryzyka związanego z podatności systemów edge'owych (np. smartfony kasjerów) oraz ryzykami z nowych kanałów sprzedaży (mobile payment, BNPL).</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Upravljanje dostopa in nadzor privilegirane uporabniške vloge</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Vzpostaviti morate sistem upravljanja dostopa s principom najmanjše potrebnosti za vse zaposlence in tretje osebe s pristopom do plačilnih podatkov, skladišč ali baz strank. To vključuje večfaktorsko avtentifikacijo za vse upravljavce sistemov, pisne dokazilne liste za privilegirane dostope in revizijsko sled z najmanj dvema letoma retencionizma. Prav tako morate zagotoviti usposabljanje na temo kibernetske varnosti za najmanj 80 % kadra, ki obravnava občutljive podatke.</p>
       </div>
     </div>
   </div>
@@ -180,27 +180,27 @@
 
 <!-- TYPICAL GAPS -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
-  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Typowe luki compliance w tym sektorze</h2>
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Tipične vrzeli skladnosti v tem sektorju</h2>
   <ul style="list-style:none;padding:0;margin:0;border-top:1px solid var(--gray-100);">
     
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Starsze terminale POS (ponad 5 lat) nie posiadają certyfikacji PCI-DSS 3.2.1 i nie wspierają szyfrowania end-to-end — wymagane jest wdrożenie tokenizacji lub modernizacja infrastruktury przed deadline 31 grudnia 2026 r.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Zastareli POS terminali v trgovinah niso vključeni v PCI-DSS obseg in ostanejo nezavzeti: vzpostavite register vseh plačilnih terminalov z danumi zadnje prevere in načrtom za modernizacijo.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Bazy danych programów lojalnościowych przechowują dane klientów przez 10+ lat po ostatniej transakcji bez uzasadnienia biznesowego — niezbędne jest przeprowadzenie audytu retencji danych i wdrożenie polityki automatycznego usunięcia danych przestarzałych.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Baze podatkov programov zvestobe innehavajo podakte strank, ki jih je mogoče zbrisati: izvedite pregled politike hranjenja podatkov in zmanjšajte obdobje na najmanjšo potrebno zakonsko dobo.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Dostawcy logistyki (np. InPost, GLS) posiadają nieograniczony dostęp do systemów inwentaryzacji bez segmentacji sieci ani monitorowania — wymaga wprowadzenia MFA, VPN z limitowanym IP oraz logowania dostępu dostawcy w SIEM.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Dobavitelji in zunanji integratorji imajo trajno in neurejeno dostop do sistemov za upravljanje zalog: vzpostavite dogovore o dostopnih pravicah s končnim rokom veljavnosti in najmanj letno presojo.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Brak procedur raportowania incydentów do CERT Polska dla zakłóceń w e-handlu — wymagane jest opracowanie SOP z progami eskalacji (np. niedostępność platformy >2h = raport) i wyznaczenie koordynatora incydentów.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Manjka jasna vloga in odgovornost osebe za kibernetsko varnost v voditeljski strukturi: priporočamo imenovanje dedicirane osebe ali tima, odgovornega za skladnost z ZInfV-1.
     </li>
   </ul>
 </div>
 
 <!-- TOOLS -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
-  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Rekomendowane narzędzia dla tego sektora</h2>
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Priporočena orodja za ta sektor</h2>
   <div style="display:grid;gap:1rem;">
     
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
@@ -232,25 +232,25 @@
 
 <!-- FAQ -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem;" itemscope itemtype="https://schema.org/FAQPage">
-  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Często zadawane pytania</h2>
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Pogosta vprašanja</h2>
   <div style="border-top:1px solid var(--gray-100);">
     
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Czy nasz starszy terminal POS musi być wymieniony, aby spełnić KSC/NIS2?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Katere trgovske verige in e-commerce operatorje zavezuje ZInfV-1 v Sloveniji?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Jeśli terminal został wdrożony przed 2019 r. i nie posiada certyfikacji PCI-DSS 3.2.1, zalecamy wymianę do 31 grudnia 2026 r. Tymczasowo można wdrożyć tokenizację (np. poprzez bramkę płatności) lub zwiększyć monitorowanie sieci, jednak modernizacja jest obligatoryjna dla pełnego compliance. Sprawdzenie statusu PCI-DSS każdego terminala powinno być częścią audytu przygotowawczego.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">ZInfV-1 zavezuje trgovske verige in e-commerce operatorje, ki so razvrščeni kot »pomembni subjekti« po Prilogi II: to so organizacije z več kot 250 zaposlenimi ali letnim prometom nad 50 milijonov evrov, ki obdelujejo plačilne podatke ali ponujajo ključne storitve. URSIV razpolaga s popolnim seznamom zavezanih organizacij, ki vam ga lahko posreduje na zahtevo.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Jakie dane z programu lojalnościowego możemy przechowywać i jak długo?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Kakšne so posledice neupoštevanja obveznosti PCI-DSS za zastarele POS terminale?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">KSC/NIS2 wymaga przechowywania danych tylko tak długo, jak jest to uzasadnione biznesowo — zazwyczaj 3 lata od ostatniej aktywności klienta. Dane o kartach kredytowych należy usunąć natychmiast po transakcji (PCI-DSS), a historię zakupów można przechowywać wyłącznie dla celów marketingu i analizy. Baza lojalnościowa z danymi 10+ letnimi stanowi niskie ryzyko operacyjne — zalecamy przeprowadzenie audytu retencji i usunięcie historycznych danych.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Neusklajenost s PCI-DSS in ZInfV-1 za POS sisteme vodi do glob od 10 do 50 milijonov evrov (odvisno od resnosti) ter lahko povzroči izgubo dovoljenj za plačilne storitve. Prav tako se povečuje tveganje za krajo podatkov in izguba ugleda. Priporočamo, da v roku šestih mesecev vzpostavite načrt za modernizacijo zastarele infrastrukture.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Jakie są kary za niespełnienie KSC/NIS2 jako podmiot ważny?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Kakšen je rok za usklajevanje s predpisi ZInfV-1 in kaj se zgodi, če roka ne zmorem?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Prezes UKNF może nałożyć karę administracyjną do 1,5 mln EUR (lub 3% przychodu brutto) za brak implementacji wymaganych środków bezpieczeństwa oraz do 5 mln EUR (lub 10% przychodu brutto) za nieudostępnienie danych audytorowi. Dodatkowo, naruszenia w systemach płatności mogą prowadzić do kar wydawanych przez procesorów płatności (utraty certyfikacji PCI-DSS). Deadline zgodności to 31 grudnia 2026 r. dla podmiotów ważnych.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Uradno skrajni rok je 19. oktober 2026 za vse zavezane subjekte. Po tej datumi URSIV in SI-CERT izvršujeta redne inšpekcije skladnosti. Organizacije, ki do tega roka ne bodo skladne, prejemajo uradna opozorila in opomene z zavezujočimi roki za odpravo pomanjkljivosti. Priporočamo, da začnete s presejo skladnosti do konca leta 2025.</p>
     </div>
   </div>
   </div>
@@ -259,30 +259,27 @@
 <!-- CTA -->
 <div style="background:var(--navy);padding:3rem 1.25rem;text-align:center;margin-top:2rem;">
   <div class="container--narrow">
-    <h2 style="color:#fff;font-size:1.4rem;margin:0 0 .75rem;">Sprawdź wymagania dla swojej organizacji</h2>
+    <h2 style="color:#fff;font-size:1.4rem;margin:0 0 .75rem;">Preverite zahteve za vašo organizacijo</h2>
     <p style="color:rgba(255,255,255,.75);margin:0 0 1.5rem;font-size:.95rem;">
-      KSC/NIS2 · Polska · 2026
+      ZInfV-1/NIS2 · Slovenija · 2026
     </p>
     <a href="../kalkulator.html" style="display:inline-block;background:#16a34a;color:#fff;padding:.85rem 2.25rem;border-radius:8px;font-weight:700;font-size:1rem;text-decoration:none;">
-      Uruchom kalkulator →
+      Zaženite kalkulator →
     </a>
   </div>
 </div>
 
-
-<nav class="related-sectors" aria-label="Powiązane sektory" style="max-width:1100px;margin:2rem auto;padding:1.5rem 1.25rem;border-top:1px solid #e5e7eb;"><h2 style="font-size:1.05rem;margin:0 0 .75rem;">Powiązane sektory</h2><ul style="list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:.5rem 1rem;"><li style="margin:0"><a href="sme-general.html">NIS2 dla średnich firm w Polsce</a></li><li style="margin:0"><a href="software-saas.html">NIS2 dla firm SaaS B2B w Polsce</a></li><li style="margin:0"><a href="telecoms.html">KSC/NIS2 dla operatorów telekomunikacyjnych i ISP</a></li><li style="margin:0"><a href="telemedicine.html">NIS2 dla platform telemedycyny w Polsce</a></li><li style="margin:0"><a href="transport.html">KSC/NIS2 dla operatorów transportu</a></li><li style="margin:0"><a href="waste-management.html">NIS2 dla operatorów odpadów w Polsce</a></li></ul></nav>
 <footer style="background:var(--gray-50);border-top:1px solid var(--gray-200);padding:2rem 1.25rem;text-align:center;">
   <div class="container">
     <p style="color:var(--gray-400);font-size:.82rem;margin:0;">
-      © 2026 NIS2-Narzedzia.pl · KSC/NIS2 · UKNF/CERT Polska
+      © 2026 NIS2-SI.eu · ZInfV-1/NIS2 · URSIV / SI-CERT
       <br>Informacje mają charakter edukacyjny i nie stanowią porady prawnej.
-      <br><a href="../index.html" style="color:var(--gray-400);">Strona główna</a> ·
-      <a href="index.html" style="color:var(--gray-400);">Sektory</a> ·
-      <a href="../porownanie.html" style="color:var(--gray-400);">Porównanie narzędzi</a>
+      <br><a href="../index.html" style="color:var(--gray-400);">Domov</a> ·
+      <a href="index.html" style="color:var(--gray-400);">Sektorji</a> ·
+      <a href="../primerjava.html" style="color:var(--gray-400);">Primerjava orodij</a>
     </p>
   </div>
 </footer>
 
-  <script src="/js/tg-cta.js" defer></script>
 </body>
 </html>

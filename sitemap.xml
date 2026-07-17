@@ -7,11 +7,10 @@
   <url><loc>https://nis2-si.eu/faq.html</loc><lastmod>2026-07-17</lastmod><priority>0.80</priority></url>
   <url><loc>https://nis2-si.eu/</loc><lastmod>2026-07-17</lastmod><priority>1.00</priority></url>
   <url><loc>https://nis2-si.eu/iso-27001-narzedzia.html</loc><lastmod>2026-07-17</lastmod><priority>0.80</priority></url>
-  <url><loc>https://nis2-si.eu/kalkulator-kary.html</loc><lastmod>2026-07-17</lastmod><priority>0.80</priority></url>
+  <url><loc>https://nis2-si.eu/kalkulator-kazni.html</loc><lastmod>2026-07-17</lastmod><priority>0.80</priority></url>
   <url><loc>https://nis2-si.eu/kalkulator-kosztow-nis2.html</loc><lastmod>2026-07-17</lastmod><priority>0.80</priority></url>
   <url><loc>https://nis2-si.eu/kalkulator.html</loc><lastmod>2026-07-17</lastmod><priority>0.80</priority></url>
-  <url><loc>https://nis2-si.eu/metodologia.html</loc><lastmod>2026-07-17</lastmod><priority>0.80</priority></url>
-  <url><loc>https://nis2-si.eu/narzedzia-dostepnosci-eaa.html</loc><lastmod>2026-07-17</lastmod><priority>0.80</priority></url>
+  <url><loc>https://nis2-si.eu/metodologija.html</loc><lastmod>2026-07-17</lastmod><priority>0.80</priority></url>
   <url><loc>https://nis2-si.eu/orodja/1password.html</loc><lastmod>2026-07-17</lastmod><priority>0.75</priority></url>
   <url><loc>https://nis2-si.eu/orodja/acronis.html</loc><lastmod>2026-07-17</lastmod><priority>0.75</priority></url>
   <url><loc>https://nis2-si.eu/orodja/bitdefender-gravityzone.html</loc><lastmod>2026-07-17</lastmod><priority>0.75</priority></url>
@@ -27,14 +26,11 @@
   <url><loc>https://nis2-si.eu/orodja/sprinto.html</loc><lastmod>2026-07-17</lastmod><priority>0.75</priority></url>
   <url><loc>https://nis2-si.eu/orodja/sycope.html</loc><lastmod>2026-07-17</lastmod><priority>0.75</priority></url>
   <url><loc>https://nis2-si.eu/orodja/vanta.html</loc><lastmod>2026-07-17</lastmod><priority>0.75</priority></url>
-  <url><loc>https://nis2-si.eu/pakiet-startowy-nis2.html</loc><lastmod>2026-07-17</lastmod><priority>0.80</priority></url>
-  <url><loc>https://nis2-si.eu/porownanie.html</loc><lastmod>2026-07-17</lastmod><priority>0.80</priority></url>
+  <url><loc>https://nis2-si.eu/primerjava.html</loc><lastmod>2026-07-17</lastmod><priority>0.80</priority></url>
   <url><loc>https://nis2-si.eu/rejestracja-ksc.html</loc><lastmod>2026-07-17</lastmod><priority>0.80</priority></url>
-  <url><loc>https://nis2-si.eu/report-cyberbezpieczenstwo-firm-pl.html</loc><lastmod>2026-07-17</lastmod><priority>0.80</priority></url>
-  <url><loc>https://nis2-si.eu/report-dostepnosc-stron-pl.html</loc><lastmod>2026-07-17</lastmod><priority>0.80</priority></url>
   <url><loc>https://nis2-si.eu/report-koszty-nis2.html</loc><lastmod>2026-07-17</lastmod><priority>0.80</priority></url>
-  <url><loc>https://nis2-si.eu/report-nis2-pl.html</loc><lastmod>2026-07-17</lastmod><priority>0.80</priority></url>
   <url><loc>https://nis2-si.eu/rozporzadzenie-wykonawcze-nis2.html</loc><lastmod>2026-07-17</lastmod><priority>0.80</priority></url>
+  <url><loc>https://nis2-si.eu/sektorji-nis2.html</loc><lastmod>2026-07-17</lastmod><priority>0.80</priority></url>
   <url><loc>https://nis2-si.eu/sektory/accountants.html</loc><lastmod>2026-07-17</lastmod><priority>0.75</priority></url>
   <url><loc>https://nis2-si.eu/sektory/banks.html</loc><lastmod>2026-07-17</lastmod><priority>0.75</priority></url>
   <url><loc>https://nis2-si.eu/sektory/cloud-providers.html</loc><lastmod>2026-07-17</lastmod><priority>0.75</priority></url>
@@ -66,7 +62,6 @@
   <url><loc>https://nis2-si.eu/sektory/transport.html</loc><lastmod>2026-07-17</lastmod><priority>0.75</priority></url>
   <url><loc>https://nis2-si.eu/sektory/waste-management.html</loc><lastmod>2026-07-17</lastmod><priority>0.75</priority></url>
   <url><loc>https://nis2-si.eu/sektory/water.html</loc><lastmod>2026-07-17</lastmod><priority>0.75</priority></url>
-  <url><loc>https://nis2-si.eu/sektory-ksc.html</loc><lastmod>2026-07-17</lastmod><priority>0.80</priority></url>
   <url><loc>https://nis2-si.eu/szkolenia-nis2.html</loc><lastmod>2026-07-17</lastmod><priority>0.80</priority></url>
   <url><loc>https://nis2-si.eu/testy-penetracyjne.html</loc><lastmod>2026-07-17</lastmod><priority>0.80</priority></url>
   <url><loc>https://nis2-si.eu/ubezpieczenie-cyber.html</loc><lastmod>2026-07-17</lastmod><priority>0.80</priority></url>

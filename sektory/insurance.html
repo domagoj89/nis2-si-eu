@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="sl">
 <head>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-68LM6P0B9Y"></script>
@@ -11,18 +11,18 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KSC/NIS2 dla ubezpieczycieli w Polsce — wymagania 2026</title>
-  <meta name="description" content="Przewodnik compliance KSC/NIS2 dla ubezpieczycieli, brokerów i reasekuratorów. Poznaj obowiązki ochrony danych polis i harmonogram wdrażania do 2026 roku.">
+  <title>NIS2 za zavarovalnice v Sloveniji — ZInfV-1 2026</title>
+  <meta name="description" content="NIS2 obveznosti za zavarovalnice, brokery in reosiguriteljice v Sloveniji. Varnost podatkov zavarovancev, poslovna kontinuiteta in upravljanje dobaviteljev.">
   <link rel="canonical" href="https://nis2-si.eu/sektory/insurance.html">
-  <meta property="og:title" content="KSC/NIS2 dla ubezpieczycieli w Polsce — wymagania 2026">
-  <meta property="og:description" content="Przewodnik compliance KSC/NIS2 dla ubezpieczycieli, brokerów i reasekuratorów. Poznaj obowiązki ochrony danych polis i harmonogram wdrażania do 2026 roku.">
+  <meta property="og:title" content="NIS2 za zavarovalnice v Sloveniji — ZInfV-1 2026">
+  <meta property="og:description" content="NIS2 obveznosti za zavarovalnice, brokery in reosiguriteljice v Sloveniji. Varnost podatkov zavarovancev, poslovna kontinuiteta in upravljanje dobaviteljev.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://nis2-si.eu/sektory/insurance.html">
-  <meta property="og:locale" content="pl_PL">
-  <meta property="og:site_name" content="NIS2-Narzedzia.pl">
+  <meta property="og:locale" content="sl_SI">
+  <meta property="og:site_name" content="NIS2-SI.eu">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="KSC/NIS2 dla ubezpieczycieli w Polsce — wymagania 2026">
-  <meta name="twitter:description" content="Przewodnik compliance KSC/NIS2 dla ubezpieczycieli, brokerów i reasekuratorów. Poznaj obowiązki ochrony danych polis i harmonogram wdrażania do 2026 roku.">
+  <meta name="twitter:title" content="NIS2 za zavarovalnice v Sloveniji — ZInfV-1 2026">
+  <meta name="twitter:description" content="NIS2 obveznosti za zavarovalnice, brokery in reosiguriteljice v Sloveniji. Varnost podatkov zavarovancev, poslovna kontinuiteta in upravljanje dobaviteljev.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
@@ -34,19 +34,19 @@
     {
       "@type": "ListItem",
       "position": 1,
-      "name": "Strona główna",
+      "name": "Domov",
       "item": "https://nis2-si.eu/"
     },
     {
       "@type": "ListItem",
       "position": 2,
-      "name": "Sektory",
+      "name": "Sektorji",
       "item": "https://nis2-si.eu/sektory/"
     },
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "KSC/NIS2 dla ubezpieczycieli, brokerów i reasekuratorów w Polsce — wymagania 2026",
+      "name": "NIS2 za zavarovalnice, brokery in reosiguriteljice v Sloveniji — zahteve ZInfV-1 do 2026",
       "item": "https://nis2-si.eu/sektory/insurance.html"
     }
   ]
@@ -59,26 +59,26 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Czy moja mała firma brokerska (przychód poniżej 2 mln EUR) musi wdrażać KSC/NIS2?",
+      "name": "Ali moramo imeti ločen IT prostor (DMZ) za brokerske portale in zunanje uporabnike?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nie — wymogi Anneksu II dotyczą brokerów z przychodami powyżej 2 mln EUR rocznie. Poniżej tego progu obowiązują Cię mniej surowe wymogi z Anneksu I (jeśli jesteś mikro-przedsiębiorstwem) lub standardowe wymogi ustawy o ochronie danych osobowych. Jednak jeśli obsługujesz danskadane ubezpieczonych i prowadzisz dystrybucję online, powinieneś wdrażać podstawowe środki bezpieczeństwa (MFA, szyfrowanie, backup)."
+        "text": "Zakon ZInfV-1 ne zahteva ločenega prostora, toda najbolja praksa je, da zunanji dostop fizično ali logično izolulirate s požarnim zidom in kontrolami dostopa. Brokerski portal mora biti ločen od internih sistemov z ničelnimi pravicami do drugih podatkovnih baz, razen tistih, ki so nujne za njihovo delo. Priporočamo arhitekturo s štirimi nivoji: javni splet, DMZ za brokerje, notranja mreža za zaposlene in ločena mreža za občutljive aktuarske podatke."
       }
     },
     {
       "@type": "Question",
-      "name": "Jaki dokładnie jest termin wdrożenia wszystkich wymogów KSC/NIS2 dla ubezpieczycieli?",
+      "name": "Kako pogosto moramo testirati poslovno kontinuiteto za sisteme zahtevkov?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Termin wdrożenia wynosi 18 miesięcy od publikacji przepisów (tj. do czerwca 2026 r.). UKNF i CERT Polska będą w tym okresie publikować wytyczne sektorowe. Zalecamy rozpoczęcie teraz od oceny istniejących systemów, przygotowania planu wdrażania oraz pilotażu MFA i procedur zarządzania dostawcami."
+        "text": "Minimum je enkrat letno, pri čemer mora test vključevati resnični izpad podatkovne baze, izpad spletnega dostopa ali simuliran napak v sistemu obravnave zahtevkov. Rezultati testov morajo biti dokumentirani, vključno s časom okrevanja, izgubljenih podatkov in učinkovin za izboljšanje. Priporočamo vsaj dve polni vaji letno ter četrtletne tehnične teste za kritične komponente."
       }
     },
     {
       "@type": "Question",
-      "name": "Jakie są kary za niespełnienie wymogów KSC/NIS2 dla ubezpieczycieli?",
+      "name": "Kaj se zgodi, če se ne usklladimo do 2026?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "UKNF może nałożyć kary administracyjne do 2% przychodów rocznych za brak wdrożenia wymogów ochrony danych i ciągłości biznesu. W przypadku naruszeń bezpieczeństwa powodujących wyciek danych policyhodlów grożą dodatkowo kary do 4% przychodów zgodnie z RODO. Incydenty muszą być zgłaszane UKNF w ciągu 24 godzin od odkrycia."
+        "text": "URSIV in SI-CERT lahko izdate opozorilo, odredilnico za usklajevanje v rokih 30–90 dni, ali v primeru hude kršitve celo izvedete sankcije do 10 milijonov EUR ali 2 % globalnega letnega prihodka, odvisno od tega, kaj je večji znesek. Dodatno nastane tudi tveganje za krvave sodbe v primeru incidenta, saj lahko zavarovalnica odgovarja za škodo zavarovancem in tretjim osebam, če bi dokazali, da je bila kršitev pravna obveza varnosti."
       }
     }
   ]
@@ -90,44 +90,44 @@
 <nav class="nav">
   <div class="container">
     <div class="nav__inner">
-      <a href="../index.html" class="nav__logo">NIS2<span>Si</span>.eu</a>
+      <a href="../index.html" class="nav__logo">NIS2<span>SI</span>.eu</a>
       <ul class="nav__links">
-        <li><a href="../porownanie.html">Porównanie narzędzi</a></li>
-        <li><a href="../kalkulator.html">Kalkulator KSC</a></li>
+        <li><a href="../primerjava.html">Primerjava orodij</a></li>
+        <li><a href="../kalkulator.html">Kalkulator NIS2</a></li>
         <li><a href="../faq.html">FAQ</a></li>
       </ul>
-      <a href="../kalkulator.html" class="nav__cta">Sprawdź czy podlegasz →</a>
+      <a href="../kalkulator.html" class="nav__cta">Preverite, ali ste zavezani →</a>
     </div>
   </div>
 </nav>
 
 <div class="container" style="padding-top:1.5rem;">
   <div class="breadcrumb">
-    <a href="../index.html">Strona główna</a><span>›</span>
-    <a href="index.html">Sektory</a><span>›</span>
-    KSC/NIS2 dla ubezpieczycieli, brokerów i reasekuratorów w Polsce — wymagania 2026
+    <a href="../index.html">Domov</a><span>›</span>
+    <a href="index.html">Sektorji</a><span>›</span>
+    NIS2 za zavarovalnice, brokery in reosiguriteljice v Sloveniji — zahteve ZInfV-1 do 2026
   </div>
 </div>
 
 <!-- HERO -->
 <div style="background:var(--gray-50);padding:2.5rem 0 3rem;border-bottom:1px solid var(--gray-200);">
   <div class="container--narrow">
-    <span style="display:inline-block;background:#16a34a;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Załącznik II — podmiot ważny</span>
-    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">KSC/NIS2 dla ubezpieczycieli, brokerów i reasekuratorów w Polsce — wymagania 2026</h1>
-    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Niniejszy przewodnik adresuje zespoły compliance, bezpieczeństwa IT oraz zarządu ubezpieczycieli, brokerów i reasekuratorów, którzy muszą wdrożyć wymogi KSC/NIS2 do czerwca 2026 r. Dowiesz się, jakie konkretne działania są wymagane dla ochrony danych ubezpieczonych i ciągłości obsługi szkód.</p>
+    <span style="display:inline-block;background:#16a34a;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Prilog II — Pomembna entiteta</span>
+    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 za zavarovalnice, brokery in reosiguriteljice v Sloveniji — zahteve ZInfV-1 do 2026</h1>
+    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Ta priročnik je namenjen vodstvenim delavcem varnosti informacij, IT direktorjem in compliance odgovornim osebam v zavarovalnicah in broker podjetjih v Sloveniji. Naučite se konkretnih obveznosti, ki jih prinaša Zakon o informacijski varnosti, ter kako uskladiti operativne sisteme z novimi standardi za zaščito podatkov zavarovancev in upravičencev.</p>
   </div>
 </div>
 
 <!-- WHO QUALIFIES -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
   <div style="background:var(--gray-50);border-left:4px solid var(--navy);border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;">
-    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Wymogi KSC/NIS2 obowiązują ubezpieczycieli oferujących ubezpieczenia majątkowe, osobowe lub składające sprawozdania do UKNF, brokerów ubezpieczeniowych z przychodami powyżej 2 mln EUR rocznie, oraz reasekuratorów posiadających polskie przedstawicielstwo. Podmioty te muszą spełnić wymogi jako tzw. podmioty ważne w rozumieniu Anneksu II rozporządzenia.</p>
+    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Zavarovalnice, brokeri in reosiguriteljice v Sloveniji, ki procesirajo osebne podatke zavarovancev ali upravičencev in imajo več kot 50 zaposlenih ali letni prihodek večji od 10 milijonov EUR, morajo biti skladne z ZInfV-1. To vključuje tudi manjše brokerske hiše, ki imajo v upravljanju podatke skupaj z materinskim podjetjem ali prek integrirane IT infrastrukture.</p>
   </div>
 </div>
 
 <!-- OBLIGATIONS -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
-  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1.25rem;">Kluczowe obowiązki NIS2 dla tego sektora</h2>
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1.25rem;">Ključne obveznosti NIS2 za ta sektor</h2>
   <div style="border-top:1px solid var(--gray-100);">
     
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -135,8 +135,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Zabezpieczenie systemów danych aktuarialnych i danych ubezpieczonych</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Musisz wdrożyć kontrole dostępu i szyfrowanie dla baz danych zawierających dane policyhodlów (PESEL, dane bancassurance, historia roszczeń). Wymaga to stosowania kwalifikowanych certyfikatów, segmentacji sieci oraz monitorowania dostępu. Przeglądu technicznego systemów należy dokonać co minimum co 12 miesięcy w zgodzie z wytycznymi CERT Polska.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Varnost sistemov za procesiranje aktuarskih in podatkov zavarovancev</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Implementirate morata posebne tehnične in organizacijske ukrepe za zaščito podatkovnih baz zavarovancev, zavarovalnih polic in klientskih informacij. To vključuje šifriranje podatkov v mirovanju in med prenosom, nadzor dostopa z večfaktorsko avtentifikacijo ter redne preglede dostopov. Posebej mora biti zaščitena brokerska portala, ki omogočata dostop do občutljivih podatkov tretjih oseb.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -144,8 +144,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Ciągłość działalności dla platform obsługi szkód i roszczeń</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Platformy do obsługi roszczeń i polis muszą mieć zdokumentowany plan ciągłości biznesu (BCP) z czasem przywrócenia do 72 godzin dla funkcji krytycznych. Należy przeprowadzać przynajmniej dwa testy failover rocznie dla systemów obsługi szkód oraz utrzymywać rezerwowe zasoby IT w oddzielnej lokalizacji geograficznej.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Poslovna kontinuiteta za platforme zahtevkov in obravnave zavarovalnih primerov</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Vzpostavljati morate sisteme za okrevanje po nesrečah in zagotavljati minimalno razpoložljivost podatkovnih storitev v primeru cybernapada ali tehnične napake. Preurediti morata naročilske sisteme, sisteme za obravnavo zahtevkov in avtomatizacijo procesov z okrevanjem v roku največ 24 ur. Letni testi poslovne kontinuitete so obvezni, pri čemer dokumentirate rezultate in vključujete tretje osebe, kot so dobavitelji programske opreme.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -153,8 +153,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Zarządzanie ryzykiem łańcucha dostaw dostawców oprogramowania ubezpieczeniowego</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Dla każdego dostawcy SaaS (systemy underwritingu, systemy agentów pośredników, platformy e-distribution) musisz przeprowadzić formalną ocenę ryzyka bezpieczeństwa, w tym weryfikację procedur backup, poziomów SLA oraz dostępu do danych Twoich klientów. Umowy powinny zawierać klauzule audytu bezpieczeństwa i prawa do ingerencji w przypadku naruszeń.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Upravljanje tveganja v dobaviteljski verigi za softverske vendorje</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Opravljati morata formalno presojo tveganja vseh dobaviteljev, ki vam zagotavljajo SaaS sisteme, oblačne storitve ali softvere za upravljanje polic. V pogodbe z dobavitelji vključujete zahteve za varnost podatkov, obveščanje o varnostnih incidentih v roku 24 ur in pravico do audita njihovih sistemov. Vzpostaviti morata register tretjih oseb, ki dostopajo do vaših podatkov, in ga posodabljati najmanj letno.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -162,8 +162,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Regularna ocena ryzyka kanałów dystrybucji cyfrowej</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Portale brokerów, aplikacje mobilne do zawarcia umów oraz platformy pośredników muszą być poddane formalnym ocenom ryzyka co najmniej co 6 miesięcy. Oceny muszą obejmować podatności authorizacji, injection attacks i podatności sesji użytkownika. Wyniki ocen należy dokumentować i przedkładać właściwym organom UKNF w razie poważnych ustaleń.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Redne ocene tveganja digitalnih distribucijskih kanalov</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Izvajati morata najmanj letne ocene tveganja spletnih portalov, mobilnih aplikacij in drugih digitalnih kanalov, prek katerih se zaposleni, brokeri ali zavarovalci povezujejo z vami. Ocene morajo obsegati preglede dostopa, analizo ranljivosti, testiranje penetracije in preverjanje skladnosti z zahtevami za zaščito podatkov. Ugotovljena tveganja morata dokumentirati in odmah sanirati.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -171,8 +171,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Zarządzanie incydentami bezpieczeństwa i powiadomienia UKNF</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Musisz ustanowić zespół ds. incydentów (CSIRT) gotowy do pracy 24/7 z procedurą raportowania do UKNF w ciągu 24 godzin od wykrycia poważnego zdarzenia. Procedury muszą obejmować klasyfikację incydentów, notifikację klientów (gdzie wymagane) oraz dokumentowanie lekcji wyciągniętych. Raport powinien zawierać zakres incydentu, liczby dotkniętych policyhodlów oraz planowany scenariusz przywrócenia.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Obveščanje in poročanje incidentov v varnosti informacij</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Vzpostaviti morata postopke za identifikacijo, obveščanje in poročanje varnostnih incidentov URSIV-u in slovenskim organom v roku 72 ur od odkritja. Vključujete tudi pripravo na nove vrste napadov, kot so ransomware in socialni inženiring, ter redne usposabljalne programe za zaposlene. Voditi morata jasne protokole za komunikacijo z zavarovancem v primeru kršenja podatkov.</p>
       </div>
     </div>
   </div>
@@ -180,27 +180,27 @@
 
 <!-- TYPICAL GAPS -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
-  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Typowe luki compliance w tym sektorze</h2>
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Tipične vrzeli skladnosti v tem sektorju</h2>
   <ul style="list-style:none;padding:0;margin:0;border-top:1px solid var(--gray-100);">
     
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Portale brokerów i agentów pośredników nie mają wdrożonej uwierzytelniania wieloskładnikowego (MFA) — wymagane jest pilne wprowadzenie MFA na poziomie TOTP/U2F dla dostępu do systemu ubezpieczeniowego każdego agenta.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Brokerske portale in vmesniki, ki jih uporabljajo agenti, nimajo aktivirane večfaktorske avtentifikacije (MFA), kar omogoča nepooblaščen dostop do podatkov zavarovancev tudi v primeru kraje poverila.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Starsze systemy zarządzania polisami (legacy) nie mają ustalonych procedur patching i zarządzania wersjami — musisz opracować harmonogram cotygodniowych przegląków dostępnych poprawek oraz testować je na środowisku pre-produkcyjnym przed wdrożeniem na live.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Starejši sistemi za upravljanje polic in obravnavo zahtevkov nemajo formaliziranega procesa upravljanja popravkov in varnostnih posodobitev, zato ostajajo izpostavljeni znanih ranljivostih mesece ali celo leta.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Brakuje formalnego programu oceny dostawców oprogramowania underwritingu oraz SaaS — powinieneś udokumentować checklist minimalnych wymagań bezpieczeństwa dla każdego nowego dostawcy oraz przeprowadzić coroczne przeglądy zgodności.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Ne obstaja formalni register tretjih oseb (dobaviteljev, cloudnih ponudnikov, integratorjev), ki dostopajo do podatkov zavarovancev, niti niso opravljena tveganja za njihove sisteme in varnostne prakse.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Systemy pośredników nie mają ostrzeżeń o anomaliach (alerting) na wypadek nieautoryzowanego dostępu do danych ubezpieczonych — należy wdrożyć system SIEM/monitoring z alertami o podejrzanych wzorcach logowania oraz zmianach uprawnień.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Podjetja ne izvedejo rednih ocen tveganja za digitalne kanale (spletne portale, mobilne aplikacije, API-je), zato ne odkrijejo slabosti v kriptografiji, upravljanju sej ali preverjanju identitete uporabnikov.
     </li>
   </ul>
 </div>
 
 <!-- TOOLS -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
-  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Rekomendowane narzędzia dla tego sektora</h2>
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Priporočena orodja za ta sektor</h2>
   <div style="display:grid;gap:1rem;">
     
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
@@ -232,25 +232,25 @@
 
 <!-- FAQ -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem;" itemscope itemtype="https://schema.org/FAQPage">
-  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Często zadawane pytania</h2>
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Pogosta vprašanja</h2>
   <div style="border-top:1px solid var(--gray-100);">
     
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Czy moja mała firma brokerska (przychód poniżej 2 mln EUR) musi wdrażać KSC/NIS2?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Ali moramo imeti ločen IT prostor (DMZ) za brokerske portale in zunanje uporabnike?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Nie — wymogi Anneksu II dotyczą brokerów z przychodami powyżej 2 mln EUR rocznie. Poniżej tego progu obowiązują Cię mniej surowe wymogi z Anneksu I (jeśli jesteś mikro-przedsiębiorstwem) lub standardowe wymogi ustawy o ochronie danych osobowych. Jednak jeśli obsługujesz danskadane ubezpieczonych i prowadzisz dystrybucję online, powinieneś wdrażać podstawowe środki bezpieczeństwa (MFA, szyfrowanie, backup).</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Zakon ZInfV-1 ne zahteva ločenega prostora, toda najbolja praksa je, da zunanji dostop fizično ali logično izolulirate s požarnim zidom in kontrolami dostopa. Brokerski portal mora biti ločen od internih sistemov z ničelnimi pravicami do drugih podatkovnih baz, razen tistih, ki so nujne za njihovo delo. Priporočamo arhitekturo s štirimi nivoji: javni splet, DMZ za brokerje, notranja mreža za zaposlene in ločena mreža za občutljive aktuarske podatke.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Jaki dokładnie jest termin wdrożenia wszystkich wymogów KSC/NIS2 dla ubezpieczycieli?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Kako pogosto moramo testirati poslovno kontinuiteto za sisteme zahtevkov?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Termin wdrożenia wynosi 18 miesięcy od publikacji przepisów (tj. do czerwca 2026 r.). UKNF i CERT Polska będą w tym okresie publikować wytyczne sektorowe. Zalecamy rozpoczęcie teraz od oceny istniejących systemów, przygotowania planu wdrażania oraz pilotażu MFA i procedur zarządzania dostawcami.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Minimum je enkrat letno, pri čemer mora test vključevati resnični izpad podatkovne baze, izpad spletnega dostopa ali simuliran napak v sistemu obravnave zahtevkov. Rezultati testov morajo biti dokumentirani, vključno s časom okrevanja, izgubljenih podatkov in učinkovin za izboljšanje. Priporočamo vsaj dve polni vaji letno ter četrtletne tehnične teste za kritične komponente.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Jakie są kary za niespełnienie wymogów KSC/NIS2 dla ubezpieczycieli?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Kaj se zgodi, če se ne usklladimo do 2026?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">UKNF może nałożyć kary administracyjne do 2% przychodów rocznych za brak wdrożenia wymogów ochrony danych i ciągłości biznesu. W przypadku naruszeń bezpieczeństwa powodujących wyciek danych policyhodlów grożą dodatkowo kary do 4% przychodów zgodnie z RODO. Incydenty muszą być zgłaszane UKNF w ciągu 24 godzin od odkrycia.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">URSIV in SI-CERT lahko izdate opozorilo, odredilnico za usklajevanje v rokih 30–90 dni, ali v primeru hude kršitve celo izvedete sankcije do 10 milijonov EUR ali 2 % globalnega letnega prihodka, odvisno od tega, kaj je večji znesek. Dodatno nastane tudi tveganje za krvave sodbe v primeru incidenta, saj lahko zavarovalnica odgovarja za škodo zavarovancem in tretjim osebam, če bi dokazali, da je bila kršitev pravna obveza varnosti.</p>
     </div>
   </div>
   </div>
@@ -259,30 +259,27 @@
 <!-- CTA -->
 <div style="background:var(--navy);padding:3rem 1.25rem;text-align:center;margin-top:2rem;">
   <div class="container--narrow">
-    <h2 style="color:#fff;font-size:1.4rem;margin:0 0 .75rem;">Sprawdź wymagania dla swojej organizacji</h2>
+    <h2 style="color:#fff;font-size:1.4rem;margin:0 0 .75rem;">Preverite zahteve za vašo organizacijo</h2>
     <p style="color:rgba(255,255,255,.75);margin:0 0 1.5rem;font-size:.95rem;">
-      KSC/NIS2 · Polska · 2026
+      ZInfV-1/NIS2 · Slovenija · 2026
     </p>
     <a href="../kalkulator.html" style="display:inline-block;background:#16a34a;color:#fff;padding:.85rem 2.25rem;border-radius:8px;font-weight:700;font-size:1rem;text-decoration:none;">
-      Uruchom kalkulator →
+      Zaženite kalkulator →
     </a>
   </div>
 </div>
 
-
-<nav class="related-sectors" aria-label="Powiązane sektory" style="max-width:1100px;margin:2rem auto;padding:1.5rem 1.25rem;border-top:1px solid #e5e7eb;"><h2 style="font-size:1.05rem;margin:0 0 .75rem;">Powiązane sektory</h2><ul style="list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:.5rem 1rem;"><li style="margin:0"><a href="it-outsourcing.html">KSC/NIS2 dla firm IT outsourcingu i integratorów systemów w Polsce 2026</a></li><li style="margin:0"><a href="law-firms.html">NIS2 dla kancelarii prawnych w Polsce</a></li><li style="margin:0"><a href="logistics.html">KSC/NIS2 dla operatorów logistycznych w Polsce</a></li><li style="margin:0"><a href="managed-services.html">NIS2 dla MSP i MSSP w Polsce</a></li><li style="margin:0"><a href="manufacturing.html">KSC/NIS2 dla producentów przemysłowych w Polsce</a></li><li style="margin:0"><a href="medical-devices.html">NIS2 dla producentów urządzeń medycznych w Polsce 2026</a></li></ul></nav>
 <footer style="background:var(--gray-50);border-top:1px solid var(--gray-200);padding:2rem 1.25rem;text-align:center;">
   <div class="container">
     <p style="color:var(--gray-400);font-size:.82rem;margin:0;">
-      © 2026 NIS2-Narzedzia.pl · KSC/NIS2 · UKNF/CERT Polska
+      © 2026 NIS2-SI.eu · ZInfV-1/NIS2 · URSIV / SI-CERT
       <br>Informacje mają charakter edukacyjny i nie stanowią porady prawnej.
-      <br><a href="../index.html" style="color:var(--gray-400);">Strona główna</a> ·
-      <a href="index.html" style="color:var(--gray-400);">Sektory</a> ·
-      <a href="../porownanie.html" style="color:var(--gray-400);">Porównanie narzędzi</a>
+      <br><a href="../index.html" style="color:var(--gray-400);">Domov</a> ·
+      <a href="index.html" style="color:var(--gray-400);">Sektorji</a> ·
+      <a href="../primerjava.html" style="color:var(--gray-400);">Primerjava orodij</a>
     </p>
   </div>
 </footer>
 
-  <script src="/js/tg-cta.js" defer></script>
 </body>
 </html>

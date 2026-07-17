@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="sl">
 <head>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-68LM6P0B9Y"></script>
@@ -11,18 +11,18 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NIS2 dla dostawców cyberbezpieczeństwa w Polsce — wymagania 2026</title>
-  <meta name="description" content="Przewodnik NIS2 dla MSSP, SOC i firm penetration testingu w Polsce. Poznaj obowiązki raportowania incydentów, bezpieczeństwa infrastruktury i odpowiedzialnego ujawniania luk.">
+  <title>NIS2 za ponudnike kibernetske varnosti v Sloveniji 2026</title>
+  <meta name="description" content="Obveznosti NIS2 za MSSP, SOC in penetracijske teste v Sloveniji. Ročnica 2026, varnost podatkov strank, poročanje incidentov.">
   <link rel="canonical" href="https://nis2-si.eu/sektory/cybersecurity-firms.html">
-  <meta property="og:title" content="NIS2 dla dostawców cyberbezpieczeństwa w Polsce — wymagania 2026">
-  <meta property="og:description" content="Przewodnik NIS2 dla MSSP, SOC i firm penetration testingu w Polsce. Poznaj obowiązki raportowania incydentów, bezpieczeństwa infrastruktury i odpowiedzialnego ujawniania luk.">
+  <meta property="og:title" content="NIS2 za ponudnike kibernetske varnosti v Sloveniji 2026">
+  <meta property="og:description" content="Obveznosti NIS2 za MSSP, SOC in penetracijske teste v Sloveniji. Ročnica 2026, varnost podatkov strank, poročanje incidentov.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://nis2-si.eu/sektory/cybersecurity-firms.html">
-  <meta property="og:locale" content="pl_PL">
-  <meta property="og:site_name" content="NIS2-Narzedzia.pl">
+  <meta property="og:locale" content="sl_SI">
+  <meta property="og:site_name" content="NIS2-SI.eu">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="NIS2 dla dostawców cyberbezpieczeństwa w Polsce — wymagania 2026">
-  <meta name="twitter:description" content="Przewodnik NIS2 dla MSSP, SOC i firm penetration testingu w Polsce. Poznaj obowiązki raportowania incydentów, bezpieczeństwa infrastruktury i odpowiedzialnego ujawniania luk.">
+  <meta name="twitter:title" content="NIS2 za ponudnike kibernetske varnosti v Sloveniji 2026">
+  <meta name="twitter:description" content="Obveznosti NIS2 za MSSP, SOC in penetracijske teste v Sloveniji. Ročnica 2026, varnost podatkov strank, poročanje incidentov.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
@@ -34,19 +34,19 @@
     {
       "@type": "ListItem",
       "position": 1,
-      "name": "Strona główna",
+      "name": "Domov",
       "item": "https://nis2-si.eu/"
     },
     {
       "@type": "ListItem",
       "position": 2,
-      "name": "Sektory",
+      "name": "Sektorji",
       "item": "https://nis2-si.eu/sektory/"
     },
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "NIS2 dla dostawców cyberbezpieczeństwa, MSSP i firm penetration testingu w Polsce — wymagania 2026",
+      "name": "NIS2 za ponudnike kibernetske varnosti, MSSP in SOC v Sloveniji — obveznosti 2026",
       "item": "https://nis2-si.eu/sektory/cybersecurity-firms.html"
     }
   ]
@@ -59,26 +59,26 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Czy moja mała firma MSSP o 5 pracownikach musi spełniać wymogi NIS2?",
+      "name": "Ali moram kot MSSP obvestiti URSIV, če je moj SOC sistema napadena, čeprav to ni direktno vplivalo na stranke?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Tak, jeśli świadczysz usługi dla klientów z sektora krytycznego (banki, operatorzy energetyczni, szpitale), jesteś podmiotem ważnym niezależnie od wielkości. Próg NIS2 dla dostawców cyfrowych nie zależy od liczby pracowników, lecz od znaczenia usług dla bezpieczeństwa sektora. Musisz wdrożyć wszystkie obowiązki do września 2026 roku."
+        "text": "Da. Kot ponudnik kritične digitalne storitve morate prijaviti URSIV-u katerikoli varnostni incident pri vaši infrastrukturi v treh dneh, tudi če je začetni vpliv omejen. Ocenite vpliv na stranke in jih nemudoma obvestite, če je vpliv dejansko nastopil. To je del vaše obveznosti za transparentnost kot važne subjekta."
       }
     },
     {
       "@type": "Question",
-      "name": "Jak długo mogę przechowywać dane diagnostyczne klientów w moim SIEM?",
+      "name": "Koliko časa smem hraniti podatke strank, ki jih prejmem preko SIEM monitoringa?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Brak uniwersalnego terminu w KSC/NIS2, ale musisz samodzielnie ustalić i udokumentować zasadę retencji opartą na ryzyku, celu przetwarzania i wymogach klientów (umowy SLA). Typowo dane diagnostyczne przechowuje się 3–12 miesięcy; termin krótszy zmniejsza ryzyko narażenia dużej ilości danych. Po upływie terminu dane muszą być automatycznie i bezpiecznie niszczone. Udokumentuj tę politykę i wykaż jej egzekucję audytorom."
+        "text": "ZInfV-1 ne predpisuje natančne roka, vendar najbolja praksa zahteva, da ohranite podatke samo toliko časa, kolikor je to potrebno za namen monitoringa (tipično 6-12 mesecev). Vzpostaviti morate jasne politike in avtomatske procese za izbris starejših podatkov. Podatke o incidentih, ki so relevantni za obrambo, je mogoče hraniti dlje, vendar z jasno dokumentacijo razlogov."
       }
     },
     {
       "@type": "Question",
-      "name": "Jakie są kary za niezastosowanie się do wymogów NIS2 do września 2026?",
+      "name": "Kakšne so kazni za neupoštevanje NIS2 v Sloveniji do oktobra 2026?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "UKNF może nałożyć kary pieniężne do 2% przychodu rocznego za nieprzestrzeganie wymagań NIS2 lub do 4% przychodu za nieprawidłowe raportowanie incydentów. Dodatkowo firma może stracić licencje, certyfikaty (ISO 27001) i zaufanie klientów. Regularne audyty wewnętrzne i wdrożenie narzędzi compliance do września 2026 znacznie obniżają ryzyko kar."
+        "text": "Globa za kršitve ZInfV-1 lahko dosegne do 10% letnega prihodka ali 2 milijona EUR, ki je nekoliko bolj, za resne kršitve (npr. neupoštevanje poročanja incidentov). Napake pri varnosti podatkov strank, neupoštevanje šifriranja ali nezadostno upravljanje dostopa se štejejo za resne. Priporočamo, da dokončate pregledovanje skladnosti do junija 2026, da imate čas za remediacijo."
       }
     }
   ]
@@ -90,44 +90,44 @@
 <nav class="nav">
   <div class="container">
     <div class="nav__inner">
-      <a href="../index.html" class="nav__logo">NIS2<span>Si</span>.eu</a>
+      <a href="../index.html" class="nav__logo">NIS2<span>SI</span>.eu</a>
       <ul class="nav__links">
-        <li><a href="../porownanie.html">Porównanie narzędzi</a></li>
-        <li><a href="../kalkulator.html">Kalkulator KSC</a></li>
+        <li><a href="../primerjava.html">Primerjava orodij</a></li>
+        <li><a href="../kalkulator.html">Kalkulator NIS2</a></li>
         <li><a href="../faq.html">FAQ</a></li>
       </ul>
-      <a href="../kalkulator.html" class="nav__cta">Sprawdź czy podlegasz →</a>
+      <a href="../kalkulator.html" class="nav__cta">Preverite, ali ste zavezani →</a>
     </div>
   </div>
 </nav>
 
 <div class="container" style="padding-top:1.5rem;">
   <div class="breadcrumb">
-    <a href="../index.html">Strona główna</a><span>›</span>
-    <a href="index.html">Sektory</a><span>›</span>
-    NIS2 dla dostawców cyberbezpieczeństwa, MSSP i firm penetration testingu w Polsce — wymagania 2026
+    <a href="../index.html">Domov</a><span>›</span>
+    <a href="index.html">Sektorji</a><span>›</span>
+    NIS2 za ponudnike kibernetske varnosti, MSSP in SOC v Sloveniji — obveznosti 2026
   </div>
 </div>
 
 <!-- HERO -->
 <div style="background:var(--gray-50);padding:2.5rem 0 3rem;border-bottom:1px solid var(--gray-200);">
   <div class="container--narrow">
-    <span style="display:inline-block;background:#16a34a;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Załącznik II — podmiot ważny</span>
-    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 dla dostawców cyberbezpieczeństwa, MSSP i firm penetration testingu w Polsce — wymagania 2026</h1>
-    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Niniejszy przewodnik jest dedykowany dostawcom usług cyberbezpieczeństwa, operatorom SOC oraz firmom penetration testingu, które jako podmioty ważne muszą spełnić wymogi KSC/NIS2. Dowiesz się, jakie konkretne obowiązki ciążą na Twojej organizacji, gdzie najczęściej występują luki oraz jak wdrożyć skuteczne rozwiązania compliance do września 2026 roku.</p>
+    <span style="display:inline-block;background:#16a34a;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Priloga II — pomembna subjekt</span>
+    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 za ponudnike kibernetske varnosti, MSSP in SOC v Sloveniji — obveznosti 2026</h1>
+    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Ta stran je namenjena ponudnikom kibernetskih storitev, upravljanim varnostnim storitvam (MSSP) in podjetjem za testiranje penetracije, ki morajo do oktobra 2026 uvesti zahteve ZInfV-1. Spoznajte konkretne obveznosti za zaščito infrastrukture SOC, podatkov strank in incidentnega poročanja.</p>
   </div>
 </div>
 
 <!-- WHO QUALIFIES -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
   <div style="background:var(--gray-50);border-left:4px solid var(--navy);border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;">
-    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Wymogi NIS2 dotyczą dostawców usług cyberbezpieczeństwa, którzy świadczą usługi cyfrowe klientom w sektorach krytycznych lub są operatorami usług cyfrowych o znaczeniu dla bezpieczeństwa. W szczególności obejmuje to MSSP (Managed Security Service Providers) monitorujące sieci klientów, operatorów Security Operations Centers (SOC) przetwarzających dane diagnostyczne, oraz firmy specjalizujące się w testach penetracyjnych i ocenach bezpieczeństwa. Próg dotyczy głównie podmiotów obsługujących klientów z sektora finansowego, energetycznego, transportu i opieki zdrowotnej niezależnie od własnej wielkości.</p>
+    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Ponudniki kibernetskih storitev, MSSP, SOC operatorji in podjetja za penetracijske teste, ki imajo več kot 50 zaposlenih ali letni prihodek/bilanca nad 10 milijonov EUR, se štejejo za pomembne subjekte. Kvalifikacija se nanaša na storitve, ki jih nudite drugim organizacijam v Sloveniji, in na kritično infrastrukturo, ki jo uporabljate za dostavo te storitve.</p>
   </div>
 </div>
 
 <!-- OBLIGATIONS -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
-  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1.25rem;">Kluczowe obowiązki NIS2 dla tego sektora</h2>
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1.25rem;">Ključne obveznosti NIS2 za ta sektor</h2>
   <div style="border-top:1px solid var(--gray-100);">
     
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -135,8 +135,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Bezpieczeństwo infrastruktury SOC i SIEM</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Jako operator SOC/MSSP musisz wdrożyć mechanizmy ochrony wszystkich danych diagnostycznych, logów i alertów klientów przechowywanych w systemie SIEM. Obejmuje to szyfrowanie danych w spoczynku i w tranzycie, kontrolę dostępu opartą na zasadzie najmniejszych uprawnień oraz auditowanie każdego dostępu pracowników do wrażliwych informacji klientów. Brak formalnych limitów retencji danych klientów w SIEM stanowi niedopuszczalne zagrożenie compliance.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Zaščita infrastrukture SOC in dostopa do podatkov strank</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Vaša SIEM infrastruktura in vsi sistemi, na katere nalagajo podatke stranke, morajo biti zaščiteni z večstopenjsko avtentikacijo, šifriranjem podatkov v mirovanju in v tranzitu ter segmentacijo omrežja. Dostop do podatkov strank mora biti omejen na avtorizirane analitike SOC in nadzorovan s kontrolami dostopa na podlagi vlog. Redne tehnične pregledave varnosti te infrastrukture so obvezne.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -144,8 +144,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Raportowanie incydentów bezpieczeństwa wynikających z kompromitacji Twojej infrastruktury</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Jeśli Twoja infrastruktura zostanie skompromitowana w sposób wpływający na bezpieczeństwo danych lub usług klientów, obowiązujesz do raportowania tego incydentu UKNF i CERT Polska w ciągu 72 godzin. Klasyfikacja musi jasno wskazywać, że incydent dotyczy dostawcy usług cyfrowych i potencjalnie wpływa na łańcuch dostaw bezpieczeństwa klientów. Jednoczesne powiadomienie klientów jest obowiązkowe, aby mogli podjąć własne działania incydentowe.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Načrt upravljanja incidentov in poročanje URSIV</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Kot ponudnik kritične digitalne storitve morate imeti dokument o upravljanju incidentov, ki jasno opredeljuje čas odziva, poročanja in obveščanja. Če vaša lastna varnostna kršitev neposredno vpliva na varnost strankinih sistemov ali podatkov, morate to prijti URSIV-u v treh dneh in stranki takoj obvestiti. Zavedati se morate tudi obveznosti za poročanje o kompromitaciji dobavitelja, ki bi vplivala na vašo storitev.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -153,8 +153,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Bezpieczeństwo raportów penetration testingu i danych zawarte w raportach</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Raporty z testów penetracyjnych zawierają wrażliwe informacje o architekturze klientów i odkrytych lukach. Musisz przechowywać je z szyfrowaniem end-to-end, ograniczyć dostęp tylko do autoryzowanych pracowników, a także ustalić i egzekwować formalne procedury niszczenia raportu po umownym terminie przechowywania. Brak szyfrowania raportów lub ich dostępność w niezabezpieczonych systemach naraża Cię na odpowiedzialność zarówno wobec klientów, jak i regulator.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Upravljanje ranljivosti in odgovorno razkritje</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Vzpostaviti morate postopek za koordinirano odkrivanje in obravnavo ranljivosti, vključno s procesi odgovornega razkritja za raziskovalce varnosti. Penetracijske teste morate izvajati najmanj letno na vseh kritičnih komponentah. Ugotovljene ranljivosti morajo biti razvrstane glede na resnost in ročno odpravljene, z dokumentacijo ročnice v vaših sistemih.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -162,8 +162,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Odpowiedzialność za zarządzanie podatnościami w łańcuchu dostaw</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Jako dostawca bezpieczeństwa, jesteś zobowiązany monitorować i raportować zagrożenia w Twojej infrastrukturze, narzędziach i zależnościach (biblioteki, pluginy, usługi chmurowe). Odkryte podatności muszą być klasyfikowane według ryzyka i zamykane w zdefiniowanych terminach (SLA). Odpowiedzialny disclosure luk w narzędziach, których używasz, oraz koordynowana odpowiedź z producentami są częścią wymogu ochrony bezpieczeństwa klientów.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Šifriranje in varnost poročil o penetracijskih testih</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Vsi poročili o penetracijskih testih, ki vsebujejo občutljive podatke o stankah, morajo biti shranjeni s šifriranjem in dostopni le avtoriziranim osebjem. Vzpostaviti morate jasne smernice za trajanje shranjevanja (tipično 3 leta) in varni izbris po poteku roka. Dostop do teh poročil mora biti nadzorovan in logiran za namen revizije.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -171,8 +171,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Przygotowanie na incydenty i testowanie planów odzyskiwania</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Musisz posiadać udokumentowany plan incydentów dla Twojej infrastruktury SOC/MSSP i co najmniej rocznie testować go poprzez ćwiczenia symulacyjne lub rzeczywiste scenariusze. Plan musi zawierać kroki eskalacji, komunikację wewnętrzną i zewnętrzną (do klientów, regulatora), oraz procedury odzyskiwania i weryfikacji integralności danych. Dokumentacja testów musi być przechowywana i dostępna do wglądu dla audytorów i CERT Polska.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Izobraževanje zaposlenih in upravljanje tretjih strank</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Vsi zaposlenci s dostopom do strankinih podatkov ali infrastrukture morajo prejeti letno izobraževanje o kibernetski varnosti in pogojih varovanja podatkov. Podizvajalci, ki dostopajo do vaše SOC infrastrukture ali podatkov strank, morajo biti pogodbeniki z dogovorom o pogojih varnosti podatkov in rednimi revizijami skladnosti.</p>
       </div>
     </div>
   </div>
@@ -180,27 +180,27 @@
 
 <!-- TYPICAL GAPS -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
-  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Typowe luki compliance w tym sektorze</h2>
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Tipične vrzeli skladnosti v tem sektorju</h2>
   <ul style="list-style:none;padding:0;margin:0;border-top:1px solid var(--gray-100);">
     
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>SIEM zawiera dane diagnostyczne klientów bez zdefiniowanego okresu retencji ani mechanizmu automatycznego usuwania; regulacja KSC/NIS2 wymaga ustanowienia i egzekwowania wyraźnej polityki przechowywania.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>SIEM sistemi in baze SOC so polne strankinih podatkov brez jasnih smernic za trajanje hranjevanja, ročnic izbrisov in šifriranja — postavite jasno politiko in avtomatske procese za čiščenje in zaščito podatkov.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Raporty penetration testów i dokumentacja luk przechowywane są w niezaszyfrowanych folderach sieciowych lub systemach zarządzania treścią dostępnych dla szerokiego grona pracowników; brak kontroli dostępu zasadzie minimalizacji uprawnień.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Poročila o penetracijskih testih so shranjena na dostopnih delenih napravah ali v nešifriranih oblacih — uvedite enkriptiran sistem shranjevanja z dostopno kontrolo na osnovi vlog in revizijskim sledenje.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Brak formalnej procedury klasyfikacji incydentów związanych z bezpieczeństwem infrastruktury dostawcy; organizacja nie rozróżnia, czy incydent wpływa na klientów, czy stanowi incydent podlegający raportowaniu regulatorowi.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Incidenti, povezani s kompromitacijo dobavitelja ali ranljivostmi v vaši infrastrukturi, niso formalno razvrščeni kot incidenti, ki vplivajo na stranke — vzpostavite matriko vpliva in jasne ročnice za poročanje.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Zależności od narzędzi trzecich (np. agenty monitorujące, biblioteki analityki) nie są systematycznie skanowane pod kątem podatności; brak procedury aktualizacji i patczowania w określonych terminach.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Tretji ponudniki (podizvajalci, облачni storitve) niso imajo jasno definiranih pogodbenih obveznosti za varnost podatkov — revidirajte vse pogodbe in dodajte klauzule o zahtevah NIS2.
     </li>
   </ul>
 </div>
 
 <!-- TOOLS -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
-  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Rekomendowane narzędzia dla tego sektora</h2>
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Priporočena orodja za ta sektor</h2>
   <div style="display:grid;gap:1rem;">
     
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
@@ -232,25 +232,25 @@
 
 <!-- FAQ -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem;" itemscope itemtype="https://schema.org/FAQPage">
-  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Często zadawane pytania</h2>
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Pogosta vprašanja</h2>
   <div style="border-top:1px solid var(--gray-100);">
     
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Czy moja mała firma MSSP o 5 pracownikach musi spełniać wymogi NIS2?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Ali moram kot MSSP obvestiti URSIV, če je moj SOC sistema napadena, čeprav to ni direktno vplivalo na stranke?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Tak, jeśli świadczysz usługi dla klientów z sektora krytycznego (banki, operatorzy energetyczni, szpitale), jesteś podmiotem ważnym niezależnie od wielkości. Próg NIS2 dla dostawców cyfrowych nie zależy od liczby pracowników, lecz od znaczenia usług dla bezpieczeństwa sektora. Musisz wdrożyć wszystkie obowiązki do września 2026 roku.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Da. Kot ponudnik kritične digitalne storitve morate prijaviti URSIV-u katerikoli varnostni incident pri vaši infrastrukturi v treh dneh, tudi če je začetni vpliv omejen. Ocenite vpliv na stranke in jih nemudoma obvestite, če je vpliv dejansko nastopil. To je del vaše obveznosti za transparentnost kot važne subjekta.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Jak długo mogę przechowywać dane diagnostyczne klientów w moim SIEM?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Koliko časa smem hraniti podatke strank, ki jih prejmem preko SIEM monitoringa?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Brak uniwersalnego terminu w KSC/NIS2, ale musisz samodzielnie ustalić i udokumentować zasadę retencji opartą na ryzyku, celu przetwarzania i wymogach klientów (umowy SLA). Typowo dane diagnostyczne przechowuje się 3–12 miesięcy; termin krótszy zmniejsza ryzyko narażenia dużej ilości danych. Po upływie terminu dane muszą być automatycznie i bezpiecznie niszczone. Udokumentuj tę politykę i wykaż jej egzekucję audytorom.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">ZInfV-1 ne predpisuje natančne roka, vendar najbolja praksa zahteva, da ohranite podatke samo toliko časa, kolikor je to potrebno za namen monitoringa (tipično 6-12 mesecev). Vzpostaviti morate jasne politike in avtomatske procese za izbris starejših podatkov. Podatke o incidentih, ki so relevantni za obrambo, je mogoče hraniti dlje, vendar z jasno dokumentacijo razlogov.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Jakie są kary za niezastosowanie się do wymogów NIS2 do września 2026?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Kakšne so kazni za neupoštevanje NIS2 v Sloveniji do oktobra 2026?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">UKNF może nałożyć kary pieniężne do 2% przychodu rocznego za nieprzestrzeganie wymagań NIS2 lub do 4% przychodu za nieprawidłowe raportowanie incydentów. Dodatkowo firma może stracić licencje, certyfikaty (ISO 27001) i zaufanie klientów. Regularne audyty wewnętrzne i wdrożenie narzędzi compliance do września 2026 znacznie obniżają ryzyko kar.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Globa za kršitve ZInfV-1 lahko dosegne do 10% letnega prihodka ali 2 milijona EUR, ki je nekoliko bolj, za resne kršitve (npr. neupoštevanje poročanja incidentov). Napake pri varnosti podatkov strank, neupoštevanje šifriranja ali nezadostno upravljanje dostopa se štejejo za resne. Priporočamo, da dokončate pregledovanje skladnosti do junija 2026, da imate čas za remediacijo.</p>
     </div>
   </div>
   </div>
@@ -259,30 +259,27 @@
 <!-- CTA -->
 <div style="background:var(--navy);padding:3rem 1.25rem;text-align:center;margin-top:2rem;">
   <div class="container--narrow">
-    <h2 style="color:#fff;font-size:1.4rem;margin:0 0 .75rem;">Sprawdź wymagania dla swojej organizacji</h2>
+    <h2 style="color:#fff;font-size:1.4rem;margin:0 0 .75rem;">Preverite zahteve za vašo organizacijo</h2>
     <p style="color:rgba(255,255,255,.75);margin:0 0 1.5rem;font-size:.95rem;">
-      KSC/NIS2 · Polska · 2026
+      ZInfV-1/NIS2 · Slovenija · 2026
     </p>
     <a href="../kalkulator.html" style="display:inline-block;background:#16a34a;color:#fff;padding:.85rem 2.25rem;border-radius:8px;font-weight:700;font-size:1rem;text-decoration:none;">
-      Uruchom kalkulator →
+      Zaženite kalkulator →
     </a>
   </div>
 </div>
 
-
-<nav class="related-sectors" aria-label="Powiązane sektory" style="max-width:1100px;margin:2rem auto;padding:1.5rem 1.25rem;border-top:1px solid #e5e7eb;"><h2 style="font-size:1.05rem;margin:0 0 .75rem;">Powiązane sektory</h2><ul style="list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:.5rem 1rem;"><li style="margin:0"><a href="dental-clinics.html">NIS2 dla klinik dentystycznych w Polsce</a></li><li style="margin:0"><a href="education.html">KSC/NIS2 dla uczelni i szkół w Polsce</a></li><li style="margin:0"><a href="energy.html">NIS2 dla operatorów energetyki, gazu i ciepła w Polsce</a></li><li style="margin:0"><a href="fintech.html">KSC/NIS2 dla Fintech</a></li><li style="margin:0"><a href="food.html">KSC/NIS2 dla przetwórców żywności</a></li><li style="margin:0"><a href="hospitals.html">NIS2 dla szpitali w Polsce 2026</a></li></ul></nav>
 <footer style="background:var(--gray-50);border-top:1px solid var(--gray-200);padding:2rem 1.25rem;text-align:center;">
   <div class="container">
     <p style="color:var(--gray-400);font-size:.82rem;margin:0;">
-      © 2026 NIS2-Narzedzia.pl · KSC/NIS2 · UKNF/CERT Polska
+      © 2026 NIS2-SI.eu · ZInfV-1/NIS2 · URSIV / SI-CERT
       <br>Informacje mają charakter edukacyjny i nie stanowią porady prawnej.
-      <br><a href="../index.html" style="color:var(--gray-400);">Strona główna</a> ·
-      <a href="index.html" style="color:var(--gray-400);">Sektory</a> ·
-      <a href="../porownanie.html" style="color:var(--gray-400);">Porównanie narzędzi</a>
+      <br><a href="../index.html" style="color:var(--gray-400);">Domov</a> ·
+      <a href="index.html" style="color:var(--gray-400);">Sektorji</a> ·
+      <a href="../primerjava.html" style="color:var(--gray-400);">Primerjava orodij</a>
     </p>
   </div>
 </footer>
 
-  <script src="/js/tg-cta.js" defer></script>
 </body>
 </html>
