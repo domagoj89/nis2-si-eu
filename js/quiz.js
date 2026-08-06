@@ -8,15 +8,15 @@
 
   // ── Affiliate + tool links ──────────────────────────────────────────────────
   const LINKS = {
-    reglyze:      { name: "Reglyze",      url: "https://reglyze.com",         review: "narzedzia/reglyze.html" },
-    secfix:       { name: "Secfix",       url: "https://secfix.com",          review: "narzedzia/secfix.html" },
-    isms_online:  { name: "ISMS.online",  url: "https://isms.online",         review: "narzedzia/isms-online.html" },
+    reglyze:      { name: "Reglyze",      url: "https://reglyze.com",         review: "orodja/reglyze.html" },
+    secfix:       { name: "Secfix",       url: "https://secfix.com",          review: "orodja/secfix.html" },
+    isms_online:  { name: "ISMS.online",  url: "https://isms.online",         review: "orodja/isms-online.html" },
     knowbe4:      { name: "KnowBe4",      url: "https://knowbe4.com",         review: "szkolenia-nis2.html" },
-    hiscox:       { name: "Hiscox Cyber", url: "https://hiscox.pl",           review: "ubezpieczenie-cyber.html" },
-    onepassword:  { name: "1Password",    url: "https://1password.com",       review: "narzedzia/1password.html" },
-    nordlayer:    { name: "NordLayer",    url: "https://nordlayer.com",       review: "narzedzia/nordlayer.html" },
+    hiscox:       { name: "Hiscox Cyber", url: "https://hiscox.com",          review: "ubezpieczenie-cyber.html" },
+    onepassword:  { name: "1Password",    url: "https://1password.com",       review: "orodja/1password.html" },
+    nordlayer:    { name: "NordLayer",    url: "https://nordlayer.com",       review: "orodja/nordlayer.html" },
     cobalt:       { name: "Cobalt.io",    url: "https://cobalt.io",           review: "testy-penetracyjne.html" },
-    bsi:          { name: "BSI ISO 27001",url: "https://bsigroup.com/pl-PL/", review: "certyfikacja-iso-27001.html" },
+    bsi:          { name: "BSI ISO 27001",url: "https://bsigroup.com/pl-PL/", review: "iso-27001-orodja.html" },
   };
 
   // ── Tool recommendation by sector + budget ─────────────────────────────────
@@ -42,96 +42,96 @@
   const questions = [
     {
       id: "sector",
-      title: "W jakim sektorze działa Twoja firma?",
-      hint: "Wybierz sektor, który najlepiej opisuje główną działalność.",
+      title: "V katerem sektorju deluje vaše podjetje?",
+      hint: "Izberite sektor, ki najbolje opisuje vašo glavno dejavnost.",
       options: [
-        { value: "annex1", icon: "⚡", label: "Sektor kluczowy (Załącznik I)",
-          sub: "Energia, transport, bankowość, finanse, zdrowie, woda, infrastruktura cyfrowa, administracja publiczna" },
-        { value: "annex2", icon: "📦", label: "Sektor ważny (Załącznik II)",
-          sub: "Poczta, gospodarka odpadami, chemia, żywność, produkcja przemysłowa, dostawcy usług cyfrowych, MSP/IT" },
-        { value: "other", icon: "🏗️", label: "Inny sektor",
-          sub: "Budownictwo, handel detaliczny, gastronomia, edukacja prywatna, inne" },
+        { value: "annex1", icon: "⚡", label: "Ključni sektor (Annexe I)",
+          sub: "Energetika, promet, bančništvo, finance, zdravstvo, voda, digitalna infrastruktura, javna uprava" },
+        { value: "annex2", icon: "📦", label: "Pomemben sektor (Annexe II)",
+          sub: "Pošta, ravnanje z odpadki, kemikalije, živila, industrijska proizvodnja, ponudniki digitalnih storitev, MSP/IT" },
+        { value: "other", icon: "🏗️", label: "Drug sektor",
+          sub: "Gradbeništvo, maloprodaja, gostinstvo, zasebno izobraževanje, drugo" },
       ]
     },
     {
       id: "size",
-      title: "Ile osób zatrudnia Twoja firma?",
-      hint: "Łącznie ze wszystkimi pracownikami i współpracownikami.",
+      title: "Koliko oseb zaposluje vaše podjetje?",
+      hint: "Skupaj z vsemi zaposlenimi in sodelavci.",
       options: [
-        { value: "micro",  icon: "👤", label: "Mniej niż 50 pracowników",  sub: "Mikro / mała firma" },
-        { value: "medium", icon: "👥", label: "50–249 pracowników",         sub: "Średnie przedsiębiorstwo" },
-        { value: "large",  icon: "🏢", label: "250 lub więcej pracowników", sub: "Duże przedsiębiorstwo" },
+        { value: "micro",  icon: "👤", label: "Manj kot 50 zaposlenih",  sub: "Mikro / malo podjetje" },
+        { value: "medium", icon: "👥", label: "50–249 zaposlenih",        sub: "Srednje podjetje" },
+        { value: "large",  icon: "🏢", label: "250 ali več zaposlenih",   sub: "Veliko podjetje" },
       ]
     },
     {
       id: "revenue",
-      title: "Jaki jest roczny obrót Twojej firmy?",
-      hint: "Roczne przychody lub suma bilansowa.",
+      title: "Kakšen je letni prihodek vašega podjetja?",
+      hint: "Letni prihodki ali bilančna vsota.",
       options: [
-        { value: "small",  icon: "💶", label: "Poniżej 10 mln EUR rocznie",  sub: "Mikro / mała firma" },
-        { value: "medium", icon: "💰", label: "10–50 mln EUR rocznie",        sub: "Średnie przedsiębiorstwo" },
-        { value: "large",  icon: "💎", label: "Powyżej 50 mln EUR rocznie",   sub: "Duże przedsiębiorstwo" },
+        { value: "small",  icon: "💶", label: "Pod 10 milijonov EUR letno",  sub: "Mikro / malo podjetje" },
+        { value: "medium", icon: "💰", label: "10–50 milijonov EUR letno",   sub: "Srednje podjetje" },
+        { value: "large",  icon: "💎", label: "Nad 50 milijonov EUR letno",  sub: "Veliko podjetje" },
       ]
     },
     {
       id: "budget",
-      title: "Jaki budżet roczny masz na zgodność z NIS2/KSC?",
-      hint: "Dopasujemy narzędzia do Twoich możliwości finansowych.",
+      title: "Kakšen letni proračun imate za skladnost z NIS2/ZInfV-1?",
+      hint: "Prilagodili bomo orodja vašim finančnim zmožnostim.",
       options: [
-        { value: "free", icon: "🆓", label: "Szukam darmowego rozwiązania", sub: "Bezpłatny plan lub jednorazowy koszt wdrożenia" },
-        { value: "low",  icon: "💵", label: "Do 1 000 PLN rocznie (~€200)",  sub: "Podstawowe narzędzie SaaS" },
-        { value: "mid",  icon: "💳", label: "1 000–6 000 PLN rocznie",       sub: "Pełna platforma compliance" },
-        { value: "high", icon: "🏦", label: "Powyżej 6 000 PLN rocznie",     sub: "Rozwiązanie enterprise" },
+        { value: "free", icon: "🆓", label: "Iščem brezplačno rešitev", sub: "Brezplačen načrt ali enkratni strošek uvedbe" },
+        { value: "low",  icon: "💵", label: "Do 200 EUR letno",          sub: "Osnovno orodje SaaS" },
+        { value: "mid",  icon: "💳", label: "200–600 EUR letno",         sub: "Celotna platforma za skladnost" },
+        { value: "high", icon: "🏦", label: "Nad 600 EUR letno",         sub: "Rešitev za podjetja" },
       ]
     },
     {
       id: "registered",
-      title: "Czy Twoja firma jest już zarejestrowana w rejestrze KSC?",
-      hint: "Termin rejestracji: 3 październik 2026. To pierwszy obowiązek.",
+      title: "Ali je vaše podjetje že registrirano pri URSIV?",
+      hint: "po ZInfV-1 (rok za registracijo pri URSIV je bil december 2025). To je prva obveznost.",
       options: [
-        { value: "yes",  icon: "✅", label: "Tak, już się zarejestrowaliśmy", sub: "Samoidentyfikacja dokonana" },
-        { value: "no",   icon: "❌", label: "Nie, jeszcze tego nie zrobiliśmy", sub: "Priorytet nr 1 — termin: 3.10.2026" },
-        { value: "unknown", icon: "❓", label: "Nie wiem / nie jestem pewny", sub: "Sprawdzimy to razem" },
+        { value: "yes",  icon: "✅", label: "Da, že smo se registrirali", sub: "Samoidentifikacija opravljena" },
+        { value: "no",   icon: "❌", label: "Ne, tega še nismo storili", sub: "Prioriteta št. 1 — rok: december 2025" },
+        { value: "unknown", icon: "❓", label: "Ne vem / nisem prepričan", sub: "Skupaj bomo preverili" },
       ]
     },
     {
       id: "has_isms",
-      title: "Czy masz wdrożony system zarządzania bezpieczeństwem (ISMS)?",
-      hint: "ISMS to zbiór polityk, procedur i kontroli cyberbezpieczeństwa — wymagany przez Art. 21 NIS2.",
+      title: "Ali imate vzpostavljen sistem upravljanja varnosti informacij (ISMS)?",
+      hint: "ISMS je zbirka politik, postopkov in varnostnih kontrol — zahteva ga Art. 21 NIS2.",
       options: [
-        { value: "yes",     icon: "✅", label: "Tak, mamy działający ISMS",        sub: "Udokumentowane polityki i procedury bezpieczeństwa" },
-        { value: "partial", icon: "🔄", label: "Pracujemy nad wdrożeniem",         sub: "Jest w trakcie — ale nie jest jeszcze ukończone" },
-        { value: "no",      icon: "❌", label: "Nie, nie mamy nic w tym zakresie", sub: "Brak systemu zarządzania bezpieczeństwem" },
+        { value: "yes",     icon: "✅", label: "Da, imamo delujoč ISMS",           sub: "Dokumentirane varnostne politike in postopki" },
+        { value: "partial", icon: "🔄", label: "Delamo na uvedbi",                 sub: "V teku — a še ni dokončano" },
+        { value: "no",      icon: "❌", label: "Ne, na tem področju nimamo ničesar", sub: "Nimamo sistema upravljanja varnosti" },
       ]
     },
     {
       id: "has_training",
-      title: "Czy pracownicy i zarząd przeszli szkolenia z cyberbezpieczeństwa?",
-      hint: "Szkolenie zarządu jest prawnym obowiązkiem na podstawie Art. 20 NIS2.",
+      title: "Ali so zaposleni in vodstvo opravili usposabljanje s področja kibernetske varnosti?",
+      hint: "Usposabljanje vodstva je zakonska obveznost na podlagi Art. 20 NIS2.",
       options: [
-        { value: "yes", icon: "✅", label: "Tak, mamy regularne szkolenia",      sub: "Pracownicy i zarząd są przeszkoleni" },
-        { value: "no",  icon: "❌", label: "Nie, nie mamy szkoleń w tym zakresie", sub: "Szkolenie zarządu jest prawnym obowiązkiem KSC" },
+        { value: "yes", icon: "✅", label: "Da, imamo redna usposabljanja",         sub: "Zaposleni in vodstvo so usposobljeni" },
+        { value: "no",  icon: "❌", label: "Ne, nimamo usposabljanj na tem področju", sub: "Usposabljanje vodstva je zakonska obveznost po ZInfV-1" },
       ]
     },
     {
       id: "has_insurance",
-      title: "Czy Twoja firma posiada ubezpieczenie od zagrożeń cybernetycznych?",
-      hint: "Ubezpieczenie cyber przenosi ryzyko rezydualne i jest elementem zarządzania ryzykiem NIS2.",
+      title: "Ali ima vaše podjetje zavarovanje pred kibernetskimi tveganji?",
+      hint: "Kibernetsko zavarovanje prenaša rezidualno tveganje in je sestavni del upravljanja tveganj po NIS2.",
       options: [
-        { value: "yes",     icon: "✅", label: "Tak, mamy ubezpieczenie cyber",     sub: "Ryzyko jest zabezpieczone" },
-        { value: "no",      icon: "❌", label: "Nie, nie mamy ubezpieczenia",       sub: "Wycena online zajmuje 20 minut" },
-        { value: "unknown", icon: "❓", label: "Nie wiem / nie słyszałem o tym",    sub: "Wyjaśnimy czym jest i ile kosztuje" },
+        { value: "yes",     icon: "✅", label: "Da, imamo kibernetsko zavarovanje",    sub: "Tveganje je zavarovano" },
+        { value: "no",      icon: "❌", label: "Ne, nimamo zavarovanja",              sub: "Spletna ponudba traja 20 minut" },
+        { value: "unknown", icon: "❓", label: "Ne vem / nisem slišal za to",         sub: "Pojasnili bomo, kaj je in koliko stane" },
       ]
     },
     {
       id: "role",
-      title: "Jaką rolę pełnisz w firmie?",
-      hint: "Dopasujemy plan do Twoich obowiązków i uprawnień decyzyjnych.",
+      title: "Kakšno vlogo imate v podjetju?",
+      hint: "Načrt bomo prilagodili vašim obveznostim in pooblastilom za odločanje.",
       options: [
-        { value: "ceo",        icon: "👔", label: "Właściciel / CEO / Zarząd", sub: "Odpowiadasz za decyzje i budżet" },
-        { value: "it",         icon: "💻", label: "IT Manager / CTO / CISO",    sub: "Odpowiadasz za wdrożenie techniczne" },
-        { value: "compliance", icon: "📋", label: "Compliance / Prawnik",       sub: "Odpowiadasz za zgodność prawną" },
-        { value: "cfo",        icon: "💰", label: "CFO / Dyrektor Finansowy",   sub: "Odpowiadasz za budżet i ryzyko finansowe" },
+        { value: "ceo",        icon: "👔", label: "Lastnik / CEO / Uprava",      sub: "Odgovarjate za odločitve in proračun" },
+        { value: "it",         icon: "💻", label: "IT Manager / CTO / CISO",     sub: "Odgovarjate za tehnično uvedbo" },
+        { value: "compliance", icon: "📋", label: "Compliance / Pravnik",        sub: "Odgovarjate za pravno skladnost" },
+        { value: "cfo",        icon: "💰", label: "CFO / Finančni direktor",     sub: "Odgovarjate za proračun in finančno tveganje" },
       ]
     },
   ];
@@ -186,11 +186,11 @@
     if (missing.includes("registration")) {
       actions.push({
         step: actions.length + 1,
-        time: "30 min · bezpłatne",
-        title: "Zarejestruj firmę w rejestrze KSC",
-        desc:  "Termin: 3 październik 2026. Formularz samoidentyfikacji online. To Twój priorytet #1.",
-        cta:   "Instrukcja krok po kroku →",
-        url:   "rejestracja-ksc.html",
+        time: "30 min · brezplačno",
+        title: "Registrirajte podjetje pri URSIV",
+        desc:  "po ZInfV-1 (rok za registracijo pri URSIV je bil december 2025). Spletni obrazec za samoidentifikacijo. To je vaša prioriteta #1.",
+        cta:   "Navodila korak za korakom →",
+        url:   "registracija-zavezancev.html",
         affiliate: false,
       });
     }
@@ -198,23 +198,23 @@
     if (missing.includes("isms")) {
       actions.push({
         step: actions.length + 1,
-        time: "20 min · bezpłatny plan",
-        title: "Uruchom system ISMS — " + ismsTool.name,
-        desc:  "Darmowy plan pokrywa pełną ocenę luk NIS2. Po rejestracji: wypełnij wbudowany kwestionariusz KSC — AI generuje polityki automatycznie.",
-        cta:   "Zacznij za €0 → " + ismsTool.name,
+        time: "20 min · brezplačen načrt",
+        title: "Vzpostavite sistem ISMS — " + ismsTool.name,
+        desc:  "Brezplačen načrt pokriva celotno oceno vrzeli NIS2. Po registraciji: izpolnite vgrajeni vprašalnik ZInfV-1 — umetna inteligenca samodejno ustvari politike.",
+        cta:   "Začnite za €0 → " + ismsTool.name,
         url:   ismsTool.url,
         affiliate: true,
-        badge: "Rekomendacja #1",
+        badge: "Priporočilo #1",
       });
     }
 
     if (missing.includes("insurance")) {
       actions.push({
         step: actions.length + 1,
-        time: "20 min · wycena online",
-        title: "Uzyskaj ofertę ubezpieczenia cyber",
-        desc:  "Przeniesienie ryzyka to element zarządzania ryzykiem NIS2. Wycena Hiscox: 20 minut online, bez rozmowy z agentem.",
-        cta:   "Sprawdź ofertę Hiscox →",
+        time: "20 min · spletna ponudba",
+        title: "Pridobite ponudbo kibernetskega zavarovanja",
+        desc:  "Prenos tveganja je sestavni del upravljanja tveganj po NIS2. Hiscox ponudba: 20 minut online, brez pogovora z agentom.",
+        cta:   "Preverite ponudbo Hiscox →",
         url:   LINKS.hiscox.url,
         affiliate: true,
       });
@@ -223,10 +223,10 @@
     if (missing.includes("training")) {
       actions.push({
         step: actions.length + 1,
-        time: "30 min · 14-dniowy bezpłatny trial",
-        title: "Uruchom szkolenia cyberbezpieczeństwa — KnowBe4",
-        desc:  "Szkolenie zarządu jest prawnym obowiązkiem (Art. 20 KSC). KnowBe4: platforma online, pierwszy moduł wysłany do zespołu w ciągu 24h.",
-        cta:   "Zacznij bezpłatny trial →",
+        time: "30 min · 14-dnevni brezplačni preizkus",
+        title: "Vzpostavite usposabljanja s področja kibernetske varnosti — KnowBe4",
+        desc:  "Usposabljanje vodstva je zakonska obveznost (Art. 20 ZInfV-1). KnowBe4: spletna platforma, prvi modul poslan ekipi v 24 urah.",
+        cta:   "Začnite brezplačni preizkus →",
         url:   LINKS.knowbe4.url,
         affiliate: true,
       });
@@ -236,10 +236,10 @@
     if (missing.includes("isms") && actions.length < 5) {
       actions.push({
         step: actions.length + 1,
-        time: "30 min · 14-dniowy bezpłatny trial",
-        title: "Wdróż menedżer haseł + MFA — 1Password",
-        desc:  "Wieloczynnikowe uwierzytelnienie (MFA) jest wymagane przez Art. 21(j) KSC. 1Password Business: setup 30 minut, rollout do zespołu tego samego dnia.",
-        cta:   "Zacznij bezpłatny trial →",
+        time: "30 min · 14-dnevni brezplačni preizkus",
+        title: "Uvedite upravitelja gesel + MFA — 1Password",
+        desc:  "Večfaktorska avtentikacija (MFA) je zahtevana z Art. 21(j) ZInfV-1. 1Password Business: nastavitev v 30 minutah, uvedba za ekipo isti dan.",
+        cta:   "Začnite brezplačni preizkus →",
         url:   LINKS.onepassword.url,
         affiliate: true,
       });
@@ -267,7 +267,7 @@
         <div class="quiz-progress">
           <div class="quiz-progress__bar" style="width:${pct}%"></div>
         </div>
-        <p class="text-sm text-gray" style="margin-bottom:.25rem;">Pytanie ${state.step + 1} z ${TOTAL}</p>
+        <p class="text-sm text-gray" style="margin-bottom:.25rem;">Vprašanje ${state.step + 1} od ${TOTAL}</p>
         <h3>${q.title}</h3>
         <p style="color:var(--gray-500);font-size:.9rem;margin-bottom:1rem;">${q.hint}</p>
         <div class="quiz-options">
@@ -284,11 +284,11 @@
         </div>
         <div class="quiz-nav">
           ${state.step > 0
-            ? `<button class="btn btn--outline btn--sm" id="quiz-back">← Wstecz</button>`
+            ? `<button class="btn btn--outline btn--sm" id="quiz-back">← Nazaj</button>`
             : `<span></span>`}
           <button class="btn btn--primary btn--sm" id="quiz-next"
                   ${state.answers[q.id] ? "" : "disabled"}>
-            ${isLast ? "Oblicz mój wynik →" : "Dalej →"}
+            ${isLast ? "Izračunaj moj rezultat →" : "Naprej →"}
           </button>
         </div>
       </div>`;
@@ -334,15 +334,15 @@
                      : "#16a34a";
 
     const scopeMsg = {
-      essential: "Twoja firma to <strong>podmiot kluczowy KSC</strong> — najwyższy poziom wymagań.",
-      important:  "Twoja firma to <strong>podmiot ważny KSC</strong> — musisz spełnić wymagania NIS2.",
-      check:      "Twoja firma może podlegać KSC — sprawdź wyjątki dla małych firm.",
-      out:        "Twoja firma prawdopodobnie nie podlega KSC — warto jednak wdrożyć podstawy.",
+      essential: "Vaše podjetje je <strong>ključni subjekt po ZInfV-1</strong> — najvišja raven zahtev.",
+      important:  "Vaše podjetje je <strong>pomemben subjekt po ZInfV-1</strong> — izpolniti morate zahteve NIS2.",
+      check:      "Vaše podjetje je morda zavezanec po ZInfV-1 — preverite izjeme za mala podjetja.",
+      out:        "Vaše podjetje verjetno ni zavezanec po ZInfV-1 — vseeno priporočamo uvedbo osnov.",
     }[scope] || "";
 
     const gapText = missing.length === 0
-      ? "Gratulacje — masz wdrożone wszystkie kluczowe środki!"
-      : `Brakuje Ci <strong>${missing.length}</strong> kluczowych środków bezpieczeństwa. Możesz wdrożyć większość w ciągu 3 dni.`;
+      ? "Čestitamo — vzpostavili ste vse ključne varnostne ukrepe!"
+      : `Manjka vam <strong>${missing.length}</strong> ključnih varnostnih ukrepov. Večino lahko uvedete v 3 dneh.`;
 
     el.innerHTML = `
       <div class="quiz-card">
@@ -352,7 +352,7 @@
 
         <div style="text-align:center;padding:1rem 0 .5rem;">
           <div style="font-size:.8rem;font-weight:700;color:var(--gray-500);text-transform:uppercase;letter-spacing:.06em;margin-bottom:.5rem;">
-            Twój wynik zgodności NIS2
+            Vaš rezultat skladnosti z NIS2
           </div>
           <div style="font-size:3.5rem;font-weight:800;color:${scoreColor};line-height:1;">
             ${score}<span style="font-size:1.5rem;color:var(--gray-400);font-weight:500;">/10</span>
@@ -366,23 +366,23 @@
 
         <div style="background:#f0f7ff;border-radius:12px;padding:1.25rem;margin:1rem 0;">
           <p style="font-size:.95rem;font-weight:700;color:#1a1a2e;margin:0 0 .35rem;">
-            📬 Otrzymaj swój 3-dniowy plan działania
+            📬 Prejemite svoj 3-dnevni akcijski načrt
           </p>
           <p style="font-size:.82rem;color:#555;margin:0 0 .75rem;">
-            Twój spersonalizowany plan: co zrobić dziś, jutro i w tym tygodniu.
-            Gotowe linki afiliacyjne do narzędzi + prompt AI dla Claude / ChatGPT / Gemini.
+            Vaš prilagojen načrt: kaj narediti danes, jutri in ta teden.
+            Pripravljene povezave do orodij + AI-poziv za Claude / ChatGPT / Gemini.
           </p>
           <form id="score-email-form" style="display:flex;gap:.5rem;flex-wrap:wrap;">
-            <input type="email" name="email" placeholder="twoj@email.pl" required
+            <input type="email" name="email" placeholder="vas@email.si" required
                    style="flex:1;min-width:180px;padding:.6rem .9rem;border:1px solid #d1d5db;border-radius:8px;font-size:.95rem;">
-            <button type="submit" class="btn btn--primary">Wyślij mi plan →</button>
+            <button type="submit" class="btn btn--primary">Pošlji mi načrt →</button>
           </form>
-          <p style="font-size:.75rem;color:#9ca3af;margin:.5rem 0 0;">Bez spamu. Jeden e-mail z planem + opcjonalne przypomnienia.</p>
+          <p style="font-size:.75rem;color:#9ca3af;margin:.5rem 0 0;">Brez neželene pošte. En e-mail z načrtom + izbirni opomniki.</p>
         </div>
 
         <button id="quiz-skip-email" type="button"
                 style="background:none;border:none;color:var(--gray-400);font-size:.8rem;cursor:pointer;width:100%;text-align:center;padding:.25rem 0;">
-          Pokaż tylko wynik, bez planu →
+          Prikaži samo rezultat, brez načrta →
         </button>
       </div>`;
 
@@ -394,7 +394,7 @@
       if (!email) return;
       const btn = e.target.querySelector("button");
       btn.disabled = true;
-      btn.textContent = "Wysyłanie...";
+      btn.textContent = "Pošiljanje...";
       state.email = email;
       _submitEmailAndReport(email, () => renderResult(true));
     });
@@ -454,7 +454,7 @@
         score,
         missing,
         email,
-        lang:   document.documentElement.lang || "pl",
+        lang:   document.documentElement.lang || "sl",
         domain: window.location.hostname,
       }),
     }).catch(() => {});
@@ -477,11 +477,11 @@
     const scoreColor = score <= 3 ? "#dc2626" : score <= 6 ? "#d97706" : "#16a34a";
 
     const scopeBadge = {
-      essential: { text: "🚨 Podmiot kluczowy",  color: "#fee2e2", tc: "#991b1b" },
-      important:  { text: "⚠️ Podmiot ważny",    color: "#fefce8", tc: "#854d0e" },
-      check:      { text: "🔍 Sprawdź wyjątki",  color: "#fefce8", tc: "#854d0e" },
-      out:        { text: "✅ Prawdopodobnie poza KSC", color: "#dcfce7", tc: "#166534" },
-    }[scope] || { text: "KSC", color: "#e5e7eb", tc: "#374151" };
+      essential: { text: "🚨 Ključni subjekt",        color: "#fee2e2", tc: "#991b1b" },
+      important:  { text: "⚠️ Pomemben subjekt",       color: "#fefce8", tc: "#854d0e" },
+      check:      { text: "🔍 Preverite izjeme",       color: "#fefce8", tc: "#854d0e" },
+      out:        { text: "✅ Verjetno ni zavezanec",  color: "#dcfce7", tc: "#166534" },
+    }[scope] || { text: "ZInfV-1", color: "#e5e7eb", tc: "#374151" };
 
     function actionCard(a) {
       const isAffiliate = a.affiliate;
@@ -503,9 +503,9 @@
 
     const reskipBlock = missing.length === 0
       ? `<div style="background:#dcfce7;border-radius:10px;padding:1rem;text-align:center;margin-bottom:1rem;">
-           <strong>🎉 Twoja firma jest w dobrej kondycji!</strong><br>
-           <span style="font-size:.85rem;">Masz wdrożone wszystkie kluczowe środki NIS2. Rozważ certyfikację ISO 27001 jako dowód zgodności.</span>
-           <br><a href="certyfikacja-iso-27001.html" style="font-size:.82rem;color:var(--navy);font-weight:700;">Dowiedz się więcej o ISO 27001 →</a>
+           <strong>🎉 Vaše podjetje je v dobri kondiciji!</strong><br>
+           <span style="font-size:.85rem;">Vzpostavili ste vse ključne ukrepe NIS2. Razmislite o certifikaciji ISO 27001 kot dokazilu skladnosti.</span>
+           <br><a href="iso-27001-orodja.html" style="font-size:.82rem;color:var(--navy);font-weight:700;">Izvedite več o ISO 27001 →</a>
          </div>`
       : actions.map(actionCard).join("");
 
@@ -514,7 +514,7 @@
 
         ${emailCaptured
           ? `<div style="background:#dcfce7;border-radius:8px;padding:.6rem 1rem;font-size:.82rem;color:#166534;font-weight:600;margin-bottom:1rem;text-align:center;">
-               ✅ Plan wysłany na ${state.email || "Twój e-mail"} — sprawdź skrzynkę
+               ✅ Načrt poslan na ${state.email || "vaš e-mail"} — preverite nabiralnik
              </div>`
           : ""}
 
@@ -523,7 +523,7 @@
             <div style="font-size:2.5rem;font-weight:800;color:${scoreColor};line-height:1;">
               ${score}<span style="font-size:1rem;color:var(--gray-400);font-weight:500;">/10</span>
             </div>
-            <div style="font-size:.7rem;color:var(--gray-500);">Wynik NIS2</div>
+            <div style="font-size:.7rem;color:var(--gray-500);">Rezultat NIS2</div>
           </div>
           <div style="flex:1;min-width:140px;">
             <div style="height:8px;background:#e5e7eb;border-radius:99px;overflow:hidden;margin-bottom:.35rem;">
@@ -537,13 +537,13 @@
 
         <h3 style="font-size:1.05rem;margin-bottom:.35rem;">
           ${missing.length > 0
-            ? `🏃 Zrób DZIŚ — łącznie ~${Math.min(120, missing.length * 30)} minut`
-            : "Twój status NIS2"}
+            ? `🏃 Naredite DANES — skupaj ~${Math.min(120, missing.length * 30)} minut`
+            : "Vaš status NIS2"}
         </h3>
         <p style="font-size:.82rem;color:var(--gray-500);margin-bottom:1rem;">
           ${missing.length > 0
-            ? `${missing.length} brakujących kroków. Poniższe możesz ukończyć dziś.`
-            : "Wszystkie kluczowe środki są na miejscu."}
+            ? `${missing.length} manjkajočih korakov. Spodnje lahko dokončate danes.`
+            : "Vsi ključni ukrepi so vzpostavljeni."}
         </p>
 
         ${reskipBlock}
@@ -551,33 +551,33 @@
         ${missing.length > 0 ? `
           <div style="border-top:1px solid #e5e7eb;padding-top:1rem;margin-top:.5rem;">
             <p style="font-size:.78rem;color:var(--gray-500);margin-bottom:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.05em;">
-              Kolejne kroki (zarezerwuj terminy)
+              Naslednji koraki (rezervirajte termine)
             </p>
             <div style="display:flex;gap:.5rem;flex-wrap:wrap;">
               <a href="testy-penetracyjne.html" style="font-size:.78rem;padding:.3rem .7rem;border:1px solid #e5e7eb;border-radius:6px;color:var(--gray-600);text-decoration:none;">
-                🔍 Test penetracyjny
+                🔍 Penetracijski test
               </a>
-              <a href="certyfikacja-iso-27001.html" style="font-size:.78rem;padding:.3rem .7rem;border:1px solid #e5e7eb;border-radius:6px;color:var(--gray-600);text-decoration:none;">
-                🏅 Certyfikacja ISO 27001
+              <a href="iso-27001-orodja.html" style="font-size:.78rem;padding:.3rem .7rem;border:1px solid #e5e7eb;border-radius:6px;color:var(--gray-600);text-decoration:none;">
+                🏅 Certifikacija ISO 27001
               </a>
               <a href="bezpieczenstwo-lancucha-dostaw.html" style="font-size:.78rem;padding:.3rem .7rem;border:1px solid #e5e7eb;border-radius:6px;color:var(--gray-600);text-decoration:none;">
-                🔗 Bezpieczeństwo dostawców
+                🔗 Varnost dobavne verige
               </a>
             </div>
           </div>` : ""}
 
         <div style="margin-top:1.25rem;display:flex;gap:.75rem;justify-content:center;flex-wrap:wrap;">
-          <button class="btn btn--outline btn--sm" id="quiz-restart">← Zacznij od nowa</button>
-          <a href="porownanie.html" class="btn btn--primary btn--sm">Porównaj narzędzia NIS2 →</a>
+          <button class="btn btn--outline btn--sm" id="quiz-restart">← Začni znova</button>
+          <a href="primerjava.html" class="btn btn--primary btn--sm">Primerjaj orodja NIS2 →</a>
         </div>
 
         ${!emailCaptured ? `
           <div style="margin-top:1rem;background:#f0f7ff;border-radius:8px;padding:.85rem;text-align:center;">
-            <p style="font-size:.82rem;margin:0 0 .5rem;"><strong>Otrzymaj pełny plan na e-mail</strong> z AI-promptem i linkami do narzędzi</p>
+            <p style="font-size:.82rem;margin:0 0 .5rem;"><strong>Prejemite celoten načrt na e-mail</strong> z AI-pozivom in povezavami do orodij</p>
             <form id="late-email-form" style="display:flex;gap:.5rem;flex-wrap:wrap;justify-content:center;">
-              <input type="email" placeholder="twoj@email.pl" required
+              <input type="email" placeholder="vas@email.si" required
                      style="flex:1;min-width:160px;padding:.45rem .75rem;border:1px solid #d1d5db;border-radius:6px;font-size:.85rem;">
-              <button type="submit" class="btn btn--primary btn--sm">Wyślij →</button>
+              <button type="submit" class="btn btn--primary btn--sm">Pošlji →</button>
             </form>
           </div>` : ""}
       </div>`;
@@ -594,11 +594,11 @@
       const email = e.target.querySelector("input[type=email]").value.trim();
       if (!email) return;
       const btn = e.target.querySelector("button");
-      btn.disabled = true; btn.textContent = "Wysyłanie...";
+      btn.disabled = true; btn.textContent = "Pošiljanje...";
       state.email = email;
       _submitEmailAndReport(email, () => {
         e.target.parentElement.innerHTML =
-          `<p style="font-size:.82rem;color:#166534;font-weight:700;">✅ Wysłano na ${email}</p>`;
+          `<p style="font-size:.82rem;color:#166534;font-weight:700;">✅ Poslano na ${email}</p>`;
       });
     });
 

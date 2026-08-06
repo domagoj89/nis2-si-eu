@@ -11,18 +11,18 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NIS2 za fintech podjetja v Sloveniji — Zahteve ZInfV-1 2026</title>
-  <meta name="description" content="Obveznosti NIS2 za fintech, procesatorje plačil in digitalne posojilodajalce v Sloveniji. Rok usklajitve do 18. oktobra 2024.">
+  <title>NIS2 za fintech v Sloveniji 2026 — Obveznosti za plačilne platforme</title>
+  <meta name="description" content="Vodič NIS2/ZInfV-1 za fintech, plačilne procesorje in neobanke v Sloveniji. Obveznosti upravljanja tveganja, testiranja varnosti in poročanja incidentov do konca 2026.">
   <link rel="canonical" href="https://nis2-si.eu/sektory/fintech.html">
-  <meta property="og:title" content="NIS2 za fintech podjetja v Sloveniji — Zahteve ZInfV-1 2026">
-  <meta property="og:description" content="Obveznosti NIS2 za fintech, procesatorje plačil in digitalne posojilodajalce v Sloveniji. Rok usklajitve do 18. oktobra 2024.">
+  <meta property="og:title" content="NIS2 za fintech v Sloveniji 2026 — Obveznosti za plačilne platforme">
+  <meta property="og:description" content="Vodič NIS2/ZInfV-1 za fintech, plačilne procesorje in neobanke v Sloveniji. Obveznosti upravljanja tveganja, testiranja varnosti in poročanja incidentov do konca 2026.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://nis2-si.eu/sektory/fintech.html">
   <meta property="og:locale" content="sl_SI">
   <meta property="og:site_name" content="NIS2-SI.eu">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="NIS2 za fintech podjetja v Sloveniji — Zahteve ZInfV-1 2026">
-  <meta name="twitter:description" content="Obveznosti NIS2 za fintech, procesatorje plačil in digitalne posojilodajalce v Sloveniji. Rok usklajitve do 18. oktobra 2024.">
+  <meta name="twitter:title" content="NIS2 za fintech v Sloveniji 2026 — Obveznosti za plačilne platforme">
+  <meta name="twitter:description" content="Vodič NIS2/ZInfV-1 za fintech, plačilne procesorje in neobanke v Sloveniji. Obveznosti upravljanja tveganja, testiranja varnosti in poročanja incidentov do konca 2026.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
@@ -46,7 +46,7 @@
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "NIS2 za fintech podjetja v Sloveniji — Obveznosti ZInfV-1 in ključne zahteve",
+      "name": "NIS2 za fintech in plačilne procesorje v Sloveniji — obveznosti pomembne osebe do 2026",
       "item": "https://nis2-si.eu/sektory/fintech.html"
     }
   ]
@@ -59,26 +59,26 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Ali mora biti varnostno testiranje naš API mojibanke.si izvedeno pred vsako proizvodno spremembo?",
+      "name": "Kaj je jaz kot fintech s 60 zaposlenimi in letnim prihodkom 8 milijonov evrov zavezana k obveznostim NIS2?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja. NIS2 zahteva, da so vsi kritični API-ji, katerih okvara bi povzročila motnjo plačilnega procesa, varnostno testirani pred primarnim izdanjem in po vsaki večji spremembi. Dokumentirajte rezultate in roki odpravljanja ranljivosti. Za fintech to je obavezna zahteva, ker je plačilni API direktno vezan na izvedljivost storitve."
+        "text": "Če ste razvrščeni kot pomembna oseba (kar je za fintech običajno glede na kritičnost plačilnih storitev), ste zavezani k vsem obviaznostim ZInfV-1. Ne šteje se samo velikost podjetja, temveč tudi vrsta storitve — fintech podjetja, ki procesirajo plačila ali nudijo kreditiranje, so praktično vedno pomembne osebe. URSIV bo to formalno potrdil v svojih objavah do konca 2025."
       }
     },
     {
       "@type": "Question",
-      "name": "Kateri parametri določajo, ali je fintech podjetje 'pomembna subjekt' po Prilogah II?",
+      "name": "Kaj pomeni 'zgodno opozorjenje' in kaj ga loči od 'notifikacije' incidenta?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Fintech podjetja so razvrstljena kot pomembna subjekta, če zagotavljajo ključne storitve na področju finančnih storitev in plačilnih sistemov (procesiranje plačil, digitalni računi, posojilne platforme). Slovenija klasificira podjetja tudi glede na število strank in količino upravljanih finančnih tokov. URSIV posamični status potrdi pisno; prepričajte se, da ste obveščeni o vašem statusu."
+        "text": "Zgodno opozorjenje je hitro obvestilo SI-CERT-u v roku 24 ur od odkritja incidenta — vsebuje samo osnovne podatke (vrsto incidenta, čas, število prizadetih uporabnikov). Notifikacija je polno tehnično poročilo, ki ga pošljete v roku 72 ur URSIV, BNS in FRA — vključuje opis vzroka, analizo vpliva ter ukrepe, ki ste jih sprejeli. Oba sta obvezna in ju morate imeti dokumentirani."
       }
     },
     {
       "@type": "Question",
-      "name": "Kakšne so kazni za neuskladnost z NIS2 do konca 2024 v Sloveniji?",
+      "name": "Kakšne so kazni za neupoštevanje NIS2 obveznosti v Sloveniji?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Zakon ZInfV-1 predvideva globe do 50.000 EUR za manjše kršitve in do 100.000 EUR za hujše kršitve, ki vplivajo na sistem ali varnost strank. Za fintech podjetja je posebej stroga kaznovana neupoštevanje varnostnega testiranja, neuspešna prijavljivanja incidentov in odsotnost formalnih zahtev za dobavitelje. Deadline za usklajitev je 18. oktober 2024."
+        "text": "Za pomembne osebe so kazni do 7 milijonov evrov ali 1,4 % letnega prometa (glede na to, katera je višja). Najpogostejše je težko ločljivo — neupoštevanje poročanja incidentov, pomanjkljive varnostne politike in neustrezen nadzor tretjih strank. URSIV je že ogrozil preglede skladnosti in nadzore v fintech sektorju od leta 2026 naprej, zato je nujno, da ste do konca 2026 v polnem skladnosti."
       }
     }
   ]
@@ -105,23 +105,23 @@
   <div class="breadcrumb">
     <a href="../index.html">Domov</a><span>›</span>
     <a href="index.html">Sektorji</a><span>›</span>
-    NIS2 za fintech podjetja v Sloveniji — Obveznosti ZInfV-1 in ključne zahteve
+    NIS2 za fintech in plačilne procesorje v Sloveniji — obveznosti pomembne osebe do 2026
   </div>
 </div>
 
 <!-- HERO -->
 <div style="background:var(--gray-50);padding:2.5rem 0 3rem;border-bottom:1px solid var(--gray-200);">
   <div class="container--narrow">
-    <span style="display:inline-block;background:#16a34a;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Priloga II — Pomembni subjekt</span>
-    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 za fintech podjetja v Sloveniji — Obveznosti ZInfV-1 in ključne zahteve</h1>
-    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Ta stran je namenjena fintech podjetjem, procesorjem plačil, neobankom in platformam za digitalno posojilovanje v Sloveniji, ki spadajo pod Prilogo II kot pomembne subjekte. Spoznate ključne obveznosti upravljanja tveganjaICT, varnostnega testiranja API-jev in zahtev za prijavo dogodkov.</p>
+    <span style="display:inline-block;background:#16a34a;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Prilog II — pomembna oseba</span>
+    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 za fintech in plačilne procesorje v Sloveniji — obveznosti pomembne osebe do 2026</h1>
+    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Ta vodič je namenjen fintech podjetjem, plačilnim procesorjem, neobankam in platformam za digitalno posojilodajbo, ki delujejo v Sloveniji in so razvrščeni kot pomembne osebe. Razjasnili boste si konkretne obveznosti upravljanja ICT tveganja, varnostnega testiranja ter poročanja incidentov.</p>
   </div>
 </div>
 
 <!-- WHO QUALIFIES -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
   <div style="background:var(--gray-50);border-left:4px solid var(--navy);border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;">
-    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">V sklop NIS2 sodijo fintech podjetja, procesatorji plačil, neobanke in platforme za digitalno posojilovanje, ki zagotavljajo ključne storitve na področju finančnih storitev in plačilnih sistemov. Kot pomembni subjekti spadate pod Prilogo II, če obdelujete plačilne podatke, upravljate digitalne račune ali zagotavljate posojilne storitve na slovenskem trgu.</p>
+    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Vaša organizacija je zavezana, če ste fintech podjetje, plačilni procesor, neobank ali platforma za digitalno posojilodajno z registracijo v Sloveniji in naslednjimi značilnostmi: zagotavljate ključne storitve plačevanja ali kreditiranja, imate več kot 50 zaposlenih ali letni prihodek presega 10 milijonov evrov, ter ste kot pomembna oseba razvrščeni s strani URSIV. Institucije nadzora finančnih storitev (BNS, FRA) vas lahko razglasijo za pomembno osebo tudi glede na kritičnost vašega storitve za slovensko finančno stabilnost.</p>
   </div>
 </div>
 
@@ -135,8 +135,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Upravljanje tveganja ICT sorazmerno z velikostjo in kritičnostjo storitve</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Vzpostaviti morate politike upravljanja tveganja ICT, ki zajemajo identifikacijo, oceno in zmanjšanje tveganj za vaš poslovni model. Za procesatorje plačil in neobanke to pomeni formalno dokumentiranje tveganj, povezanih s plačilnimi API-ji, shranitvijo podatkov strank in sistemsko dostopnostjo. URSIV pričakuje letno revizijo in posodobitev politik, posebej po uvedbi novih digitalnih storitev.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">ICT upravljanje tveganja in varnostne politike</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Sprejeti morate pisne politike upravljanja ICT tveganja, ki pokrivajo vse kritične sisteme (mobilne aplikacije, API, plačilne terminale, podatkovne centre). Do konca 2026 morate dokumentirati oceno tveganja za vsak finančni produkt in storitev, s posebnim poudarkom na API varnosti in zaščiti podatkov gibanja sredstev. Politika mora vključevati tudi zahteve do tretjih strank (cloud ponudnikov, platnih gateway-jev, sistemskih integracijskih partnerjev).</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -144,8 +144,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Obvezno varnostno testiranje plačilnih API-jev in mobilnih aplikacij</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Pred vsakim primarnim izdanjem in po vsaki večji spremembi mora biti izvršeno celovito varnostno testiranje (penetracijski test, analiza kode) vaših plačilnih API-jev in mobilnih aplikacij. Dokumentirajte rezultate, usmeritve in roki odpravljanja ranljivosti. To je obvezna zahteva za fintech podjetja, ker direktno vplivate na varnost finančnih podatkov strank in preprečevanje frauda.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Testiranje varnosti API-jev in mobilnih aplikacij</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Vsaj enkrat letno (ali po vsakem večjem izdanju) morate zahtevati zunanja varnostna testiranja svojih plačilnih API-jev, mobilnih aplikacij in finančnih platform. Penetracijske teste mora izvedti neodvisni izvajalec s certifikatom CEH ali ekvivalentnim. Naročite si tudi avtomatizirana dinamična varnostna skeniranja za odkrivanje ranljivosti, ki jih naprave zaznajo med obratovanjem.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -153,8 +153,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Zaščita podatkov strank v skladu z NIS2 in PSD2/GDPR</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Podatki strank morajo biti zaščiteni s tehnično šifriranjem, kontrolo dostopa in rednimi varnostnimi pregledi. NIS2 zahteva, da so ti ukrepi dokumentirani in usklajeni s PSD2 in GDPR. Za digitalne posojilodajalce in neobanke je to kritično: vzpostaviti morate politiko podatkovne varnosti, ki vključuje enkriptiranje v prenosu in v mirovanju, ter kontrolo dostopa po principu najmanjših pravic.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Poročanje incidentov in zgodnje opozorjenje</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Ko pride do incidenta, ki vpliva na razpoložljivost ali varnost plačilnih storitev (npr. DDoS napad, kršitev podatkov, popravka neupravičenega dostopa), morate poslati zgodno opozorilo SI-CERT-u v roku 24 ur in polno obvestilo pristojnim organom (URSIV, BNS, FRA) v roku 72 ur. Zgodno opozorilo mora vsebovati osnovne dejstve (vrsto incidenta, število prizadetih strank), polno obvestilo pa tehnični opis, časovni vidik in sprejetih ukrepov.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -162,8 +162,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Formalne zahteve za varnost dobaviteljev in ponudnikov storitev v oblaku</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Vzpostaviti morate pisne dogovore z vsemi dobavitelji podatkovnih storitev (cloud ponudniki, API ponudniki, storitve analize) s specifičnimi zahtevami glede varnosti, dostopnosti in incidentnega odziva. Vsaj letno pregledate skladnost dobaviteljev z dogovorjenimi zahtevami. To je ključna oblast, saj fintech podjetja pogosto zaupajo kritične operacije tretjim osebam.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Varnostna zahtevanja do tretjih strank in dobaviteljev</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Pregledate morate pogodbe s ponudniki oblačnih storitev, sistemskih integracijskih partnerji in zunanjimi plačilnimi gateway-ji, da v njih zahtevate specifične ICT varnostne standarde (najmanj: avtentifikacija, šifriranje v prenosu in mirovanju, redne varnostne audite). Dokumentirati morate, da so vaši ključni dobavitelji prešli najmanj osnovno varnostno oceno ali da imajo certifikat ISO 27001. Do konca 2026 morate imeti podpisane anekse k pogodbam, ki zavezujejo dobavitelje k notificiranju vas o incidentih v roku 24 ur.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -171,8 +171,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Prijaviti morate varnostne dogodke, ki vplivajo na plačilni proces, v roku 72 ur na URSIV</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Vaš incident response plan mora razlikovati med GDPR notifikacijami (osebni podatki) in NIS2 prijavami (motnje plačilnega sistema). Če se vaš plačilni API sesuje, je to NIS2 incident. Če nastane dostop do osebnih podatkov strank, je to tudi GDPR incident. Dokumentirajte obe vrsti in poročajte URSIV v roku 72 ur od odkritja, če je v vprašanju motnja storitve.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Kontinuiteta poslovanja in odziv na incidente</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Sprejeti morate načrt kontinuitete poslovanja in načrt odziva na incidente, ki specifično obravnava scenarije motnje plačilnega procesiranja, podatkovne breče ter DDoS napadov. Načrt mora vsebovati seznam vseh kritičnih delov IT infrastrukture, določiti mora osebe odgovorne za posamezne vrste incidentov in predvideti mora testiranje načrta najmanj dvakrat letno. Navedite tudi osebo, odgovorno za usklajevanje s SI-CERT-om in drugimi organami ob incidentu.</p>
       </div>
     </div>
   </div>
@@ -184,16 +184,16 @@
   <ul style="list-style:none;padding:0;margin:0;border-top:1px solid var(--gray-100);">
     
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>API varnostno testiranje ni formalno dokumentirano niti ni izvršeno po vsakem izdanju — naslavljajte to z uvedbo obveznega scenarija varnostnega testiranja v razvojni ciklus.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>API varnost ni formalno ocenjena po vsakem izdanju — nasvet: uvedite avtomatizirana varnostna skeniranja API-jev v cikel razvoja (DevSecOps) in zahtevajte zunanjo penetracijsko analizo najmanj letno.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Pogodbe z dobavitelji (cloud, payment gateway) ne vsebujejo eksplicitnih zahtev za ICT varnost in incidentni odziv — revidirajte vse pogodbe in dodajte zahteve za varnostno certificiranje, redne preglede in obveščanje ob incidentih.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Pogodbe s ponudniki oblačnih storitev in plačilnimi gateway-ji ne vsebujejo izrecnih zahtev za ICT varnost in notifikacijo incidentov — nasvet: dodajte anekse k pogodbam, ki zavezujejo dobavitelje k ISO 27001 ali ekvivalentnim standardom in 24-urni obvestilni dolžnosti.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Incident response plan je usmerjen samo na GDPR in notranje politike — razdelite ga na NIS2 in GDPR učinke ter jasno definirajte meje za prijavljivanje na URSIV.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Načrt odziva na incidente pokriva GDPR, ne pa specifičnih pragov in postopkov NIS2 (24-urna zgodno opozorjenja, 72-urna notifikacija) — nasvet: razširite načrt z natančnimi definicijami NIS2 incidentov in jasno določite osebe, odgovorne za usklajevanje z URSIV in SI-CERT-om.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Upravljanje tveganja ICT ni formalizirano za nove digitalne kanale (mobilna aplikacija, tretji API-ji) — vzpostavite centralni register tveganj, ki je letno posodobljen in vezan na spremembe v storitvah.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Ni dokumentiranega nadzora varnosti tretjih strank in njihove infrastrukture — nasvet: prepričajte se, da imate dostop do rednih varnostnih poročil dobaviteljev in da so v pogodbah dogovorjene vse dostopnost in varnostne metrke (SLA).
     </li>
   </ul>
 </div>
@@ -236,21 +236,21 @@
   <div style="border-top:1px solid var(--gray-100);">
     
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Ali mora biti varnostno testiranje naš API mojibanke.si izvedeno pred vsako proizvodno spremembo?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Kaj je jaz kot fintech s 60 zaposlenimi in letnim prihodkom 8 milijonov evrov zavezana k obveznostim NIS2?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Ja. NIS2 zahteva, da so vsi kritični API-ji, katerih okvara bi povzročila motnjo plačilnega procesa, varnostno testirani pred primarnim izdanjem in po vsaki večji spremembi. Dokumentirajte rezultate in roki odpravljanja ranljivosti. Za fintech to je obavezna zahteva, ker je plačilni API direktno vezan na izvedljivost storitve.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Če ste razvrščeni kot pomembna oseba (kar je za fintech običajno glede na kritičnost plačilnih storitev), ste zavezani k vsem obviaznostim ZInfV-1. Ne šteje se samo velikost podjetja, temveč tudi vrsta storitve — fintech podjetja, ki procesirajo plačila ali nudijo kreditiranje, so praktično vedno pomembne osebe. URSIV bo to formalno potrdil v svojih objavah do konca 2025.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Kateri parametri določajo, ali je fintech podjetje 'pomembna subjekt' po Prilogah II?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Kaj pomeni 'zgodno opozorjenje' in kaj ga loči od 'notifikacije' incidenta?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Fintech podjetja so razvrstljena kot pomembna subjekta, če zagotavljajo ključne storitve na področju finančnih storitev in plačilnih sistemov (procesiranje plačil, digitalni računi, posojilne platforme). Slovenija klasificira podjetja tudi glede na število strank in količino upravljanih finančnih tokov. URSIV posamični status potrdi pisno; prepričajte se, da ste obveščeni o vašem statusu.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Zgodno opozorjenje je hitro obvestilo SI-CERT-u v roku 24 ur od odkritja incidenta — vsebuje samo osnovne podatke (vrsto incidenta, čas, število prizadetih uporabnikov). Notifikacija je polno tehnično poročilo, ki ga pošljete v roku 72 ur URSIV, BNS in FRA — vključuje opis vzroka, analizo vpliva ter ukrepe, ki ste jih sprejeli. Oba sta obvezna in ju morate imeti dokumentirani.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Kakšne so kazni za neuskladnost z NIS2 do konca 2024 v Sloveniji?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Kakšne so kazni za neupoštevanje NIS2 obveznosti v Sloveniji?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Zakon ZInfV-1 predvideva globe do 50.000 EUR za manjše kršitve in do 100.000 EUR za hujše kršitve, ki vplivajo na sistem ali varnost strank. Za fintech podjetja je posebej stroga kaznovana neupoštevanje varnostnega testiranja, neuspešna prijavljivanja incidentov in odsotnost formalnih zahtev za dobavitelje. Deadline za usklajitev je 18. oktober 2024.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Za pomembne osebe so kazni do 7 milijonov evrov ali 1,4 % letnega prometa (glede na to, katera je višja). Najpogostejše je težko ločljivo — neupoštevanje poročanja incidentov, pomanjkljive varnostne politike in neustrezen nadzor tretjih strank. URSIV je že ogrozil preglede skladnosti in nadzore v fintech sektorju od leta 2026 naprej, zato je nujno, da ste do konca 2026 v polnem skladnosti.</p>
     </div>
   </div>
   </div>

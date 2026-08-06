@@ -11,18 +11,18 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NIS2 za zavarovalnice v Sloveniji — ZInfV-1 2026</title>
-  <meta name="description" content="NIS2 obveznosti za zavarovalnice, brokery in reosiguriteljice v Sloveniji. Varnost podatkov zavarovancev, poslovna kontinuiteta in upravljanje dobaviteljev.">
+  <title>NIS2 zahteve za zavarovalnice v Sloveniji – Vodnik 2026</title>
+  <meta name="description" content="Obveznosti zavarovalnic in brokerjev po ZInfV-1/NIS2 v Sloveniji. Rok za polno izvajanje: konec 2026. Poiščite konkretne ukrepe za varnost podatkov.">
   <link rel="canonical" href="https://nis2-si.eu/sektory/insurance.html">
-  <meta property="og:title" content="NIS2 za zavarovalnice v Sloveniji — ZInfV-1 2026">
-  <meta property="og:description" content="NIS2 obveznosti za zavarovalnice, brokery in reosiguriteljice v Sloveniji. Varnost podatkov zavarovancev, poslovna kontinuiteta in upravljanje dobaviteljev.">
+  <meta property="og:title" content="NIS2 zahteve za zavarovalnice v Sloveniji – Vodnik 2026">
+  <meta property="og:description" content="Obveznosti zavarovalnic in brokerjev po ZInfV-1/NIS2 v Sloveniji. Rok za polno izvajanje: konec 2026. Poiščite konkretne ukrepe za varnost podatkov.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://nis2-si.eu/sektory/insurance.html">
   <meta property="og:locale" content="sl_SI">
   <meta property="og:site_name" content="NIS2-SI.eu">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="NIS2 za zavarovalnice v Sloveniji — ZInfV-1 2026">
-  <meta name="twitter:description" content="NIS2 obveznosti za zavarovalnice, brokery in reosiguriteljice v Sloveniji. Varnost podatkov zavarovancev, poslovna kontinuiteta in upravljanje dobaviteljev.">
+  <meta name="twitter:title" content="NIS2 zahteve za zavarovalnice v Sloveniji – Vodnik 2026">
+  <meta name="twitter:description" content="Obveznosti zavarovalnic in brokerjev po ZInfV-1/NIS2 v Sloveniji. Rok za polno izvajanje: konec 2026. Poiščite konkretne ukrepe za varnost podatkov.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
@@ -46,7 +46,7 @@
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "NIS2 za zavarovalnice, brokery in reosiguriteljice v Sloveniji — zahteve ZInfV-1 do 2026",
+      "name": "NIS2 za zavarovalnice in brokerje v Sloveniji – Obveznosti po ZInfV-1",
       "item": "https://nis2-si.eu/sektory/insurance.html"
     }
   ]
@@ -59,26 +59,26 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Ali moramo imeti ločen IT prostor (DMZ) za brokerske portale in zunanje uporabnike?",
+      "name": "Ali mora naša manjša zavarovalno-brokerska hiša s 30 zaposlenimi izpolnjevati obveznosti NIS2?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Zakon ZInfV-1 ne zahteva ločenega prostora, toda najbolja praksa je, da zunanji dostop fizično ali logično izolulirate s požarnim zidom in kontrolami dostopa. Brokerski portal mora biti ločen od internih sistemov z ničelnimi pravicami do drugih podatkovnih baz, razen tistih, ki so nujne za njihovo delo. Priporočamo arhitekturo s štirimi nivoji: javni splet, DMZ za brokerje, notranja mreža za zaposlene in ločena mreža za občutljive aktuarske podatke."
+        "text": "Ne avtomatično – ZInfV-1 zavezuje le »pomembne subjekte«, ki imajo najmanj 50 zaposlenih ali letni promet najmanj 10 milijonov EUR. Vendar če ste microorganism pod to pragom, vam vseeno priporočamo izvajati temeljne ukrepe informacijske varnosti, ker zavarovancem dolguješ zaščito njihovih podatkov."
       }
     },
     {
       "@type": "Question",
-      "name": "Kako pogosto moramo testirati poslovno kontinuiteto za sisteme zahtevkov?",
+      "name": "Kaj je konkretno 'zgodnja obvestila' v 24 urah in kako jo napravimo?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Minimum je enkrat letno, pri čemer mora test vključevati resnični izpad podatkovne baze, izpad spletnega dostopa ali simuliran napak v sistemu obravnave zahtevkov. Rezultati testov morajo biti dokumentirani, vključno s časom okrevanja, izgubljenih podatkov in učinkovin za izboljšanje. Priporočamo vsaj dve polni vaji letno ter četrtletne tehnične teste za kritične komponente."
+        "text": "Zgodnja obvestila je prvi stik s SI-CERT takoj ko je odkrit resni varnostni incident (npr. eksfiltracija podatkov zavarovancev ali napad na kritični sistem). Pošljete jih na ustrezni kontakt SI-CERT, nato pa v 72 urah pošljete URSIV-u polno notifikacijo z detajli incidenta in ukrepov za sanacijo."
       }
     },
     {
       "@type": "Question",
-      "name": "Kaj se zgodi, če se ne usklladimo do 2026?",
+      "name": "Kolikšne so kazni za neupoštevanje ZInfV-1 do konca 2026?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "URSIV in SI-CERT lahko izdate opozorilo, odredilnico za usklajevanje v rokih 30–90 dni, ali v primeru hude kršitve celo izvedete sankcije do 10 milijonov EUR ali 2 % globalnega letnega prihodka, odvisno od tega, kaj je večji znesek. Dodatno nastane tudi tveganje za krvave sodbe v primeru incidenta, saj lahko zavarovalnica odgovarja za škodo zavarovancem in tretjim osebam, če bi dokazali, da je bila kršitev pravna obveza varnosti."
+        "text": "Za pomembne subjekte (vključno zavarovalnice) so kazni do 7 milijonov EUR ali pa 1,4 % letnega prometa – kar je več. Posebej resne kazni se izrekajo za neupoštevanje obveznosti za poročanje incidetov (24/72 ur) in za neskladne varnostne politike za obdelavo občutljivih podatkov zavarovancev."
       }
     }
   ]
@@ -105,23 +105,23 @@
   <div class="breadcrumb">
     <a href="../index.html">Domov</a><span>›</span>
     <a href="index.html">Sektorji</a><span>›</span>
-    NIS2 za zavarovalnice, brokery in reosiguriteljice v Sloveniji — zahteve ZInfV-1 do 2026
+    NIS2 za zavarovalnice in brokerje v Sloveniji – Obveznosti po ZInfV-1
   </div>
 </div>
 
 <!-- HERO -->
 <div style="background:var(--gray-50);padding:2.5rem 0 3rem;border-bottom:1px solid var(--gray-200);">
   <div class="container--narrow">
-    <span style="display:inline-block;background:#16a34a;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Prilog II — Pomembna entiteta</span>
-    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 za zavarovalnice, brokery in reosiguriteljice v Sloveniji — zahteve ZInfV-1 do 2026</h1>
-    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Ta priročnik je namenjen vodstvenim delavcem varnosti informacij, IT direktorjem in compliance odgovornim osebam v zavarovalnicah in broker podjetjih v Sloveniji. Naučite se konkretnih obveznosti, ki jih prinaša Zakon o informacijski varnosti, ter kako uskladiti operativne sisteme z novimi standardi za zaščito podatkov zavarovancev in upravičencev.</p>
+    <span style="display:inline-block;background:#16a34a;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Priloga II – Pomembna subjekt</span>
+    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 za zavarovalnice in brokerje v Sloveniji – Obveznosti po ZInfV-1</h1>
+    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Ta vodnik je namenjen zavarovalnicam, zavarovalno-brokerjskim hišam in povratnim zavarovateľem, ki obdelujejo podatke zavarovancev. Spoznajte konkretne obveznosti informacijske varnosti in roke za skladnost do konca 2026.</p>
   </div>
 </div>
 
 <!-- WHO QUALIFIES -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
   <div style="background:var(--gray-50);border-left:4px solid var(--navy);border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;">
-    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Zavarovalnice, brokeri in reosiguriteljice v Sloveniji, ki procesirajo osebne podatke zavarovancev ali upravičencev in imajo več kot 50 zaposlenih ali letni prihodek večji od 10 milijonov EUR, morajo biti skladne z ZInfV-1. To vključuje tudi manjše brokerske hiše, ki imajo v upravljanju podatke skupaj z materinskim podjetjem ali prek integrirane IT infrastrukture.</p>
+    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Zavarovalnice, zavarovalni brokerji in povratni zavarovatelji, ki v Republiki Sloveniji poslovne dejavnosti izvajajo s poslovanjem z zavarovanim tveganjenjem in obdelujejo osebne podatke zavarovancev ter imajo vsaj 50 zaposlenih ali letni promet najmanj 10 milijonov EUR morajo izpolnjevati obveznosti pomembnih subjektov po Zakonu o informacijski varnosti (ZInfV-1). Pod to kategorijo spadajo tudi večje zavarovalno-brokerske hiše, ki kot posredniki obdelujejo osebne podatke strank.</p>
   </div>
 </div>
 
@@ -135,8 +135,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Varnost sistemov za procesiranje aktuarskih in podatkov zavarovancev</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Implementirate morata posebne tehnične in organizacijske ukrepe za zaščito podatkovnih baz zavarovancev, zavarovalnih polic in klientskih informacij. To vključuje šifriranje podatkov v mirovanju in med prenosom, nadzor dostopa z večfaktorsko avtentifikacijo ter redne preglede dostopov. Posebej mora biti zaščitena brokerska portala, ki omogočata dostop do občutljivih podatkov tretjih oseb.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Varnost sistemov za obdelavo aktuarskih in podatkov zavarovancev</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Zavrstiti in zaščititi vse sisteme, ki obdelujejo podatke zavarovancev (polise, zahtevki za odškodnino, aktuarske ocene). Implementirati dostop z večfaktorsko avtentifikacijo (MFA) na portale za brokerje in interne uporabnike. Rednih preglede dostopnih pravic izvajati najmanj letno in zagotoviti, da le pooblaščeni zaposleniki dostopajo do občutljivih podatkov.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -144,8 +144,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Poslovna kontinuiteta za platforme zahtevkov in obravnave zavarovalnih primerov</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Vzpostavljati morate sisteme za okrevanje po nesrečah in zagotavljati minimalno razpoložljivost podatkovnih storitev v primeru cybernapada ali tehnične napake. Preurediti morata naročilske sisteme, sisteme za obravnavo zahtevkov in avtomatizacijo procesov z okrevanjem v roku največ 24 ur. Letni testi poslovne kontinuitete so obvezni, pri čemer dokumentirate rezultate in vključujete tretje osebe, kot so dobavitelji programske opreme.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Poslovna kontinuiteta za platforme obdelave zahtevkov</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Vzpostaviti plane za okrevanje po nespremembah (business continuity in disaster recovery) za vse kritične sisteme obdelave zahtevkov. Letno testirati scenarije izpadov podatkovnih centrov in ročno ali samodejno preklapljanje na varnostne sisteme. Čas okrevanja podatkov ne sme presegati štiri ure za sisteme, kritične za poslovanje zahtevkov.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -153,8 +153,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Upravljanje tveganja v dobaviteljski verigi za softverske vendorje</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Opravljati morata formalno presojo tveganja vseh dobaviteljev, ki vam zagotavljajo SaaS sisteme, oblačne storitve ali softvere za upravljanje polic. V pogodbe z dobavitelji vključujete zahteve za varnost podatkov, obveščanje o varnostnih incidentih v roku 24 ur in pravico do audita njihovih sistemov. Vzpostaviti morata register tretjih oseb, ki dostopajo do vaših podatkov, in ga posodabljati najmanj letno.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Upravljanje tveganj v dobavni verigi za programsko opremo</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Vzpostaviti formal proces upravljanja tveganj (vendor risk management) za vse zunanje ponudnike programske opreme in SaaS rešitve, ki jih uporabljate (npr. sistemi za upravljanje polic, portali za brokerje). V pogodbe vključiti pogoje za periodične varnostne redove, poročanje o varnostnih napakah in pravico do revizije varnostnih procesov.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -163,7 +163,7 @@
       </div>
       <div>
         <strong style="color:var(--navy);font-size:.95rem;">Redne ocene tveganja digitalnih distribucijskih kanalov</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Izvajati morata najmanj letne ocene tveganja spletnih portalov, mobilnih aplikacij in drugih digitalnih kanalov, prek katerih se zaposleni, brokeri ali zavarovalci povezujejo z vami. Ocene morajo obsegati preglede dostopa, analizo ranljivosti, testiranje penetracije in preverjanje skladnosti z zahtevami za zaščito podatkov. Ugotovljena tveganja morata dokumentirati in odmah sanirati.</p>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Najmanj dvakrat letno izvesti ocene tveganja za spletne portale, mobilne aplikacije in sisteme za prodajo polic preko interneta. Posebno pozornost posvetiti zaščiti before pred napadali in zagotoviti sledljivo dokumentacijo o rezultatih ocen. Rezultate predložiti vodstvu in na podlagi njih spremeniti politike dostopa.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -171,8 +171,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Obveščanje in poročanje incidentov v varnosti informacij</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Vzpostaviti morata postopke za identifikacijo, obveščanje in poročanje varnostnih incidentov URSIV-u in slovenskim organom v roku 72 ur od odkritja. Vključujete tudi pripravo na nove vrste napadov, kot so ransomware in socialni inženiring, ter redne usposabljalne programe za zaposlene. Voditi morata jasne protokole za komunikacijo z zavarovancem v primeru kršenja podatkov.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Incideneti – prijavna obveznost in notifikacija</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Vzpostaviti sistem za sledenje varnostnim incidetom ter zagotoviti, da je SI-CERT obveščen v 24 urah od odkritja resnega incidenta (zgodnja obvestila). Polna notifikacija URSIV-u in prizadetim osebam se mora izvršiti v 72 urah. Ohraniti dokumentacijo o vseh incidetih in izvajati povratne ocene varnostnih procesov.</p>
       </div>
     </div>
   </div>
@@ -184,16 +184,16 @@
   <ul style="list-style:none;padding:0;margin:0;border-top:1px solid var(--gray-100);">
     
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Brokerske portale in vmesniki, ki jih uporabljajo agenti, nimajo aktivirane večfaktorske avtentifikacije (MFA), kar omogoča nepooblaščen dostop do podatkov zavarovancev tudi v primeru kraje poverila.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Dostopni portali za brokerje niso zaščiteni z večfaktorsko avtentifikacijo (MFA) in omogočajo enostaven napad na račune z veljuljenimi ilegitimnimi dostopi.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Starejši sistemi za upravljanje polic in obravnavo zahtevkov nemajo formaliziranega procesa upravljanja popravkov in varnostnih posodobitev, zato ostajajo izpostavljeni znanih ranljivostih mesece ali celo leta.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Zgodovinski sistemi za upravljanje polic nimajo formalnega procesa obvladovanja popravkov (patch management) in vsebujejo znane ranljivosti, ki jih je enostavno izkoristiti.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Ne obstaja formalni register tretjih oseb (dobaviteljev, cloudnih ponudnikov, integratorjev), ki dostopajo do podatkov zavarovancev, niti niso opravljena tveganja za njihove sisteme in varnostne prakse.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Ni formalnega upravljanja tveganj za zunanje dobavitelje SaaS orodij (npr. podatkovne analitike, spletne platforme) – pogodbe ne vsebujejo obveznosti za varnostne redove ali odgovore na incidente.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Podjetja ne izvedejo rednih ocen tveganja za digitalne kanale (spletne portale, mobilne aplikacije, API-je), zato ne odkrijejo slabosti v kriptografiji, upravljanju sej ali preverjanju identitete uporabnikov.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Ocene tveganja digitalnih distribucijskih kanalov (spletne strani, mobilne aplikacije) se ne izvajajo sistematično ali pa se rezultati ne prevajajo v konkretne varnostne ukrepe.
     </li>
   </ul>
 </div>
@@ -236,21 +236,21 @@
   <div style="border-top:1px solid var(--gray-100);">
     
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Ali moramo imeti ločen IT prostor (DMZ) za brokerske portale in zunanje uporabnike?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Ali mora naša manjša zavarovalno-brokerska hiša s 30 zaposlenimi izpolnjevati obveznosti NIS2?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Zakon ZInfV-1 ne zahteva ločenega prostora, toda najbolja praksa je, da zunanji dostop fizično ali logično izolulirate s požarnim zidom in kontrolami dostopa. Brokerski portal mora biti ločen od internih sistemov z ničelnimi pravicami do drugih podatkovnih baz, razen tistih, ki so nujne za njihovo delo. Priporočamo arhitekturo s štirimi nivoji: javni splet, DMZ za brokerje, notranja mreža za zaposlene in ločena mreža za občutljive aktuarske podatke.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Ne avtomatično – ZInfV-1 zavezuje le »pomembne subjekte«, ki imajo najmanj 50 zaposlenih ali letni promet najmanj 10 milijonov EUR. Vendar če ste microorganism pod to pragom, vam vseeno priporočamo izvajati temeljne ukrepe informacijske varnosti, ker zavarovancem dolguješ zaščito njihovih podatkov.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Kako pogosto moramo testirati poslovno kontinuiteto za sisteme zahtevkov?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Kaj je konkretno 'zgodnja obvestila' v 24 urah in kako jo napravimo?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Minimum je enkrat letno, pri čemer mora test vključevati resnični izpad podatkovne baze, izpad spletnega dostopa ali simuliran napak v sistemu obravnave zahtevkov. Rezultati testov morajo biti dokumentirani, vključno s časom okrevanja, izgubljenih podatkov in učinkovin za izboljšanje. Priporočamo vsaj dve polni vaji letno ter četrtletne tehnične teste za kritične komponente.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Zgodnja obvestila je prvi stik s SI-CERT takoj ko je odkrit resni varnostni incident (npr. eksfiltracija podatkov zavarovancev ali napad na kritični sistem). Pošljete jih na ustrezni kontakt SI-CERT, nato pa v 72 urah pošljete URSIV-u polno notifikacijo z detajli incidenta in ukrepov za sanacijo.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Kaj se zgodi, če se ne usklladimo do 2026?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Kolikšne so kazni za neupoštevanje ZInfV-1 do konca 2026?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">URSIV in SI-CERT lahko izdate opozorilo, odredilnico za usklajevanje v rokih 30–90 dni, ali v primeru hude kršitve celo izvedete sankcije do 10 milijonov EUR ali 2 % globalnega letnega prihodka, odvisno od tega, kaj je večji znesek. Dodatno nastane tudi tveganje za krvave sodbe v primeru incidenta, saj lahko zavarovalnica odgovarja za škodo zavarovancem in tretjim osebam, če bi dokazali, da je bila kršitev pravna obveza varnosti.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Za pomembne subjekte (vključno zavarovalnice) so kazni do 7 milijonov EUR ali pa 1,4 % letnega prometa – kar je več. Posebej resne kazni se izrekajo za neupoštevanje obveznosti za poročanje incidetov (24/72 ur) in za neskladne varnostne politike za obdelavo občutljivih podatkov zavarovancev.</p>
     </div>
   </div>
   </div>
