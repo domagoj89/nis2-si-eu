@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="sl">
 <head>
-<meta name="robots" content="noindex,nofollow">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-68LM6P0B9Y"></script>
   <script>
@@ -12,18 +11,18 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NIS2 za telekomunikacijske operaterje v Sloveniji — obveznosti 2026</title>
-  <meta name="description" content="NIS2/ZInfV-1 obveznosti za telekomunikacijske operaterje, ISP-je in mobilne operaterje v Sloveniji. Izpolnjene do 2026 s posebnim poudarkom na varnosti omrežne infrastrukture in poročanju o incidentih.">
+  <title>NIS2 za telekomunikacijske operaterje v Sloveniji — Obveznosti 2026</title>
+  <meta name="description" content="Smernice NIS2/ZInfV-1 za telekomunikacijske operaterje, ISP in CDN ponudnike v Sloveniji. Obveznosti do konca 2026, poročanje incidentov, kaznovalnik.">
   <link rel="canonical" href="https://nis2-si.eu/sektory/telecoms.html">
-  <meta property="og:title" content="NIS2 za telekomunikacijske operaterje v Sloveniji — obveznosti 2026">
-  <meta property="og:description" content="NIS2/ZInfV-1 obveznosti za telekomunikacijske operaterje, ISP-je in mobilne operaterje v Sloveniji. Izpolnjene do 2026 s posebnim poudarkom na varnosti omrežne infrastrukture in poročanju o incidentih.">
+  <meta property="og:title" content="NIS2 za telekomunikacijske operaterje v Sloveniji — Obveznosti 2026">
+  <meta property="og:description" content="Smernice NIS2/ZInfV-1 za telekomunikacijske operaterje, ISP in CDN ponudnike v Sloveniji. Obveznosti do konca 2026, poročanje incidentov, kaznovalnik.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://nis2-si.eu/sektory/telecoms.html">
   <meta property="og:locale" content="sl_SI">
   <meta property="og:site_name" content="NIS2-SI.eu">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="NIS2 za telekomunikacijske operaterje v Sloveniji — obveznosti 2026">
-  <meta name="twitter:description" content="NIS2/ZInfV-1 obveznosti za telekomunikacijske operaterje, ISP-je in mobilne operaterje v Sloveniji. Izpolnjene do 2026 s posebnim poudarkom na varnosti omrežne infrastrukture in poročanju o incidentih.">
+  <meta name="twitter:title" content="NIS2 za telekomunikacijske operaterje v Sloveniji — Obveznosti 2026">
+  <meta name="twitter:description" content="Smernice NIS2/ZInfV-1 za telekomunikacijske operaterje, ISP in CDN ponudnike v Sloveniji. Obveznosti do konca 2026, poročanje incidentov, kaznovalnik.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
@@ -47,7 +46,7 @@
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "NIS2 za telekomunikacijske operaterje in ISP-je v Sloveniji — obveznosti in zahteve do 2026",
+      "name": "NIS2 za telekomunikacijske operaterje, ISP in mobilne operaterje v Sloveniji — Obveznosti do konca 2026",
       "item": "https://nis2-si.eu/sektory/telecoms.html"
     }
   ]
@@ -60,26 +59,26 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Katere telekomunikacijske storitve spadajo pod Prilogo I in so zato zajete z najbolj strogimi NIS2 zahtevami?",
+      "name": "Kaj je konkretno razlika med »zgodnjo opozorilom« v 24 urah in »notifikacijo« v 72 urah po ZInfV-1?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Vsa javno dostopna elektronska komunikacijska storitev telekomunikacijskih operaterjev, mobilnih omrežnih operaterjev in ISP-jev v Sloveniji je zajeta pod Prilogo I. To vključuje dostop do interneta, javne telefonske storitve, mobilne storitve in CDN. URSIV ima список operaterjev, ki so uradno ocenjeni kot subjekti odločilnega pomena."
+        "text": "Zgodnja opozorila (early warning) v 24 urah je osnovni vpogled: kaj se je zgodilo, koliko uporabnikov je vpletenih, kako resen je vpliv. Notifikacija v 72 urah vključuje tudi uraden opis incidenta, naprave oz. sisteme, ki so bili prizadeti, in prvi predlog ublažitve. Za telekomunikacijske operaterje je to pogosto izguba dostopa do BGP, DNSa ali glavnih связavca."
       }
     },
     {
       "@type": "Question",
-      "name": "Kateri so konkretni koraki za zaščito BGP rusmerjanja pred napadi in umikom poti?",
+      "name": "Ali je obvezno »brisanje« vseh starejših usmerjevalnikov ali je dovolj aktivno upravljanje tveganj?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Implementirajte RPKI (Resource Public Key Infrastructure) za validacijo originalnosti AS poti pri vsakem BGP naročanju. Nastrojite filtre BGP, ki zavračajo neželene poti. Uporabite BGP Flowspec za blokiranje zlonamerne promete. Redno spremljajte spremembe BGP konfiguracije in aktivnosti, saj jih je treba arhivirati in preiskovati."
+        "text": "Zakon dopušča »aktivno upravljanje tveganj«: upoštevate lahko starejšo opremo, če ste dokumentirali tveganja, sprejeli odločitve o nadzoru (npr. omejeni dostop, izolirani segment) in jih redoma pregledali. Vendar je »end-of-support firmware« nedopusten: vsak usmerjevalnik mora prejemati varnostne posodobitve od proizvajalca ali biti zaposedovano zamenjati do konca leta 2026."
       }
     },
     {
       "@type": "Question",
-      "name": "Kakšne so kazni za neusluga s NIS2 zahtevami v Sloveniji do 2026?",
+      "name": "Kakšne so kazni za neupoštevanje ZInfV-1 za telekomunikacijske operaterje?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "ZInfV-1 predvideva globe do 50.000 EUR za resna nesoglasja s pravili o varnosti omrežne infrastrukture in poročanju o incidentih. Za subjekte odločilnega pomena kot so telekomunikacijski operaterji je tudi možna suspenzija dovoljenj za delovanje v primeru ponavljajočih se kršitev ali neporočanja kritičnih incidentov."
+        "text": "Obvezni subjekti (Annex I) so lahko globljeni do 10 milijonov evrov ali 2 % vrstnega letnega prometa, kar je za velike operaterje pomemben znesek. Podjetja z manj kot 50 milijoni evrov prometa so globljena do 7 milijonov evrov ali 1,4 %. Ročnik za skladno poročanje in spremljavo je 31. december 2026; od tega datuma URSIV pričakuje dokaze o polni implementaciji obveznosti."
       }
     }
   ]
@@ -106,23 +105,23 @@
   <div class="breadcrumb">
     <a href="../index.html">Domov</a><span>›</span>
     <a href="index.html">Sektorji</a><span>›</span>
-    NIS2 za telekomunikacijske operaterje in ISP-je v Sloveniji — obveznosti in zahteve do 2026
+    NIS2 za telekomunikacijske operaterje, ISP in mobilne operaterje v Sloveniji — Obveznosti do konca 2026
   </div>
 </div>
 
 <!-- HERO -->
 <div style="background:var(--gray-50);padding:2.5rem 0 3rem;border-bottom:1px solid var(--gray-200);">
   <div class="container--narrow">
-    <span style="display:inline-block;background:#1a3a5c;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Priloga I — subjekt odločilnega pomena</span>
-    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 za telekomunikacijske operaterje in ISP-je v Sloveniji — obveznosti in zahteve do 2026</h1>
-    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Ta stran je namenjena telekomunikacijskim operaterjem, ISP-jem, mobilnim operaterjem in ponudnikom CDN storitev v Sloveniji, ki jih NIS2/ZInfV-1 klasificira kot subjekte odločilnega pomena. Spoznajte specifične zahteve za varnost mrežne infrastrukture, obvezno poročanje o incidentih in upravljanje tveganj v oskrbovalski verigi.</p>
+    <span style="display:inline-block;background:#1a3a5c;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Priloga I — Obvezni subjekt (ključna entiteta)</span>
+    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 za telekomunikacijske operaterje, ISP in mobilne operaterje v Sloveniji — Obveznosti do konca 2026</h1>
+    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Kot telekomunikacijski operater, ISP, mobilni operator ali CDN ponudnik v Sloveniji spadate med obvezne subjekte po Zakonu o informacijski varnosti (ZInfV-1). Ta stran vam pojasnjuje konkretne obveznosti, tveganja in roke za polno skladnost do konca 2026.</p>
   </div>
 </div>
 
 <!-- WHO QUALIFIES -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
   <div style="background:var(--gray-50);border-left:4px solid var(--navy);border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;">
-    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Telekomunikacijski operaterji, Internet ponudniki storitev (ISP), mobilni omrežni operaterji in ponudniki storitev dostopa do vsebine (CDN) v Sloveniji so klasificirani kot subjekti odločilnega pomena, če zagotavljajo javno dostopne elektronske komunikacijske storitve ali so ključni za digitalno infrastrukturo. Pod ZInfV-1 so obvezani, da izpolnijo najstrožje zahteve Priloge I, ne glede na število naročnikov ali geografski obseg delovanja.</p>
+    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Med zavezance sodijo vsi operaterji javnih telekomunikacijskih omrežij v Sloveniji, internetni ponudniki (ISP), mobilni operaterji ter ponudniki storitev dostavnih omrežij (CDN), ki zagotavljajo storitve za več kot 100.000 uporabnikov ali so ključni za nemoteno delovanje kritične infrastrukture. Tudi manjši operaterji postanejo zavezanci, če so vključeni v kritični oskrbni verigi ali obslužujejo javne naročnike.</p>
   </div>
 </div>
 
@@ -136,8 +135,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Varnost jedra omrežne infrastrukture in usmerjanja</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Zagotoviti morate, da so jedra BGP usmerjalnikov, DNS resolverji in kritični omrežni elementi zaščiteni pred napadom na usmerjanje in zlonamerno spreminjanjem konfiguracije. Implementirajte filtriranje BGP poti, RPKI validacijo in kontinuirano spremljanje sprememb v konfiguraciji. Vsi ključni omrežni elementi morajo biti omejeni s strogimi dostopnimi nadzori in šifriranimi kanali, ki jih redno revidirate.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Varnost omrežne infrastrukture in usmerjanja prometa</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Kot telekomunikacijski operator morate vzpostaviti kontrole za zavarovanje osnovne omrežne infrastrukture, vključno s čelnimi usmerjevalniki, varnim usmerjanjem BGP in zaščito pred razvodom BGP poti. Implementirajte filtriranje BGP poti, RPKI (Resource Public Key Infrastructure) validacijo in spremljanje anomalij v protokolu usmerjanja, da preprečite napadne scenarije kot so BGP hijacking in route leaking.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -145,8 +144,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Obvezno poročanje o incidentih, ki vplivajo na naročnike</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Če pride do napake, vdora ali druge kibernetske grožnje, ki vpliva na pomembno populacijo naročnikov, morate o tem poročati URSIV in SI-CERT v skladu s časovnimi rokami ZInfV-1. Vzpostavite notranjo prvo pomočno skupino (CSIRT), ki je 24/7 na voljo, in jasne postopke za blaženje, dokumentiranje in poročanje. Deljenke z nadzorom in analizo incidentov morajo biti avtomatske in jih je treba arhivirati najmanj tri leta.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Poročanje incidentov o prekinitvah storitev</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Incident, ki vpliva na območni ali nacionalni obseg, morate prijaviti SI-CERTu (Slovenskega nacionalnega centra za odziv na incidente) v roku 24 ur kot zgodnjo opozorilo, nato pa v celoti notificirati v roku 72 ur od odkritja. Obveznost vključuje tudi poročanje o izpadih, ki segajo na več sto tisoč uporabnikov, in vseh incident povezanih s kritično infrastrukturo.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -154,8 +153,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Upravljanje tveganj v oskrbovalski verigi omrežne opreme</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Ocenite vsa tveganja, ki jih predstavljajo dobavitelji omrežne opreme — usmerjalniki, stikala, bazne postaje, DNS storitvam in podobno. Zavezani ste, da preverate varnostne certifikate dobaviteljev, zahtevate redne zaščitne popravke in spremljate, da oprema ne teče na starem, nepodprtem ali nevnem firmware. Vzpostavite pogodbe s dobavitelji, ki vključujejo odgovornost za varnostne zahteve in obvezna obvestila o ugotovljenih ranljivostih.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Varnost dobavne verige omrežne opreme</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Morate vzpostaviti kontrole nad vsemi dobavitelji ključne opreme (usmerjevalniki, stikala, bazne postaje, DNS strežniki). Zahtevajte od dobaviteljev dokumentacijo varnostnih preizkušenj, informacije o verzijah firmware-ja in napovedih o zaključku dobave (end-of-support). Prepovedani so usmerjevalniki in druga kritična omrežna oprema, ki teče s firmware-jem brez aktivne varnostne podpore.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -163,8 +162,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Varnost zakonitega prestrezanja in nadzora dostopa</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Sistemi za zakonito prestrezanje (LI) morajo biti zaštiteni z najvišjim nivojem dostopnega nadzora in šifriranja. Samo osebje z izrecno pristojnostjo sme imeti dostop do intetnih vmesnikov in konfiguracije. Vzpostavite imenik vseh osebkov z dostopom do LI sistemov in redno revidirajte njihove aktivnosti. Vse spremembe konfiguracije in pristopa morajo biti avtomatično evidentiane in zaščitene pred spreminjanjem.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Nadzor dostopa in zakoniti prestrezanje</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Implementirajte stroga kontrola dostopa za kadre, ki imajo dostop do omrežne infrastrukture in sistemov zakonitega prestrezanja (lawful interception). Vodite dnevnike dostopa (audit logs), izvajajte večfaktorsko preverjanje (MFA) in redne preglede dodelitev pravic. Posebej varujte ključe za šifriranje komunikacijskih poti in dostope do sistemov zakonitega prestrezanja.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -172,8 +171,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Kontinuirani nadzor omrežnih anomalij in groženj</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Implementirajte 24/7 monitoring infrastrukture z avtomatskim odkrivanjem anomalij v prometnih vzorcih, dostopih in konfiguraciji. Uporabite SIEM rešitve, da centralizirate dnevnike iz vseh ključnih omrežnih naprav. Vzpostavite jasne prage za obvestila o domnevnih napadih in nesoglasjih ter zagotovite, da je analiza incidentov trajna in dokumentirana.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Obvljujočih upravljanja tveganj in »supply chain risk assessment«</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Vzpostavite proces upravljanja tveganj, ki vključuje redne ocene varnosti kritične infrastrukture in dobavne verige. Leto 2026 je rok za polno implementacijo sistema: ocenjevanje tveganj za vse ključne dobavitelje, redno spremljanje stanja varnosti in dokumentirane odločitve o ublažitvi tveganj za vsak segment omrežne infrastrukture.</p>
       </div>
     </div>
   </div>
@@ -185,16 +184,16 @@
   <ul style="list-style:none;padding:0;margin:0;border-top:1px solid var(--gray-100);">
     
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>BGP filtriranje in RPKI validacija nista implementirana, zato so jedra omrežja izpostavljena napadom na usmerjanje in umiku poti.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>BGP route filtering in RPKI validacija nista implementirani; usmerjevalniki sprejemajo neuvrščene BGP napovedi, kar omogoči hijacking poti in preusmerjanje kritičnega prometa.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Omrežna oprema (usmerjalniki, stikala, bazne postaje) teče na firmware-u, ki je dlje kot šest mesecev brez varnostnih popravkov, saj ni vzpostavljenega postopka za redne posodobitve.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Omrežna oprema (usmerjevalniki, stikala, bazne postaje) teče s firmware-jem, ki je prekoračil konec dobavitelja (end-of-support) in ne prejema varnostnih popravkov; to je pogosto pri opremi, starejši od 5–8 let.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Spremljanja jeder omrežja ni, saj manjka integracija SIEM/NAM sistemov za realčasno odkrivanje konfiguracije sprememb in zlonamerne aktivnosti.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Nadzor dostopa do kritičnih sistemov je slab: korenski računi so deljeni med tehnično osebje, MFA ni preizkušena na jedrih omrežja in audit logi se ne spremljajo ali ne shranjujejo.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Dostopni nadzor do zakonitega prestrezanja in upravnih interfejsov je šibak — dostop nima spremenljivih gesel in avtentifikacije multi-faktor, zato je rizično in tvegano.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Dobavitelj opreme ni sistematično vrednoteni po kriteriju varnosti; manjka dokumentacijo o procesih varnostnega testiranja in o načrtih izključitve starejših komponent iz dobavne verige.
     </li>
   </ul>
 </div>
@@ -210,7 +209,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">vanta.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../orodja/vanta.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Preveri orodje →</a>
+      <a href="../orodja/vanta.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
@@ -218,7 +217,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">secfix.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../orodja/secfix.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Preveri orodje →</a>
+      <a href="../orodja/secfix.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
@@ -226,7 +225,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">isms.online</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../orodja/isms-online.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Preveri orodje →</a>
+      <a href="../orodja/isms-online.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
   </div>
 </div>
@@ -237,21 +236,21 @@
   <div style="border-top:1px solid var(--gray-100);">
     
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Katere telekomunikacijske storitve spadajo pod Prilogo I in so zato zajete z najbolj strogimi NIS2 zahtevami?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Kaj je konkretno razlika med »zgodnjo opozorilom« v 24 urah in »notifikacijo« v 72 urah po ZInfV-1?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Vsa javno dostopna elektronska komunikacijska storitev telekomunikacijskih operaterjev, mobilnih omrežnih operaterjev in ISP-jev v Sloveniji je zajeta pod Prilogo I. To vključuje dostop do interneta, javne telefonske storitve, mobilne storitve in CDN. URSIV ima список operaterjev, ki so uradno ocenjeni kot subjekti odločilnega pomena.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Zgodnja opozorila (early warning) v 24 urah je osnovni vpogled: kaj se je zgodilo, koliko uporabnikov je vpletenih, kako resen je vpliv. Notifikacija v 72 urah vključuje tudi uraden opis incidenta, naprave oz. sisteme, ki so bili prizadeti, in prvi predlog ublažitve. Za telekomunikacijske operaterje je to pogosto izguba dostopa do BGP, DNSa ali glavnih связavca.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Kateri so konkretni koraki za zaščito BGP rusmerjanja pred napadi in umikom poti?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Ali je obvezno »brisanje« vseh starejših usmerjevalnikov ali je dovolj aktivno upravljanje tveganj?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Implementirajte RPKI (Resource Public Key Infrastructure) za validacijo originalnosti AS poti pri vsakem BGP naročanju. Nastrojite filtre BGP, ki zavračajo neželene poti. Uporabite BGP Flowspec za blokiranje zlonamerne promete. Redno spremljajte spremembe BGP konfiguracije in aktivnosti, saj jih je treba arhivirati in preiskovati.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Zakon dopušča »aktivno upravljanje tveganj«: upoštevate lahko starejšo opremo, če ste dokumentirali tveganja, sprejeli odločitve o nadzoru (npr. omejeni dostop, izolirani segment) in jih redoma pregledali. Vendar je »end-of-support firmware« nedopusten: vsak usmerjevalnik mora prejemati varnostne posodobitve od proizvajalca ali biti zaposedovano zamenjati do konca leta 2026.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Kakšne so kazni za neusluga s NIS2 zahtevami v Sloveniji do 2026?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Kakšne so kazni za neupoštevanje ZInfV-1 za telekomunikacijske operaterje?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">ZInfV-1 predvideva globe do 50.000 EUR za resna nesoglasja s pravili o varnosti omrežne infrastrukture in poročanju o incidentih. Za subjekte odločilnega pomena kot so telekomunikacijski operaterji je tudi možna suspenzija dovoljenj za delovanje v primeru ponavljajočih se kršitev ali neporočanja kritičnih incidentov.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Obvezni subjekti (Annex I) so lahko globljeni do 10 milijonov evrov ali 2 % vrstnega letnega prometa, kar je za velike operaterje pomemben znesek. Podjetja z manj kot 50 milijoni evrov prometa so globljena do 7 milijonov evrov ali 1,4 %. Ročnik za skladno poročanje in spremljavo je 31. december 2026; od tega datuma URSIV pričakuje dokaze o polni implementaciji obveznosti.</p>
     </div>
   </div>
   </div>
@@ -270,11 +269,13 @@
   </div>
 </div>
 
+
+<nav class="related-sectors" aria-label="Related sectors" style="max-width:1100px;margin:2rem auto;padding:1.5rem 1.25rem;border-top:1px solid #e5e7eb;"><h2 style="font-size:1.05rem;margin:0 0 .75rem;">Related sectors</h2><ul style="list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:.5rem 1rem;"><li style="margin:0"><a href="telemedicine.html">NIS2/ZInfV-1 za telehealth platforme v Sloveniji 2026</a></li><li style="margin:0"><a href="transport.html">NIS2 za letalske operaterje, železnice in pristanišča v Sloveniji 2026</a></li><li style="margin:0"><a href="waste-management.html">NIS2 za oskrbovalce komunalnih odpadkov v Sloveniji - 2026</a></li><li style="margin:0"><a href="water.html">NIS2 za dobavitelje pitne vode v Sloveniji</a></li><li style="margin:0"><a href="accountants.html">NIS2 zahteve za računovodske pisarne in davčne svetovalce v Sloveniji 2026</a></li><li style="margin:0"><a href="banks.html">NIS2 za banke in hranilnice v Sloveniji</a></li></ul></nav>
 <footer style="background:var(--gray-50);border-top:1px solid var(--gray-200);padding:2rem 1.25rem;text-align:center;">
   <div class="container">
     <p style="color:var(--gray-400);font-size:.82rem;margin:0;">
       © 2026 NIS2-SI.eu · ZInfV-1/NIS2 · URSIV / SI-CERT
-      <br>Informacije so izobraževalne narave in ne pomenijo pravnega nasveta.
+      <br>Informacje mają charakter edukacyjny i nie stanowią porady prawnej.
       <br><a href="../index.html" style="color:var(--gray-400);">Domov</a> ·
       <a href="index.html" style="color:var(--gray-400);">Sektorji</a> ·
       <a href="../primerjava.html" style="color:var(--gray-400);">Primerjava orodij</a>

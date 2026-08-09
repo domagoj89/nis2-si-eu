@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="sl">
 <head>
-<meta name="robots" content="noindex,nofollow">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-68LM6P0B9Y"></script>
   <script>
@@ -12,18 +11,18 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NIS2/ZInfV-1 za velike trgovske verige in e-commerce - Slovenija 2026</title>
-  <meta name="description" content="Obveznosti NIS2 za trgovske verige: zaščita plačilnih sistemov, podatkov strank, dobaviteljev. Rok usklajevanja do decembra 2025.">
+  <title>NIS2 Zahteve za Velike Trgovske Verige in E-Commerce - Slovenija 2026</title>
+  <meta name="description" content="NIS2 (ZInfV-1) obveznosti za trgovince in e-trgovce v Sloveniji. Rok za polno implementacijo varnostnih ukrepov: konec 2026. Navodila URSIV.">
   <link rel="canonical" href="https://nis2-si.eu/sektory/retail.html">
-  <meta property="og:title" content="NIS2/ZInfV-1 za velike trgovske verige in e-commerce - Slovenija 2026">
-  <meta property="og:description" content="Obveznosti NIS2 za trgovske verige: zaščita plačilnih sistemov, podatkov strank, dobaviteljev. Rok usklajevanja do decembra 2025.">
+  <meta property="og:title" content="NIS2 Zahteve za Velike Trgovske Verige in E-Commerce - Slovenija 2026">
+  <meta property="og:description" content="NIS2 (ZInfV-1) obveznosti za trgovince in e-trgovce v Sloveniji. Rok za polno implementacijo varnostnih ukrepov: konec 2026. Navodila URSIV.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://nis2-si.eu/sektory/retail.html">
   <meta property="og:locale" content="sl_SI">
   <meta property="og:site_name" content="NIS2-SI.eu">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="NIS2/ZInfV-1 za velike trgovske verige in e-commerce - Slovenija 2026">
-  <meta name="twitter:description" content="Obveznosti NIS2 za trgovske verige: zaščita plačilnih sistemov, podatkov strank, dobaviteljev. Rok usklajevanja do decembra 2025.">
+  <meta name="twitter:title" content="NIS2 Zahteve za Velike Trgovske Verige in E-Commerce - Slovenija 2026">
+  <meta name="twitter:description" content="NIS2 (ZInfV-1) obveznosti za trgovince in e-trgovce v Sloveniji. Rok za polno implementacijo varnostnih ukrepov: konec 2026. Navodila URSIV.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
@@ -47,7 +46,7 @@
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "NIS2/ZInfV-1 za velike trgovske verige in e-commerce operatorje v Sloveniji — Obveznosti in rok 2026",
+      "name": "NIS2 Varnostne Zahteve za Velike Trgovske Verige in E-Commerce Operatorje v Sloveniji",
       "item": "https://nis2-si.eu/sektory/retail.html"
     }
   ]
@@ -60,26 +59,26 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Katere trgovske verige in e-commerce operatorje zavezuje ZInfV-1 v Sloveniji?",
+      "name": "Ali smo kot e-commerce operator s fizičnimi prodajalnami obvezirani spoštovati ZInfV-1?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "ZInfV-1 zavezuje trgovske verige in e-commerce operatorje, ki so razvrščeni kot »pomembni subjekti« po Prilogi II: to so organizacije z več kot 250 zaposlenimi ali letnim prometom nad 50 milijonov evrov, ki obdelujejo plačilne podatke ali ponujajo ključne storitve. URSIV razpolaga s popolnim seznamom zavezanih organizacij, ki vam ga lahko posreduje na zahtevo."
+        "text": "Da, če obdelujete podatke več kot 1.000 strank mesečno ali imate letni prihodek nad 50 milijonov EUR, ste kot pomembni subjekt na Prilogi II zavezani ZInfV-1. To velja tudi za hibridne modele (splet + trgovine), ker je vaša storitvena dostopnost kritična za gospodarstvo Slovenije."
       }
     },
     {
       "@type": "Question",
-      "name": "Kakšne so posledice neupoštevanja obveznosti PCI-DSS za zastarele POS terminale?",
+      "name": "Kakšen je rok za prijavilo v SI-CERT in kaj se zgodi, če zamudim zahtevani zeitraum?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Neusklajenost s PCI-DSS in ZInfV-1 za POS sisteme vodi do glob od 10 do 50 milijonov evrov (odvisno od resnosti) ter lahko povzroči izgubo dovoljenj za plačilne storitve. Prav tako se povečuje tveganje za krajo podatkov in izguba ugleda. Priporočamo, da v roku šestih mesecev vzpostavite načrt za modernizacijo zastarele infrastrukture."
+        "text": "Zgodnji alarm je treba poslati v roku 24 ur od odkritja incidenta. Uradno obvestilo je treba poslati v roku 72 ur. Zamuda na poročanje ima za posledico globe od 1.4% do 2% letnega prometa za pomembne subjekte (do 7 milijonov EUR). Dokumentirajte časovnico v internih logih."
       }
     },
     {
       "@type": "Question",
-      "name": "Kakšen je rok za usklajevanje s predpisi ZInfV-1 in kaj se zgodi, če roka ne zmorem?",
+      "name": "Ali starejši POS terminali, ki niso certificirani za PCI-DSS, štejejo kot »varnostne»?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Uradno skrajni rok je 19. december 2025 za vse zavezane subjekte. Po tej datumi URSIV in SI-CERT izvršujeta redne inšpekcije skladnosti. Organizacije, ki do tega roka ne bodo skladne, prejemajo uradna opozorila in opomene z zavezujočimi roki za odpravo pomanjkljivosti. Priporočamo, da začnete s presejo skladnosti do konca leta 2025."
+        "text": "Ne — žal je to pogosta vrzel. Starejši terminali so še vedno del vaše IT infrastrukture in jih je treba zaščititi s sodobnim kriptografskim standardi in popravkami, tudi če PCI-DSS režim jih ne pokriva. Do konca 2026 jih morate bodisi nadgraditi, izolirati z mrežno segmentacijo ali vključiti v urnik rednih penetracijskih testov."
       }
     }
   ]
@@ -106,23 +105,23 @@
   <div class="breadcrumb">
     <a href="../index.html">Domov</a><span>›</span>
     <a href="index.html">Sektorji</a><span>›</span>
-    NIS2/ZInfV-1 za velike trgovske verige in e-commerce operatorje v Sloveniji — Obveznosti in rok 2026
+    NIS2 Varnostne Zahteve za Velike Trgovske Verige in E-Commerce Operatorje v Sloveniji
   </div>
 </div>
 
 <!-- HERO -->
 <div style="background:var(--gray-50);padding:2.5rem 0 3rem;border-bottom:1px solid var(--gray-200);">
   <div class="container--narrow">
-    <span style="display:inline-block;background:#16a34a;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Priloga II — Pomembna subjekt</span>
-    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2/ZInfV-1 za velike trgovske verige in e-commerce operatorje v Sloveniji — Obveznosti in rok 2026</h1>
-    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Vodilo je namenjeno upravam informacijske varnosti in vodstvenemu sloju velikih trgovskih verig ter e-commerce operatorjev, ki obdelujejo plačilne podatke in osebne podatke strank. Spoznajte konkretne obveznosti skladnosti s Slovenskim zakonom o informacijski varnosti po direktivi NIS2.</p>
+    <span style="display:inline-block;background:#16a34a;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Priloga II — Pomembna Subjekt</span>
+    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 Varnostne Zahteve za Velike Trgovske Verige in E-Commerce Operatorje v Sloveniji</h1>
+    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Ta navodila so namenjena varnostnim vodjam, IT direktorjem in compliance oficirjem večjih trgovskih verig in e-commerce platforme, ki obdelujejo občutljive podatke strank in plačilne transakcije. Spoznajte konkretne obveznosti, roke in tveganja iz Zakona o informacijski varnosti.</p>
   </div>
 </div>
 
 <!-- WHO QUALIFIES -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
   <div style="background:var(--gray-50);border-left:4px solid var(--navy);border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;">
-    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Pod obveznosti ZInfV-1 spadajo trgovske verige in e-commerce operatorji s številom zaposlenih nad 250 oseb ali letnim prometom nad 50 milijonov evrov, ki obdelujejo plačilne podatke prek POS terminalov ali spletnih trgovin. Poleg tega morajo biti tudi manjši operatorji, ki nudijo ključne storitve elektronskega poslovanja ali prevzamejo vlogo operaterja kritične infrastrukture, skladni s predpisi.</p>
+    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Pod ZInfV-1 spadate kot pomembna subjekt, če ste velika trgovska veriga s fizičnimi prodajalnami in spletnim trgovanjem, obdelujete podatke več kot 1.000 strank mesečno, ali vaš letni prihodek presega 50 milijonov EUR. Zavezani ste tudi, če imata storitve plačilnega procesiranja ali upravljanja zalog kritično vlogo za storitve trgovanja v Sloveniji.</p>
   </div>
 </div>
 
@@ -136,8 +135,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Zaščita infrastrukture plačilnega procesiranja in POS terminalov</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Zagotoviti morate skladnost s standardi PCI-DSS 4.0 za vse točke prodaje, vključno z zastarelo infrastrukturo, ki ni v neposrednem obsegu stare PCI-DSS certifikacije. Poleg tega je treba na sistemih za obdelavo plačil vzpostaviti popolno šifriranje podatkov v prenosu in mirovanju ter omejiti dostop samo na overeni персонал s pogoji, odvisnimi od vloge. URSIV pričakuje, da dokumentirate vse plačilne sisteme, vključno z arhitekturnimi diagrami, kriptografskima ključema in evidenco dostopa.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Varnost Infrastrukture POS in Plačilnega Procesiranja</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Zagotoviti morate, da so vsi POS terminali, gateway-ji in sistemi za obdelavo plačil zaščiteni s sodobnimi kriptografskih standardi in rednimi popravki. To zajema tako sodobne POS naprave kot tudi starejšo infrastrukturo, ki je morda izključena iz PCI-DSS obsega. Do konca 2026 mora biti jasno dokumentiran inventar vse plačilne infrastrukture z opredeljenim lastником in odgovornostjo.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -145,8 +144,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Varovanje podatkov strank in obvestilo o kršitvi</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Vzpostaviti morate postopke za odkrivanje in prijavljivanje kršitev osebnih podatkov v roku 72 ur. Za trgovske verige z baze nad milijon strank je obvezna vzpostavitev avtomatiziranega sistema za praćenje anomalij v dostopih do baz podatkov. Prav tako je potrebno periodično preverjati veljavnost in ustreznost obdobja hranjenja podatkov za programe zvestobe ter izbrisati podatke, ki niso več potrebni.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Upravljanje Tveganj v Dobavni Verigi</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Ovrednotiti in nadzorovati morate dostop zunanjim dobaviteljem logistike, upravljavcem zalog in sistemskim integratorjem do vaših sistemov. Za vsakega dobavitelja mora biti predvidena pogodba o informacijski varnosti z jasnimi zahtevami glede šifriranja, dostopa in poročanja o varnostnih dogajanjih. Redni pregledi dostopnih pravic morajo biti izvedeni vsaj letno.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -154,8 +153,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Varnost dobaviteljev in logistike v verigi dostave</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Zahtevati morate, da vsi dobavitelji sistemov za upravljanje zalog in logistike (3PL, WMS, ERP) izpolnjujejo najmanj osnovne varnostne standarde in vam zagotavljajo dokazila o skladnosti. Ključno je установити pogodbe, ki opredelijo odgovornosti za varnost podatkov in protokole za obveščanje o incidentih. Pri vsakem dobavitelju, ki ima dostop do vaših kritičnih sistemov, morate izvršiti letno presojo tveganja in dostop periodično preveriti.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Obveščanje o Incidentih in Zgodnji Alarm</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">V primeru varnostnega incidenta, ki vpliva na storitve spletnega trgovanja ali obdelavo podatkov strank, morate SI-CERT obvestiti v zgodnji alarm v roku 24 ur. Uradno obvestilo upravljavcu (če je drugačen od vas) in URSIV-u je treba poslati v roku 72 ur. Dokumentirajte časovnico, obseg in korektivne ukrepe za vsak incident.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -163,8 +162,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Prijavljivanje incidentov URSIV in upravljanje kriznih situacij</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">V primeru incidenta, ki vpliva na dostopnost spletne trgovine, POS omrežja ali plačilnega procesiranja za več kot dve uri, morate takoj obvestiti SI-CERT in URSIV (najdlje v roku ene ure). Pripraviti morate podroben načrt za krizno upravljanje, ki vključuje scenarije izpada, komunikacijske kanale in vloge reševalnega tima. Dokumentirati morate tudi vse incidente v internem beledu z analizo vzroka in korektivnimi ukrepi.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Zaščita Podatkov Strank in Politika Hrambe</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Pogosto izvajajte preglede baz podatkov lojalnostnih programov in storitve e-pošte, da ne hranite osebnih podatkov dalj časa, kot je potrebno. Imeti morate jasno politiko hrambe z avtomatiziranimi postopki brisanja; podaljšana hrambe podatkov povečuje tveganje za kršitve. Snemajte vse dostope do občutljivih podatkov strank z možnostjo revizije.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -172,8 +171,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Upravljanje dostopa in nadzor privilegirane uporabniške vloge</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Vzpostaviti morate sistem upravljanja dostopa s principom najmanjše potrebnosti za vse zaposlence in tretje osebe s pristopom do plačilnih podatkov, skladišč ali baz strank. To vključuje večfaktorsko avtentifikacijo za vse upravljavce sistemov, pisne dokazilne liste za privilegirane dostope in revizijsko sled z najmanj dvema letoma retencionizma. Prav tako morate zagotoviti usposabljanje na temo kibernetske varnosti za najmanj 80 % kadra, ki obravnava občutljive podatke.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Upravljanje Dostopa in Ločevanje Nalog</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Implementirajte kontrole najmanjšega privilegija za vse uporabnike, ki dostopajo do plačilnih sistemov in podatkov strank. Osebe, ki upravljajo POS sisteme in inventar, ne smejo imeti administratorskega dostopa do spletne prodajne platforme. Redne preglede nalog (najmanj letno) morajo potrditi, da so dostopne pravice v skladu s trenutnimi delovnimi nalogami.</p>
       </div>
     </div>
   </div>
@@ -185,16 +184,16 @@
   <ul style="list-style:none;padding:0;margin:0;border-top:1px solid var(--gray-100);">
     
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Zastareli POS terminali v trgovinah niso vključeni v PCI-DSS obseg in ostanejo nezavzeti: vzpostavite register vseh plačilnih terminalov z danumi zadnje prevere in načrtom za modernizacijo.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Starejši POS terminali brez sistemskih popravkov ostajajo na terenu, ker niso vključeni v obseg PCI-DSS in jih zato varnostne ekipe ignorirate.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Baze podatkov programov zvestobe innehavajo podakte strank, ki jih je mogoče zbrisati: izvedite pregled politike hranjenja podatkov in zmanjšajte obdobje na najmanjšo potrebno zakonsko dobo.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Baze podatkov lojalnostnih programov vsebujejo zgodovino nakupov in osebne podatke strank, ki se hranijo 5+ let, čeprav je dovolj 12 mesecev za poslovne namene.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Dobavitelji in zunanji integratorji imajo trajno in neurejeno dostop do sistemov za upravljanje zalog: vzpostavite dogovore o dostopnih pravicah s končnim rokom veljavnosti in najmanj letno presojo.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Dobavitelji logistike in upravljavci zalog imajo trajne dostope do sistemov za upravljanje zalog brez formalnih pogodb o varnosti ali zmanjšanja dostopa ob koncu sodelovanja.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Manjka jasna vloga in odgovornost osebe za kibernetsko varnost v voditeljski strukturi: priporočamo imenovanje dedicirane osebe ali tima, odgovornega za skladnost z ZInfV-1.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Noben centraliziran sistem za revizijo in dnevnike dostopa do plačilnih sistemov, zato incidenti niso enačasno odkrit in prijavljeni SI-CERT-u.
     </li>
   </ul>
 </div>
@@ -210,7 +209,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">reglyze.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../orodja/reglyze.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Preveri orodje →</a>
+      <a href="../orodja/reglyze.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
@@ -218,7 +217,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">isms.online</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../orodja/isms-online.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Preveri orodje →</a>
+      <a href="../orodja/isms-online.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
@@ -226,7 +225,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">nordlayer.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../orodja/nordlayer.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Preveri orodje →</a>
+      <a href="../orodja/nordlayer.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
   </div>
 </div>
@@ -237,21 +236,21 @@
   <div style="border-top:1px solid var(--gray-100);">
     
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Katere trgovske verige in e-commerce operatorje zavezuje ZInfV-1 v Sloveniji?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Ali smo kot e-commerce operator s fizičnimi prodajalnami obvezirani spoštovati ZInfV-1?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">ZInfV-1 zavezuje trgovske verige in e-commerce operatorje, ki so razvrščeni kot »pomembni subjekti« po Prilogi II: to so organizacije z več kot 250 zaposlenimi ali letnim prometom nad 50 milijonov evrov, ki obdelujejo plačilne podatke ali ponujajo ključne storitve. URSIV razpolaga s popolnim seznamom zavezanih organizacij, ki vam ga lahko posreduje na zahtevo.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Da, če obdelujete podatke več kot 1.000 strank mesečno ali imate letni prihodek nad 50 milijonov EUR, ste kot pomembni subjekt na Prilogi II zavezani ZInfV-1. To velja tudi za hibridne modele (splet + trgovine), ker je vaša storitvena dostopnost kritična za gospodarstvo Slovenije.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Kakšne so posledice neupoštevanja obveznosti PCI-DSS za zastarele POS terminale?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Kakšen je rok za prijavilo v SI-CERT in kaj se zgodi, če zamudim zahtevani zeitraum?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Neusklajenost s PCI-DSS in ZInfV-1 za POS sisteme vodi do glob od 10 do 50 milijonov evrov (odvisno od resnosti) ter lahko povzroči izgubo dovoljenj za plačilne storitve. Prav tako se povečuje tveganje za krajo podatkov in izguba ugleda. Priporočamo, da v roku šestih mesecev vzpostavite načrt za modernizacijo zastarele infrastrukture.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Zgodnji alarm je treba poslati v roku 24 ur od odkritja incidenta. Uradno obvestilo je treba poslati v roku 72 ur. Zamuda na poročanje ima za posledico globe od 1.4% do 2% letnega prometa za pomembne subjekte (do 7 milijonov EUR). Dokumentirajte časovnico v internih logih.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Kakšen je rok za usklajevanje s predpisi ZInfV-1 in kaj se zgodi, če roka ne zmorem?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Ali starejši POS terminali, ki niso certificirani za PCI-DSS, štejejo kot »varnostne»?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Uradno skrajni rok je 19. december 2025 za vse zavezane subjekte. Po tej datumi URSIV in SI-CERT izvršujeta redne inšpekcije skladnosti. Organizacije, ki do tega roka ne bodo skladne, prejemajo uradna opozorila in opomene z zavezujočimi roki za odpravo pomanjkljivosti. Priporočamo, da začnete s presejo skladnosti do konca leta 2025.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Ne — žal je to pogosta vrzel. Starejši terminali so še vedno del vaše IT infrastrukture in jih je treba zaščititi s sodobnim kriptografskim standardi in popravkami, tudi če PCI-DSS režim jih ne pokriva. Do konca 2026 jih morate bodisi nadgraditi, izolirati z mrežno segmentacijo ali vključiti v urnik rednih penetracijskih testov.</p>
     </div>
   </div>
   </div>
@@ -270,11 +269,13 @@
   </div>
 </div>
 
+
+<nav class="related-sectors" aria-label="Related sectors" style="max-width:1100px;margin:2rem auto;padding:1.5rem 1.25rem;border-top:1px solid #e5e7eb;"><h2 style="font-size:1.05rem;margin:0 0 .75rem;">Related sectors</h2><ul style="list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:.5rem 1rem;"><li style="margin:0"><a href="sme-general.html">NIS2 za srednja podjetja v Sloveniji</a></li><li style="margin:0"><a href="software-saas.html">NIS2 skladnost za B2B SaaS</a></li><li style="margin:0"><a href="telecoms.html">NIS2 za telekomunikacijske operaterje v Sloveniji</a></li><li style="margin:0"><a href="telemedicine.html">NIS2/ZInfV-1 za telehealth platforme v Sloveniji 2026</a></li><li style="margin:0"><a href="transport.html">NIS2 za letalske operaterje, železnice in pristanišča v Sloveniji 2026</a></li><li style="margin:0"><a href="waste-management.html">NIS2 za oskrbovalce komunalnih odpadkov v Sloveniji - 2026</a></li></ul></nav>
 <footer style="background:var(--gray-50);border-top:1px solid var(--gray-200);padding:2rem 1.25rem;text-align:center;">
   <div class="container">
     <p style="color:var(--gray-400);font-size:.82rem;margin:0;">
       © 2026 NIS2-SI.eu · ZInfV-1/NIS2 · URSIV / SI-CERT
-      <br>Informacije so izobraževalne narave in ne pomenijo pravnega nasveta.
+      <br>Informacje mają charakter edukacyjny i nie stanowią porady prawnej.
       <br><a href="../index.html" style="color:var(--gray-400);">Domov</a> ·
       <a href="index.html" style="color:var(--gray-400);">Sektorji</a> ·
       <a href="../primerjava.html" style="color:var(--gray-400);">Primerjava orodij</a>

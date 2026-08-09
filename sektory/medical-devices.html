@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="sl">
 <head>
-<meta name="robots" content="noindex,nofollow">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-68LM6P0B9Y"></script>
   <script>
@@ -13,17 +12,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NIS2 za proizvajalce medicinskih naprav v Sloveniji 2026</title>
-  <meta name="description" content="NIS2 zahteve za proizvajalce medicinskih naprav: SBOM, nadzor po trženju, poročanje o ranljivostih. Rok 2026.">
+  <meta name="description" content="NIS2 obveznosti za proizvajalce medicinskih naprav v Sloveniji: SBOM, nadzor po trženju, varnost oskrbne verige in skladnost z rokom 2026.">
   <link rel="canonical" href="https://nis2-si.eu/sektory/medical-devices.html">
   <meta property="og:title" content="NIS2 za proizvajalce medicinskih naprav v Sloveniji 2026">
-  <meta property="og:description" content="NIS2 zahteve za proizvajalce medicinskih naprav: SBOM, nadzor po trženju, poročanje o ranljivostih. Rok 2026.">
+  <meta property="og:description" content="NIS2 obveznosti za proizvajalce medicinskih naprav v Sloveniji: SBOM, nadzor po trženju, varnost oskrbne verige in skladnost z rokom 2026.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://nis2-si.eu/sektory/medical-devices.html">
   <meta property="og:locale" content="sl_SI">
   <meta property="og:site_name" content="NIS2-SI.eu">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="NIS2 za proizvajalce medicinskih naprav v Sloveniji 2026">
-  <meta name="twitter:description" content="NIS2 zahteve za proizvajalce medicinskih naprav: SBOM, nadzor po trženju, poročanje o ranljivostih. Rok 2026.">
+  <meta name="twitter:description" content="NIS2 obveznosti za proizvajalce medicinskih naprav v Sloveniji: SBOM, nadzor po trženju, varnost oskrbne verige in skladnost z rokom 2026.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
@@ -47,7 +46,7 @@
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "NIS2 za proizvajalce medicinskih naprav v Sloveniji — obveznosti 2026",
+      "name": "NIS2 za proizvajalce medicinskih naprav v Sloveniji — obveznosti in rok skladnosti 2026",
       "item": "https://nis2-si.eu/sektory/medical-devices.html"
     }
   ]
@@ -60,26 +59,26 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Kaj natanko mora biti vključeno v SBOM za medicinsko napravo?",
+      "name": "Kaj je SBOM in ali je res potreben za starejše medicinske naprave, ki so že na trgu?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "SBOM mora navedti vse komponente programske opreme (odprte kode, lastne kode, tretje osebe), s točnami verzijami in povezavami do znanih ranljivosti. Vključiti morate tudi operacijski sistem, gonilnike, gonilnike in konfiguracijske datoteke. Priporočljiv je standard SPDX ali CycloneDX, URSIV pričakuje dostopnost v standardnem formatu."
+        "text": "SBOM (Software Bill of Materials) je detaljni seznam vseh programskih komponent, knjižnic in odvisnosti vaše naprave. Да, tudi starejše naprave, še v uporabi, morajo imeti SBOM do konca 2026, saj je to osnovna zahteva ZInfV-1 in MDR. Če SBOM ne obstaja, ga morate rekonstruirati ali angažirate zunanjo revizijo za analizo kode."
       }
     },
     {
       "@type": "Question",
-      "name": "V kakšnem roku moram objaviti kritični varnostni popravek?",
+      "name": "Kaj se zgodi, če ne sporočim ranljivosti v roku 72 ur?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Za kritične ranljivosti, ki neposredno ogrožajo varnost bolnikov, je priporočljiv rok 30 dni od potrditve ranljivosti. Za srednje resne napake je 90 dni. Rok mora biti dogovorit s klinični uporabniki in dokumentiran v politiki upravljanja popravkov. Odlašanje potrdite s tveganjem in oceno vpliva na varnost."
+        "text": "Nejavljena ranljivost je resna kršitev ZInfV-1 in lahko povzroči kazni do 7 milijonov evrov ali 1,4 % prometa za pomembne subjekte. Poleg tega SI-CERT lahko izda ukrep zaustavljanja distribucije naprave in medicinsko inšpekcijo aktivira preiskavo, kar tvega preklico dovoljenja za proizvodnjo."
       }
     },
     {
       "@type": "Question",
-      "name": "Kaj se zgodi, če ne poročam o cybersecurity incidentu URSIV-u?",
+      "name": "Ali moramo testirati varnostne posodobitve pred objavo na terenu?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Neporočanje o kritičnih incidentih, ki vplivajo na varnost bolnikov, je prekršek po ZInfV-1 in MDR. Grozi vam kazni do 50.000 EUR, prepoved prodaje naprav, odvzem registracije in civilna odgovornost do bolnikov. URSIV aktivno nadzira poročila iz kliničnih institucij, zato incidenti verjetno ne bodo ostali neopaženi."
+        "text": "Да, čeprav ni eksplicitno prepisan največji preizkusni standard, mora biti vsaka posodobitev testirana v reprezentativnem okolju bolnišničnega sistema ali simuliranem terenu, da se zagotovi, da ne izpadi nujne funkcionalnosti ali varnostne kontrole. Dokumentirate morate teste in rezultate, to pa mora biti del vašega postmercato programa, pri čemer je odgovornost proizvajalca, da je posodobitev varna za bolnikove naprave."
       }
     }
   ]
@@ -106,23 +105,23 @@
   <div class="breadcrumb">
     <a href="../index.html">Domov</a><span>›</span>
     <a href="index.html">Sektorji</a><span>›</span>
-    NIS2 za proizvajalce medicinskih naprav v Sloveniji — obveznosti 2026
+    NIS2 za proizvajalce medicinskih naprav v Sloveniji — obveznosti in rok skladnosti 2026
   </div>
 </div>
 
 <!-- HERO -->
 <div style="background:var(--gray-50);padding:2.5rem 0 3rem;border-bottom:1px solid var(--gray-200);">
   <div class="container--narrow">
-    <span style="display:inline-block;background:#16a34a;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Priloga II — pomembna entiteta</span>
-    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 za proizvajalce medicinskih naprav v Sloveniji — obveznosti 2026</h1>
-    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Kot proizvajalec medicinske naprave ste kot pomembna entiteta zavezani NIS2 zahtevam. Ta stran pojasnjuje konkretne obveznosti za SBOM, cybersecurity nadzor po trženju in poročanje o ranljivostih.</p>
+    <span style="display:inline-block;background:#16a34a;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Priloga II — Pomembni subjekt</span>
+    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 za proizvajalce medicinskih naprav v Sloveniji — obveznosti in rok skladnosti 2026</h1>
+    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Ta stran je namenjena proizvajalcem medicinskih naprav v Sloveniji, ki jih NIS2 razvrsti kot pomembne subjekte. Izvedeli boste, kako uskladiti svoje sisteme s Slovenskim zakonom o informacijski varnosti (ZInfV-1) in kako preprečiti kaznive do 7 milijonov evrov.</p>
   </div>
 </div>
 
 <!-- WHO QUALIFIES -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
   <div style="background:var(--gray-50);border-left:4px solid var(--navy);border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;">
-    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Obvezani ste, če proizvajate medicinske naprave (glede na MDR) in ste razvrščeni kot pomembna entiteta po NIS2. Vključeni ste, če imate letni promet nad 1,2 milijona EUR ali več kot 50 zaposlenih in delujete na področju zdravstva. Obveznost velja tudi za manjše proizvajalce, ki proizvajajo kritične medicinske naprave (npr. naprave za intenzivno nego, kirurške sisteme).</p>
+    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Proizvajalci medicinskih naprav, ki so v skladu z MDR razvrstljeni kot proizvajalci in njihovi informacijski sistemi vplivajo na kritično infrastrukturo ali javno varnost, se razvrščajo kot pomembni subjekti. To običajno zajema proizvajalce naprav razreda III in II, ki imajo lastne informatike sisteme ali so del večje korporativne strukture s presečnimi digitalnimi sestavinami. Skladi se mora tudi proizvajalec, ki ima vrhezno povezano oskrbno verigo ali centralne podatke o bolnikih in medicinskih zgodovinah.</p>
   </div>
 </div>
 
@@ -136,8 +135,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Izdelava Software Bill of Materials (SBOM) za programsko opremo naprav</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Obvezani ste dokumentirati vse komponente, knjižnice in odvisnosti v programski opremi vaših medicinskih naprav. SBOM mora biti dostopen regulatorjem in uporabnikom ter ažuran pri vsaki spremembi programske opreme. To je ključno za hitro identifikacijo ranljive programske opreme pri incidentih.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Software Bill of Materials (SBOM) in dokumentacija</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Za vsako medicinsko napravo s programsko opremo morate pripraviti in vzdrževati popoln SBOM, ki navaja vse odvisne komponente, knjižnice in trzne module. Ta dokumentacija mora biti dostopna URSIV/SI-CERT pri auditu ali v primeru varnostnega vprašanja. SBOM mora biti posodobljene pri vsakem posodobljen izdaji in mora biti del MDR tehnične dokumentacije.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -145,8 +144,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Post-market cybersecurity surveillance in upravljanje popravkov</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Vzpostaviti morate proces spremljanja novoodkritih ranljivosti v vgrajeni programski opremi in komponentah. Pri kritičnih ranljivostih, ki ogrozijo varnost bolnikov, morate izdati in razdeliti popravke v dogovorjenem roku (največ 30 dni za kritične ranljivosti). Proces mora biti dokumentiran in preverljiv.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Post-market nadzor nad varnostnimi ranljivostmi</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Vzpostaviti morate proaktivno politiko spremljanja dostopnih varnostnih poročil, CVE baz podatkov in patch opozoril za vse komponente vaših naprav. Vsaki ranljivosti, ki bi lahko vplivala na varnost bolnikov, morate dati odgovor v roku 30 dni z načrtom popravka ali mitigacije. Dokumentacija tega nadzora je obvezna in mora biti deloma redna, najmanj polletno pregleda.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -154,8 +153,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Poročanje o incidentih, ki vplivajo na varnost bolnikov</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">O cybersecurity incidentih, ki povzročijo ali bi lahko povzročili nevarnost za zdravje, morate poročati URSIV-u v skladu s klavzulami MDR. Poročati morate tudi o napakah pri издітcificiramih popravkov ali neuspešnih nadgradenjih, ki izpostavljajo paciente tveganju.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Varne postopke za posodobitve vdelane programske opreme</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Vsak postopek za objavo in namestitev posodobitev vdelane programske opreme mora biti kriptografsko podpisan in preverljiv. Zagotoviti morate, da so posodobitve, objavljene na produkcijskih napravah, preverljive in da ne morete biti izbrisane ali zamenjane brez sledljivosti. Dokumentirate morate tudi povratni mehanizem za hitro umik varnostne posodobitve, če se izkaže, da ima nove težave.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -163,8 +162,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Varnost dobavne verige za komponente in razvijalce programske opreme</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Preveriti morate cybersecurity standarde vaših dobaviteljev komponent, čipov in tretjih oseb, ki razvijajo komponente programske opreme. Pogodbe morajo vsebovati klavzule o obveznosti poročanja o ranljivostih in pristanku na varnostne revizije. Vzpostaviti morate sistem spremljanja statusa zaščite pri kritičnih dobaviteljih.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Varnost in presoj oskrbne verige</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Izvršiti morate varnostne presoje svojih kritičnih dobaviteljev, zlasti tistih, ki nudijo komponente, programsko opremo ali storitve, povezane s kritičnimi sistemi. Vsak dobavitelj mora imeti svoje politike varnosti in pristopiti k minimalnim ZInfV-1 standardom. Pogodbe z dobavitelji morajo vsebovati klavzule o nadzoru, pravici revizije in sposobnosti zagotavljanja SBOM.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -172,8 +171,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Usklajeni MDR Članek 5(5) — cybersecurity kot del varstvenega niza</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Cybersecurity je trajni del predvidene funkcionalnosti medicinske naprave. Dokumentirati morate kibernetske grožnje za vsako napravo, jih vrednotiti in uvesti ustrezne varnostne kontrole. Varnostni ukrepi morajo biti del tehničnega dokumenta MDR in ažurirani po odkritju novih ranljivosti.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Poročanje o varnostnih dogodkih in ranljivostmi</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">V primeru ranljivosti, ki vpliva na varnost bolnika ali se podpira z medicinsko napravo, morate v roku 24 ur dati zgodnjo opozorilo URSIV in SI-CERT ter celotno obvestilo v roku 72 ur. Poročilo mora vsebovati opis kršitve, vrsto prizadetih naprav, predvideno število bolnikov in zaustavljalce tveganja. Obvestiti morate tudi uporabnike (bolnišnice, zdravnike), ki uporabljajo vaše naprave, z jasnimi navodili za zmanjšanje tveganja.</p>
       </div>
     </div>
   </div>
@@ -185,16 +184,16 @@
   <ul style="list-style:none;padding:0;margin:0;border-top:1px solid var(--gray-100);">
     
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Proizvajalci nimajo SBOM za starejše medicinske naprave, ki so še v klinični uporabi — to ovira hitro identifikacijo ranljivih komponent pri kritičnih incidentih.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Proizvajalci nimajo celovitega SBOM za starejše, že tržene naprave, ker so jih razvijali pred sprejetjem MDR/NIS2 zahtev — to povzroči zakasnitve pri identifikaciji ranljivih komponent in nesposobnost hitrega odziva na nove grožnje.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Proces varnostne nadgradnje firmware-ja ni ustrezno zavarovan (npr. brez podpisovanja, brez šifriranja, brez preverjanja autentičnosti) in bolniki prejemajo neupravljane posodobitve prek nezaščitenih kanalov.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Postopek za varnostne posodobitve vdelane programske opreme ni avtomatiziran ali ni podpisan s kriptografijo — kar omogoči spreminjanje ali pojavljanje nepooblaščenih različic na terenu in naredi sledenje praktično nemogoče.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Ni vzpostavljenega programa za post-market cybersecurity nadzor — proizvajalci ne spremljajo ranljivosti v tretjih knjižnicah in ne izdajajo popravkov, dokler jih ne zahteva regulatorji.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Ni vzpostavljenega programa za proaktivni nadzor nad CVE in varnostnimi obavijestima za komponente v napravah — zato proizvajalci odkrije ranljivost le po tem, ko jo javno diskrejo ali je napada uporabnika.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Dobavna veriga ni vključena v cybersecurity načrt — proizvajalci ne preverjajo varnosti komponent ali razvojnih orodij in nimajo obvestil o ranljivostih od dobaviteljev.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Dobavitelji komponent in tretjih strank niso sistemsko pregledani glede varnostne zrelosti — torej je oskrbna veriga ranljiva in tveganja niso nadzirana, kar povzroči možnost vbrizgavanja zlonamernega koda ali zastarele programske opreme.
     </li>
   </ul>
 </div>
@@ -210,7 +209,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">secfix.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../orodja/secfix.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Preveri orodje →</a>
+      <a href="../orodja/secfix.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
@@ -218,7 +217,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">vanta.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../orodja/vanta.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Preveri orodje →</a>
+      <a href="../orodja/vanta.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
@@ -226,7 +225,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">sprinto.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../orodja/sprinto.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Preveri orodje →</a>
+      <a href="../orodja/sprinto.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
   </div>
 </div>
@@ -237,21 +236,21 @@
   <div style="border-top:1px solid var(--gray-100);">
     
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Kaj natanko mora biti vključeno v SBOM za medicinsko napravo?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Kaj je SBOM in ali je res potreben za starejše medicinske naprave, ki so že na trgu?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">SBOM mora navedti vse komponente programske opreme (odprte kode, lastne kode, tretje osebe), s točnami verzijami in povezavami do znanih ranljivosti. Vključiti morate tudi operacijski sistem, gonilnike, gonilnike in konfiguracijske datoteke. Priporočljiv je standard SPDX ali CycloneDX, URSIV pričakuje dostopnost v standardnem formatu.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">SBOM (Software Bill of Materials) je detaljni seznam vseh programskih komponent, knjižnic in odvisnosti vaše naprave. Да, tudi starejše naprave, še v uporabi, morajo imeti SBOM do konca 2026, saj je to osnovna zahteva ZInfV-1 in MDR. Če SBOM ne obstaja, ga morate rekonstruirati ali angažirate zunanjo revizijo za analizo kode.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">V kakšnem roku moram objaviti kritični varnostni popravek?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Kaj se zgodi, če ne sporočim ranljivosti v roku 72 ur?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Za kritične ranljivosti, ki neposredno ogrožajo varnost bolnikov, je priporočljiv rok 30 dni od potrditve ranljivosti. Za srednje resne napake je 90 dni. Rok mora biti dogovorit s klinični uporabniki in dokumentiran v politiki upravljanja popravkov. Odlašanje potrdite s tveganjem in oceno vpliva na varnost.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Nejavljena ranljivost je resna kršitev ZInfV-1 in lahko povzroči kazni do 7 milijonov evrov ali 1,4 % prometa za pomembne subjekte. Poleg tega SI-CERT lahko izda ukrep zaustavljanja distribucije naprave in medicinsko inšpekcijo aktivira preiskavo, kar tvega preklico dovoljenja za proizvodnjo.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Kaj se zgodi, če ne poročam o cybersecurity incidentu URSIV-u?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Ali moramo testirati varnostne posodobitve pred objavo na terenu?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Neporočanje o kritičnih incidentih, ki vplivajo na varnost bolnikov, je prekršek po ZInfV-1 in MDR. Grozi vam kazni do 50.000 EUR, prepoved prodaje naprav, odvzem registracije in civilna odgovornost do bolnikov. URSIV aktivno nadzira poročila iz kliničnih institucij, zato incidenti verjetno ne bodo ostali neopaženi.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Да, čeprav ni eksplicitno prepisan največji preizkusni standard, mora biti vsaka posodobitev testirana v reprezentativnem okolju bolnišničnega sistema ali simuliranem terenu, da se zagotovi, da ne izpadi nujne funkcionalnosti ali varnostne kontrole. Dokumentirate morate teste in rezultate, to pa mora biti del vašega postmercato programa, pri čemer je odgovornost proizvajalca, da je posodobitev varna za bolnikove naprave.</p>
     </div>
   </div>
   </div>
@@ -270,11 +269,13 @@
   </div>
 </div>
 
+
+<nav class="related-sectors" aria-label="Related sectors" style="max-width:1100px;margin:2rem auto;padding:1.5rem 1.25rem;border-top:1px solid #e5e7eb;"><h2 style="font-size:1.05rem;margin:0 0 .75rem;">Related sectors</h2><ul style="list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:.5rem 1rem;"><li style="margin:0"><a href="pharmacies.html">NIS2 Farmacevtske verige Slovenija 2026</a></li><li style="margin:0"><a href="public-administration.html">NIS2 / ZInfV-1 skladnost za državne in občinske organe 2026</a></li><li style="margin:0"><a href="real-estate.html">NIS2 za nepremičninske agencije v Sloveniji</a></li><li style="margin:0"><a href="retail.html">NIS2 Zahteve za Velike Trgovske Verige in E-Commerce - Slovenija 2026</a></li><li style="margin:0"><a href="sme-general.html">NIS2 za srednja podjetja v Sloveniji</a></li><li style="margin:0"><a href="software-saas.html">NIS2 skladnost za B2B SaaS</a></li></ul></nav>
 <footer style="background:var(--gray-50);border-top:1px solid var(--gray-200);padding:2rem 1.25rem;text-align:center;">
   <div class="container">
     <p style="color:var(--gray-400);font-size:.82rem;margin:0;">
       © 2026 NIS2-SI.eu · ZInfV-1/NIS2 · URSIV / SI-CERT
-      <br>Informacije so izobraževalne narave in ne pomenijo pravnega nasveta.
+      <br>Informacje mają charakter edukacyjny i nie stanowią porady prawnej.
       <br><a href="../index.html" style="color:var(--gray-400);">Domov</a> ·
       <a href="index.html" style="color:var(--gray-400);">Sektorji</a> ·
       <a href="../primerjava.html" style="color:var(--gray-400);">Primerjava orodij</a>

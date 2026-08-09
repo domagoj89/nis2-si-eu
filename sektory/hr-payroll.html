@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="sl">
 <head>
-<meta name="robots" content="noindex,nofollow">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-68LM6P0B9Y"></script>
   <script>
@@ -12,18 +11,18 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NIS2 za ponudnike HR programske opreme v Sloveniji 2026</title>
-  <meta name="description" content="NIS2 zahteve za ponudnike plačilne in kadrovske programske opreme v Sloveniji. Obveznosti varovanja podatkov zaposlenih, poročanje incidentov in izolacija podatkov strank.">
+  <title>NIS2 za HR in plačne storitve v Sloveniji 2026</title>
+  <meta name="description" content="Zahteve ZInfV-1 za prodajalce HR programske opreme in posredovalce plačilnih storitev. Rok implementacije do konca 2026, kazenski denar do 7 milijonov evrov.">
   <link rel="canonical" href="https://nis2-si.eu/sektory/hr-payroll.html">
-  <meta property="og:title" content="NIS2 za ponudnike HR programske opreme v Sloveniji 2026">
-  <meta property="og:description" content="NIS2 zahteve za ponudnike plačilne in kadrovske programske opreme v Sloveniji. Obveznosti varovanja podatkov zaposlenih, poročanje incidentov in izolacija podatkov strank.">
+  <meta property="og:title" content="NIS2 za HR in plačne storitve v Sloveniji 2026">
+  <meta property="og:description" content="Zahteve ZInfV-1 za prodajalce HR programske opreme in posredovalce plačilnih storitev. Rok implementacije do konca 2026, kazenski denar do 7 milijonov evrov.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://nis2-si.eu/sektory/hr-payroll.html">
   <meta property="og:locale" content="sl_SI">
   <meta property="og:site_name" content="NIS2-SI.eu">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="NIS2 za ponudnike HR programske opreme v Sloveniji 2026">
-  <meta name="twitter:description" content="NIS2 zahteve za ponudnike plačilne in kadrovske programske opreme v Sloveniji. Obveznosti varovanja podatkov zaposlenih, poročanje incidentov in izolacija podatkov strank.">
+  <meta name="twitter:title" content="NIS2 za HR in plačne storitve v Sloveniji 2026">
+  <meta name="twitter:description" content="Zahteve ZInfV-1 za prodajalce HR programske opreme in posredovalce plačilnih storitev. Rok implementacije do konca 2026, kazenski denar do 7 milijonov evrov.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
@@ -47,7 +46,7 @@
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "NIS2 za ponudnike HR in plačilne programske opreme v Sloveniji — obveznosti 2026",
+      "name": "NIS2 za prodajalce HR programske opreme in posredovalce plačilnih storitev v Sloveniji",
       "item": "https://nis2-si.eu/sektory/hr-payroll.html"
     }
   ]
@@ -60,26 +59,26 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Ali sem zavezanec NIS2, če imam samo Pet strank za svojo HR programsko opremo?",
+      "name": "Ali sem kot prodajalec HR programske opreme sam odgovoren za poročanje o kršitvah podatkov ali je to odgovornost vsakega odjemalca posebej?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Da, ste. NIS2 zahteva Priloga II vas ne razvršča glede na število strank, temveč na to, da ste »ponudnik digitalne storitve« in obdelujete osebne podatke ter plačilne informacije. Že ena strankav kritičnem sektorju (finance, zdravstvo, energija) vas kvalificira. Tudi če imate samo pet manjših strank, ste po definiciji NIS2 »pomembna entiteta« in morate izpolnjevati vse obveznosti."
+        "text": "Kot ponudnik digitalne storitve ste odgovorni za zgodnje opozorilo SI-CERT (24 ur) in za obvestilo Javnega zavoda varstvu podatkov (72 ur), ne glede na to, ali je odjemalec to že storil. Prav tako morate obvestiti vsakega odjemalca, katere podatke njegovih zaposlenih je vdor prizadel. Če ne sporočite pravočasno, vam grozi kazen do 7 milijonov evrov."
       }
     },
     {
       "@type": "Question",
-      "name": "Kaj točno pomeni »fizična izolacija« podatkov v večnajemniški arhitekturi?",
+      "name": "Kaj točno pomeni 'popolna izolacija tenantov' v SaaS sistemu za plačne podatke?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Pomeni, da so podatki različnih strank shranjeni v ločenih tabelah podatkovne baze s strogo ločenimi dostupi, ne le v ločenih »mapah« znotraj enake tabele. Administrator sistema ne sme tehnično moči dostopati do podatkov druge stranke, tudi če ima dostop do celotne podatkovne baze. Minimalna raven je repliciranje podatkovne baze za vsako stranko ali uporaba particioniranih tabel z neuporabljivo steno med strankami."
+        "text": "To pomeni, da mora biti fizično nemogoče, da se v eni organizaciji prikažejo plačni podatki druge organizacije — tudi če bi administrator naredil napako. Uporabite ločene baze podatkov, ločene sheme v eni bazi z obveznimi WHERE filtri ali posebne podatkovne centre. Vsak dostop mora biti kontroliran z identifikatorjem najemnika, in to preverjanje mora biti neobhodno v vsaki aplikacijski logiki in na ravni baze podatkov."
       }
     },
     {
       "@type": "Question",
-      "name": "Kakšne so kazni za neupoštevanje NIS2 zahtev do leta 2026?",
+      "name": "Kakšne so kazni, če do konca 2026 ne izpolnim zahtev ZInfV-1?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Za ponudnike digitalnih storitev so kazni izrečene do 100.000 EUR ali 2 % globalnega letnega prometa, odvisno od tega, kaj je večje. Če ne poročite incidenta v roku 24 ur, je posebna kazen do 50.000 EUR. Neuspešna ali nepopolna izolacija podatkov strank, ki pripelje do vdora, se šteje za nepravilno izvrševanje nalog in je podvržena najvišjim kaznem. Rok za polno usklajeno je 31. oktober 2025, pogodbe s strankami pa morajo že sedaj vsebovati klavzule o NIS2 zahtevah."
+        "text": "Za pomembne entitete, kot ste vi, so kazni do 7 milijonov evrov ali 1,4 % letnega svetovnega prometa (odvisno od tega, kateri je višji) za kršitve osnovnih zahtev o varnosti. Dodatno vas čakajo pravne spore s strani odjemalcev in možna prekinitev pogodb. URSIV vam bo omogočil prehodne ukrepe do konca 2026, a mora biti vaš načrt skladnosti zagotovljen do 19. decembra 2025 (rok registracije kot važne entitete je že potekel)."
       }
     }
   ]
@@ -106,23 +105,23 @@
   <div class="breadcrumb">
     <a href="../index.html">Domov</a><span>›</span>
     <a href="index.html">Sektorji</a><span>›</span>
-    NIS2 za ponudnike HR in plačilne programske opreme v Sloveniji — obveznosti 2026
+    NIS2 za prodajalce HR programske opreme in posredovalce plačilnih storitev v Sloveniji
   </div>
 </div>
 
 <!-- HERO -->
 <div style="background:var(--gray-50);padding:2.5rem 0 3rem;border-bottom:1px solid var(--gray-200);">
   <div class="container--narrow">
-    <span style="display:inline-block;background:#16a34a;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Priloga II — pomembna entiteta</span>
-    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 za ponudnike HR in plačilne programske opreme v Sloveniji — obveznosti 2026</h1>
-    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Če s svojo programsko opremo upravljate plačilne podatke in osebne podatke zaposlenih več podjetij hkrati, ste zavezanec NIS2. Naučite se konkretnih obveznosti varovanja podatkov, poročanja varnostnih incidentov in izolacije podatkov strank v večnajemniških sistemih.</p>
+    <span style="display:inline-block;background:#16a34a;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Prilog II — Pomembna entiteta</span>
+    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 za prodajalce HR programske opreme in posredovalce plačilnih storitev v Sloveniji</h1>
+    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Če ponujate HR ali plačno programsko opremo več organizacijam, ste kot pomembna entiteta zavezani k skladnosti z ZInfV-1. Spoznajte konkretne tehnične in organizacijske ukrepe, ki jih morate uvesti do konca 2026.</p>
   </div>
 </div>
 
 <!-- WHO QUALIFIES -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
   <div style="background:var(--gray-50);border-left:4px solid var(--navy);border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;">
-    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Pod NIS2 sodite kot ponudnik digitalne storitve, če upravljate programsko opremo za plačila ali upravljanje virov človeških virov (HRIS) za dve ali več pravnih oseb v Sloveniji. Vaša klasifikacija kot »pomembna entiteta« je obvezna, ne glede na število zaposlenih v vašem podjetju, ker obdelujete osebne podatke in plačilne informacije strank, ki jih štejemo za kritično infrastrukturo sektorja.</p>
+    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Prodajalci SaaS rešitev za upravljanje človeških virov in plačilnih sistemov, ki delujejo kot digitalni ponudniki storitev in obdelujejo osebne podatke zaposlenih za deset ali več pravnih oseb v Republiki Sloveniji. Vključeni ste tudi, če imate vrhunske ali kritične podatkovne storitve v Uniji, ki jih potrebuje več kot ena pravna oseba v Sloveniji.</p>
   </div>
 </div>
 
@@ -136,8 +135,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Varovanje plačilnih podatkov in osebnih podatkov zaposlenih</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Kot ponudnik HR in plačilne programske opreme ste dolžni zagotoviti, da je dostop do plačilnih podatkov in osebnih podatkov zaposlenih vaših strank zaščiten z najmanj dvofaktorsko avtentikacijo za vse administratorske račune. Vsi dostopi do podatkov morajo biti revidirati in beleženi v neprekinjenih revizijskih zapisih. Podatki morajo biti šifrirani tako med prenosom kot pri mirovanju, in to mora biti dokumentirano v vaši politiki varnosti.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Varnost podatkov zaposlenih in večočitna izolacija v SaaS platformah</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Kot ponudnik HR in plačne programske opreme morate zagotoviti popolno logično in fizično ločitev podatkov posameznih odjemalcev (tenantov) v svojih sistemih. Podatke zaposlenih ene organizacije mora biti tehnično nemogoče dostopati skozi aplikacijski vmesnik druge organizacije. To je podvojena obveza: sočasno morate biti skladni z GDPR (članak 32) in z zahtevami ZInfV-1 (Prilog II, člen 21).</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -145,8 +144,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Poročanje varnostnih incidentov kao ponudnik digitalne storitve</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Če pride do varnostnega vdora, ki vpliva na podatke dveh ali več vaših strank (na primer, če napadalec dostopa do podatkov zaposlenih v več podjetjih), morate to prijaviti URSIV v roku 24 ur od odkritja. Poleg tega morate vsako prizadeto stranko uradno obvestiti z informacijami o obsegu vdora, prizadetih podatkih in priporočenih ukrepih. Nepopolno ali pozno poročilo predstavlja sankcijo do 50.000 EUR.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Kontrola dostopa in strojno večfaktorsko avtentificiranje za administratorje</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Dostop do administratorskih funkcij v vašem sistemu ne sme biti mogoč le z geslom. Vsak administrativni račun (tudi računi služb, ki jih upravljate interno) mora biti zaščiten s strojnim ključem (hardware MFA) ali z enakovredno varno rešitvijo. Večfaktorska avtentifikacija mora biti obvezna, ne le priporočena, in mora biti nadzirana z revizijskim sledi.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -154,8 +153,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Izolacija podatkov strank v večnajemniških sistemih</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">V svoji programski opremi morate zagotoviti, da je vsak podatek ene stranke popolnoma logično in fizično izoliran od podatkov drugih strank. To pomeni, da mora administrator enega podjetja tehnično biti nemogoče dostopati do podatkov drugega podjetja, tudi če ima uporabnikarski račun ali dostop do sistema. Razdelitev dostopa mora biti osnovana na vlogo in podjetju, z aktivnimi preveritvami na ravni podatkovne baze.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Poročanje o kršitvah podatkov za več odjemalcev</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Ko pride do vdora v podatke in so prizadeti podatki zaposlenih več vaših odjemalcev, ste odgovorni za zgodnje opozorilo SI-CERT v roku 24 ur in za uradno obvestilo Javnega zavoda varstvu podatkov v roku 72 ur. Vsak odjemalec prav tako prejme obvestilo od vas. Če ne sporočite pravočasno, vam grozi kazen do 7 milijonov evrov ali 1,4 % letnega prometa.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -163,8 +162,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Kontrola dostopa za administratorske račune</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Vsi administratorski dostopi do plačilnih sistemov in HR podatkov morajo biti zaščiteni z obvezno hardversko večfaktorsko avtentikacijo (na primer, varnostni ključ). Uporabniki ne smejo imeti pridobitve mogočnosti za sami sebi spremeniti pravice dostopa. Hkrati morate upoštevati politik najmanj potrebnih pravic — vsak uporabnik dobi samo tiste pravice, ki jih res potrebuje za svojo nalogo.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Varnost oskrbovalne verige in varnost tretjih oseb</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Preiskati morate varnost vseh podizvajalcev (hosting ponudnikov, razvijalcev, zunanjih svetovalcev), ki imajo dostop do sistemov ali podatkov. Za vsako zunanjo osebo ali storitev, ki ima dostop do podatkov zaposlenih, morate imeti pogodbo, ki određa obveze informacijske varnosti. Redno preverite skladnost tretjih oseb in prekinite povezave takim ponudnikom, ki ne izpolnjujejo standardov varnosti.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -172,8 +171,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Proces izbrisa podatkov ob koncu pogodbe</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Ko pogodba s stranko preneha, morate v dogovorenem roku (navadno 30 dni) zbrisati vse njene podatke iz vašega sistema. To mora biti dokumentirano in potrdljivo — ne le logično izbrisano, temveč tudi fizično odstranjeno iz vseh varnostnih kopij v dogovorjenem roku. Stranki morate posredovati pisno potrdilo o popolnem izbrisu podatkov, ki je primerna za revizijske namene.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Proces uničenja podatkov pri izjavi pogodbe</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Ob koncu pogodbe z odjemalcem morate imeti formaliziran postopek, ki zagotavlja, da so vsi podatki zaposlenca (plačni podatki, osebni podatki, dnevniki dostopa) popolnoma izbrisani iz vseh sistemov, vključno z varnostnimi kopijami in replikami. Odjemalec mora dobiti pisno potrdilo o izbrisu. Podatki, ki ostanejo po izteku pogodbe, predstavljajo nezakonito hrambo in vodijo do kazni.</p>
       </div>
     </div>
   </div>
@@ -185,16 +184,16 @@
   <ul style="list-style:none;padding:0;margin:0;border-top:1px solid var(--gray-100);">
     
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Podatki različnih strank niso dovolj izolirani na ravni podatkovne baze — administrator ene stranke lahko dostopa do podatkov druge stranke z ročnim spreminjanjem parametrov URL-ja ali SQL poizvedb, kar je kritična ranljivost.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Napačna ali pomanjkljiva izolacija tenantov: podatki zaposlenih ene organizacije so dostopni ali se »prikažejo« v vmesniku druge organizacije prek napake pri poizvedbah ali šibkih filtrov. Popravite neposredno z revizijo kode baze podatkov in vključitvijo fizičnih delitev.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Administratorski dostopi do plačilnih sistemov niso zaščiteni z hardversko večfaktorsko avtentikacijo, temveč le s kodno besedo ali softverskim 2FA, kar ne zadošča zahtevam NIS2 za kritične podatke.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Administratorski dostop zaščiten samo z geslom: zaposleni ali zunanji svetovalci dostopajo do upravljalnega panela brez hardware ključa, kar omogoča tudi brute-force napade in krajo poverilnic. Takoj vpeljite obvezno strojno MFA za vse administrativne račune.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Formalni proces za izbris podatkov ob prenehanju pogodbe ne obstaja — podjetja pričakujejo izbris, vendar vaš sistem ne beeleži, kaj je izbrisano, in podatki ostanejo v varnostnih kopijah nedoločeno.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Ni formalnega postopka za brisanje podatkov pri prekinitvi pogodbe: podatki zaposlenih ostanejo v 'neaktivnih' tabelah, varnostnih kopijah ali arhivih tudi depois izpovedi pogodbe. Definirajte in dokumentirajte celoten cikel života podatkov ter implementirajte avtomatiziran proces uničenja.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Revizijski zapiski za dostop do plačilnih podatkov niso dovolj podrobni — beležijo se samo prijave, ne pa tudi dejanske branja ali prenose plačilnih datotek, kar onemogoča dokazati, kdo je dostopil do katerih podatkov.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Negotovost pri poročanju o vdorih: ni jasnega notranjega protokola, kaj narediti v 24 urah in kaj v 72 urah, komu obvestiti, kako obvestiti odjemalce. Vzpostavite pisana napotka za incident response z natančnimi roki in odgovorno osebo za komunikacijo s SI-CERT.
     </li>
   </ul>
 </div>
@@ -210,7 +209,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">sprinto.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../orodja/sprinto.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Preveri orodje →</a>
+      <a href="../orodja/sprinto.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
@@ -218,7 +217,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">secfix.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../orodja/secfix.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Preveri orodje →</a>
+      <a href="../orodja/secfix.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
@@ -226,7 +225,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">drata.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../orodja/drata.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Preveri orodje →</a>
+      <a href="../orodja/drata.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
   </div>
 </div>
@@ -237,21 +236,21 @@
   <div style="border-top:1px solid var(--gray-100);">
     
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Ali sem zavezanec NIS2, če imam samo Pet strank za svojo HR programsko opremo?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Ali sem kot prodajalec HR programske opreme sam odgovoren za poročanje o kršitvah podatkov ali je to odgovornost vsakega odjemalca posebej?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Da, ste. NIS2 zahteva Priloga II vas ne razvršča glede na število strank, temveč na to, da ste »ponudnik digitalne storitve« in obdelujete osebne podatke ter plačilne informacije. Že ena strankav kritičnem sektorju (finance, zdravstvo, energija) vas kvalificira. Tudi če imate samo pet manjših strank, ste po definiciji NIS2 »pomembna entiteta« in morate izpolnjevati vse obveznosti.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Kot ponudnik digitalne storitve ste odgovorni za zgodnje opozorilo SI-CERT (24 ur) in za obvestilo Javnega zavoda varstvu podatkov (72 ur), ne glede na to, ali je odjemalec to že storil. Prav tako morate obvestiti vsakega odjemalca, katere podatke njegovih zaposlenih je vdor prizadel. Če ne sporočite pravočasno, vam grozi kazen do 7 milijonov evrov.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Kaj točno pomeni »fizična izolacija« podatkov v večnajemniški arhitekturi?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Kaj točno pomeni 'popolna izolacija tenantov' v SaaS sistemu za plačne podatke?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Pomeni, da so podatki različnih strank shranjeni v ločenih tabelah podatkovne baze s strogo ločenimi dostupi, ne le v ločenih »mapah« znotraj enake tabele. Administrator sistema ne sme tehnično moči dostopati do podatkov druge stranke, tudi če ima dostop do celotne podatkovne baze. Minimalna raven je repliciranje podatkovne baze za vsako stranko ali uporaba particioniranih tabel z neuporabljivo steno med strankami.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">To pomeni, da mora biti fizično nemogoče, da se v eni organizaciji prikažejo plačni podatki druge organizacije — tudi če bi administrator naredil napako. Uporabite ločene baze podatkov, ločene sheme v eni bazi z obveznimi WHERE filtri ali posebne podatkovne centre. Vsak dostop mora biti kontroliran z identifikatorjem najemnika, in to preverjanje mora biti neobhodno v vsaki aplikacijski logiki in na ravni baze podatkov.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Kakšne so kazni za neupoštevanje NIS2 zahtev do leta 2026?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Kakšne so kazni, če do konca 2026 ne izpolnim zahtev ZInfV-1?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Za ponudnike digitalnih storitev so kazni izrečene do 100.000 EUR ali 2 % globalnega letnega prometa, odvisno od tega, kaj je večje. Če ne poročite incidenta v roku 24 ur, je posebna kazen do 50.000 EUR. Neuspešna ali nepopolna izolacija podatkov strank, ki pripelje do vdora, se šteje za nepravilno izvrševanje nalog in je podvržena najvišjim kaznem. Rok za polno usklajeno je 31. oktober 2025, pogodbe s strankami pa morajo že sedaj vsebovati klavzule o NIS2 zahtevah.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Za pomembne entitete, kot ste vi, so kazni do 7 milijonov evrov ali 1,4 % letnega svetovnega prometa (odvisno od tega, kateri je višji) za kršitve osnovnih zahtev o varnosti. Dodatno vas čakajo pravne spore s strani odjemalcev in možna prekinitev pogodb. URSIV vam bo omogočil prehodne ukrepe do konca 2026, a mora biti vaš načrt skladnosti zagotovljen do 19. decembra 2025 (rok registracije kot važne entitete je že potekel).</p>
     </div>
   </div>
   </div>
@@ -270,11 +269,13 @@
   </div>
 </div>
 
+
+<nav class="related-sectors" aria-label="Related sectors" style="max-width:1100px;margin:2rem auto;padding:1.5rem 1.25rem;border-top:1px solid #e5e7eb;"><h2 style="font-size:1.05rem;margin:0 0 .75rem;">Related sectors</h2><ul style="list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:.5rem 1rem;"><li style="margin:0"><a href="index.html">Sektorji, ki jih zajema NIS2 v Sloveniji 2026</a></li><li style="margin:0"><a href="insurance.html">NIS2 zahteve za zavarovalnice v Sloveniji</a></li><li style="margin:0"><a href="it-outsourcing.html">NIS2 za IT outsourcing podjetja v Sloveniji</a></li><li style="margin:0"><a href="law-firms.html">NIS2 za pravne storitve v Sloveniji</a></li><li style="margin:0"><a href="logistics.html">NIS2 za logistične operaterje v Sloveniji</a></li><li style="margin:0"><a href="managed-services.html">NIS2 za MSP in MSSP v Sloveniji</a></li></ul></nav>
 <footer style="background:var(--gray-50);border-top:1px solid var(--gray-200);padding:2rem 1.25rem;text-align:center;">
   <div class="container">
     <p style="color:var(--gray-400);font-size:.82rem;margin:0;">
       © 2026 NIS2-SI.eu · ZInfV-1/NIS2 · URSIV / SI-CERT
-      <br>Informacije so izobraževalne narave in ne pomenijo pravnega nasveta.
+      <br>Informacje mają charakter edukacyjny i nie stanowią porady prawnej.
       <br><a href="../index.html" style="color:var(--gray-400);">Domov</a> ·
       <a href="index.html" style="color:var(--gray-400);">Sektorji</a> ·
       <a href="../primerjava.html" style="color:var(--gray-400);">Primerjava orodij</a>
