@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="sl">
 <head>
-<meta name="robots" content="noindex,nofollow">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-68LM6P0B9Y"></script>
   <script>
@@ -12,18 +11,18 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NIS2 za ponudnike kibernetske varnosti v Sloveniji 2026</title>
-  <meta name="description" content="Obveznosti NIS2 za MSSP, SOC in penetracijske teste v Sloveniji. Ročnica 2026, varnost podatkov strank, poročanje incidentov.">
+  <title>NIS2 za cybersecurity ponudnike in MSSP v Sloveniji 2026</title>
+  <meta name="description" content="NIS2 obveznosti za cybersecurity vendorje, MSSP in penetration testing firme v Sloveniji. Rok za implementacijo: konec 2026. Obvezna registracija in poročanje incidentov.">
   <link rel="canonical" href="https://nis2-si.eu/sektory/cybersecurity-firms.html">
-  <meta property="og:title" content="NIS2 za ponudnike kibernetske varnosti v Sloveniji 2026">
-  <meta property="og:description" content="Obveznosti NIS2 za MSSP, SOC in penetracijske teste v Sloveniji. Ročnica 2026, varnost podatkov strank, poročanje incidentov.">
+  <meta property="og:title" content="NIS2 za cybersecurity ponudnike in MSSP v Sloveniji 2026">
+  <meta property="og:description" content="NIS2 obveznosti za cybersecurity vendorje, MSSP in penetration testing firme v Sloveniji. Rok za implementacijo: konec 2026. Obvezna registracija in poročanje incidentov.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://nis2-si.eu/sektory/cybersecurity-firms.html">
   <meta property="og:locale" content="sl_SI">
   <meta property="og:site_name" content="NIS2-SI.eu">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="NIS2 za ponudnike kibernetske varnosti v Sloveniji 2026">
-  <meta name="twitter:description" content="Obveznosti NIS2 za MSSP, SOC in penetracijske teste v Sloveniji. Ročnica 2026, varnost podatkov strank, poročanje incidentov.">
+  <meta name="twitter:title" content="NIS2 za cybersecurity ponudnike in MSSP v Sloveniji 2026">
+  <meta name="twitter:description" content="NIS2 obveznosti za cybersecurity vendorje, MSSP in penetration testing firme v Sloveniji. Rok za implementacijo: konec 2026. Obvezna registracija in poročanje incidentov.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
@@ -47,7 +46,7 @@
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "NIS2 za ponudnike kibernetske varnosti, MSSP in SOC v Sloveniji — obveznosti 2026",
+      "name": "NIS2 za cybersecurity vendorje in MSSP v Sloveniji — obveznosti pomembnih entitet do 2026",
       "item": "https://nis2-si.eu/sektory/cybersecurity-firms.html"
     }
   ]
@@ -60,26 +59,26 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Ali moram kot MSSP obvestiti URSIV, če je moj SOC sistema napadena, čeprav to ni direktno vplivalo na stranke?",
+      "name": "Ali je naša MSSP platforma tudi sam nadzornik podatkov ali samo obdelovalec znotraj NIS2 sistema?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Da. Kot ponudnik kritične digitalne storitve morate prijaviti URSIV-u katerikoli varnostni incident pri vaši infrastrukturi v treh dneh, tudi če je začetni vpliv omejen. Ocenite vpliv na stranke in jih nemudoma obvestite, če je vpliv dejansko nastopil. To je del vaše obveznosti za transparentnost kot važne subjekta."
+        "text": "Kot MSSP ste glede na NIS2 klasificirani kot »kritični ponudnik digitalnih storitev« in hkrati »nadzornik podatkov« vaših odjemalčevih varnostnih informacij (SIEM logi, rezultati testiranja). To pomeni, da neposredno odgovarjate za skladnost s tehnični in organizacijski ukrepom za zaščito teh podatkov. Če pa podizvajalcu outsourcate del obdelave (npr. oblačno shranjevano SIEM), ostajate vi tisti, ki je odgovoren URSIV in SI-CERT."
       }
     },
     {
       "@type": "Question",
-      "name": "Koliko časa smem hraniti podatke strank, ki jih prejmem preko SIEM monitoringa?",
+      "name": "Kakšne točne korake moramo narediti do konca 2026, da dosežemo polno skladnost?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "ZInfV-1 ne predpisuje natančne roka, vendar najbolja praksa zahteva, da ohranite podatke samo toliko časa, kolikor je to potrebno za namen monitoringa (tipično 6-12 mesecev). Vzpostaviti morate jasne politike in avtomatske procese za izbris starejših podatkov. Podatke o incidentih, ki so relevantni za obrambo, je mogoče hraniti dlje, vendar z jasno dokumentacijo razlogov."
+        "text": "Do konca 2026 morate: (1) celovito presoditi tveganja v vaših sistemih in sistemih odjemalcev ter dokumentirati vse izkrivljene tvegane, (2) vpeljati tehnični ukrepe (kriptografija, dostopne kontrole, nadzor), (3) oblikovati politike in procese za poročanje incidentov, odgovorno razkritje in upravljanje tretjih oseb, (4) opraviti pravne preglede pogodb z odjemalci in podizvajalci za skladnost s NIS2, (5) izvesti redne varnostne ocene in penetration teste vaših lastnih sistemov. Orodja kot Vanta, Drata in Sprinto vam omogočajo avtomatizacijo dokumentiranja in sledenja obveznostim."
       }
     },
     {
       "@type": "Question",
-      "name": "Kakšne so kazni za neupoštevanje NIS2 v Sloveniji do decembra 2025?",
+      "name": "Katere so kazni, če ne poročam incidenta v 24 oz. 72 urah?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Globa za kršitve ZInfV-1 lahko dosegne do 10% letnega prihodka ali 2 milijona EUR, ki je nekoliko bolj, za resne kršitve (npr. neupoštevanje poročanja incidentov). Napake pri varnosti podatkov strank, neupoštevanje šifriranja ali nezadostno upravljanje dostopa se štejejo za resne. Priporočamo, da dokončate pregledovanje skladnosti do junija 2026, da imate čas za remediacijo."
+        "text": "V skladu s Zakonom o informacijski varnosti (ZInfV-1) so kazni za velike entitete do €7 milijonov ali 1,4 % letnega prihodka, vendar se lahko še povečajo, če je to druga kršitev ali če ste s hujšo nepazljivostjo omogočili incident. Zamuda poročanja je posebej resna, ker omogoči nadaljnje škode in prepreči pravočasno usklajevanje s SI-CERT. Priporočam, da vzpostavite avtomatske alarme in nadzor za detektiranje incidentov ter jasne mehanizme eskalacije s časovnim rokom 24 ur za Early Warning."
       }
     }
   ]
@@ -106,23 +105,23 @@
   <div class="breadcrumb">
     <a href="../index.html">Domov</a><span>›</span>
     <a href="index.html">Sektorji</a><span>›</span>
-    NIS2 za ponudnike kibernetske varnosti, MSSP in SOC v Sloveniji — obveznosti 2026
+    NIS2 za cybersecurity vendorje in MSSP v Sloveniji — obveznosti pomembnih entitet do 2026
   </div>
 </div>
 
 <!-- HERO -->
 <div style="background:var(--gray-50);padding:2.5rem 0 3rem;border-bottom:1px solid var(--gray-200);">
   <div class="container--narrow">
-    <span style="display:inline-block;background:#16a34a;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Priloga II — pomembna subjekt</span>
-    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 za ponudnike kibernetske varnosti, MSSP in SOC v Sloveniji — obveznosti 2026</h1>
-    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Ta stran je namenjena ponudnikom kibernetskih storitev, upravljanim varnostnim storitvam (MSSP) in podjetjem za testiranje penetracije, ki morajo do decembra 2025 uvesti zahteve ZInfV-1. Spoznajte konkretne obveznosti za zaščito infrastrukture SOC, podatkov strank in incidentnega poročanja.</p>
+    <span style="display:inline-block;background:#16a34a;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Priloga II — pomembna entiteta</span>
+    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 za cybersecurity vendorje in MSSP v Sloveniji — obveznosti pomembnih entitet do 2026</h1>
+    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Kot ponudnik kritičnih digitalnih storitev ste kot MSSP,SOC ali penetration testing firma direktno zajeti v NIS2. Ta vodnik pojasnjuje vaše obveznosti registracije, varnostnih kontrol in poročanja incidentov, ki veljajo od junija 2025 dalje.</p>
   </div>
 </div>
 
 <!-- WHO QUALIFIES -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
   <div style="background:var(--gray-50);border-left:4px solid var(--navy);border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;">
-    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Ponudniki kibernetskih storitev, MSSP, SOC operatorji in podjetja za penetracijske teste, ki imajo več kot 50 zaposlenih ali letni prihodek/bilanca nad 10 milijonov EUR, se štejejo za pomembne subjekte. Kvalifikacija se nanaša na storitve, ki jih nudite drugim organizacijam v Sloveniji, in na kritično infrastrukturo, ki jo uporabljate za dostavo te storitve.</p>
+    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Pod NIS2 se kot pomembne entitete štejejo MSSP, ki zagotavljajo upravljane varnostne storitve za več kot tri mesece, in ponudniki storitev nadzora (SOC) z dostopom do infrastrukture ali podatkov odjemalcev. Kadar opravljate penetration testiranje ali upravljanje varnosti za druge организacije in s tem dostopate do njihovih kritičnih sistemov, se štejete za kritičnega digitalnega ponudnika storitev. V Sloveniji se pravila uporabljajo za vse pravne subjekte, ne glede na velikost.</p>
   </div>
 </div>
 
@@ -136,8 +135,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Zaščita infrastrukture SOC in dostopa do podatkov strank</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Vaša SIEM infrastruktura in vsi sistemi, na katere nalagajo podatke stranke, morajo biti zaščiteni z večstopenjsko avtentikacijo, šifriranjem podatkov v mirovanju in v tranzitu ter segmentacijo omrežja. Dostop do podatkov strank mora biti omejen na avtorizirane analitike SOC in nadzorovan s kontrolami dostopa na podlagi vlog. Redne tehnične pregledave varnosti te infrastrukture so obvezne.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Registracija pri URSIV in prijava v register</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Kot MSSP ali SOC ponudnik ste bili obvezani registrirati se pri Uradu Republike Slovenije za informacijsko varnost (URSIV) do 19. decembra 2025. Registracija je osnovna administrativna obveza, ki omogoči URSIV in SI-CERT spremljanje večjih varnostnih incidentov v vašem sektorju. Preverjajte, ali je vaša firma že vpis​ana v uradni register drugih pomembnih entitet na spletni strani URSIV.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -145,8 +144,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Načrt upravljanja incidentov in poročanje URSIV</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Kot ponudnik kritične digitalne storitve morate imeti dokument o upravljanju incidentov, ki jasno opredeljuje čas odziva, poročanja in obveščanja. Če vaša lastna varnostna kršitev neposredno vpliva na varnost strankinih sistemov ali podatkov, morate to prijti URSIV-u v treh dneh in stranki takoj obvestiti. Zavedati se morate tudi obveznosti za poročanje o kompromitaciji dobavitelja, ki bi vplivala na vašo storitev.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Upravljanje tveganja in tehnične varnostne ukrepe</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Do konca 2026 mora biti vaša SOC infrastruktura in vse storitve zaščitene s standardi upravljanja tveganja: kriptografija podatkov pri počitku in v prenosu, dostopne kontrole, spremljanje dostopov in redne varnostne ocene. Za MSSP in penetration testing firme je ključno, da formalno dokumentirate, kako so podatki odjemalcev (SIEM logi, poročila testiranja) fizično in logično ločeni od vaših internih podatkov ter kako so zaščiteni pred nepooblaščenim dostopom ali krajo.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -154,8 +153,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Upravljanje ranljivosti in odgovorno razkritje</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Vzpostaviti morate postopek za koordinirano odkrivanje in obravnavo ranljivosti, vključno s procesi odgovornega razkritja za raziskovalce varnosti. Penetracijske teste morate izvajati najmanj letno na vseh kritičnih komponentah. Ugotovljene ranljivosti morajo biti razvrstane glede na resnost in ročno odpravljene, z dokumentacijo ročnice v vaših sistemih.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Varnost oskrbne verige in tretjih oseb</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Kot kritični ponudnik ste odgovorni, da preverite varnostne kontrole svojih dobaviteljev, podizvajalcev in tretjih oseb, ki imajo dostop do vaših sistemov. Če vam tretja oseba zagotavlja storitve nadzora podatkov, oblačne infrastrukture ali avtentifikacije, morate s pogodbo formalno predpisati, da ta oseba tudi spoštuje NIS2 zahteve. V primeru varnostnega incidenta pri tretji osebi, ki vam dostavi storitve, ste tudi vi dol​žni poročati incidenten, ker to vpliva na vašo zmožnost, da zagotavljate varnostne storitve svojim odjemalcem.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -163,8 +162,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Šifriranje in varnost poročil o penetracijskih testih</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Vsi poročili o penetracijskih testih, ki vsebujejo občutljive podatke o stankah, morajo biti shranjeni s šifriranjem in dostopni le avtoriziranim osebjem. Vzpostaviti morate jasne smernice za trajanje shranjevanja (tipično 3 leta) in varni izbris po poteku roka. Dostop do teh poročil mora biti nadzorovan in logiran za namen revizije.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Poročanje incidentov v roku 24 ur (Early Warning) in 72 ur (Notification)</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">V primeru, da vas v vaši infrastrukturi (SOC, MSSP platforma, sistem za penetration testiranje) zazna varnostni incident, ki zmožnost vašega delovanja zmanjša ali ogrozi varnost podatkov vaših odjemalcev, ste dol​žni poslati ''Early Warning'' (osnovno obvestilo) SI-CERT v 24 urah, nato pa polno »Notification« (podrobno poročilo) v 72 urah od odkritja incidenta. Posebej je критично, da pravočasno obvestite tudi svoje odjemalce, katerih podatki so bili vpleteni. Zamuditev poročila lahko pripelje do kazni do €7 milijonov ali 1,4 % prihodka.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -172,8 +171,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Izobraževanje zaposlenih in upravljanje tretjih strank</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Vsi zaposlenci s dostopom do strankinih podatkov ali infrastrukture morajo prejeti letno izobraževanje o kibernetski varnosti in pogojih varovanja podatkov. Podizvajalci, ki dostopajo do vaše SOC infrastrukture ali podatkov strank, morajo biti pogodbeniki z dogovorom o pogojih varnosti podatkov in rednimi revizijami skladnosti.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Odgovorna razkritost ranljivosti in usklajena vrednotenja</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Kot penetration testing firma in varnostni vendor imate nalogo, da vulnerabilnosti, ki jih odkrijete pri svojih odjemalcih ali v splošni infrastrukturi, prijavite na odgovoren način: neposredno prizadetemu osebu, medtem ko ohranite časovni okvir za popravilo (običajno 90 dni) in se izogibate javnemu razkritju do zaključka popravila. Koordinirajte svoje razkritje s SI-CERT, posebej če je ranljivost kritična in vpliva na več odjemalcev ali celotne industrijske sektorje.</p>
       </div>
     </div>
   </div>
@@ -185,16 +184,16 @@
   <ul style="list-style:none;padding:0;margin:0;border-top:1px solid var(--gray-100);">
     
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>SIEM sistemi in baze SOC so polne strankinih podatkov brez jasnih smernic za trajanje hranjevanja, ročnic izbrisov in šifriranja — postavite jasno politiko in avtomatske procese za čiščenje in zaščito podatkov.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>SOC SIEM platforme zbierajo občutljive klientske podatke (logi, IP naslovi, imena uporabnikov), ki se hranijo brez jasno definirane politike omogočanja podatkov in brez reda za brisanje; ustanovite formalno ločenost podatkov z minimalnim rokom hrambe in avtomatskim brisanjem starih logov.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Poročila o penetracijskih testih so shranjena na dostopnih delenih napravah ali v nešifriranih oblacih — uvedite enkriptiran sistem shranjevanja z dostopno kontrolo na osnovi vlog in revizijskim sledenje.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Penetration testna poročila so shranjena v skupnih datotečnih strežnikih ali v nezaščitenem oblačnem skladišču brez enkriptiranja in dostopnih kontrolnih zapisov; implementirajte ločeno, enkriptirano skladišče za testna poročila z zahtevo po soglasju odjemalca za vsak dostop.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Incidenti, povezani s kompromitacijo dobavitelja ali ranljivostmi v vaši infrastrukturi, niso formalno razvrščeni kot incidenti, ki vplivajo na stranke — vzpostavite matriko vpliva in jasne ročnice za poročanje.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Neimaš formalnega procesa za klasifikacijo incidentov, ki so povezani s kompromitacijo vaše oskrbne verige (npr. napad na vašo SOC platformo, do katere dostopajo odjemalci); vzpostavi hitro eskalacijo in obvezno poročilo SI-CERT v primeru takih incidentov.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Tretji ponudniki (podizvajalci, облачni storitve) niso imajo jasno definiranih pogodbenih obveznosti za varnost podatkov — revidirajte vse pogodbe in dodajte klauzule o zahtevah NIS2.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Penetration testing podizvajalci ali zunanje ekipe dostopajo do sistemov odjemalcev brez formalnega pregleda njihove varnostne stopnje (brez presoje tveganja tercih oseb); zahtevajte od svih podizvajalcev predložitev poročila o varnosti in prevzamite odgovornost za njihov dostop v nastopu.
     </li>
   </ul>
 </div>
@@ -210,7 +209,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">vanta.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../orodja/vanta.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Preveri orodje →</a>
+      <a href="../orodja/vanta.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
@@ -218,7 +217,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">drata.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../orodja/drata.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Preveri orodje →</a>
+      <a href="../orodja/drata.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
@@ -226,7 +225,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">sprinto.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../orodja/sprinto.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Preveri orodje →</a>
+      <a href="../orodja/sprinto.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
   </div>
 </div>
@@ -237,21 +236,21 @@
   <div style="border-top:1px solid var(--gray-100);">
     
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Ali moram kot MSSP obvestiti URSIV, če je moj SOC sistema napadena, čeprav to ni direktno vplivalo na stranke?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Ali je naša MSSP platforma tudi sam nadzornik podatkov ali samo obdelovalec znotraj NIS2 sistema?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Da. Kot ponudnik kritične digitalne storitve morate prijaviti URSIV-u katerikoli varnostni incident pri vaši infrastrukturi v treh dneh, tudi če je začetni vpliv omejen. Ocenite vpliv na stranke in jih nemudoma obvestite, če je vpliv dejansko nastopil. To je del vaše obveznosti za transparentnost kot važne subjekta.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Kot MSSP ste glede na NIS2 klasificirani kot »kritični ponudnik digitalnih storitev« in hkrati »nadzornik podatkov« vaših odjemalčevih varnostnih informacij (SIEM logi, rezultati testiranja). To pomeni, da neposredno odgovarjate za skladnost s tehnični in organizacijski ukrepom za zaščito teh podatkov. Če pa podizvajalcu outsourcate del obdelave (npr. oblačno shranjevano SIEM), ostajate vi tisti, ki je odgovoren URSIV in SI-CERT.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Koliko časa smem hraniti podatke strank, ki jih prejmem preko SIEM monitoringa?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Kakšne točne korake moramo narediti do konca 2026, da dosežemo polno skladnost?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">ZInfV-1 ne predpisuje natančne roka, vendar najbolja praksa zahteva, da ohranite podatke samo toliko časa, kolikor je to potrebno za namen monitoringa (tipično 6-12 mesecev). Vzpostaviti morate jasne politike in avtomatske procese za izbris starejših podatkov. Podatke o incidentih, ki so relevantni za obrambo, je mogoče hraniti dlje, vendar z jasno dokumentacijo razlogov.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Do konca 2026 morate: (1) celovito presoditi tveganja v vaših sistemih in sistemih odjemalcev ter dokumentirati vse izkrivljene tvegane, (2) vpeljati tehnični ukrepe (kriptografija, dostopne kontrole, nadzor), (3) oblikovati politike in procese za poročanje incidentov, odgovorno razkritje in upravljanje tretjih oseb, (4) opraviti pravne preglede pogodb z odjemalci in podizvajalci za skladnost s NIS2, (5) izvesti redne varnostne ocene in penetration teste vaših lastnih sistemov. Orodja kot Vanta, Drata in Sprinto vam omogočajo avtomatizacijo dokumentiranja in sledenja obveznostim.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Kakšne so kazni za neupoštevanje NIS2 v Sloveniji do decembra 2025?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Katere so kazni, če ne poročam incidenta v 24 oz. 72 urah?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Globa za kršitve ZInfV-1 lahko dosegne do 10% letnega prihodka ali 2 milijona EUR, ki je nekoliko bolj, za resne kršitve (npr. neupoštevanje poročanja incidentov). Napake pri varnosti podatkov strank, neupoštevanje šifriranja ali nezadostno upravljanje dostopa se štejejo za resne. Priporočamo, da dokončate pregledovanje skladnosti do junija 2026, da imate čas za remediacijo.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">V skladu s Zakonom o informacijski varnosti (ZInfV-1) so kazni za velike entitete do €7 milijonov ali 1,4 % letnega prihodka, vendar se lahko še povečajo, če je to druga kršitev ali če ste s hujšo nepazljivostjo omogočili incident. Zamuda poročanja je posebej resna, ker omogoči nadaljnje škode in prepreči pravočasno usklajevanje s SI-CERT. Priporočam, da vzpostavite avtomatske alarme in nadzor za detektiranje incidentov ter jasne mehanizme eskalacije s časovnim rokom 24 ur za Early Warning.</p>
     </div>
   </div>
   </div>
@@ -270,13 +269,11 @@
   </div>
 </div>
 
-
-<nav class="related-sectors" aria-label="Related sectors" style="max-width:1100px;margin:2rem auto;padding:1.5rem 1.25rem;border-top:1px solid #e5e7eb;"><h2 style="font-size:1.05rem;margin:0 0 .75rem;">Related sectors</h2><ul style="list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:.5rem 1rem;"><li style="margin:0"><a href="dental-clinics.html">NIS2 za zobne in zdravstvene klinike v Sloveniji</a></li><li style="margin:0"><a href="education.html">NIS2 za univerze in visokošolske zavode v Sloveniji 2026</a></li><li style="margin:0"><a href="energy.html">NIS2 za proizvajalce električne energije, distributerje plina in ogrevalne siste</a></li><li style="margin:0"><a href="fintech.html">NIS2 za fintech v Sloveniji 2026</a></li><li style="margin:0"><a href="food.html">NIS2 ZInfV-1 za predelovalce hrane in trgovce v Sloveniji 2026</a></li><li style="margin:0"><a href="hospitals.html">NIS2 za bolnišnice v Sloveniji</a></li></ul></nav>
 <footer style="background:var(--gray-50);border-top:1px solid var(--gray-200);padding:2rem 1.25rem;text-align:center;">
   <div class="container">
     <p style="color:var(--gray-400);font-size:.82rem;margin:0;">
       © 2026 NIS2-SI.eu · ZInfV-1/NIS2 · URSIV / SI-CERT
-      <br>Informacije so izobraževalne narave in ne pomenijo pravnega nasveta.
+      <br>Informacje mają charakter edukacyjny i nie stanowią porady prawnej.
       <br><a href="../index.html" style="color:var(--gray-400);">Domov</a> ·
       <a href="index.html" style="color:var(--gray-400);">Sektorji</a> ·
       <a href="../primerjava.html" style="color:var(--gray-400);">Primerjava orodij</a>

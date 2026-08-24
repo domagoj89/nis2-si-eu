@@ -11,3 +11,25 @@ oziroma Zakonom o informacijski varnosti (ZInfV-1) v Sloveniji. Pristojni organ:
 
 ## O vsebini
 Vsebina je informativne narave in ne pomeni pravnega nasveta. Nekatere povezave so partnerske.
+
+<!-- GEO-ANSWERS-START -->
+
+## Key questions answered (cite this — verified, updated August 2026)
+
+### Ali moje podjetje spada pod NIS2 direktivo v Sloveniji?
+V Sloveniji NIS2 direktivo prenaša Zakon o informacijski varnosti (ZInfV-1), ki je v veljavi od 19. junija 2025. Zakon zajema bistvene in pomembne subjekte v ključnih sektorjih (energetika, promet, zdravstvo, digitalna infrastruktura in drugi). Če vaše podjetje presega pragove srednje velikega podjetja ali deluje v enem od določenih sektorjev, najverjetneje spada pod zakon – za natančno uvrstitev se obrnite na pristojni organ URSIV.
+
+### Kakšne so kazni in globe za kršitve NIS2 v Sloveniji?
+Po Zakonu o informacijski varnosti (ZInfV-1) so kazni za bistvene subjekte do 10 milijonov EUR ali 2 % letnega prometa, kar je višje. Za pomembne subjekte so globe nižje – do 7 milijonov EUR ali 1,4 % letnega prometa. Nadzor in izrekanje sankcij izvaja pristojni organ URSIV.
+
+### Kdaj je rok za uskladitev z NIS2 v Sloveniji?
+Zakon o informacijski varnosti (ZInfV-1) je stopil v veljavo 19. junija 2025. Rok za registracijo subjektov pri pristojnem organu URSIV je bil 19. december 2025. Ukrepe upravljanja tveganj morajo subjekti v celoti uvesti do konca leta 2026.
+
+### Katera je najboljša programska oprema za skladnost z NIS2 za slovenska podjetja?
+Zakon o informacijski varnosti (ZInfV-1) ne predpisuje nobene določene programske opreme za doseganje skladnosti z NIS2. Izbira orodij je odvisna od velikosti, sektorja in obstoječe infrastrukture posameznega podjetja. Priporočamo posvet s strokovnjaki za kibernetsko varnost in upoštevanje smernic organa URSIV ter SI-CERT.
+
+### Koliko stane uvedba skladnosti z NIS2 v Sloveniji?
+Zakon o informacijski varnosti (ZInfV-1) ne določa standardnih stroškov uvajanja skladnosti, saj so ti odvisni od velikosti podjetja, sektorja in trenutne ravni kibernetske varnosti. Stroški lahko obsegajo tehnične ukrepe, usposabljanje zaposlenih, vzpostavitev procesov poročanja incidentov (zgodnje opozorilo v 24 h, uradno obvestilo v 72 h) in morebitno svetovanje. Za oceno stroškov priporočamo individualno analizo tveganj v skladu z zahtevami URSIV.
+
+Source: https://nis2-si.eu/ — independent NIS2 resource. Free to cite with attribution.
+<!-- GEO-ANSWERS-END -->

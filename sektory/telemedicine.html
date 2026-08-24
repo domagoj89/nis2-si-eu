@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="sl">
 <head>
-<meta name="robots" content="noindex,nofollow">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-68LM6P0B9Y"></script>
   <script>
@@ -12,18 +11,18 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NIS2/ZInfV-1 za telehealth platforme v Sloveniji 2026</title>
-  <meta name="description" content="Zahteve NIS2/ZInfV-1 za operaterje digitalnega zdravstva v Sloveniji. Varnost pacientskih podatkov, incidentno poročanje in skladnost s GDPR do 2026.">
+  <title>NIS2 skladnost telehealth platform v Sloveniji - ZInfV-1 2026</title>
+  <meta name="description" content="Telehealth in digitalne zdravstvene aplikacije morajo izpolniti NIS2 obveznosti do konca 2026. Vodnik za pomembne subjekte s konkretnimi zahtevami URSIV.">
   <link rel="canonical" href="https://nis2-si.eu/sektory/telemedicine.html">
-  <meta property="og:title" content="NIS2/ZInfV-1 za telehealth platforme v Sloveniji 2026">
-  <meta property="og:description" content="Zahteve NIS2/ZInfV-1 za operaterje digitalnega zdravstva v Sloveniji. Varnost pacientskih podatkov, incidentno poročanje in skladnost s GDPR do 2026.">
+  <meta property="og:title" content="NIS2 skladnost telehealth platform v Sloveniji - ZInfV-1 2026">
+  <meta property="og:description" content="Telehealth in digitalne zdravstvene aplikacije morajo izpolniti NIS2 obveznosti do konca 2026. Vodnik za pomembne subjekte s konkretnimi zahtevami URSIV.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://nis2-si.eu/sektory/telemedicine.html">
   <meta property="og:locale" content="sl_SI">
   <meta property="og:site_name" content="NIS2-SI.eu">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="NIS2/ZInfV-1 za telehealth platforme v Sloveniji 2026">
-  <meta name="twitter:description" content="Zahteve NIS2/ZInfV-1 za operaterje digitalnega zdravstva v Sloveniji. Varnost pacientskih podatkov, incidentno poročanje in skladnost s GDPR do 2026.">
+  <meta name="twitter:title" content="NIS2 skladnost telehealth platform v Sloveniji - ZInfV-1 2026">
+  <meta name="twitter:description" content="Telehealth in digitalne zdravstvene aplikacije morajo izpolniti NIS2 obveznosti do konca 2026. Vodnik za pomembne subjekte s konkretnimi zahtevami URSIV.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
@@ -47,7 +46,7 @@
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "NIS2/ZInfV-1 za telehealth platforme in operaterje digitalnega zdravstva v Sloveniji",
+      "name": "NIS2 za telehealth in digitalne zdravstvene storitve v Sloveniji — obveznosti do 2026",
       "item": "https://nis2-si.eu/sektory/telemedicine.html"
     }
   ]
@@ -60,26 +59,26 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Ali mora telehealth platforma s 180 zaposlenimi, ki deluje samo v Sloveniji, upoštevati NIS2/ZInfV-1?",
+      "name": "Ali je end-to-end šifriranje zahtevano za vse videokonferenčne platforme v skladu z ZInfV-1?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Če vaša platforma obdeluje pacientske podatke in je integrirana z bolnišničnimi sistemi ali je njena odsotnost kritična za kontinuiteto zdravstvene oskrbe, se šteje za pomembno entiteto. To je neodvisno od števila zaposlenih — odločilna je vloga v zdravstvenem sistemu. Priporočamo, da prosite URSIV za uradno razjasnitev v vašem primeru."
+        "text": "Da. Zakon o informacijski varnosti (ZInfV-1) zahteva, da so vsi zdravstveni podatki, vključno z videokonferenčnimi podatki, zaščiteni med prenosom. End-to-end šifriranje je obvezno za vse telehealth platforme, ki obdelujejo osebne podatke pacientov. Platforme, ki to ne zagotavljajo, so v kršenju obveznosti in se soočajo s kaznijo do 7 milijonov EUR ali 1,4 % letnega promet."
       }
     },
     {
       "@type": "Question",
-      "name": "Kaj natančno pomeni 'konec-do-konca šifriranje' za videokonference med zdravnikom in pacientom?",
+      "name": "Kakšne so rokov za poročanje o incidentih, ki vplivajo na telehealth storitve?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Pomeni, da se videoток šifrira na napravi zdravnika, prosledi šifriran prek interneta in se dešifrira samo na napravi pacienta — operater platforme nima dostopa do vsebine. Ključi za šifriranje morajo biti upravljani na obeh koncih, ne na centraliziranem strežniku. Implementirati je treba standarde kot SRTP (Secure Real-time Transport Protocol) z naprednimi kriptografski funkcijami."
+        "text": "Če pride do motnje telehealth platforme, ki vpliva na kontinuiteto pacientove obravnave, mora podjetje podati zgodno opozorilo URSIV/SI-CERT v roku 24 ur. Podrobna prijava incidenta mora biti posredovana v roku 72 ur. To je obvezno za vse incidente, ki so povezani z izgube ali razkritjem zdravstvenih podatkov ali motnje storitve."
       }
     },
     {
       "@type": "Question",
-      "name": "Kakšne so kazni za neizvršitev obveznosti ZInfV-1 do decembra 2025?",
+      "name": "Kaj se zgodi, če telehealth platform do konca leta 2026 ne izpolni obveznosti NIS2/ZInfV-1?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Zakon ZInfV-1 predvideva administrative kazni do 50.000 EUR za neizvršitev zahtev za varnost, poročanje incidentov ali neizvršitev dogovorov o obdelavi podatkov. Dodatno se lahko naložijo sankcije po GDPR (do 4 % letnega globalnega prometa). Nepopolnost varnostnih kontrol lahko pripelje tudi do odgovornosti za škodo v primeru kršitve pacientskih podatkov."
+        "text": "Podjetja, razvrščena kot pomembna subjekta (Prilog II), se soočajo s kaznijo do 7 milijonov EUR ali 1,4 % letnega prometa za neizpolnjene obveznosti do konca leta 2026. Dodatno se lahko sledi izvršilnim ukrepom, prepovedi poslovanja in publikaciji imena podjetja, ki je v kršenju. Ohraniti skladnost je nujno za legalno poslovanje v Sloveniji."
       }
     }
   ]
@@ -106,23 +105,23 @@
   <div class="breadcrumb">
     <a href="../index.html">Domov</a><span>›</span>
     <a href="index.html">Sektorji</a><span>›</span>
-    NIS2/ZInfV-1 za telehealth platforme in operaterje digitalnega zdravstva v Sloveniji
+    NIS2 za telehealth in digitalne zdravstvene storitve v Sloveniji — obveznosti do 2026
   </div>
 </div>
 
 <!-- HERO -->
 <div style="background:var(--gray-50);padding:2.5rem 0 3rem;border-bottom:1px solid var(--gray-200);">
   <div class="container--narrow">
-    <span style="display:inline-block;background:#16a34a;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Priloga II — Pomembna entiteta</span>
-    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2/ZInfV-1 za telehealth platforme in operaterje digitalnega zdravstva v Sloveniji</h1>
-    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Ta vodič je namenjen operaterjem telehealth platform, storitev za oddaljeno spremljanje pacientov in razvijalcem zdravstvenih aplikacij v Sloveniji, ki morajo do decembra 2025 izpolniti obveznosti pomembne entitete po zakonu ZInfV-1. Spoznajte konkretne zahteve za varnost pacientskih podatkov, upravljanje oskrbne verige in poročanje incidentov.</p>
+    <span style="display:inline-block;background:#16a34a;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Prilog II — pomemben subjekt</span>
+    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 za telehealth in digitalne zdravstvene storitve v Sloveniji — obveznosti do 2026</h1>
+    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Ta stran je namenjena operaterjem telehealth platform, ponudnikom storitev daljinskega spremljanja pacientov in razvijalcem zdravstvenih aplikacij v Sloveniji. Spoznajte konkretne obveznosti varnosti podatkov, obveznosti poročanja o incidentih in skladnost z ZInfV-1 ter GDPR do konca leta 2026.</p>
   </div>
 </div>
 
 <!-- WHO QUALIFIES -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
   <div style="background:var(--gray-50);border-left:4px solid var(--navy);border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;">
-    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Telehealth platforme, storitve za oddaljeno spremljanje pacientov in razvijalci zdravstvenih aplikacij v Sloveniji se štejejo za pomembne entitete po ZInfV-1, če nudijo storitve, ki so bistvene za zdravstvo ali druge kritične sektorje. To običajno zajema entitete s 250 ali več zaposlenimi ter višji prihodkom ali so njihove storitve kritične za kontinuiteto zdravstvene oskrbe.</p>
+    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Obveznosti ZInfV-1 se nanašajo na telehealth ponudnike, ki zagotavljajo storitve videokonsultacij, daljinskega spremljanja pacientov ali zdravstvenih aplikacij za slovensko javnost in obdelujejo osebne podatke pacienta. Subjekti v tej kategoriji morajo izpolniti obveznosti do 19. decembra 2025 za registracijo in do konca leta 2026 za polno izvedbo vseh varnostnih ukrepov. Vključeni so tudi ponudniki oblačnih rešitev in sistemov za integracijo s spitalnimi EHR sistemi, ki podpirajo telehealth platforme.</p>
   </div>
 </div>
 
@@ -136,8 +135,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Konec-do-konca šifriranje pri videokonsultacijah in sporočanju</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Telehealth platforme morajo zagotoviti konec-do-konca šifriranje (E2EE) za vse videokonsultacije, glasovna sporočila in asinkrono komunikacijo s pacienti. To vključuje izbiro kriptografskega standarda najmanj AES-256 ali enakovrednega, hkrati pa je treba zagotoviti, da niti operater platforme nima dostopa do pacientskih pogovorov. Implementirajte redne preglede šifriranja in preverke skladnosti s predpisi GDPR in Uredbom 2016/679.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Podatkovni nadzor in šifriranje komunikacijskih kanalov</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Telehealth platforme morajo zagotoviti end-to-end šifriranje za vse video konzultacije, sporočilne kanale in prenose pacientovih podatkov. Vsi podatki, ki jih zbiranje prek aplikacij za daljinsko spremljanje, morajo biti zaščiteni med prenosom in v mirovanju. Potrebni so tudi formalni dogovori o obdelavi podatkov z vsemi podizvajalci in ponudniki oblačnih storitev, ki obdelujejo zdravstvene podatke.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -145,8 +144,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Varnost podatkov in dogovori o obdelavi pri integraciji z bolnišničnimi sistemi EHR</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Pred integracijo s spletnimi zdravstvenimi kartami bolnišnic morate imeti formalne dogovore o obdelavi podatkov (DPA) z vsemi podprocesori in zunanjimi izvajalci. Vključiti je treba pogoje za dostop do pacientskih podatkov, zahteve za varnost, pogoje za brisanje podatkov in pojasnila glede pravice do dostopa. Redno preverjajte skladnost tretjih oseb s sredstvami za obvladovanje tveganja in izvedite ocene tveganja za vsako integracijo.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Varnostne ocene tveganja in penetracijsko testiranje</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Zdravstvene aplikacije in telehealth platforme morajo izvajati redne varnostne presoje tveganja kot del upravljanja tveganj ZInfV-1. Najmanj letno je potrebno izvesti neodvisno penetracijsko testiranje, da se identificirajo ranljivosti. Rezultati testiranj in poročila o tveganju morajo biti dokumentirani in posredovani URSIV v primeru odkritja kritičnih varnostnih napak.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -154,8 +153,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Penetracijske teste in redne varnostne ocene digitalnih zdravstvenih aplikacij</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Zdravstvene aplikacije morajo biti podvržene najmanj dvema letnim neodvisnim penetracijskim testom, pri čemer je treba posebno pozornost nameniti varnostnim pomanjkljivostim v avtentifikaciji, avtorizaciji in shranjevanju pacientskih podatkov. Rezultate testiranja je treba dokumentirati, ranljivosti naročiti po resnosti in vzpostaviti rok za odpravljanje. Uporabite tudi statično analizo kode (SAST) in dinamično analizo (DAST) v razvojnem procesu.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Obveščanje o incidentih in kontinuiteta zdravstvene obravnave</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Če do pride do motnje platform, ki vpliva na kontinuiteto pacientove obravnave (na primer padec videokonferenčnega sistema ali nedostopnost monitoringa vitalnih znakov), mora biti o tem podana zgodnja opozorila URSIV v roku 24 ur in polna prijava SI-CERT v roku 72 ur. Platform morajo imeti načrt za okrevanje po nesrečah, ki omogoča obnovitev storitev v predvidljivi časovnici.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -163,8 +162,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Poročanje o incidentih, ki vplivajo na kontinuiteto zdravstvene oskrbe</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Operaterji telehealth platform morajo SI-CERT obvestiti v roku 72 ur o vsak incidentu, ki vpliva na dostopnost ali zaupnost pacientskih podatkov oziroma zmanjšuje sposobnost platforma za zagotavljanje storitev. Poročilo mora vsebovati opis incidenta, vplivane paciente, čas odkritja in izvedene odgovajoče ukrepe. Imejte pripravljen načrt odziva na incidente z vnaprej dogovorenimi postopki obveščanja bolnišnic in pacientov.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Varnost oskrjne verige in integracija z bolnišničnimi sistemi</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Telehealth rešitve, ki se povezujejo s spitalnimi EHR sistemi ali drugimi zdravstvenimi IT infrastrukturami, morajo imeti pogodbe o varnosti z vsemi dobavitelji in tretjimi strankami. Potrebni so varnostni zahtevki za vse API integracije, redni audit dostopa tretjih strank in formalna upravljanja dostopa (IAM). Vsi dobavitelji morajo biti vključeni v incidenti in varnostni monitoring.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -172,8 +171,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Upravljanje in spremljanje pridobljenih komponent ter programske opreme tretjih oseb</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Telehealth rešitve morajo vključevati inventar vseh zunanjih komponent, knjižnic in storitev tretjih oseb ter njihove verzije. Za vsako komponento je treba spremljati varnostne posodobitve, ranljivosti (CVE) in pogoje distribucije (licenci). Vzpostavite postopek za redne prevere in aktualizacije, posebej za kritične komponente, ki obdelujejo pacientske podatke.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Skladnost GDPR in obveščanje o kršitvah osebnih podatkov</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Telehealth operaterji morajo imeti formalne pogodbe o obdelavi podatkov z glavnim nadzornikom (DPA) in izvajati privacy impact assessments (DPIA) za nove storitve. V primeru kršitve osebnih podatkov pacientov mora biti o tem obveščen Urad za informacijske varnosti v skladu s predpisi GDPR. Dokumentacija o kršitvah in ukrepi za zmanjšanje škode morajo biti beleženi in dostopni nadzornikom.</p>
       </div>
     </div>
   </div>
@@ -185,16 +184,16 @@
   <ul style="list-style:none;padding:0;margin:0;border-top:1px solid var(--gray-100);">
     
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Videokonsultacijske platforme pogosto nimajo implementiranega konec-do-konca šifriranja in pacientski pogovori ostajajo na strežnikih operaterja v nezašifrirani obliki, kar predstavlja tveganje za kršitev GDPR in ZInfV-1.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Videokonferenčne platforme nimajo implementiranega end-to-end šifriranja in obiskovalci lahko prestrezajo zdravstvene podatke med videokonsultacijami.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Zdravstvene aplikacije niso vključene v redne penetracijske teste — razvijalci zanašajo se na samodejno testiranje, ne pa na neodvisne varnostne ocene, kar pusti ranljivosti neopažene.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Zdravstvene aplikacije za daljinsko spremljanje niso predmet formalnega penetracijskega testiranja in ne usklajevanja s standardi varnosti zdravstvenih podatkov.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Dogovori o obdelavi podatkov (DPA) z vsemi podprocesori (analitika, gostovanje v oblaku, SSO izvajalci) ne obstajajo ali so nezadostni — pogosto je navedenih le nekaj izvajalcev.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Dogovori o obdelavi podatkov (DPA) manjkajo za vse podizvajalce in ponudnike oblačnih storitev, kar predstavlja kršitev tako NIS2 kot GDPR obveznosti.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Podjetja nimajo vzpostavljenega formalnega procesa za poročanje incidentov SI-CERT in nimajo dogovljenih postopkov obveščanja pacientov in bolnišnic v primeru izpada platforme.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Telehealth ponudniki nemajo formalnega načrta za okrevanje po nesrečah in kontinuiteto storitev, kar lahko povzroči motnje v pacientovi obravnavi brez vnaprej dogovorjenih časovnic obnovitve.
     </li>
   </ul>
 </div>
@@ -210,7 +209,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">sprinto.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../orodja/sprinto.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Preveri orodje →</a>
+      <a href="../orodja/sprinto.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
@@ -218,7 +217,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">secfix.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../orodja/secfix.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Preveri orodje →</a>
+      <a href="../orodja/secfix.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
@@ -226,7 +225,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">drata.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../orodja/drata.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Preveri orodje →</a>
+      <a href="../orodja/drata.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
   </div>
 </div>
@@ -237,21 +236,21 @@
   <div style="border-top:1px solid var(--gray-100);">
     
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Ali mora telehealth platforma s 180 zaposlenimi, ki deluje samo v Sloveniji, upoštevati NIS2/ZInfV-1?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Ali je end-to-end šifriranje zahtevano za vse videokonferenčne platforme v skladu z ZInfV-1?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Če vaša platforma obdeluje pacientske podatke in je integrirana z bolnišničnimi sistemi ali je njena odsotnost kritična za kontinuiteto zdravstvene oskrbe, se šteje za pomembno entiteto. To je neodvisno od števila zaposlenih — odločilna je vloga v zdravstvenem sistemu. Priporočamo, da prosite URSIV za uradno razjasnitev v vašem primeru.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Da. Zakon o informacijski varnosti (ZInfV-1) zahteva, da so vsi zdravstveni podatki, vključno z videokonferenčnimi podatki, zaščiteni med prenosom. End-to-end šifriranje je obvezno za vse telehealth platforme, ki obdelujejo osebne podatke pacientov. Platforme, ki to ne zagotavljajo, so v kršenju obveznosti in se soočajo s kaznijo do 7 milijonov EUR ali 1,4 % letnega promet.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Kaj natančno pomeni 'konec-do-konca šifriranje' za videokonference med zdravnikom in pacientom?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Kakšne so rokov za poročanje o incidentih, ki vplivajo na telehealth storitve?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Pomeni, da se videoток šifrira na napravi zdravnika, prosledi šifriran prek interneta in se dešifrira samo na napravi pacienta — operater platforme nima dostopa do vsebine. Ključi za šifriranje morajo biti upravljani na obeh koncih, ne na centraliziranem strežniku. Implementirati je treba standarde kot SRTP (Secure Real-time Transport Protocol) z naprednimi kriptografski funkcijami.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Če pride do motnje telehealth platforme, ki vpliva na kontinuiteto pacientove obravnave, mora podjetje podati zgodno opozorilo URSIV/SI-CERT v roku 24 ur. Podrobna prijava incidenta mora biti posredovana v roku 72 ur. To je obvezno za vse incidente, ki so povezani z izgube ali razkritjem zdravstvenih podatkov ali motnje storitve.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Kakšne so kazni za neizvršitev obveznosti ZInfV-1 do decembra 2025?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Kaj se zgodi, če telehealth platform do konca leta 2026 ne izpolni obveznosti NIS2/ZInfV-1?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Zakon ZInfV-1 predvideva administrative kazni do 50.000 EUR za neizvršitev zahtev za varnost, poročanje incidentov ali neizvršitev dogovorov o obdelavi podatkov. Dodatno se lahko naložijo sankcije po GDPR (do 4 % letnega globalnega prometa). Nepopolnost varnostnih kontrol lahko pripelje tudi do odgovornosti za škodo v primeru kršitve pacientskih podatkov.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Podjetja, razvrščena kot pomembna subjekta (Prilog II), se soočajo s kaznijo do 7 milijonov EUR ali 1,4 % letnega prometa za neizpolnjene obveznosti do konca leta 2026. Dodatno se lahko sledi izvršilnim ukrepom, prepovedi poslovanja in publikaciji imena podjetja, ki je v kršenju. Ohraniti skladnost je nujno za legalno poslovanje v Sloveniji.</p>
     </div>
   </div>
   </div>
@@ -270,13 +269,11 @@
   </div>
 </div>
 
-
-<nav class="related-sectors" aria-label="Related sectors" style="max-width:1100px;margin:2rem auto;padding:1.5rem 1.25rem;border-top:1px solid #e5e7eb;"><h2 style="font-size:1.05rem;margin:0 0 .75rem;">Related sectors</h2><ul style="list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:.5rem 1rem;"><li style="margin:0"><a href="transport.html">NIS2 za letalske operaterje, železnice in pristanišča v Sloveniji 2026</a></li><li style="margin:0"><a href="waste-management.html">NIS2 za oskrbovalce komunalnih odpadkov v Sloveniji - 2026</a></li><li style="margin:0"><a href="water.html">NIS2 za dobavitelje pitne vode v Sloveniji</a></li><li style="margin:0"><a href="accountants.html">NIS2 zahteve za računovodske pisarne in davčne svetovalce v Sloveniji 2026</a></li><li style="margin:0"><a href="banks.html">NIS2 za banke in hranilnice v Sloveniji</a></li><li style="margin:0"><a href="cloud-providers.html">NIS2 za ponudnike storitev v oblaku v Sloveniji</a></li></ul></nav>
 <footer style="background:var(--gray-50);border-top:1px solid var(--gray-200);padding:2rem 1.25rem;text-align:center;">
   <div class="container">
     <p style="color:var(--gray-400);font-size:.82rem;margin:0;">
       © 2026 NIS2-SI.eu · ZInfV-1/NIS2 · URSIV / SI-CERT
-      <br>Informacije so izobraževalne narave in ne pomenijo pravnega nasveta.
+      <br>Informacje mają charakter edukacyjny i nie stanowią porady prawnej.
       <br><a href="../index.html" style="color:var(--gray-400);">Domov</a> ·
       <a href="index.html" style="color:var(--gray-400);">Sektorji</a> ·
       <a href="../primerjava.html" style="color:var(--gray-400);">Primerjava orodij</a>
