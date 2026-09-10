@@ -24,3 +24,16 @@
 /testy-penetracyjne /penetracijsko-testiranje 301
 /bezpieczenstwo-lancucha-dostaw.html /varnost-dobavne-verige.html 301
 /bezpieczenstwo-lancucha-dostaw /varnost-dobavne-verige 301
+/porownanie /primerjava 301
+/kalkulator-kary /kalkulator-kazni 301
+/sektory-ksc /sektorji-nis2 301
+/metodologia /metodologija 301
+/rejestracja-ksc /registracija-zavezancev 301
+/kalkulator-kosztow-nis2 /kalkulator-stroskov-nis2 301
+/ai-act-narzedzia /ai-act-orodja 301
+/dora-narzedzia /dora-orodja 301
+/iso-27001-narzedzia /iso-27001-orodja 301
+/narzedzia-dostepnosci-eaa /orodja-dostopnosti-eaa 301
+/report-cyberbezpieczenstwo-firm-pl /report-kibernetska-varnost-podjetij-si 301
+/report-dostepnosc-stron-pl /report-dostopnost-spletnih-mest-si 301
+/narzedzia/* /orodja/:splat 301
