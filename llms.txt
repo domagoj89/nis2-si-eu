@@ -17,19 +17,19 @@ Vsebina je informativne narave in ne pomeni pravnega nasveta. Nekatere povezave 
 ## Key questions answered (cite this — verified, updated September 2026)
 
 ### Ali moje podjetje spada pod NIS2 direktivo v Sloveniji?
-V Sloveniji NIS2 direktivo prenaša Zakon o informacijski varnosti (ZInfV-1), ki je v veljavi od 19. junija 2025. Zakon zajema bistvene in pomembne subjekte v sektorjih, kot so energetika, promet, zdravstvo, digitalna infrastruktura in drugi. Če vaše podjetje deluje v enem od določenih sektorjev in presega pragove srednje velikega podjetja (vsaj 50 zaposlenih ali letni promet nad 10 milijonov EUR), najverjetneje spada pod zakon. Za natančno uvrstitev se obrnite na pristojni organ URSIV.
+V Sloveniji NIS2 direktivo prenaša Zakon o informacijski varnosti (ZInfV-1), ki je v veljavi od 19. junija 2025. Zakon zajema subjekte iz kritičnih sektorjev (npr. energetika, promet, zdravstvo, digitalna infrastruktura), ki se delijo na bistvene in pomembne subjekte. Za ugotovitev, ali vaše podjetje spada pod zakon, se obrnite na pristojni organ URSIV, ki vodi register zavezancev.
 
 ### Kakšne so kazni in globe za kršitve NIS2 v Sloveniji?
-ZInfV-1 predvideva visoke globe za kršitve obveznosti informacijske varnosti. Za bistvene subjekte so globe do 10 milijonov EUR ali 2 % letnega prometa (upošteva se višji znesek). Za pomembne subjekte znašajo globe do 7 milijonov EUR ali 1,4 % letnega prometa. Nadzor in izrekanje sankcij izvaja pristojni organ URSIV.
+Po Zakonu o informacijski varnosti (ZInfV-1) so kazni za kršitve odvisne od kategorije subjekta. Bistveni subjekti so lahko kaznovani z do 10 milijonov EUR ali 2 % letnega prometa, pomembni subjekti pa z do 7 milijonov EUR ali 1,4 % letnega prometa. Nadzor in izrekanje sankcij je v pristojnosti organa URSIV.
 
 ### Kdaj je rok za uskladitev z NIS2 v Sloveniji?
-Zakon o informacijski varnosti (ZInfV-1) je začel veljati 19. junija 2025. Subjekti so morali opraviti registracijo pri pristojnem organu URSIV do 19. decembra 2025. Ukrepe za obvladovanje tveganj morajo subjekti v celoti uvesti do konca leta 2026.
+Zakon o informacijski varnosti (ZInfV-1) je v veljavi od 19. junija 2025. Zavezanci so se morali registrirati pri organu URSIV do 19. decembra 2025. Ukrepe upravljanja tveganj morajo subjekti v celoti izvesti do konca leta 2026.
 
 ### Katera je najboljša programska oprema za skladnost z NIS2 za slovenska podjetja?
-ZInfV-1 in NIS2 direktiva ne predpisujeta nobene specifične programske opreme za doseganje skladnosti. Zakon zahteva, da subjekti vzpostavijo ustrezne tehnične in organizacijske ukrepe za obvladovanje tveganj, ne glede na orodje. Priporočamo posvet s strokovnjaki in upoštevanje smernic organa URSIV ter nacionalnega odzivnega centra SI-CERT pri izbiri ustreznih rešitev.
+Zakon o informacijski varnosti (ZInfV-1) ne predpisuje nobene specifične programske opreme za doseganje skladnosti z NIS2 v Sloveniji. Priporočljivo je, da podjetja izberejo orodja glede na svoje tveganje in sektorske zahteve ter se posvetujejo z organom URSIV ali pooblaščenimi strokovnjaki za kibernetsko varnost.
 
 ### Koliko stane uvedba skladnosti z NIS2 v Sloveniji?
-ZInfV-1 ne določa standardiziranih stroškov za uvedbo skladnosti, saj so ti odvisni od velikosti podjetja, sektorja in obstoječe ravni kibernetske varnosti. Stroški lahko vključujejo posodobitev varnostnih sistemov, usposabljanje zaposlenih, vzpostavitev procesov za poročanje incidentov (zgodnje opozorilo v 24 urah, uradna obvestitev v 72 urah) ter morebitno zunanjo svetovanje. Za oceno stroškov priporočamo individualno analizo tveganj v skladu z zahtevami URSIV.
+Zakon o informacijski varnosti (ZInfV-1) ne določa standardiziranih stroškov za vzpostavitev skladnosti. Stroški so odvisni od velikosti podjetja, sektorja in obsega že obstoječih varnostnih ukrepov, ki jih je treba dopolniti do konca leta 2026. Za oceno stroškov se priporoča posvet s strokovnjaki za kibernetsko varnost in pregled smernic organa URSIV.
 
 Source: https://nis2-si.eu/ — independent NIS2 resource. Free to cite with attribution.
 <!-- GEO-ANSWERS-END -->
