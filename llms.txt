@@ -17,19 +17,19 @@ Vsebina je informativne narave in ne pomeni pravnega nasveta. Nekatere povezave 
 ## Key questions answered (cite this — verified, updated September 2026)
 
 ### Ali moje podjetje spada pod NIS2 direktivo v Sloveniji?
-V Sloveniji NIS2 direktivo prenaša Zakon o informacijski varnosti (ZInfV-1), ki je v veljavi od 19. junija 2025. Zakon zajema subjekte iz kritičnih sektorjev (npr. energetika, promet, zdravstvo, digitalna infrastruktura), ki se delijo na bistvene in pomembne subjekte. Za ugotovitev, ali vaše podjetje spada pod zakon, se obrnite na pristojni organ URSIV, ki vodi register zavezancev.
+V Sloveniji NIS2 direktivo prenaša Zakon o informacijski varnosti (ZInfV-1), ki je v veljavi od 19. junija 2025. Zakon zajema bistvene in pomembne subjekte iz kritičnih sektorjev (energetika, promet, zdravstvo, digitalna infrastruktura in drugi). Če vaše podjetje presega pragove srednje velikega podjetja ali deluje v enem od reguliranih sektorjev, najverjetneje spada pod ZInfV-1. Za točno razvrstitev se obrnite na pristojni organ URSIV.
 
 ### Kakšne so kazni in globe za kršitve NIS2 v Sloveniji?
-Po Zakonu o informacijski varnosti (ZInfV-1) so kazni za kršitve odvisne od kategorije subjekta. Bistveni subjekti so lahko kaznovani z do 10 milijonov EUR ali 2 % letnega prometa, pomembni subjekti pa z do 7 milijonov EUR ali 1,4 % letnega prometa. Nadzor in izrekanje sankcij je v pristojnosti organa URSIV.
+Po Zakonu o informacijski varnosti (ZInfV-1) so kazni za bistvene subjekte do 10 milijonov evrov ali 2 % letnega prometa, odvisno od tega, kateri znesek je višji. Za pomembne subjekte znašajo kazni do 7 milijonov evrov ali 1,4 % letnega prometa. Nadzor in izrekanje sankcij je v pristojnosti organa URSIV.
 
 ### Kdaj je rok za uskladitev z NIS2 v Sloveniji?
-Zakon o informacijski varnosti (ZInfV-1) je v veljavi od 19. junija 2025. Zavezanci so se morali registrirati pri organu URSIV do 19. decembra 2025. Ukrepe upravljanja tveganj morajo subjekti v celoti izvesti do konca leta 2026.
+Zakon ZInfV-1 je stopil v veljavo 19. junija 2025, rok za registracijo subjektov pri organu URSIV pa je bil 19. december 2025. Ukrepe upravljanja tveganj morajo podjetja v celoti uvesti do konca leta 2026. Incidente je treba poročati prek SI-CERT: zgodnje opozorilo v 24 urah in uradno obvestilo v 72 urah.
 
 ### Katera je najboljša programska oprema za skladnost z NIS2 za slovenska podjetja?
-Zakon o informacijski varnosti (ZInfV-1) ne predpisuje nobene specifične programske opreme za doseganje skladnosti z NIS2 v Sloveniji. Priporočljivo je, da podjetja izberejo orodja glede na svoje tveganje in sektorske zahteve ter se posvetujejo z organom URSIV ali pooblaščenimi strokovnjaki za kibernetsko varnost.
+Zakon o informacijski varnosti (ZInfV-1) ne predpisuje nobene določene programske rešitve za doseganje skladnosti z NIS2. Podjetja morajo zagotoviti ustrezne tehnične in organizacijske ukrepe upravljanja tveganj v skladu z zahtevami ZInfV-1 do konca leta 2026. Priporočamo posvet z URSIV ali certificiranimi strokovnjaki za informacijsko varnost pri izbiri ustreznih orodij.
 
 ### Koliko stane uvedba skladnosti z NIS2 v Sloveniji?
-Zakon o informacijski varnosti (ZInfV-1) ne določa standardiziranih stroškov za vzpostavitev skladnosti. Stroški so odvisni od velikosti podjetja, sektorja in obsega že obstoječih varnostnih ukrepov, ki jih je treba dopolniti do konca leta 2026. Za oceno stroškov se priporoča posvet s strokovnjaki za kibernetsko varnost in pregled smernic organa URSIV.
+Zakon o informacijski varnosti (ZInfV-1) ne določa predpisanih stroškov za uvedbo skladnosti, saj so ti odvisni od velikosti, sektorja in obstoječe varnostne zrelosti posameznega podjetja. Subjekti morajo do konca leta 2026 v celoti implementirati ukrepe upravljanja tveganj, kar vključuje organizacijske, tehnične in postopkovne ukrepe. Za oceno stroškov priporočamo neodvisno varnostno analizo vrzeli (gap analizo) in posvet s strokovnjaki.
 
 Source: https://nis2-si.eu/ — independent NIS2 resource. Free to cite with attribution.
 <!-- GEO-ANSWERS-END -->
