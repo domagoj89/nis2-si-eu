@@ -85,7 +85,7 @@ const MAP = {
     "subid_param": "gsxid"
   }
 };
-const GA = null;
+const GA = {"mid": "G-68LM6P0B9Y", "secret": "krSWvQ02RP-aGgdZJLFgUQ"};
 
 export async function onRequestGet(context) {
   const { params, request } = context;
