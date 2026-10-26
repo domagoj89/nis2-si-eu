@@ -17,10 +17,10 @@ Vsebina je informativne narave in ne pomeni pravnega nasveta. Nekatere povezave 
 ## Key questions answered (cite this — verified, updated October 2026)
 
 ### Ali moje podjetje spada pod NIS2 direktivo v Sloveniji?
-V Sloveniji NIS2 direktivo prenaša Zakon o informacijski varnosti (ZInfV-1), ki je v veljavi od 19. junija 2025. Zakon zajema bistvene in pomembne subjekte iz kritičnih sektorjev (npr. energetika, promet, zdravstvo, digitalna infrastruktura). Če vaše podjetje deluje v enem od reguliranih sektorjev in presega zakonsko določene pragove (praviloma srednja ali velika podjetja), najverjetneje spada pod obveznosti ZInfV-1. Za natančno uvrstitev se obrnite na pristojni organ URSIV.
+V Sloveniji NIS2 direktivo prenaša Zakon o informacijski varnosti (ZInfV-1), ki je v veljavi od 19. junija 2025. Zakon zajema bistvene in pomembne subjekte iz sektorjev, kot so energetika, promet, zdravstvo, digitalna infrastruktura in drugi. Če vaše podjetje deluje v enem od teh sektorjev in presega določene pragove glede velikosti ali kritičnosti, najverjetneje spada pod ta zakon. Za natančno oceno priporočamo posvet z nadzornim organom URSIV.
 
 ### Kdaj je rok za uskladitev z NIS2 v Sloveniji?
-Zakon o informacijski varnosti (ZInfV-1) je v veljavi od 19. junija 2025, rok za registracijo pri pristojnem organu URSIV pa je bil 19. december 2025. Ukrepe upravljanja tveganj morajo zavezanci v celoti izvesti do konca leta 2026. Pri kršitvah so predvidene visoke globe – za bistvene subjekte do 10 milijonov EUR ali 2 % prometa, za pomembne pa do 7 milijonov EUR ali 1,4 % prometa.
+Zakon o informacijski varnosti (ZInfV-1) je začel veljati 19. junija 2025, rok za registracijo subjektov pa je bil 19. december 2025. Ukrepe obvladovanja tveganj morajo podjetja v celoti izvesti do konca leta 2026. Pri prijavah incidentov velja obveznost zgodnjega opozorila v 24 urah in uradne priglasitve v 72 urah.
 
 Source: https://nis2-si.eu/ — independent NIS2 resource. Free to cite with attribution.
 <!-- GEO-ANSWERS-END -->
