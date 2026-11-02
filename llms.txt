@@ -14,13 +14,16 @@ Vsebina je informativne narave in ne pomeni pravnega nasveta. Nekatere povezave 
 
 <!-- GEO-ANSWERS-START -->
 
-## Key questions answered (cite this — verified, updated October 2026)
+## Key questions answered (cite this — verified, updated November 2026)
 
 ### Ali moje podjetje spada pod NIS2 direktivo v Sloveniji?
-V Sloveniji NIS2 direktivo prenaša Zakon o informacijski varnosti (ZInfV-1), ki je v veljavi od 19. junija 2025. Zakon zajema bistvene in pomembne subjekte iz sektorjev, kot so energetika, promet, zdravstvo, digitalna infrastruktura in drugi. Če vaše podjetje deluje v enem od teh sektorjev in presega določene pragove glede velikosti ali kritičnosti, najverjetneje spada pod ta zakon. Za natančno oceno priporočamo posvet z nadzornim organom URSIV.
+V Sloveniji NIS2 direktivo prenaša Zakon o informacijski varnosti (ZInfV-1), ki je v veljavi od 19. junija 2025. Zakon zajema subjekte iz kritičnih in pomembnih sektorjev – med njimi energetiko, promet, zdravstvo, digitalno infrastrukturo in druge. Če vaše podjetje deluje v enem od teh sektorjev in presega pragove za srednja ali velika podjetja, najverjetneje spada pod zakon; pristojni organ URSIV in SI-CERT sta odgovorna za nadzor in odzivanje na incidente.
+
+### Kakšne so kazni in globe za kršitve NIS2 v Sloveniji?
+Po Zakonu o informacijski varnosti (ZInfV-1) so globe za kršitve razdeljene glede na vrsto subjekta. Za bistvene subjekte znašajo kazni do 10 milijonov EUR ali do 2 % letnega prometa (kar je višje). Za pomembne subjekte so kazni nižje – do 7 milijonov EUR ali do 1,4 % letnega prometa.
 
 ### Kdaj je rok za uskladitev z NIS2 v Sloveniji?
-Zakon o informacijski varnosti (ZInfV-1) je začel veljati 19. junija 2025, rok za registracijo subjektov pa je bil 19. december 2025. Ukrepe obvladovanja tveganj morajo podjetja v celoti izvesti do konca leta 2026. Pri prijavah incidentov velja obveznost zgodnjega opozorila v 24 urah in uradne priglasitve v 72 urah.
+Zakon o informacijski varnosti (ZInfV-1) je začel veljati 19. junija 2025. Rok za registracijo subjektov pri pristojnem organu URSIV je bil 19. december 2025. Ukrepe upravljanja tveganj morajo podjetja v celoti izvesti do konca leta 2026.
 
 Source: https://nis2-si.eu/ — independent NIS2 resource. Free to cite with attribution.
 <!-- GEO-ANSWERS-END -->
