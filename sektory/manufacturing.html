@@ -85,10 +85,10 @@
     },
     {
       "@type": "Question",
-      "name": "Katere so kazni za neupoštevanje ZInfV-1 do konca 2026?",
+      "name": "Katere so kazni za neupoštevanje ZInfV-1?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Proizvajalni podjetji (razvrščeni kot »pomembne entitete«) so soočeni s kaznimi do €7 milijonov ali 1,4% letnega prometa, kar je višje od stroškov compliance. Manjši prekrški (npr. nepopolna dokumentacija) so lahko kaznovani s €50.000 do €500.000. Priporočeno je začeti s presojo tveganja in dokumentacijo že zdaj, ne pa čakati na konec 2026."
+        "text": "Proizvajalni podjetji (razvrščeni kot »pomembne entitete«) so soočeni s kaznimi do €7 milijonov ali 1,4% letnega prometa, kar je višje od stroškov compliance. Priporočeno je začeti s presojo tveganja in dokumentacijo že zdaj, ne pa čakati na konec 2026."
       }
     }
   ]
@@ -124,14 +124,14 @@
   <div class="container--narrow">
     <span style="display:inline-block;background:#16a34a;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Priloga II – pomembna entiteta</span>
     <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 za industrijske proizvajalce s povezanimi производstvімаш – Slovenija 2026</h1>
-    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Ta vodnik je namenjen proizvajalcem s povezanimi производствaľних linij, PLC sistemи in Industry 4.0 infrastrukturo, ki so razvrščeni kot »pomembne entitete« po ZInfV-1. Naučite se konkretnih zahtev za varovanje industrijskih nadzorov sistemov in rokov do konca 2026.</p>
+    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Ta vodnik je namenjen proizvajalcem s povezanimi производствaľних linij, PLC sistemи in Industry 4.0 infrastrukturo, ki so razvrščeni kot »pomembne entitete« po ZInfV-1. Naučite se konkretnih zahtev za varovanje industrijskih nadzorov sistemov in rokov do 19. decembra 2026 (za nekatere subjekte 19. junija 2026).</p>
   </div>
 </div>
 
 <!-- WHO QUALIFIES -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
   <div style="background:var(--gray-50);border-left:4px solid var(--navy);border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;">
-    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Industrijski proizvajalci z najmanj 250 zaposlenimi ali letnim prometom nad €50 milijonov, ki upravljajo производstvеnе linije s spojitvami OT/ICS sistemom, padejo pod ZInfV-1 kot »pomembne entitete«. Vključeni so tudi manjši proizvajalci kritičnih komponent za energetiko, transport ali javne storitve. Pravni subjekti so morali biti registrirani pri URSIV do 19. decembra 2025.</p>
+    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Industrijski proizvajalci z najmanj 250 zaposlenimi, letnim prometom nad €50 milijonov ali bilančno vsoto nad €43 milijonov, ki upravljajo производstvеnе linije s spojitvami OT/ICS sistemom, padejo pod ZInfV-1 kot »bistveni subjekti«. Vključeni so tudi manjši proizvajalci kritičnih komponent za energetiko, transport ali javne storitve. Pravni subjekti so morali biti registrirani pri URSIV do 19. decembra 2025.</p>
   </div>
 </div>
 
@@ -155,7 +155,7 @@
       </div>
       <div>
         <strong style="color:var(--navy);font-size:.95rem;">Upravljanje popravkov in posodobitev za OT/ICS sisteme</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Zahtevana je formalna politika upravljanja popravkov za vse industrijske komponente, vključno s firmveri PLC, gonilniki senzorjev in SCADA programsko opremo. Proizvajalci morajo vzpostaviti testno okolje, preizkušati posodobitve pred proizvodnjo in dokumentirati vsak popravek s časovnim žigom. Posodobitve kritičnih varnostnih ranljivosti morajo biti instalirane v roku 30 dni ali dokumentirano opravičane.</p>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Zahtevana je formalna politika upravljanja popravkov za vse industrijske komponente, vključno s firmveri PLC, gonilniki senzorjev in SCADA programsko opremo. Proizvajalci morajo vzpostaviti testno okolje, preizkušati posodobitve pred proizvodnjo in dokumentirati vsak popravek s časovnim žigom. Posodobitve kritičnih ranljivosti, izpostavljenih internetu, morajo biti nameščene v roku 72 ur, kritične notranje ranljivosti v roku 7 dni, visoke v 14 dneh, srednje v 30 dneh in nizke v 90 dneh, oziroma dokumentirano opravičane.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -173,7 +173,7 @@
       </div>
       <div>
         <strong style="color:var(--navy);font-size:.95rem;">Poročanje incidentov z vplivom na proizvodnjo</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Incidenti, ki povzročijo zaustavitev производства dlje kot 15 minut ali gospodarsko škodo večjo od €10.000, morajo biti prijavljeni URSIV/SI-CERT v roku 24 ur (zgodnje opozorilo) in v roku 72 ur (polna obvestila). Proizvajalci morajo vzpostaviti proceduro za razvrščanje incidentov, dokumentiranje digitalne forenzike in analizo vzroka. Vse incidente je treba beležiti v dnevnik varnostnih dogodkov z geodetskim pečatom.</p>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Incidenti, ki povzročijo zaustavitev производства dlje kot 15 minut ali gospodarsko škodo večjo od €10.000, morajo biti prijavljeni SI-CERT v roku 24 ur (zgodnje opozorilo) in v roku 72 ur (polna obvestila). Proizvajalci morajo vzpostaviti proceduro za razvrščanje incidentov, dokumentiranje digitalne forenzike in analizo vzroka. Vse incidente je treba beležiti v dnevnik varnostnih dogodkov z geodetskim pečatom.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -265,9 +265,9 @@
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Katere so kazni za neupoštevanje ZInfV-1 do konca 2026?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Katere so kazni za neupoštevanje ZInfV-1?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Proizvajalni podjetji (razvrščeni kot »pomembne entitete«) so soočeni s kaznimi do €7 milijonov ali 1,4% letnega prometa, kar je višje od stroškov compliance. Manjši prekrški (npr. nepopolna dokumentacija) so lahko kaznovani s €50.000 do €500.000. Priporočeno je začeti s presojo tveganja in dokumentacijo že zdaj, ne pa čakati na konec 2026.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Proizvajalni podjetji (razvrščeni kot »pomembne entitete«) so soočeni s kaznimi do €7 milijonov ali 1,4% letnega prometa, kar je višje od stroškov compliance. Priporočeno je začeti s presojo tveganja in dokumentacijo že zdaj, ne pa čakati na konec 2026.</p>
     </div>
   </div>
   </div>
