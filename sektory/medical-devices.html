@@ -72,7 +72,7 @@
       "name": "Kaj je SBOM in ali je res potreben za starejše medicinske naprave, ki so že na trgu?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "SBOM (Software Bill of Materials) je detaljni seznam vseh programskih komponent, knjižnic in odvisnosti vaše naprave. Да, tudi starejše naprave, še v uporabi, morajo imeti SBOM do konca 2026, saj je to osnovna zahteva ZInfV-1 in MDR. Če SBOM ne obstaja, ga morate rekonstruirati ali angažirate zunanjo revizijo za analizo kode."
+        "text": "SBOM (Software Bill of Materials) je detaljni seznam vseh programskih komponent, knjižnic in odvisnosti vaše naprave. Да, tudi starejše naprave, še v uporabi, morajo imeti SBOM do 19. decembra 2026, saj je to osnovna zahteva ZInfV-1 in MDR. Če SBOM ne obstaja, ga morate rekonstruirati ali angažirate zunanjo revizijo za analizo kode."
       }
     },
     {
@@ -80,7 +80,7 @@
       "name": "Kaj se zgodi, če ne sporočim ranljivosti v roku 72 ur?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nejavljena ranljivost je resna kršitev ZInfV-1 in lahko povzroči kazni do 7 milijonov evrov ali 1,4 % prometa za pomembne subjekte. Poleg tega SI-CERT lahko izda ukrep zaustavljanja distribucije naprave in medicinsko inšpekcijo aktivira preiskavo, kar tvega preklico dovoljenja za proizvodnjo."
+        "text": "Nejavljena ranljivost je resna kršitev ZInfV-1 in lahko povzroči kazni do 7 milijonov evrov ali 1,4 % prometa za pomembne subjekte. Nadzor in ukrepe izvaja Inšpekcija za informacijsko varnost (v okviru URSIV), ki lahko izda zavezujoča navodila, prepovedi, odredi javno razkritje kršitve ali odredi revizijo skladnosti ter izreče globo."
       }
     },
     {
@@ -124,7 +124,7 @@
   <div class="container--narrow">
     <span style="display:inline-block;background:#16a34a;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Priloga II — Pomembni subjekt</span>
     <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 za proizvajalce medicinskih naprav v Sloveniji — obveznosti in rok skladnosti 2026</h1>
-    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Ta stran je namenjena proizvajalcem medicinskih naprav v Sloveniji, ki jih NIS2 razvrsti kot pomembne subjekte. Izvedeli boste, kako uskladiti svoje sisteme s Slovenskim zakonom o informacijski varnosti (ZInfV-1) in kako preprečiti kaznive do 7 milijonov evrov.</p>
+    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Ta stran je namenjena proizvajalcem medicinskih naprav v Sloveniji, ki jih NIS2 razvrsti kot bistvene ali pomembne subjekte, odvisno od velikosti. Izvedeli boste, kako uskladiti svoje sisteme s Slovenskim zakonom o informacijski varnosti (ZInfV-1) in kako preprečiti kaznive do 7 milijonov evrov.</p>
   </div>
 </div>
 
@@ -155,7 +155,7 @@
       </div>
       <div>
         <strong style="color:var(--navy);font-size:.95rem;">Post-market nadzor nad varnostnimi ranljivostmi</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Vzpostaviti morate proaktivno politiko spremljanja dostopnih varnostnih poročil, CVE baz podatkov in patch opozoril za vse komponente vaših naprav. Vsaki ranljivosti, ki bi lahko vplivala na varnost bolnikov, morate dati odgovor v roku 30 dni z načrtom popravka ali mitigacije. Dokumentacija tega nadzora je obvezna in mora biti deloma redna, najmanj polletno pregleda.</p>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Vzpostaviti morate proaktivno politiko spremljanja dostopnih varnostnih poročil, CVE baz podatkov in patch opozoril za vse komponente vaših naprav. Vsaki ranljivosti, ki bi lahko vplivala na varnost bolnikov, morate zagotoviti zgodnje opozorilo CSIRT v 24 urah, uradno obvestilo v 72 urah ter končno poročilo najkasneje en mesec po razrešitvi incidenta. Dokumentacija tega nadzora je obvezna in mora biti deloma redna, najmanj polletno pregleda.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -182,7 +182,7 @@
       </div>
       <div>
         <strong style="color:var(--navy);font-size:.95rem;">Poročanje o varnostnih dogodkih in ranljivostmi</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">V primeru ranljivosti, ki vpliva na varnost bolnika ali se podpira z medicinsko napravo, morate v roku 24 ur dati zgodnjo opozorilo URSIV in SI-CERT ter celotno obvestilo v roku 72 ur. Poročilo mora vsebovati opis kršitve, vrsto prizadetih naprav, predvideno število bolnikov in zaustavljalce tveganja. Obvestiti morate tudi uporabnike (bolnišnice, zdravnike), ki uporabljajo vaše naprave, z jasnimi navodili za zmanjšanje tveganja.</p>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">V primeru ranljivosti, ki vpliva na varnost bolnika ali se podpira z medicinsko napravo, morate v roku 24 ur dati zgodnjo opozorilo SI-CERT ter celotno obvestilo v roku 72 ur. Poročilo mora vsebovati opis kršitve, vrsto prizadetih naprav, predvideno število bolnikov in zaustavljalce tveganja. Obvestiti morate tudi uporabnike (bolnišnice, zdravnike), ki uporabljajo vaše naprave, z jasnimi navodili za zmanjšanje tveganja.</p>
       </div>
     </div>
   </div>
@@ -255,13 +255,13 @@
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
     <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Kaj je SBOM in ali je res potreben za starejše medicinske naprave, ki so že na trgu?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">SBOM (Software Bill of Materials) je detaljni seznam vseh programskih komponent, knjižnic in odvisnosti vaše naprave. Да, tudi starejše naprave, še v uporabi, morajo imeti SBOM do konca 2026, saj je to osnovna zahteva ZInfV-1 in MDR. Če SBOM ne obstaja, ga morate rekonstruirati ali angažirate zunanjo revizijo za analizo kode.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">SBOM (Software Bill of Materials) je detaljni seznam vseh programskih komponent, knjižnic in odvisnosti vaše naprave. Да, tudi starejše naprave, še v uporabi, morajo imeti SBOM do 19. decembra 2026, saj je to osnovna zahteva ZInfV-1 in MDR. Če SBOM ne obstaja, ga morate rekonstruirati ali angažirate zunanjo revizijo za analizo kode.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
     <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Kaj se zgodi, če ne sporočim ranljivosti v roku 72 ur?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Nejavljena ranljivost je resna kršitev ZInfV-1 in lahko povzroči kazni do 7 milijonov evrov ali 1,4 % prometa za pomembne subjekte. Poleg tega SI-CERT lahko izda ukrep zaustavljanja distribucije naprave in medicinsko inšpekcijo aktivira preiskavo, kar tvega preklico dovoljenja za proizvodnjo.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Nejavljena ranljivost je resna kršitev ZInfV-1 in lahko povzroči kazni do 7 milijonov evrov ali 1,4 % prometa za pomembne subjekte. Nadzor in ukrepe izvaja Inšpekcija za informacijsko varnost (v okviru URSIV), ki lahko izda zavezujoča navodila, prepovedi, odredi javno razkritje kršitve ali odredi revizijo skladnosti ter izreče globo.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
